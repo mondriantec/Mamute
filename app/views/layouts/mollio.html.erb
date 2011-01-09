@@ -24,90 +24,34 @@ http://creativecommons.org/licenses/GPL/2.0/
 <div id="wrap">
 
 	<div id="header">
-		<div id="site-name">Site name</div>
+		<div id="site-name">Sistema Nacional de Registro de Processos</div>
 		<div id="search">
-			<form action="">
-			<label for="searchsite">Site Search:</label>
-			<input id="searchsite" name="searchsite" type="text" />
-			<input type="submit" value="Go" class="f-submit" />
-			</form>
+			
 		</div>
 		<ul id="nav">
-		<li class="first"><a href="#">Home</a></li>
-		<li class="active"><a href="#">Products</a>
-			<ul>
-			<li class="first"><a href="#">Maecenas</a></li>
-			<li class="active"><a href="#">Phasellus</a></li>
-			<li><a href="#">Mauris sollicitudin</a></li>
-			<li><a href="#">Mauris sollicitudin</a></li>
-			<li><a href="#">Mauris sollicitudin</a></li>
-			<li><a href="#">Mauris sollicitudin</a></li>
-			<li class="last"><a href="#">Mauris at enim</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Client list</a>
-			<ul>
-			<li class="first"><a href="#">Maecenas</a></li>
-			<li><a href="#">Phasellus</a></li>
-			<li><a href="#">Mauris sollicitudin</a></li>
-			<li class="last"><a href="#">Mauris at enim</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Case Studies &amp; References</a>
-			<ul>
-			<li class="first"><a href="#">Maecenas</a></li>
-			<li><a href="#">Phasellus</a></li>
-			<li><a href="#">Mauris sollicitudin</a></li>
-			<li><a href="#">Phasellus</a></li>
-			<li><a href="#">Mauris sollicitudin</a></li>
-			<li><a href="#">Phasellus</a></li>
-			<li><a href="#">Mauris sollicitudin</a></li>
-			<li><a href="#">Phasellus</a></li>
-			<li><a href="#">Mauris sollicitudin</a></li>
-			<li><a href="#">Phasellus</a></li>
-			<li><a href="#">Mauris sollicitudin</a></li>
-			<li class="last"><a href="#">Mauris at enim</a></li>
-			</ul>
-		</li>
-		<li class="last"><a href="#">Locations</a>
-			<ul>
-			<li class="first"><a href="#">Maecenas</a></li>
-			<li><a href="#">Phasellus</a></li>
-			<li><a href="#">Mauris sollicitudin</a></li>
-			<li class="last"><a href="#">Mauris at enim</a></li>
-			</ul>
-		</li>
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="#">Protocolo</a>	</li>
+		<li><a href="#">Certidoes</a></li>
+		<li><a href="#">Financeiro</a></li>
+		<li><a href="#">Administracao</a></li>
+		<li class="last"><a href="#">Sair</a></li>
 		</ul>
 	</div>
 	
 	<div id="content-wrap">
 	
+
 		<div id="utility">
 
-			<ul id="nav-secondary">
-			<li class="first"><a href="#">Latinus Wordus</a></li>
-			<li><a href="#">Catsnamus Mitenus</a></li>
-			<li class="active"><a href="#">Beautus Weatherus</a>
-			
-				<ul>
-				<li class="first"><a href="#">Letsgo Surfingus</a></li>
-				<li><a href="#">Nothingo on tivio</a></li>
-				<li class="active"><a href="#">Wanta a coffeo</a></li>
-				<li class="last"><a href="#">Nothingo on tivio</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Bottomus Navigationus</a></li>
-			<li><a href="#">Gee my neckus issore</a></li>
-			<li class="last"><a href="#">Last buttus notleastus</a></li>
-			</ul>
+        <%= render :partial => session[:submenu] %>
 		</div>
+
 		
 		<div id="content">
 			<%= yield %>
 			
 		</div>
 		
-		<div id="poweredby"><a href="http://farcry.daemon.com.au/"><img src="wsimages/mollio.gif" alt="FarCry - Mollio" /></a></div>
 		
 	</div>
 	

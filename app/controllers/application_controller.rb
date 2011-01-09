@@ -7,4 +7,11 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  before_filter do |f|
+    f.menu "home"
+  end
+  def menu(nome_menu)
+    session[:menu] = nome_menu
+    session[:submenu] = "menus/submenu_" + nome_menu
+  end
 end
