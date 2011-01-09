@@ -1,4 +1,16 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :perfis_usuarios
+
+  map.resources :perfis
+
+  map.logout '/logout', :controller => 'contas', :action => 'destroy'
+  map.login '/login', :controller => 'contas', :action => 'new'
+  map.register '/register', :controller => 'usuarios', :action => 'create'
+  map.signup '/signup', :controller => 'usuarios', :action => 'new'
+  map.resources :usuarios
+
+  map.resource :conta
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

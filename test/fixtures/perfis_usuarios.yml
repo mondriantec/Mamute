@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  usuario_id: 
+  perfil_id: 1
+  created_by: 1
+  updated_by: 1
+
+two:
+  usuario_id: 
+  perfil_id: 1
+  created_by: 1
+  updated_by: 1
