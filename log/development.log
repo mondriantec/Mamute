@@ -1,1 +1,1723 @@
 
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-05 21:20:32) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 29ms (View: 27, DB: 0) | 200 OK [http://localhost/teste]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:20:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:20:33) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:20:33) [GET]
+
+ActionController::RoutingError (No route matches "/wsimages/mollio.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-05 21:20:34) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/teste]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:20:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:20:34) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:20:34) [GET]
+
+ActionController::RoutingError (No route matches "/wsimages/mollio.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-05 21:20:45) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/teste]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:20:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:20:45) [GET]
+
+ActionController::RoutingError (No route matches "/wsimages/mollio.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-05 21:21:42) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/teste]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:21:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:21:42) [GET]
+
+ActionController::RoutingError (No route matches "/wsimages/mollio.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-05 21:21:47) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/teste]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:21:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:21:47) [GET]
+
+ActionController::RoutingError (No route matches "/wsimages/mollio.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-05 21:22:04) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/teste]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:22:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:22:04) [GET]
+
+ActionController::RoutingError (No route matches "/wsimages/mollio.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-05 21:22:17) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:22:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:22:17) [GET]
+
+ActionController::RoutingError (No route matches "/wsimages/mollio.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-05 21:23:03) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:23:03) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-05 21:23:03) [GET]
+
+ActionController::RoutingError (No route matches "/wsimages/mollio.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (4.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;36;1mUsuario Load (0.3ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109150215')[0m
+Migrating to CreatePerfis (20110109151007)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "perfis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "perfis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mPerfil Create (0.2ms)[0m   [0;1mINSERT INTO "perfis" ("created_at", "nome", "updated_at", "created_by", "updated_by") VALUES('2011-01-09 15:28:09', 'ADMIN', '2011-01-09 15:28:09', 1, 1)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151007')[0m
+Migrating to CreatePerfisUsuarios (20110109151210)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "perfis_usuarios" ("perfil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "perfis_usuarios" ("perfil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109151210')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis_usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;35;1mUsuario Load (0.3ms)[0m   [0mSELECT * FROM "usuarios" LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com') LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109150215')[0m
+Migrating to CreatePerfis (20110109151007)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "perfis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mPerfil Create (0.1ms)[0m   [0;1mINSERT INTO "perfis" ("created_at", "nome", "updated_at", "created_by", "updated_by") VALUES('2011-01-09 15:31:10', 'ADMIN', '2011-01-09 15:31:10', 1, 1)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151007')[0m
+Migrating to CreatePerfisUsuarios (20110109151210)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "perfis_usuarios" ("perfil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151210')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis_usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com') LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109150215')[0m
+Migrating to CreatePerfis (20110109151007)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "perfis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mPerfil Create (0.2ms)[0m   [0;1mINSERT INTO "perfis" ("created_at", "nome", "updated_at", "created_by", "updated_by") VALUES('2011-01-09 15:32:11', 'ADMIN', '2011-01-09 15:32:11', 1, 1)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151007')[0m
+Migrating to CreatePerfisUsuarios (20110109151210)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "perfis_usuarios" ("perfil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151210')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis_usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;36;1mUsuario Load (0.3ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109150215')[0m
+Migrating to CreatePerfis (20110109151007)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "perfis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mPerfil Create (0.1ms)[0m   [0;1mINSERT INTO "perfis" ("created_at", "nome", "updated_at", "created_by", "updated_by") VALUES('2011-01-09 15:33:04', 'ADMIN', '2011-01-09 15:33:04', 1, 1)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151007')[0m
+Migrating to CreatePerfisUsuarios (20110109151210)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "perfis_usuarios" ("perfil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151210')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis_usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com') LIMIT 1[0m
+  [4;35;1mUsuario Create (0.1ms)[0m   [0mINSERT INTO "usuarios" ("salt", "created_at", "crypted_password", "remember_token_expires_at", "nome", "updated_at", "created_by", "remember_token", "updated_by", "login", "email") VALUES('acef9935a58223d837d57d3afdea02a2255d1056', '2011-01-09 15:34:09', '0102e92985c8ddbba78fae80f67635c7fb90ccbf', NULL, 'admin', '2011-01-09 15:34:09', NULL, NULL, NULL, 'admin', 'coutinho@mondriantecnologia.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109150215')[0m
+Migrating to CreatePerfis (20110109151007)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "perfis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mPerfil Create (0.1ms)[0m   [0;1mINSERT INTO "perfis" ("created_at", "nome", "updated_at", "created_by", "updated_by") VALUES('2011-01-09 15:34:09', 'ADMIN', '2011-01-09 15:34:09', 1, 1)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151007')[0m
+Migrating to CreatePerfisUsuarios (20110109151210)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "perfis_usuarios" ("perfil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mPerfil Load (0.1ms)[0m   [0;1mSELECT * FROM "perfis" WHERE ("perfis"."nome" = 'admin') LIMIT 1[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "perfis_usuarios" ("perfil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;35;1mPerfil Load (0.2ms)[0m   [0mSELECT * FROM "perfis" WHERE ("perfis"."nome" = 'ADMIN') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "perfis_usuarios" ("created_at", "updated_at", "perfil_id") VALUES ('2011-01-09 15:34:09', '2011-01-09 15:34:09', 1)[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151210')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis_usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;36;1mPerfil Load (0.9ms)[0m   [0;1mSELECT * FROM "perfis" [0m
+  [4;35;1mUsuario Load (0.3ms)[0m   [0mSELECT * FROM "usuarios" [0m
+  [4;36;1mPerfil Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: perfis_usuarios.usuario_id: SELECT * FROM "perfis" INNER JOIN "perfis_usuarios" ON "perfis".id = "perfis_usuarios".perfil_id WHERE ("perfis_usuarios".usuario_id = 1 ) [0m
+  [4;35;1mUsuario Load (0.5ms)[0m   [0mSELECT * FROM "usuarios" LIMIT 1[0m
+  [4;36;1mPerfil Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: perfis_usuarios.usuario_id: SELECT * FROM "perfis" INNER JOIN "perfis_usuarios" ON "perfis".id = "perfis_usuarios".perfil_id WHERE ("perfis_usuarios".usuario_id = 1 ) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com') LIMIT 1[0m
+  [4;35;1mUsuario Create (0.1ms)[0m   [0mINSERT INTO "usuarios" ("salt", "created_at", "crypted_password", "remember_token_expires_at", "nome", "updated_at", "created_by", "remember_token", "updated_by", "login", "email") VALUES('c0ebcc28852e2d5a570dd053755f016aec3b5a80', '2011-01-09 15:36:38', '05e54371451361700b4ff34f6b1f36037f69db79', NULL, 'admin', '2011-01-09 15:36:38', NULL, NULL, NULL, 'admin', 'coutinho@mondriantecnologia.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109150215')[0m
+Migrating to CreatePerfis (20110109151007)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "perfis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mPerfil Create (0.1ms)[0m   [0;1mINSERT INTO "perfis" ("created_at", "nome", "updated_at", "created_by", "updated_by") VALUES('2011-01-09 15:36:38', 'ADMIN', '2011-01-09 15:36:38', 1, 1)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151007')[0m
+Migrating to CreatePerfisUsuarios (20110109151210)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "perfis_usuarios" ("usuario_id" integer, "perfil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mPerfil Load (0.1ms)[0m   [0;1mSELECT * FROM "perfis" WHERE ("perfis"."nome" = 'ADMIN') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "perfis_usuarios" ("created_at", "updated_at", "usuario_id", "perfil_id") VALUES ('2011-01-09 15:36:38', '2011-01-09 15:36:38', 1, 1)[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109151210')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis_usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;36;1mUsuario Load (0.7ms)[0m   [0;1mSELECT * FROM "usuarios" LIMIT 1[0m
+  [4;35;1mPerfil Load (0.3ms)[0m   [0mSELECT * FROM "perfis" INNER JOIN "perfis_usuarios" ON "perfis".id = "perfis_usuarios".perfil_id WHERE ("perfis_usuarios".usuario_id = 1 ) [0m
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:21:07) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 86ms (View: 84, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:21:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:21:08) [GET]
+
+ActionController::RoutingError (No route matches "/wsimages/mollio.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:22:50) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:22:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:22:50) [GET]
+
+ActionController::RoutingError (No route matches "/wsimages/mollio.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:23:27) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:23:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:23:55) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:23:55) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:24:48) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:24:48) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:25:21) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:25:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:25:37) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:25:37) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:26:06) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:26:06) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:34:21) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:34:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:35:07) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:35:08) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:35:17) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:35:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:36:24) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:36:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+/!\ FAILSAFE /!\  Sun Jan 09 13:42:49 -0300 2011
+  Status: 500 Internal Server Error
+  /Users/nabucodonosorcoutinhocosta/workspace/irtd/app/controllers/application_controller.rb:14: syntax error, unexpected tIDENTIFIER, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:101:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:27:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/bin/mongrel_rails:19:in `load'
+    /opt/local/bin/mongrel_rails:19
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:43:04) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Rendered menus/_submenu_padrao (0.7ms)
+Completed in 58ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:43:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:57:28) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Rendered menus/_submenu_home (0.8ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:57:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 13:58:21) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 13:58:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsuariosController#index (for 127.0.0.1 at 2011-01-09 14:00:42) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, menu, and new):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (32.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+Migrating to CreateCidades (20110109170133)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "cidades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "uf" varchar(2), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170133')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cidades")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis_usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+Migrating to CreateCidades (20110109170133)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cidades")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis_usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+Migrating to CreateCidades (20110109170133)
+Migrating to CreateCartorios (20110109170340)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "cartorios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "cidade_id" integer, "oficio" varchar(255), "tabeliao" varchar(255), "endereco" varchar(255), "bairro" varchar(255), "fone" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170340')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cartorios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis_usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+Migrating to CreateCidades (20110109170133)
+Migrating to CreateCartorios (20110109170340)
+Migrating to CreateEntidades (20110109170520)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "entidades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "cnpj" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170520')[0m
+Migrating to AddUsuarioOrganizacao (20110109170610)
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "usuarios" ADD "organizacao_id" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "usuarios" ADD "organizacao_type" varchar(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_usuarios_on_organizacao_type_and_organizacao_id" ON "usuarios" ("organizacao_type", "organizacao_id")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170610')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cartorios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("entidades")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis_usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_login')[0m
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 14:08:48) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com') LIMIT 1[0m
+  [4;35;1mUsuario Create (0.1ms)[0m   [0mINSERT INTO "usuarios" ("salt", "created_at", "crypted_password", "remember_token_expires_at", "nome", "updated_at", "created_by", "remember_token", "updated_by", "login", "email") VALUES('db4bcff8e69f10c2df73bffc1187988c559ac494', '2011-01-09 17:11:07', '9745fde8762dc077a7fc87fe62125b07520efbd2', NULL, 'admin', '2011-01-09 17:11:07', NULL, NULL, NULL, 'admin', 'coutinho@mondriantecnologia.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109150215')[0m
+Migrating to CreatePerfis (20110109151007)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "perfis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mPerfil Create (0.2ms)[0m   [0;1mINSERT INTO "perfis" ("created_at", "nome", "updated_at", "created_by", "updated_by") VALUES('2011-01-09 17:11:07', 'ADMIN', '2011-01-09 17:11:07', 1, 1)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151007')[0m
+Migrating to CreatePerfisUsuarios (20110109151210)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "perfis_usuarios" ("usuario_id" integer, "perfil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mPerfil Load (0.1ms)[0m   [0;1mSELECT * FROM "perfis" WHERE ("perfis"."nome" = 'ADMIN') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "perfis_usuarios" ("created_at", "updated_at", "usuario_id", "perfil_id") VALUES ('2011-01-09 17:11:07', '2011-01-09 17:11:07', 1, 1)[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109151210')[0m
+Migrating to CreateCidades (20110109170133)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "cidades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "uf" varchar(2), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170133')[0m
+Migrating to CreateCartorios (20110109170340)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "cartorios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "cidade_id" integer, "oficio" varchar(255), "tabeliao" varchar(255), "endereco" varchar(255), "bairro" varchar(255), "fone" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170340')[0m
+Migrating to CreateEntidades (20110109170520)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "entidades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "cnpj" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mEntidade Create (0.2ms)[0m   [0;1mINSERT INTO "entidades" ("created_at", "nome", "updated_at", "cnpj") VALUES('2011-01-09 17:11:07', 'Fabrica Info', '2011-01-09 17:11:07', NULL)[0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com') LIMIT 1[0m
+  [4;35;1mUsuario Create (0.1ms)[0m   [0mINSERT INTO "usuarios" ("salt", "created_at", "crypted_password", "remember_token_expires_at", "nome", "updated_at", "created_by", "remember_token", "updated_by", "login", "email") VALUES('7d62f0c506feaf58033afa3d64118a67a9504e69', '2011-01-09 17:11:28', 'c537d71fa64dc9d8f89e32435d09edf8bf1e754e', NULL, 'admin', '2011-01-09 17:11:28', NULL, NULL, NULL, 'admin', 'coutinho@mondriantecnologia.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109150215')[0m
+Migrating to CreatePerfis (20110109151007)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "perfis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mPerfil Create (0.2ms)[0m   [0;1mINSERT INTO "perfis" ("created_at", "nome", "updated_at", "created_by", "updated_by") VALUES('2011-01-09 17:11:28', 'ADMIN', '2011-01-09 17:11:28', 1, 1)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151007')[0m
+Migrating to CreatePerfisUsuarios (20110109151210)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "perfis_usuarios" ("usuario_id" integer, "perfil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mPerfil Load (0.1ms)[0m   [0;1mSELECT * FROM "perfis" WHERE ("perfis"."nome" = 'ADMIN') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "perfis_usuarios" ("created_at", "updated_at", "usuario_id", "perfil_id") VALUES ('2011-01-09 17:11:28', '2011-01-09 17:11:28', 1, 1)[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109151210')[0m
+Migrating to CreateCidades (20110109170133)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "cidades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "uf" varchar(2), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170133')[0m
+Migrating to CreateCartorios (20110109170340)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "cartorios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "cidade_id" integer, "oficio" varchar(255), "tabeliao" varchar(255), "endereco" varchar(255), "bairro" varchar(255), "fone" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170340')[0m
+Migrating to CreateEntidades (20110109170520)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "entidades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "cnpj" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mEntidade Create (0.2ms)[0m   [0;1mINSERT INTO "entidades" ("created_at", "nome", "updated_at", "cnpj") VALUES('2011-01-09 17:11:28', 'Fabrica Info', '2011-01-09 17:11:28', NULL)[0m
+  [4;35;1mUsuario Load (0.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;36;1mUsuario Update (0.1ms)[0m   [0;1mUPDATE "usuarios" SET "updated_at" = '2011-01-09 17:11:28' WHERE "id" = 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109170520')[0m
+Migrating to AddUsuarioOrganizacao (20110109170610)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "usuarios" ADD "organizacao_id" integer[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mALTER TABLE "usuarios" ADD "organizacao_type" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_usuarios_on_organizacao_type_and_organizacao_id" ON "usuarios" ("organizacao_type", "organizacao_id")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109170610')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cartorios")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cidades")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("entidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis_usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 14:13:12) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:13:12) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 14:16:51) [GET]
+Rendering template within layouts/mollio
+Rendering teste/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:16:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-09 14:16:57) [GET]
+  [4;36;1mCartorio Load (0.8ms)[0m   [0;1mSELECT * FROM "cartorios" [0m
+Rendering cartorios/index
+Completed in 122ms (View: 17, DB: 1) | 200 OK [http://localhost/cartorios]
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-09 14:16:58) [GET]
+  [4;35;1mCartorio Load (0.6ms)[0m   [0mSELECT * FROM "cartorios" [0m
+Rendering cartorios/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/cartorios]
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-09 14:17:31) [GET]
+  [4;36;1mCartorio Load (0.6ms)[0m   [0;1mSELECT * FROM "cartorios" [0m
+Rendering template within layouts/application
+Rendering cartorios/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/cartorios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:17:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#new (for 127.0.0.1 at 2011-01-09 14:17:34) [GET]
+Rendering template within layouts/application
+Rendering cartorios/new
+Rendered menus/_submenu_home (0.1ms)
+Completed in 79ms (View: 73, DB: 0) | 200 OK [http://localhost/cartorios/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:17:34) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2011-01-09 14:17:44) [GET]
+  [4;35;1mCidade Load (0.6ms)[0m   [0mSELECT * FROM "cidades" [0m
+Rendering template within layouts/application
+Rendering cidades/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/cidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:17:44) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CidadesController#new (for 127.0.0.1 at 2011-01-09 14:17:46) [GET]
+Rendering template within layouts/application
+Rendering cidades/new
+Rendered menus/_submenu_home (0.1ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/cidades/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:17:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2011-01-09 14:17:50) [GET]
+  [4;36;1mCidade Load (0.5ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+Rendering template within layouts/application
+Rendering cidades/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/cidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:17:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2011-01-09 14:19:44) [GET]
+  [4;35;1mCidade Load (0.5ms)[0m   [0mSELECT * FROM "cidades" [0m
+Rendering template within layouts/application
+Rendering cidades/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 10ms (View: 3, DB: 1) | 200 OK [http://localhost/cidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:19:44) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:20:40) [GET]
+
+ActionController::RoutingError (No route matches "/administracao" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:20:43) [GET]
+
+ActionController::RoutingError (No route matches "/administracao" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:21:10) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.6ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:21:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:22:02) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.5ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:22:02) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:22:29) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:22:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:22:54) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 71ms (View: 69, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:22:54) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:22:56) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:22:56) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:23:08) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:23:08) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 14:23:10) [GET]
+
+ActionView::MissingTemplate (Missing layout layouts/mollio.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 14:23:31) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:23:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:23:33) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:23:33) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 14:23:35) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:23:35) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:23:36) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:23:36) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:23:47) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:23:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:23:49) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:23:49) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 14:23:51) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_submenu_home (0.4ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:23:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:23:52) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:23:52) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 14:23:54) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 67ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:23:54) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:23:56) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:23:56) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:24:16) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.5ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:24:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2011-01-09 14:24:18) [GET]
+  [4;36;1mCidade Load (0.5ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+Rendering template within layouts/application
+Rendering cidades/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/cidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:24:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:24:21) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:24:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-09 14:24:22) [GET]
+  [4;35;1mCartorio Load (0.5ms)[0m   [0mSELECT * FROM "cartorios" [0m
+Rendering template within layouts/application
+Rendering cartorios/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/cartorios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:24:22) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:24:24) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:24:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:25:11) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:25:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:25:13) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:25:13) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 14:25:15) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:25:15) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 14:25:16) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:25:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-09 14:25:17) [GET]
+  [4;36;1mCartorio Load (0.6ms)[0m   [0;1mSELECT * FROM "cartorios" [0m
+Rendering template within layouts/application
+Rendering cartorios/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/cartorios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:25:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2011-01-09 14:25:19) [GET]
+  [4;35;1mCidade Load (0.5ms)[0m   [0mSELECT * FROM "cidades" [0m
+Rendering template within layouts/application
+Rendering cidades/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/cidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:25:19) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-09 14:25:20) [GET]
+  [4;36;1mCartorio Load (0.6ms)[0m   [0;1mSELECT * FROM "cartorios" [0m
+Rendering template within layouts/application
+Rendering cartorios/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://localhost/cartorios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:25:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2011-01-09 14:25:21) [GET]
+  [4;35;1mCidade Load (0.5ms)[0m   [0mSELECT * FROM "cidades" [0m
+Rendering template within layouts/application
+Rendering cidades/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/cidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 14:25:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

@@ -1,4 +1,6 @@
 class EntidadesController < ApplicationController
+
+  before_filter { |f| f.menu 'administracao' }
   # GET /entidades
   # GET /entidades.xml
   def index

@@ -9,7 +9,33 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110109151210) do
+ActiveRecord::Schema.define(:version => 20110109170610) do
+
+  create_table "cartorios", :force => true do |t|
+    t.integer  "cidade_id"
+    t.string   "oficio"
+    t.string   "tabeliao"
+    t.string   "endereco"
+    t.string   "bairro"
+    t.string   "fone"
+    t.string   "fax"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "cidades", :force => true do |t|
+    t.string   "nome"
+    t.string   "uf",         :limit => 2
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "entidades", :force => true do |t|
+    t.string   "nome"
+    t.string   "cnpj"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "perfis", :force => true do |t|
     t.string   "nome"
@@ -38,8 +64,11 @@ ActiveRecord::Schema.define(:version => 20110109151210) do
     t.datetime "remember_token_expires_at"
     t.integer  "created_by"
     t.integer  "updated_by"
+    t.integer  "organizacao_id"
+    t.string   "organizacao_type"
   end
 
   add_index "usuarios", ["login"], :name => "index_usuarios_on_login", :unique => true
+  add_index "usuarios", ["organizacao_type", "organizacao_id"], :name => "index_usuarios_on_organizacao_type_and_organizacao_id"
 
 end

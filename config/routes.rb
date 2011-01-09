@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :administracao
+  
   map.resources :entidades
 
   map.resources :cartorios
