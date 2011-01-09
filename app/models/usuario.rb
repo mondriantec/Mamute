@@ -3,6 +3,7 @@ require 'digest/sha1'
 class Usuario < ActiveRecord::Base
   
   has_and_belongs_to_many :perfis
+  belongs_to :organizacao, :polymorphic => true
   
   include Authentication
   include Authentication::ByPassword

@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :entidades
+
+  map.resources :cartorios
+
+  map.resources :cidades
+
   map.resources :perfis_usuarios
 
   map.resources :perfis

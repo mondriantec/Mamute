@@ -1,0 +1,20 @@
+<h1>Editing entidade</h1>
+
+<% form_for(@entidade) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :cnpj %><br />
+    <%= f.text_field :cnpj %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @entidade %> |
+<%= link_to 'Back', entidades_path %>

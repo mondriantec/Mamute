@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cidade_id: 1
+  oficio: MyString
+  tabeliao: MyString
+  endereco: MyString
+  bairro: MyString
+  fone: MyString
+  fax: MyString
+
+two:
+  cidade_id: 1
+  oficio: MyString
+  tabeliao: MyString
+  endereco: MyString
+  bairro: MyString
+  fone: MyString
+  fax: MyString
