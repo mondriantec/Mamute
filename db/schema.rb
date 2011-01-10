@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110109170610) do
+ActiveRecord::Schema.define(:version => 20110110025047) do
 
   create_table "cartorios", :force => true do |t|
     t.integer  "cidade_id"
@@ -30,9 +30,24 @@ ActiveRecord::Schema.define(:version => 20110109170610) do
     t.datetime "updated_at"
   end
 
+  create_table "configuracoes", :force => true do |t|
+    t.string   "chave"
+    t.string   "valor"
+    t.text     "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "entidades", :force => true do |t|
     t.string   "nome"
     t.string   "cnpj"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "motivo_notificacaos", :force => true do |t|
+    t.string   "motivo"
+    t.text     "descricao"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -48,6 +63,25 @@ ActiveRecord::Schema.define(:version => 20110109170610) do
   create_table "perfis_usuarios", :id => false, :force => true do |t|
     t.integer  "usuario_id"
     t.integer  "perfil_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pessoas", :force => true do |t|
+    t.string   "nome"
+    t.string   "cpf"
+    t.string   "rg"
+    t.string   "orgao_emissor_rg"
+    t.string   "uf_emissor_rg"
+    t.string   "cnh"
+    t.string   "nome_mae"
+    t.string   "endereco"
+    t.string   "bairro"
+    t.string   "cidade_id"
+    t.string   "cep"
+    t.string   "estado_civil"
+    t.integer  "created_by"
+    t.integer  "updated_by"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

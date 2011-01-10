@@ -1,0 +1,73 @@
+<p>
+  <b>Nome:</b>
+  <%=h @pessoa.nome %>
+</p>
+
+<p>
+  <b>Cpf:</b>
+  <%=h @pessoa.cpf %>
+</p>
+
+<p>
+  <b>Rg:</b>
+  <%=h @pessoa.rg %>
+</p>
+
+<p>
+  <b>Orgao emissor rg:</b>
+  <%=h @pessoa.orgao_emissor_rg %>
+</p>
+
+<p>
+  <b>Uf emissor rg:</b>
+  <%=h @pessoa.uf_emissor_rg %>
+</p>
+
+<p>
+  <b>Cnh:</b>
+  <%=h @pessoa.cnh %>
+</p>
+
+<p>
+  <b>Nome mae:</b>
+  <%=h @pessoa.nome_mae %>
+</p>
+
+<p>
+  <b>Endereco:</b>
+  <%=h @pessoa.endereco %>
+</p>
+
+<p>
+  <b>Bairro:</b>
+  <%=h @pessoa.bairro %>
+</p>
+
+<p>
+  <b>Cidade:</b>
+  <%=h @pessoa.cidade_id %>
+</p>
+
+<p>
+  <b>Cep:</b>
+  <%=h @pessoa.cep %>
+</p>
+
+<p>
+  <b>Estado civil:</b>
+  <%=h @pessoa.estado_civil %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%=h @pessoa.created_by %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%=h @pessoa.updated_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_pessoa_path(@pessoa) %> |
+<%= link_to 'Back', pessoas_path %>

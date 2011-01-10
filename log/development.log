@@ -1721,3 +1721,1200 @@ ActionController::RoutingError (No route matches "/javascripts/common.js" with {
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 22:50:05) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_submenu_home (0.6ms)
+Completed in 144ms (View: 102, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 22:50:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 22:50:17) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (7.5ms)
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 22:50:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 22:51:03) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_submenu_administracao (1.1ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 22:51:03) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntidadesController#index (for 127.0.0.1 at 2011-01-09 22:51:06) [GET]
+  [4;36;1mEntidade Load (35.9ms)[0m   [0;1mSELECT * FROM "entidades" [0m
+Rendering template within layouts/application
+Rendering entidades/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 126ms (View: 75, DB: 36) | 200 OK [http://localhost/entidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 22:51:06) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-09 22:51:10) [GET]
+  [4;35;1mCartorio Load (0.6ms)[0m   [0mSELECT * FROM "cartorios" [0m
+Rendering template within layouts/application
+Rendering cartorios/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 43ms (View: 10, DB: 1) | 200 OK [http://localhost/cartorios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 22:51:10) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2011-01-09 22:51:11) [GET]
+  [4;36;1mCidade Load (0.6ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+Rendering template within layouts/application
+Rendering cidades/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 56ms (View: 16, DB: 1) | 200 OK [http://localhost/cidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 22:51:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-09 22:51:12) [GET]
+  [4;35;1mCartorio Load (0.6ms)[0m   [0mSELECT * FROM "cartorios" [0m
+Rendering template within layouts/application
+Rendering cartorios/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/cartorios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 22:51:13) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntidadesController#index (for 127.0.0.1 at 2011-01-09 22:51:14) [GET]
+  [4;36;1mEntidade Load (0.5ms)[0m   [0;1mSELECT * FROM "entidades" [0m
+Rendering template within layouts/application
+Rendering entidades/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/entidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 22:51:14) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2011-01-09 22:51:17) [GET]
+  [4;35;1mCidade Load (0.5ms)[0m   [0mSELECT * FROM "cidades" [0m
+Rendering template within layouts/application
+Rendering cidades/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/cidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 22:51:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-09 22:51:18) [GET]
+  [4;36;1mCartorio Load (0.5ms)[0m   [0;1mSELECT * FROM "cartorios" [0m
+Rendering template within layouts/application
+Rendering cartorios/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/cartorios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 22:51:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntidadesController#index (for 127.0.0.1 at 2011-01-09 22:51:20) [GET]
+  [4;35;1mEntidade Load (0.6ms)[0m   [0mSELECT * FROM "entidades" [0m
+Rendering template within layouts/application
+Rendering entidades/index
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 75ms (View: 6, DB: 1) | 200 OK [http://localhost/entidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 22:51:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:25:40) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_submenu_home (0.1ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:25:40) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:26:55) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_principal (0.5ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:26:55) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:28:09) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_principal (0.7ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:28:09) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:28:51) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_principal (0.6ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:28:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:28:53) [GET]
+
+ActionController::RoutingError (No route matches "/home" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:29:47) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_principal (0.7ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:29:49) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:29:49) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:30:37) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_principal (0.7ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:30:37) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 23:30:39) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:30:39) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:30:41) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:30:41) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:30:52) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_principal (0.7ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:30:52) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:31:04) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_principal (0.7ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:31:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:31:05) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/teste]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:31:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:32:33) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_principal (0.7ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/teste]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:32:33) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:32:34) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/teste]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:32:34) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TesteController#index (for 127.0.0.1 at 2011-01-09 23:32:46) [GET]
+Rendering template within layouts/application
+Rendering teste/index
+Rendered menus/_principal (0.7ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/teste]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:32:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 23:32:48) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:32:48) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-09 23:32:49) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 74ms (View: 72, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:32:49) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 23:32:51) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:32:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 23:33:07) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.7ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:33:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-09 23:33:10) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:33:10) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 23:33:11) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:33:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-09 23:33:13) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:33:13) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-09 23:33:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.7ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:33:22) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 23:33:23) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:33:23) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-09 23:33:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:33:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 23:33:27) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:33:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-09 23:33:28) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:33:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 23:33:31) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 67ms (View: 65, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:33:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2011-01-09 23:33:36) [GET]
+  [4;36;1mCidade Load (0.6ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+Rendering template within layouts/application
+Rendering cidades/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/cidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:33:36) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-09 23:33:37) [GET]
+  [4;35;1mCartorio Load (0.5ms)[0m   [0mSELECT * FROM "cartorios" [0m
+Rendering template within layouts/application
+Rendering cartorios/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/cartorios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:33:37) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntidadesController#index (for 127.0.0.1 at 2011-01-09 23:33:38) [GET]
+  [4;36;1mEntidade Load (0.6ms)[0m   [0;1mSELECT * FROM "entidades" [0m
+Rendering template within layouts/application
+Rendering entidades/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/entidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:33:38) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntidadesController#index (for 127.0.0.1 at 2011-01-09 23:34:05) [GET]
+  [4;35;1mEntidade Load (0.6ms)[0m   [0mSELECT * FROM "entidades" [0m
+Rendering template within layouts/application
+Rendering entidades/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.5ms)
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/entidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:34:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PerfisController#index (for 127.0.0.1 at 2011-01-09 23:34:07) [GET]
+  [4;36;1mPerfil Load (0.6ms)[0m   [0;1mSELECT * FROM "perfis" [0m
+Rendering template within layouts/application
+Rendering perfis/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 84ms (View: 78, DB: 1) | 200 OK [http://localhost/perfis]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:34:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PerfisController#index (for 127.0.0.1 at 2011-01-09 23:34:28) [GET]
+  [4;35;1mPerfil Load (0.6ms)[0m   [0mSELECT * FROM "perfis" [0m
+Rendering template within layouts/application
+Rendering perfis/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/perfis]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:34:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntidadesController#index (for 127.0.0.1 at 2011-01-09 23:34:29) [GET]
+  [4;36;1mEntidade Load (0.6ms)[0m   [0;1mSELECT * FROM "entidades" [0m
+Rendering template within layouts/application
+Rendering entidades/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/entidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:34:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-09 23:34:31) [GET]
+  [4;35;1mCartorio Load (0.5ms)[0m   [0mSELECT * FROM "cartorios" [0m
+Rendering template within layouts/application
+Rendering cartorios/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/cartorios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:34:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2011-01-09 23:34:31) [GET]
+  [4;36;1mCidade Load (0.5ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+Rendering template within layouts/application
+Rendering cidades/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/cidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:34:32) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PerfisController#index (for 127.0.0.1 at 2011-01-09 23:34:33) [GET]
+  [4;35;1mPerfil Load (0.6ms)[0m   [0mSELECT * FROM "perfis" [0m
+Rendering template within layouts/application
+Rendering perfis/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/perfis]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:34:33) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-09 23:34:38) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:34:38) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 23:34:40) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:34:40) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-09 23:34:58) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:34:58) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-09 23:34:59) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:34:59) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 23:35:00) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:35:00) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2011-01-09 23:35:02) [GET]
+  [4;36;1mCidade Load (0.5ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+Rendering template within layouts/application
+Rendering cidades/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/cidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:35:02) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-09 23:35:03) [GET]
+  [4;35;1mCartorio Load (0.6ms)[0m   [0mSELECT * FROM "cartorios" [0m
+Rendering template within layouts/application
+Rendering cartorios/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/cartorios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:35:03) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntidadesController#index (for 127.0.0.1 at 2011-01-09 23:35:04) [GET]
+  [4;36;1mEntidade Load (0.6ms)[0m   [0;1mSELECT * FROM "entidades" [0m
+Rendering template within layouts/application
+Rendering entidades/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/entidades]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:35:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PerfisController#index (for 127.0.0.1 at 2011-01-09 23:35:05) [GET]
+  [4;35;1mPerfil Load (0.6ms)[0m   [0mSELECT * FROM "perfis" [0m
+Rendering template within layouts/application
+Rendering perfis/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/perfis]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:35:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PerfisController#index (for 127.0.0.1 at 2011-01-09 23:36:02) [GET]
+  [4;36;1mPerfil Load (0.6ms)[0m   [0;1mSELECT * FROM "perfis" [0m
+Rendering template within layouts/application
+Rendering perfis/index
+Rendered menus/_principal (0.7ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/perfis]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:36:02) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-09 23:36:04) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:36:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+Migrating to CreateCidades (20110109170133)
+Migrating to CreateCartorios (20110109170340)
+Migrating to CreateEntidades (20110109170520)
+Migrating to AddUsuarioOrganizacao (20110109170610)
+Migrating to CreateMotivoNotificacaos (20110110023708)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "motivo_notificacaos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "motivo" varchar(255), "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110110023708')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("cartorios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("entidades")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("motivo_notificacaos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis_usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 23:38:24) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:38:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+Migrating to CreateCidades (20110109170133)
+Migrating to CreateCartorios (20110109170340)
+Migrating to CreateEntidades (20110109170520)
+Migrating to AddUsuarioOrganizacao (20110109170610)
+Migrating to CreateMotivoNotificacaos (20110110023708)
+Migrating to CreateConfiguracoes (20110110024017)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "configuracoes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "chave" varchar(255), "valor" varchar(255), "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110110024017')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cartorios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("configuracoes")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("entidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("motivo_notificacaos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis_usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_login')[0m
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-09 23:41:00) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.7ms)
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:41:00) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ConfiguracoesController#index (for 127.0.0.1 at 2011-01-09 23:41:02) [GET]
+  [4;35;1mConfiguracao Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: configuracaos: SELECT * FROM "configuracaos" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: configuracaos: SELECT * FROM "configuracaos" ):
+  app/controllers/configuracoes_controller.rb:5:in `index'
+
+Rendered rescues/_trace (114.0ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ConfiguracoesController#index (for 127.0.0.1 at 2011-01-09 23:41:39) [GET]
+  [4;36;1mConfiguracao Load (0.8ms)[0m   [0;1mSELECT * FROM "configuracoes" [0m
+Rendering template within layouts/configuracoes
+Rendering configuracoes/index
+Completed in 92ms (View: 85, DB: 1) | 200 OK [http://localhost/configuracoes]
+
+
+Processing ConfiguracoesController#index (for 127.0.0.1 at 2011-01-09 23:42:02) [GET]
+  [4;35;1mConfiguracao Load (0.5ms)[0m   [0mSELECT * FROM "configuracoes" [0m
+Rendering template within layouts/application
+Rendering configuracoes/index
+Rendered menus/_principal (0.8ms)
+Rendered menus/_submenu_home (0.4ms)
+Completed in 23ms (View: 18, DB: 1) | 200 OK [http://localhost/configuracoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:42:02) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ConfiguracoesController#index (for 127.0.0.1 at 2011-01-09 23:43:07) [GET]
+  [4;36;1mConfiguracao Load (0.6ms)[0m   [0;1mSELECT * FROM "configuracoes" [0m
+Rendering template within layouts/application
+Rendering configuracoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/configuracoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:43:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ConfiguracoesController#index (for 127.0.0.1 at 2011-01-09 23:43:45) [GET]
+  [4;35;1mConfiguracao Load (0.6ms)[0m   [0mSELECT * FROM "configuracoes" [0m
+Rendering template within layouts/application
+Rendering configuracoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.6ms)
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/configuracoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:43:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ConfiguracoesController#index (for 127.0.0.1 at 2011-01-09 23:43:58) [GET]
+  [4;36;1mConfiguracao Load (0.6ms)[0m   [0;1mSELECT * FROM "configuracoes" [0m
+Rendering template within layouts/application
+Rendering configuracoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/configuracoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:43:59) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+Migrating to CreateCidades (20110109170133)
+Migrating to CreateCartorios (20110109170340)
+Migrating to CreateEntidades (20110109170520)
+Migrating to AddUsuarioOrganizacao (20110109170610)
+Migrating to CreateMotivoNotificacaos (20110110023708)
+Migrating to CreateConfiguracoes (20110110024017)
+Migrating to CreatePessoas (20110110025047)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "pessoas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "cpf" varchar(255), "rg" varchar(255), "orgao_emissor_rg" varchar(255), "uf_emissor_rg" varchar(255), "cnh" varchar(255), "nome_mae" varchar(255), "endereco" varchar(255), "bairro" varchar(255), "cidade_id" varchar(255), "cep" varchar(255), "estado_civil" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110110025047')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cartorios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("configuracoes")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("entidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("motivo_notificacaos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis_usuarios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("pessoas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m

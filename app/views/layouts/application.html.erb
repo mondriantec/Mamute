@@ -28,21 +28,13 @@ http://creativecommons.org/licenses/GPL/2.0/
 		<div id="search">
 			
 		</div>
-		<ul id="nav">
-		<li class="active"><a href="/">Home</a></li>
-		<li><a href="#">Protocolo</a>	</li>
-		<li><a href="#">Certidoes</a></li>
-		<li><a href="#">Financeiro</a></li>
-		<li><a href="/administracao">Administracao</a></li>
-		<li class="last"><a href="#">Sair</a></li>
-		</ul>
+		<%= render :partial => "menus/principal"%>
 	</div>
 	
 	<div id="content-wrap">
 	
 
 		<div id="utility">
-
         <%= render :partial => session[:submenu] %>
 		</div>
 

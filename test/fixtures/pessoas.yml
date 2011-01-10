@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome: MyString
+  cpf: MyString
+  rg: MyString
+  orgao_emissor_rg: MyString
+  uf_emissor_rg: MyString
+  cnh: MyString
+  nome_mae: MyString
+  endereco: MyString
+  bairro: MyString
+  cidade_id: MyString
+  cep: MyString
+  estado_civil: MyString
+  created_by: 1
+  updated_by: 1
+
+two:
+  nome: MyString
+  cpf: MyString
+  rg: MyString
+  orgao_emissor_rg: MyString
+  uf_emissor_rg: MyString
+  cnh: MyString
+  nome_mae: MyString
+  endereco: MyString
+  bairro: MyString
+  cidade_id: MyString
+  cep: MyString
+  estado_civil: MyString
+  created_by: 1
+  updated_by: 1

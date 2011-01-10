@@ -1,4 +1,5 @@
 class PerfisController < ApplicationController
+  before_filter { |f| f.menu 'administracao' }
   # GET /perfis
   # GET /perfis.xml
   def index

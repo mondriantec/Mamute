@@ -1,0 +1,18 @@
+<p>
+  <b>Chave:</b>
+  <%=h @configuracao.chave %>
+</p>
+
+<p>
+  <b>Valor:</b>
+  <%=h @configuracao.valor %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%=h @configuracao.descricao %>
+</p>
+
+
+<%= link_to 'Edit', edit_configuracao_path(@configuracao) %> |
+<%= link_to 'Back', configuracoes_path %>

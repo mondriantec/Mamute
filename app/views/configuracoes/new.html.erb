@@ -1,0 +1,23 @@
+<h1>New configuracao</h1>
+
+<% form_for(@configuracao) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :chave %><br />
+    <%= f.text_field :chave %>
+  </p>
+  <p>
+    <%= f.label :valor %><br />
+    <%= f.text_field :valor %>
+  </p>
+  <p>
+    <%= f.label :descricao %><br />
+    <%= f.text_area :descricao %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', configuracoes_path %>

@@ -1,0 +1,22 @@
+<h1>Listing motivo_notificacaos</h1>
+
+<table>
+  <tr>
+    <th>Motivo</th>
+    <th>Descricao</th>
+  </tr>
+
+<% @motivo_notificacaos.each do |motivo_notificacao| %>
+  <tr>
+    <td><%=h motivo_notificacao.motivo %></td>
+    <td><%=h motivo_notificacao.descricao %></td>
+    <td><%= link_to 'Show', motivo_notificacao %></td>
+    <td><%= link_to 'Edit', edit_motivo_notificacao_path(motivo_notificacao) %></td>
+    <td><%= link_to 'Destroy', motivo_notificacao, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New motivo_notificacao', new_motivo_notificacao_path %>
