@@ -18,6 +18,13 @@ class CreatePessoas < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :pessoas, :cpf
+    add_index :pessoas, :rg
+    add_index :pessoas, :cnh
+    add_index :pessoas, :nome
+    add_index :pessoas, :nome_mae    
+    add_index :pessoas, :cidade_id
+    
   end
 
   def self.down

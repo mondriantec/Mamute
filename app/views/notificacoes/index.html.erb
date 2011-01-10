@@ -1,0 +1,28 @@
+<h1>Listing notificacoes</h1>
+
+<table>
+  <tr>
+    <th>Notificado</th>
+    <th>Notificado version</th>
+    <th>Cartorio</th>
+    <th>Motivo notificacao</th>
+    <th>Descricao</th>
+  </tr>
+
+<% @notificacoes.each do |notificacao| %>
+  <tr>
+    <td><%=h notificacao.notificado_id %></td>
+    <td><%=h notificacao.notificado_version_id %></td>
+    <td><%=h notificacao.cartorio_id %></td>
+    <td><%=h notificacao.motivo_notificacao_id %></td>
+    <td><%=h notificacao.descricao %></td>
+    <td><%= link_to 'Show', notificacao %></td>
+    <td><%= link_to 'Edit', edit_notificacao_path(notificacao) %></td>
+    <td><%= link_to 'Destroy', notificacao, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New notificacao', new_notificacao_path %>

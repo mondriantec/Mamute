@@ -3155,3 +3155,1493 @@ ActionController::RoutingError (No route matches "/javascripts/common.js" with {
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-09 23:54:44) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:54:44) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-09 23:54:46) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:54:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-09 23:54:47) [GET]
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/application
+Rendering pessoas/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_pessoas (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/pessoas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-09 23:54:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+Migrating to CreateCidades (20110109170133)
+Migrating to CreateCartorios (20110109170340)
+Migrating to CreateEntidades (20110109170520)
+Migrating to AddUsuarioOrganizacao (20110109170610)
+Migrating to CreateMotivoNotificacaos (20110110023708)
+Migrating to CreateConfiguracoes (20110110024017)
+Migrating to CreatePessoas (20110110025047)
+Migrating to CreateNotificacaos (20110110025639)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "notificacaos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "notificado_id" integer, "notificado_version_id" integer, "cartorio_id" integer, "motivo_notificacao_id" integer, "descricao" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110110025639')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cartorios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("configuracoes")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("entidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("motivo_notificacaos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("notificacaos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis_usuarios")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("pessoas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;36;1mSQL (52.1ms)[0m   [0;1mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com') LIMIT 1[0m
+  [4;35;1mUsuario Create (0.1ms)[0m   [0mINSERT INTO "usuarios" ("salt", "created_at", "crypted_password", "remember_token_expires_at", "nome", "updated_at", "created_by", "remember_token", "updated_by", "login", "email") VALUES('bfb5ff722f816a2960af815ecd0ab37ad8ffe480', '2011-01-10 03:01:30', 'ff8383cd70959390fe10bfe160cad9edfdcf4836', NULL, 'admin', '2011-01-10 03:01:30', NULL, NULL, NULL, 'admin', 'coutinho@mondriantecnologia.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109150215')[0m
+Migrating to CreatePerfis (20110109151007)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "perfis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mPerfil Create (0.1ms)[0m   [0;1mINSERT INTO "perfis" ("created_at", "nome", "updated_at", "created_by", "updated_by") VALUES('2011-01-10 03:01:30', 'ADMIN', '2011-01-10 03:01:30', 1, 1)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151007')[0m
+Migrating to CreatePerfisUsuarios (20110109151210)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "perfis_usuarios" ("usuario_id" integer, "perfil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mPerfil Load (0.1ms)[0m   [0;1mSELECT * FROM "perfis" WHERE ("perfis"."nome" = 'ADMIN') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "perfis_usuarios" ("created_at", "updated_at", "usuario_id", "perfil_id") VALUES ('2011-01-10 03:01:30', '2011-01-10 03:01:30', 1, 1)[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109151210')[0m
+Migrating to CreateCidades (20110109170133)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "cidades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "uf" varchar(2), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170133')[0m
+Migrating to CreateCartorios (20110109170340)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "cartorios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "cidade_id" integer, "oficio" varchar(255), "tabeliao" varchar(255), "endereco" varchar(255), "bairro" varchar(255), "fone" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170340')[0m
+Migrating to CreateEntidades (20110109170520)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "entidades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "cnpj" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mEntidade Create (0.2ms)[0m   [0;1mINSERT INTO "entidades" ("created_at", "nome", "updated_at", "cnpj") VALUES('2011-01-10 03:01:30', 'Fabrica Info', '2011-01-10 03:01:30', NULL)[0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;36;1mUsuario Update (0.1ms)[0m   [0;1mUPDATE "usuarios" SET "updated_at" = '2011-01-10 03:01:30' WHERE "id" = 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109170520')[0m
+Migrating to AddUsuarioOrganizacao (20110109170610)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mALTER TABLE "usuarios" ADD "organizacao_id" integer[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "usuarios" ADD "organizacao_type" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_usuarios_on_organizacao_type_and_organizacao_id" ON "usuarios" ("organizacao_type", "organizacao_id")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109170610')[0m
+Migrating to CreateMotivoNotificacaos (20110110023708)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "motivo_notificacaos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "motivo" varchar(255), "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110110023708')[0m
+Migrating to CreateConfiguracoes (20110110024017)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "configuracoes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "chave" varchar(255), "valor" varchar(255), "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110110024017')[0m
+Migrating to CreatePessoas (20110110025047)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "pessoas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "cpf" varchar(255), "rg" varchar(255), "orgao_emissor_rg" varchar(255), "uf_emissor_rg" varchar(255), "cnh" varchar(255), "nome_mae" varchar(255), "endereco" varchar(255), "bairro" varchar(255), "cidade_id" varchar(255), "cep" varchar(255), "estado_civil" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_pessoas_on_cpf" ON "pessoas" ("cpf")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_pessoas_on_rg" ON "pessoas" ("rg")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_pessoas_on_cnh" ON "pessoas" ("cnh")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_pessoas_on_nome" ON "pessoas" ("nome")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_pessoas_on_nome_mae" ON "pessoas" ("nome_mae")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_pessoas_on_cidade_id" ON "pessoas" ("cidade_id")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110110025047')[0m
+Migrating to CreateNotificacaos (20110110025639)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "notificacaos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "notificado_id" integer, "notificado_version_id" integer, "cartorio_id" integer, "motivo_notificacao_id" integer, "descricao" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110110025639')[0m
+Migrating to CreateNotificacoes (20110110025931)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "notificacoes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "notificado_id" integer, "notificado_version_id" integer, "cartorio_id" integer, "motivo_notificacao_id" integer, "descricao" integer, "status" varchar(1), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_notificacoes_on_notificado_id" ON "notificacoes" ("notificado_id")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_notificacoes_on_notificado_version_id" ON "notificacoes" ("notificado_version_id")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_notificacoes_on_cartorio_id" ON "notificacoes" ("cartorio_id")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_notificacoes_on_motivo_notificacao_id" ON "notificacoes" ("motivo_notificacao_id")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_notificacoes_on_status" ON "notificacoes" ("status")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110110025931')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cartorios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("configuracoes")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("entidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("motivo_notificacaos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("notificacaos")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("notificacoes")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_notificacoes_on_status')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_notificacoes_on_motivo_notificacao_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_notificacoes_on_cartorio_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_notificacoes_on_notificado_version_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_notificacoes_on_notificado_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis_usuarios")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("pessoas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_cidade_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_nome_mae')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_nome')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_cnh')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_rg')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_cpf')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_login')[0m
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-10 00:02:13) [GET]
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/application
+Rendering pessoas/index
+Rendered menus/_principal (0.8ms)
+Rendered menus/_submenu_pessoas (0.1ms)
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/pessoas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:02:13) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:02:16) [GET]
+  [4;36;1mNotificacao Load (0.8ms)[0m   [0;1mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 56ms (View: 50, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:02:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:02:18) [GET]
+  [4;35;1mNotificacao Load (0.8ms)[0m   [0mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:02:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:03:58) [GET]
+  [4;36;1mNotificacao Load (0.8ms)[0m   [0;1mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:03:58) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:04:19) [GET]
+  [4;35;1mNotificacao Load (0.8ms)[0m   [0mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.2ms)
+
+ActionView::TemplateError (Missing template menus/_submenu_notificacoes.erb in view path app/views) on line #38 of app/views/layouts/application.html.erb:
+35: 	
+36: 
+37: 		<div id="utility">
+38:         <%= render :partial => session[:submenu] %>
+39: 		</div>
+40: 
+41: 		
+
+    app/views/layouts/application.html.erb:38
+    app/controllers/notificacoes_controller.rb:10:in `index'
+
+Rendered rescues/_trace (120.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:04:56) [GET]
+  [4;36;1mNotificacao Load (0.8ms)[0m   [0;1mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_notificacoes (0.5ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:04:56) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-10 00:04:59) [GET]
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/application
+Rendering pessoas/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_pessoas (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/pessoas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:04:59) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:05:00) [GET]
+  [4;36;1mNotificacao Load (0.8ms)[0m   [0;1mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:05:00) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:05:14) [GET]
+  [4;35;1mNotificacao Load (0.8ms)[0m   [0mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.8ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:05:14) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#new (for 127.0.0.1 at 2011-01-10 00:05:16) [GET]
+Rendering template within layouts/application
+Rendering notificacoes/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/notificacoes/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:05:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#new (for 127.0.0.1 at 2011-01-10 00:05:29) [GET]
+Rendering template within layouts/application
+Rendering notificacoes/new
+Rendered menus/_principal (0.8ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/notificacoes/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:05:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:05:33) [GET]
+  [4;36;1mNotificacao Load (0.8ms)[0m   [0;1mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:05:33) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:06:17) [GET]
+  [4;35;1mNotificacao Load (0.8ms)[0m   [0mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.8ms)
+Rendered menus/_submenu_notificacoes (0.4ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:06:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#new (for 127.0.0.1 at 2011-01-10 00:06:18) [GET]
+Rendering template within layouts/application
+Rendering notificacoes/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/notificacoes/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:06:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:06:20) [GET]
+  [4;36;1mNotificacao Load (0.8ms)[0m   [0;1mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:06:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:06:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:06:22) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-10 00:06:22) [GET]
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/application
+Rendering pessoas/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_pessoas (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/pessoas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:06:23) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:06:25) [GET]
+  [4;36;1mNotificacao Load (0.8ms)[0m   [0;1mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:06:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:06:28) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:06:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:06:30) [GET]
+  [4;35;1mNotificacao Load (0.8ms)[0m   [0mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:06:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:06:41) [GET]
+  [4;36;1mNotificacao Load (0.8ms)[0m   [0;1mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.7ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:06:41) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:06:43) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:06:43) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-10 00:06:43) [GET]
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/application
+Rendering pessoas/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_pessoas (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/pessoas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:06:43) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:06:44) [GET]
+  [4;36;1mNotificacao Load (0.8ms)[0m   [0;1mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:06:44) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-10 00:06:45) [GET]
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:06:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-10 00:07:14) [GET]
+
+NoMethodError (undefined method `login_required' for #<AdministracaoController:0x103280358>):
+  
+
+Rendered rescues/_trace (106.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-10 00:07:32) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/administracao]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:32) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:32) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:32) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:32) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:32) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:32) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:32) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:33) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:33) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:33) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:33) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:33) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:33) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:33) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:33) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:33) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:33) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:33) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:33) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:07:33) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/conta/new]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:08:01) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.7ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 46ms (View: 43, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:08:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-10 00:08:04) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/pessoas]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:08:05) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:08:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:08:06) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/home]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:08:06) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:08:06) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:08:07) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/notificacoes]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:08:07) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:08:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-10 00:08:08) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/administracao]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:08:08) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:08:08) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ContasController#destroy (for 127.0.0.1 at 2011-01-10 00:08:09) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:08:09) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 70ms (View: 68, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:08:09) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ContasController#create (for 127.0.0.1 at 2011-01-10 00:08:15) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"PEe0vlsQUe2zxehv6yIEHbJzUCGtIlfKLwJ7o/dz+o0=", "login"=>"admin", "password"=>"123456"}
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/logout
+Completed in 35ms (DB: 0) | 302 Found [http://localhost/conta]
+
+
+Processing ContasController#destroy (for 127.0.0.1 at 2011-01-10 00:08:16) [GET]
+  [4;36;1mUsuario Load (0.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:08:16) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:08:16) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:08:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ContasController#create (for 127.0.0.1 at 2011-01-10 00:09:00) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"0WxbFaz7cc4Y3ST0UKdixSYJ1ueJ4djkAomcWqpr3Hs=", "login"=>"admin", "password"=>"123456"}
+  [4;35;1mUsuario Load (0.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/conta]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:09:00) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:00) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-10 00:09:03) [GET]
+  [4;35;1mUsuario Load (0.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;36;1mPessoa Load (0.2ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/application
+Rendering pessoas/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_pessoas (0.1ms)
+Completed in 33ms (View: 11, DB: 0) | 200 OK [http://localhost/pessoas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:03) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:09:04) [GET]
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;36;1mNotificacao Load (0.2ms)[0m   [0;1mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 15ms (View: 2, DB: 0) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-10 00:09:05) [GET]
+  [4;35;1mUsuario Load (0.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ContasController#destroy (for 127.0.0.1 at 2011-01-10 00:09:06) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:09:06) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:09:06) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:06) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-10 00:09:09) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/pessoas]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:09:09) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:09) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:09:10) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/notificacoes]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:09:10) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:10) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-10 00:09:10) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/administracao]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:09:10) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ContasController#destroy (for 127.0.0.1 at 2011-01-10 00:09:11) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:09:11) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ContasController#create (for 127.0.0.1 at 2011-01-10 00:09:17) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"4IBp3qrDGF03LIr7QwLd73L6K3SNdP0qMbj+0cAqasM=", "login"=>"admin", "password"=>"123456"}
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/logout
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/conta]
+
+
+Processing ContasController#destroy (for 127.0.0.1 at 2011-01-10 00:09:17) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 79ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:09:17) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:09:17) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ContasController#create (for 127.0.0.1 at 2011-01-10 00:09:23) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"7pEMh4lCNnuc48/eANwKtKmRgVPuVPSJJGK7skBN2Sk=", "login"=>"admin", "password"=>"123456"}
+  [4;35;1mUsuario Load (0.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/conta]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:09:23) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:23) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ContasController#destroy (for 127.0.0.1 at 2011-01-10 00:09:25) [GET]
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 79ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:09:25) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-10 00:09:25) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ContasController#create (for 127.0.0.1 at 2011-01-10 00:09:32) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"63ccgeu+ovYSIv1SFH0T7oPrfvC2pB0mBU4OerWUfEg=", "login"=>"admin", "password"=>"123456"}
+  [4;36;1mUsuario Load (0.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/conta]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:09:32) [GET]
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:32) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-10 00:09:34) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mPessoa Load (0.2ms)[0m   [0mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/application
+Rendering pessoas/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_pessoas (0.1ms)
+Completed in 81ms (View: 2, DB: 0) | 200 OK [http://localhost/pessoas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:34) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:09:36) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mNotificacao Load (0.2ms)[0m   [0mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 15ms (View: 2, DB: 0) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:36) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-10 00:09:38) [GET]
+  [4;36;1mUsuario Load (0.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:38) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:09:40) [GET]
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:40) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-10 00:09:51) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mPessoa Load (0.2ms)[0m   [0mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/application
+Rendering pessoas/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_pessoas (0.1ms)
+Completed in 16ms (View: 2, DB: 0) | 200 OK [http://localhost/pessoas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:52) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:09:52) [GET]
+  [4;36;1mUsuario Load (0.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mNotificacao Load (0.2ms)[0m   [0mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:53) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-10 00:09:53) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:09:53) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:10:00) [GET]
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:10:00) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-10 00:10:02) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mPessoa Load (0.2ms)[0m   [0mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/application
+Rendering pessoas/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_pessoas (0.1ms)
+Completed in 16ms (View: 2, DB: 0) | 200 OK [http://localhost/pessoas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:10:02) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:10:03) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mNotificacao Load (0.2ms)[0m   [0mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 16ms (View: 2, DB: 0) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:10:03) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-10 00:10:04) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:10:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#index (for 127.0.0.1 at 2011-01-10 00:10:07) [GET]
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;36;1mNotificacao Load (0.2ms)[0m   [0;1mSELECT * FROM "notificacaos" [0m
+Rendering template within layouts/application
+Rendering notificacoes/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 16ms (View: 2, DB: 0) | 200 OK [http://localhost/notificacoes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:10:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NotificacoesController#new (for 127.0.0.1 at 2011-01-10 00:10:08) [GET]
+  [4;35;1mUsuario Load (0.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering notificacoes/new
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_notificacoes (0.1ms)
+Completed in 86ms (View: 7, DB: 0) | 200 OK [http://localhost/notificacoes/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:10:08) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-10 00:10:14) [GET]
+  [4;36;1mUsuario Load (0.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mPessoa Load (0.3ms)[0m   [0mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/application
+Rendering pessoas/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_pessoas (0.1ms)
+Completed in 19ms (View: 2, DB: 1) | 200 OK [http://localhost/pessoas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:10:14) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-10 00:10:15) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.1ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-10 00:10:15) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

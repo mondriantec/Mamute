@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110110025047) do
+ActiveRecord::Schema.define(:version => 20110110025931) do
 
   create_table "cartorios", :force => true do |t|
     t.integer  "cidade_id"
@@ -52,6 +52,33 @@ ActiveRecord::Schema.define(:version => 20110110025047) do
     t.datetime "updated_at"
   end
 
+  create_table "notificacaos", :force => true do |t|
+    t.integer  "notificado_id"
+    t.integer  "notificado_version_id"
+    t.integer  "cartorio_id"
+    t.integer  "motivo_notificacao_id"
+    t.integer  "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "notificacoes", :force => true do |t|
+    t.integer  "notificado_id"
+    t.integer  "notificado_version_id"
+    t.integer  "cartorio_id"
+    t.integer  "motivo_notificacao_id"
+    t.integer  "descricao"
+    t.string   "status",                :limit => 1
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "notificacoes", ["cartorio_id"], :name => "index_notificacoes_on_cartorio_id"
+  add_index "notificacoes", ["motivo_notificacao_id"], :name => "index_notificacoes_on_motivo_notificacao_id"
+  add_index "notificacoes", ["notificado_id"], :name => "index_notificacoes_on_notificado_id"
+  add_index "notificacoes", ["notificado_version_id"], :name => "index_notificacoes_on_notificado_version_id"
+  add_index "notificacoes", ["status"], :name => "index_notificacoes_on_status"
+
   create_table "perfis", :force => true do |t|
     t.string   "nome"
     t.integer  "created_by"
@@ -85,6 +112,13 @@ ActiveRecord::Schema.define(:version => 20110110025047) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "pessoas", ["cidade_id"], :name => "index_pessoas_on_cidade_id"
+  add_index "pessoas", ["cnh"], :name => "index_pessoas_on_cnh"
+  add_index "pessoas", ["cpf"], :name => "index_pessoas_on_cpf"
+  add_index "pessoas", ["nome"], :name => "index_pessoas_on_nome"
+  add_index "pessoas", ["nome_mae"], :name => "index_pessoas_on_nome_mae"
+  add_index "pessoas", ["rg"], :name => "index_pessoas_on_rg"
 
   create_table "usuarios", :force => true do |t|
     t.string   "login",                     :limit => 40

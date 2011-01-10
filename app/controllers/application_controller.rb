@@ -7,6 +7,11 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  
+  include AuthenticatedSystem
+  
+  before_filter :login_required
+  
   before_filter do |f|
     f.menu "home"
   end
