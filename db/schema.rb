@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110110025931) do
+ActiveRecord::Schema.define(:version => 20110110032142) do
 
   create_table "cartorios", :force => true do |t|
     t.integer  "cidade_id"
@@ -45,19 +45,24 @@ ActiveRecord::Schema.define(:version => 20110110025931) do
     t.datetime "updated_at"
   end
 
-  create_table "motivo_notificacaos", :force => true do |t|
-    t.string   "motivo"
-    t.text     "descricao"
+  create_table "mensagens", :force => true do |t|
+    t.integer  "usuario_id"
+    t.integer  "destinatario_id"
+    t.string   "assunto"
+    t.text     "texto"
+    t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "notificacaos", :force => true do |t|
-    t.integer  "notificado_id"
-    t.integer  "notificado_version_id"
-    t.integer  "cartorio_id"
-    t.integer  "motivo_notificacao_id"
-    t.integer  "descricao"
+  add_index "mensagens", ["assunto"], :name => "index_mensagens_on_assunto"
+  add_index "mensagens", ["destinatario_id"], :name => "index_mensagens_on_destinatario_id"
+  add_index "mensagens", ["status"], :name => "index_mensagens_on_status"
+  add_index "mensagens", ["usuario_id"], :name => "index_mensagens_on_usuario_id"
+
+  create_table "motivo_notificacaos", :force => true do |t|
+    t.string   "motivo"
+    t.text     "descricao"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

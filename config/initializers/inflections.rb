@@ -8,5 +8,7 @@ ActiveSupport::Inflector.inflections do |inflect|
     inflect.irregular 'perfil', 'perfis'
     inflect.irregular 'configuracao','configuracoes'
     inflect.irregular 'notificacao','notificacoes'
+    inflect.irregular 'motivo_notificacao','motivo_notificacaos'    
+    inflect.irregular 'mensagem','mensagens'
 #   inflect.uncountable %w( fish sheep )
 end

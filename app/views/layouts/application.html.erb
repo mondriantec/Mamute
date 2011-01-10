@@ -33,10 +33,11 @@ http://creativecommons.org/licenses/GPL/2.0/
 	
 	<div id="content-wrap">
 	
-
+        <% if logged_in? %>
 		<div id="utility">
         <%= render :partial => session[:submenu] %>
 		</div>
+		<% end %>
 
 		
 		<div id="content">

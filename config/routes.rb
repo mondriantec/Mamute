@@ -1,7 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :mensagens
+
   map.resources :notificacoes
 
-  map.resources :notificacaos
+  map.resources :financeiro
 
   map.resources :pessoas
 

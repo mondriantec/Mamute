@@ -1,0 +1,28 @@
+<p>
+  <b>Usuario:</b>
+  <%=h @mensagem.usuario_id %>
+</p>
+
+<p>
+  <b>Destinatario:</b>
+  <%=h @mensagem.destinatario_id %>
+</p>
+
+<p>
+  <b>Assunto:</b>
+  <%=h @mensagem.assunto %>
+</p>
+
+<p>
+  <b>Texto:</b>
+  <%=h @mensagem.texto %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @mensagem.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_mensagem_path(@mensagem) %> |
+<%= link_to 'Back', mensagens_path %>
