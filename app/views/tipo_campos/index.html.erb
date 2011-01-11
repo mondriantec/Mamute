@@ -1,0 +1,20 @@
+<h1>Listing tipo_campos</h1>
+
+<table>
+  <tr>
+    <th>Tipo</th>
+  </tr>
+
+<% @tipo_campos.each do |tipo_campo| %>
+  <tr>
+    <td><%=h tipo_campo.tipo %></td>
+    <td><%= link_to 'Show', tipo_campo %></td>
+    <td><%= link_to 'Edit', edit_tipo_campo_path(tipo_campo) %></td>
+    <td><%= link_to 'Destroy', tipo_campo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tipo_campo', new_tipo_campo_path %>

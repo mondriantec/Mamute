@@ -1,0 +1,13 @@
+<p>
+  <b>Tipo:</b>
+  <%=h @tipo_processo.tipo %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%=h @tipo_processo.descricao %>
+</p>
+
+
+<%= link_to 'Edit', edit_tipo_processo_path(@tipo_processo) %> |
+<%= link_to 'Back', tipo_processos_path %>

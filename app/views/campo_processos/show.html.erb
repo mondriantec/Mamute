@@ -1,0 +1,23 @@
+<p>
+  <b>Tipo campo:</b>
+  <%=h @campo_processo.tipo_campo_id %>
+</p>
+
+<p>
+  <b>Tipo processo:</b>
+  <%=h @campo_processo.tipo_processo_id %>
+</p>
+
+<p>
+  <b>Nome:</b>
+  <%=h @campo_processo.nome %>
+</p>
+
+<p>
+  <b>Tamanho:</b>
+  <%=h @campo_processo.tamanho %>
+</p>
+
+
+<%= link_to 'Edit', edit_campo_processo_path(@campo_processo) %> |
+<%= link_to 'Back', campo_processos_path %>

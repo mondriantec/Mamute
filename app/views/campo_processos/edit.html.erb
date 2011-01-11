@@ -1,0 +1,28 @@
+<h1>Editing campo_processo</h1>
+
+<% form_for(@campo_processo) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :tipo_campo_id %><br />
+    <%= f.text_field :tipo_campo_id %>
+  </p>
+  <p>
+    <%= f.label :tipo_processo_id %><br />
+    <%= f.text_field :tipo_processo_id %>
+  </p>
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :tamanho %><br />
+    <%= f.text_field :tamanho %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @campo_processo %> |
+<%= link_to 'Back', campo_processos_path %>

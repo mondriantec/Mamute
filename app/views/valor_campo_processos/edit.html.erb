@@ -1,0 +1,24 @@
+<h1>Editing valor_campo_processo</h1>
+
+<% form_for(@valor_campo_processo) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :processo_id %><br />
+    <%= f.text_field :processo_id %>
+  </p>
+  <p>
+    <%= f.label :campo_processo_id %><br />
+    <%= f.text_field :campo_processo_id %>
+  </p>
+  <p>
+    <%= f.label :valor %><br />
+    <%= f.text_area :valor %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @valor_campo_processo %> |
+<%= link_to 'Back', valor_campo_processos_path %>

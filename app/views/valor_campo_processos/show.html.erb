@@ -1,0 +1,18 @@
+<p>
+  <b>Processo:</b>
+  <%=h @valor_campo_processo.processo_id %>
+</p>
+
+<p>
+  <b>Campo processo:</b>
+  <%=h @valor_campo_processo.campo_processo_id %>
+</p>
+
+<p>
+  <b>Valor:</b>
+  <%=h @valor_campo_processo.valor %>
+</p>
+
+
+<%= link_to 'Edit', edit_valor_campo_processo_path(@valor_campo_processo) %> |
+<%= link_to 'Back', valor_campo_processos_path %>

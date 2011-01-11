@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  processo_id: 1
+  campo_processo_id: 1
+  valor: MyText
+
+two:
+  processo_id: 1
+  campo_processo_id: 1
+  valor: MyText

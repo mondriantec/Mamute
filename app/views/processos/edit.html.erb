@@ -1,0 +1,16 @@
+<h1>Editing processo</h1>
+
+<% form_for(@processo) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :tipo_processo_id %><br />
+    <%= f.text_field :tipo_processo_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @processo %> |
+<%= link_to 'Back', processos_path %>

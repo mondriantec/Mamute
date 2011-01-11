@@ -1,7 +1,15 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :mensagens
+  map.resources :campo_processos
 
-  map.resources :notificacoes
+  map.resources :processos
+
+  map.resources :valor_campo_processos
+
+  map.resources :tipo_campos
+
+  map.resources :tipo_processos
+
+  map.resources :mensagens
 
   map.resources :financeiro
 

@@ -1,0 +1,24 @@
+<h1>Listing valor_campo_processos</h1>
+
+<table>
+  <tr>
+    <th>Processo</th>
+    <th>Campo processo</th>
+    <th>Valor</th>
+  </tr>
+
+<% @valor_campo_processos.each do |valor_campo_processo| %>
+  <tr>
+    <td><%=h valor_campo_processo.processo_id %></td>
+    <td><%=h valor_campo_processo.campo_processo_id %></td>
+    <td><%=h valor_campo_processo.valor %></td>
+    <td><%= link_to 'Show', valor_campo_processo %></td>
+    <td><%= link_to 'Edit', edit_valor_campo_processo_path(valor_campo_processo) %></td>
+    <td><%= link_to 'Destroy', valor_campo_processo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New valor_campo_processo', new_valor_campo_processo_path %>

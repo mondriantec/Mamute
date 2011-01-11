@@ -1,0 +1,16 @@
+<h1>Editing tipo_campo</h1>
+
+<% form_for(@tipo_campo) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @tipo_campo %> |
+<%= link_to 'Back', tipo_campos_path %>

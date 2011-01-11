@@ -1,0 +1,20 @@
+<h1>Listing processos</h1>
+
+<table>
+  <tr>
+    <th>Tipo processo</th>
+  </tr>
+
+<% @processos.each do |processo| %>
+  <tr>
+    <td><%=h processo.tipo_processo_id %></td>
+    <td><%= link_to 'Show', processo %></td>
+    <td><%= link_to 'Edit', edit_processo_path(processo) %></td>
+    <td><%= link_to 'Destroy', processo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New processo', new_processo_path %>

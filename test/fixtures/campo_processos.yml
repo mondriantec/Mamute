@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tipo_campo_id: 1
+  tipo_processo_id: 1
+  nome: MyString
+  tamanho: 1
+
+two:
+  tipo_campo_id: 1
+  tipo_processo_id: 1
+  nome: MyString
+  tamanho: 1

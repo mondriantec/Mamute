@@ -1,0 +1,26 @@
+<h1>Listing campo_processos</h1>
+
+<table>
+  <tr>
+    <th>Tipo campo</th>
+    <th>Tipo processo</th>
+    <th>Nome</th>
+    <th>Tamanho</th>
+  </tr>
+
+<% @campo_processos.each do |campo_processo| %>
+  <tr>
+    <td><%=h campo_processo.tipo_campo_id %></td>
+    <td><%=h campo_processo.tipo_processo_id %></td>
+    <td><%=h campo_processo.nome %></td>
+    <td><%=h campo_processo.tamanho %></td>
+    <td><%= link_to 'Show', campo_processo %></td>
+    <td><%= link_to 'Edit', edit_campo_processo_path(campo_processo) %></td>
+    <td><%= link_to 'Destroy', campo_processo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New campo_processo', new_campo_processo_path %>
