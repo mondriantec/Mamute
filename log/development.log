@@ -7803,3 +7803,56 @@ Migrating to CreateCampoProcessos (20110111133053)
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("valor_campo_processos")[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-11 10:41:32) [GET]
+Redirected to http://localhost:3000/conta/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing ContasController#new (for 127.0.0.1 at 2011-01-11 10:41:32) [GET]
+Rendering template within layouts/application
+Rendering contas/new
+Rendered menus/_principal (1.0ms)
+Completed in 124ms (View: 121, DB: 0) | 200 OK [http://localhost/conta/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:41:32) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ContasController#create (for 127.0.0.1 at 2011-01-11 10:41:38) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"peIWsTI0pqP1Xn8TR8reqE/d4Gw45J1nugt/vaiyzgw=", "login"=>"admin", "password"=>"123456"}
+  [4;36;1mUsuario Load (0.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 25ms (DB: 0) | 302 Found [http://localhost/conta]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-11 10:41:38) [GET]
+  [4;35;1mUsuario Load (0.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.3ms)
+Rendered menus/_submenu_home (8.6ms)
+Completed in 51ms (View: 40, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:41:39) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProcessosController#index (for 127.0.0.1 at 2011-01-11 10:41:41) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mProcesso Load (0.2ms)[0m   [0mSELECT * FROM "processos" [0m
+Rendering template within layouts/processos
+Rendering processos/index
+Completed in 31ms (View: 11, DB: 0) | 200 OK [http://localhost/processos]

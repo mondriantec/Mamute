@@ -1,4 +1,7 @@
 class ProcessosController < ApplicationController
+
+  before_filter { |f| f.menu 'processos' }
+
   # GET /processos
   # GET /processos.xml
   def index
