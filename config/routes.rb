@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :imagem_processos
+
   map.resources :campo_processos
 
   map.resources :processos

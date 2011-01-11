@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  processo_id: 1
+  imagem_file_name: MyString
+  imagem_content_type: MyString
+  imagem_file_size: 1
+
+two:
+  processo_id: 1
+  imagem_file_name: MyString
+  imagem_content_type: MyString
+  imagem_file_size: 1

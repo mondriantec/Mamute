@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110111133053) do
+ActiveRecord::Schema.define(:version => 20110111135443) do
 
   create_table "campo_processos", :force => true do |t|
     t.integer  "tipo_campo_id"
@@ -50,6 +50,15 @@ ActiveRecord::Schema.define(:version => 20110111133053) do
   create_table "entidades", :force => true do |t|
     t.string   "nome"
     t.string   "cnpj"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "imagem_processos", :force => true do |t|
+    t.integer  "processo_id"
+    t.string   "imagem_file_name"
+    t.string   "imagem_content_type"
+    t.integer  "imagem_file_size"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
