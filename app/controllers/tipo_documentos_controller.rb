@@ -1,4 +1,7 @@
 class TipoDocumentosController < ApplicationController
+
+  before_filter { |f| f.menu 'administracao' }
+
   # GET /tipo_documentos
   # GET /tipo_documentos.xml
   def index
