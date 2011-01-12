@@ -1,0 +1,28 @@
+<h1>Editing campo_documento</h1>
+
+<% form_for(@campo_documento) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :tipo_documento_id %><br />
+    <%= f.text_field :tipo_documento_id %>
+  </p>
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :limite %><br />
+    <%= f.text_field :limite %>
+  </p>
+  <p>
+    <%= f.label :descricao %><br />
+    <%= f.text_area :descricao %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @campo_documento %> |
+<%= link_to 'Back', campo_documentos_path %>

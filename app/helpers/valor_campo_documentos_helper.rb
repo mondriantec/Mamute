@@ -1,0 +1,2 @@
+module ValorCampoDocumentosHelper
+end

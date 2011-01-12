@@ -1,0 +1,18 @@
+<p>
+  <b>Documento:</b>
+  <%=h @valor_campo_documento.documento_id %>
+</p>
+
+<p>
+  <b>Campo documento:</b>
+  <%=h @valor_campo_documento.campo_documento_id %>
+</p>
+
+<p>
+  <b>Valor:</b>
+  <%=h @valor_campo_documento.valor %>
+</p>
+
+
+<%= link_to 'Edit', edit_valor_campo_documento_path(@valor_campo_documento) %> |
+<%= link_to 'Back', valor_campo_documentos_path %>

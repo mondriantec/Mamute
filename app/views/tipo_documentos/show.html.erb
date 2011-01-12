@@ -1,0 +1,13 @@
+<p>
+  <b>Tipo:</b>
+  <%=h @tipo_documento.tipo %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%=h @tipo_documento.descricao %>
+</p>
+
+
+<%= link_to 'Edit', edit_tipo_documento_path(@tipo_documento) %> |
+<%= link_to 'Back', tipo_documentos_path %>

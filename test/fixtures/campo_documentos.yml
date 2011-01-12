@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tipo_documento_id: 1
+  nome: 
+  limite: 1
+  descricao: MyText
+
+two:
+  tipo_documento_id: 1
+  nome: 
+  limite: 1
+  descricao: MyText

@@ -1,5 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :imagem_processos
+  map.resources :valor_campo_documentos
+
+  map.resources :campo_documentos
+
+  map.resources :documentos
+
+  map.resources :tipo_documentos
 
   map.resources :campo_processos
 

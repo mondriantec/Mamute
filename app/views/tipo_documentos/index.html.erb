@@ -1,0 +1,22 @@
+<h1>Listing tipo_documentos</h1>
+
+<table>
+  <tr>
+    <th>Tipo</th>
+    <th>Descricao</th>
+  </tr>
+
+<% @tipo_documentos.each do |tipo_documento| %>
+  <tr>
+    <td><%=h tipo_documento.tipo %></td>
+    <td><%=h tipo_documento.descricao %></td>
+    <td><%= link_to 'Show', tipo_documento %></td>
+    <td><%= link_to 'Edit', edit_tipo_documento_path(tipo_documento) %></td>
+    <td><%= link_to 'Destroy', tipo_documento, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tipo_documento', new_tipo_documento_path %>

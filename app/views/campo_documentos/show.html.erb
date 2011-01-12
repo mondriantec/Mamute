@@ -1,0 +1,23 @@
+<p>
+  <b>Tipo documento:</b>
+  <%=h @campo_documento.tipo_documento_id %>
+</p>
+
+<p>
+  <b>Nome:</b>
+  <%=h @campo_documento.nome %>
+</p>
+
+<p>
+  <b>Limite:</b>
+  <%=h @campo_documento.limite %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%=h @campo_documento.descricao %>
+</p>
+
+
+<%= link_to 'Edit', edit_campo_documento_path(@campo_documento) %> |
+<%= link_to 'Back', campo_documentos_path %>

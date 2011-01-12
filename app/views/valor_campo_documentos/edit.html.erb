@@ -1,0 +1,24 @@
+<h1>Editing valor_campo_documento</h1>
+
+<% form_for(@valor_campo_documento) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :documento_id %><br />
+    <%= f.text_field :documento_id %>
+  </p>
+  <p>
+    <%= f.label :campo_documento_id %><br />
+    <%= f.text_field :campo_documento_id %>
+  </p>
+  <p>
+    <%= f.label :valor %><br />
+    <%= f.text_area :valor %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @valor_campo_documento %> |
+<%= link_to 'Back', valor_campo_documentos_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  documento_id: 1
+  campo_documento_id: 1
+  valor: MyText
+
+two:
+  documento_id: 1
+  campo_documento_id: 1
+  valor: MyText

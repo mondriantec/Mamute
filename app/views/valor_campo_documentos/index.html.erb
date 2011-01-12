@@ -1,0 +1,24 @@
+<h1>Listing valor_campo_documentos</h1>
+
+<table>
+  <tr>
+    <th>Documento</th>
+    <th>Campo documento</th>
+    <th>Valor</th>
+  </tr>
+
+<% @valor_campo_documentos.each do |valor_campo_documento| %>
+  <tr>
+    <td><%=h valor_campo_documento.documento_id %></td>
+    <td><%=h valor_campo_documento.campo_documento_id %></td>
+    <td><%=h valor_campo_documento.valor %></td>
+    <td><%= link_to 'Show', valor_campo_documento %></td>
+    <td><%= link_to 'Edit', edit_valor_campo_documento_path(valor_campo_documento) %></td>
+    <td><%= link_to 'Destroy', valor_campo_documento, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New valor_campo_documento', new_valor_campo_documento_path %>

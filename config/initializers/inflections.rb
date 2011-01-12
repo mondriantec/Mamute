@@ -10,5 +10,6 @@ ActiveSupport::Inflector.inflections do |inflect|
     inflect.irregular 'notificacao','notificacoes'
     inflect.irregular 'motivo_notificacao','motivo_notificacaos'    
     inflect.irregular 'mensagem','mensagens'
+    inflect.irregular 'imagem','imagens'
 #   inflect.uncountable %w( fish sheep )
 end

@@ -9,7 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110111135443) do
+ActiveRecord::Schema.define(:version => 20110112175612) do
+
+  create_table "campo_documentos", :force => true do |t|
+    t.integer  "tipo_documento_id"
+    t.integer  "tipo_campo_id"
+    t.integer  "limite"
+    t.text     "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "campo_processos", :force => true do |t|
     t.integer  "tipo_campo_id"
@@ -47,6 +56,15 @@ ActiveRecord::Schema.define(:version => 20110111135443) do
     t.datetime "updated_at"
   end
 
+  create_table "documentos", :force => true do |t|
+    t.integer  "tipo_documento_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "imagem_content_type"
+    t.string   "imagem_file_name"
+    t.integer  "imagem_file_size"
+  end
+
   create_table "entidades", :force => true do |t|
     t.string   "nome"
     t.string   "cnpj"
@@ -54,14 +72,16 @@ ActiveRecord::Schema.define(:version => 20110111135443) do
     t.datetime "updated_at"
   end
 
-  create_table "imagem_processos", :force => true do |t|
-    t.integer  "processo_id"
+  create_table "imagens", :force => true do |t|
+    t.integer  "documento_id"
     t.string   "imagem_file_name"
     t.string   "imagem_content_type"
     t.integer  "imagem_file_size"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "imagens", ["documento_id"], :name => "index_imagens_on_documento_id"
 
   create_table "mensagens", :force => true do |t|
     t.integer  "usuario_id"
@@ -173,6 +193,13 @@ ActiveRecord::Schema.define(:version => 20110111135443) do
     t.datetime "updated_at"
   end
 
+  create_table "tipo_documentos", :force => true do |t|
+    t.string   "tipo"
+    t.text     "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "tipo_processos", :force => true do |t|
     t.string   "tipo"
     t.text     "descricao"
@@ -198,6 +225,14 @@ ActiveRecord::Schema.define(:version => 20110111135443) do
 
   add_index "usuarios", ["login"], :name => "index_usuarios_on_login", :unique => true
   add_index "usuarios", ["organizacao_type", "organizacao_id"], :name => "index_usuarios_on_organizacao_type_and_organizacao_id"
+
+  create_table "valor_campo_documentos", :force => true do |t|
+    t.integer  "documento_id"
+    t.integer  "campo_documento_id"
+    t.text     "valor"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "valor_campo_processos", :force => true do |t|
     t.integer  "processo_id"

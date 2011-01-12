@@ -7856,3 +7856,1121 @@ Processing ProcessosController#index (for 127.0.0.1 at 2011-01-11 10:41:41) [GET
 Rendering template within layouts/processos
 Rendering processos/index
 Completed in 31ms (View: 11, DB: 0) | 200 OK [http://localhost/processos]
+
+
+Processing ProcessosController#index (for 127.0.0.1 at 2011-01-11 10:42:52) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mProcesso Load (0.2ms)[0m   [0mSELECT * FROM "processos" [0m
+Rendering template within layouts/application
+Rendering processos/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_processos (0.5ms)
+Completed in 23ms (View: 5, DB: 0) | 200 OK [http://localhost/processos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:42:53) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-11 10:42:56) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mPessoa Load (0.3ms)[0m   [0mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/application
+Rendering pessoas/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_pessoas (13.0ms)
+Completed in 57ms (View: 39, DB: 0) | 200 OK [http://localhost/pessoas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:42:56) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProcessosController#index (for 127.0.0.1 at 2011-01-11 10:42:57) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mProcesso Load (0.2ms)[0m   [0mSELECT * FROM "processos" [0m
+Rendering template within layouts/application
+Rendering processos/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_processos (0.1ms)
+Completed in 21ms (View: 2, DB: 0) | 200 OK [http://localhost/processos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:42:57) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-11 10:42:59) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (6.3ms)
+Completed in 45ms (View: 34, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:42:59) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-11 10:44:13) [GET]
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.5ms)
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:44:13) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-11 10:45:18) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.6ms)
+Completed in 84ms (View: 6, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:45:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-11 10:46:30) [GET]
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.6ms)
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:46:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-11 10:47:45) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.7ms)
+Completed in 18ms (View: 6, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:47:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-11 10:48:18) [GET]
+  [4;35;1mUsuario Load (0.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.7ms)
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:48:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TipoCamposController#index (for 127.0.0.1 at 2011-01-11 10:48:26) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mTipoCampo Load (0.2ms)[0m   [0mSELECT * FROM "tipo_campos" [0m
+Rendering template within layouts/application
+Rendering tipo_campos/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 24ms (View: 8, DB: 0) | 200 OK [http://localhost/tipo_campos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:48:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TipoProcessosController#index (for 127.0.0.1 at 2011-01-11 10:48:28) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mTipoProcesso Load (0.2ms)[0m   [0mSELECT * FROM "tipo_processos" [0m
+Rendering template within layouts/application
+Rendering tipo_processos/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 89ms (View: 73, DB: 0) | 200 OK [http://localhost/tipo_processos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:48:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-11 10:48:30) [GET]
+  [4;36;1mUsuario Load (0.4ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mCartorio Load (0.2ms)[0m   [0mSELECT * FROM "cartorios" [0m
+Rendering template within layouts/application
+Rendering cartorios/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 32ms (View: 8, DB: 1) | 200 OK [http://localhost/cartorios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:48:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-11 10:48:31) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mCartorio Load (0.2ms)[0m   [0mSELECT * FROM "cartorios" [0m
+Rendering template within layouts/application
+Rendering cartorios/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 17ms (View: 2, DB: 0) | 200 OK [http://localhost/cartorios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:48:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CartoriosController#index (for 127.0.0.1 at 2011-01-11 10:49:14) [GET]
+  [4;36;1mUsuario Load (0.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;35;1mCartorio Load (0.2ms)[0m   [0mSELECT * FROM "cartorios" [0m
+Rendering template within layouts/application
+Rendering cartorios/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 17ms (View: 2, DB: 0) | 200 OK [http://localhost/cartorios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:49:14) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-11 10:49:16) [GET]
+  [4;36;1mUsuario Load (0.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_home (0.1ms)
+Completed in 79ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:49:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MensagensController#index (for 127.0.0.1 at 2011-01-11 10:49:17) [GET]
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;36;1mMensagem Load (0.2ms)[0m   [0;1mSELECT * FROM "mensagens" [0m
+Rendering template within layouts/application
+Rendering mensagens/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_mensagens (11.4ms)
+Completed in 48ms (View: 23, DB: 0) | 200 OK [http://localhost/mensagens]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:49:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2011-01-11 10:49:18) [GET]
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/application
+Rendering pessoas/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_pessoas (0.1ms)
+Completed in 19ms (View: 2, DB: 0) | 200 OK [http://localhost/pessoas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:49:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProcessosController#index (for 127.0.0.1 at 2011-01-11 10:49:19) [GET]
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;36;1mProcesso Load (0.2ms)[0m   [0;1mSELECT * FROM "processos" [0m
+Rendering template within layouts/application
+Rendering processos/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_processos (0.1ms)
+Completed in 20ms (View: 2, DB: 0) | 200 OK [http://localhost/processos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:49:19) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FinanceiroController#index (for 127.0.0.1 at 2011-01-11 10:49:20) [GET]
+  [4;35;1mUsuario Load (0.3ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering financeiro/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_financeiro (10.1ms)
+Completed in 33ms (View: 21, DB: 0) | 200 OK [http://localhost/financeiro]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:49:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-11 10:49:21) [GET]
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_administracao (0.1ms)
+Completed in 80ms (View: 2, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:49:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+Migrating to CreateCidades (20110109170133)
+Migrating to CreateCartorios (20110109170340)
+Migrating to CreateEntidades (20110109170520)
+Migrating to AddUsuarioOrganizacao (20110109170610)
+Migrating to CreateMotivoNotificacaos (20110110023708)
+Migrating to CreateConfiguracoes (20110110024017)
+Migrating to CreatePessoas (20110110025047)
+Migrating to CreateMensagens (20110110032142)
+Migrating to AdicionaVersoes (20110111124339)
+Migrating to CreateTipoProcessos (20110111131935)
+Migrating to CreateTipoCampos (20110111132051)
+Migrating to CreateValorCampoProcessos (20110111132359)
+Migrating to CreateProcessos (20110111132545)
+Migrating to CreateCampoProcessos (20110111133053)
+Migrating to CreateImagemProcessos (20110111135443)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "imagem_processos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "processo_id" integer, "imagem_file_name" varchar(255), "imagem_content_type" varchar(255), "imagem_file_size" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110111135443')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("campo_processos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cartorios")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cidades")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("configuracoes")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("entidades")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("imagem_processos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("mensagens")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_status')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_assunto')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_destinatario_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_usuario_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("motivo_notificacaos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis_usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("pessoa_versions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoa_versions_on_pessoa_id')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("pessoas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_cidade_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_nome_mae')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_nome')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_cnh')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_rg')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_cpf')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("processo_versions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_processo_versions_on_processo_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("processos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tipo_campos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tipo_processos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("valor_campo_processos")[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+Migrating to CreateCidades (20110109170133)
+Migrating to CreateCartorios (20110109170340)
+Migrating to CreateEntidades (20110109170520)
+Migrating to AddUsuarioOrganizacao (20110109170610)
+Migrating to CreateMotivoNotificacaos (20110110023708)
+Migrating to CreateConfiguracoes (20110110024017)
+Migrating to CreatePessoas (20110110025047)
+Migrating to CreateMensagens (20110110032142)
+Migrating to AdicionaVersoes (20110111124339)
+Migrating to CreateTipoProcessos (20110111131935)
+Migrating to CreateTipoCampos (20110111132051)
+Migrating to CreateValorCampoProcessos (20110111132359)
+Migrating to CreateProcessos (20110111132545)
+Migrating to CreateCampoProcessos (20110111133053)
+Migrating to CreateImagemProcessos (20110111135443)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("campo_processos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cartorios")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cidades")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("configuracoes")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("entidades")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("imagem_processos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("mensagens")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_status')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_assunto')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_destinatario_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_usuario_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("motivo_notificacaos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis_usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("pessoa_versions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoa_versions_on_pessoa_id')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("pessoas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_cidade_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_nome_mae')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_nome')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_cnh')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_rg')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_cpf')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("processo_versions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_processo_versions_on_processo_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("processos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tipo_campos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tipo_processos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("valor_campo_processos")[0m
+
+
+Processing AdministracaoController#index (for 127.0.0.1 at 2011-01-11 10:57:12) [GET]
+  [4;36;1mUsuario Load (0.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administracao/index
+Rendered menus/_principal (1.0ms)
+Rendered menus/_submenu_administracao (0.7ms)
+Completed in 110ms (View: 79, DB: 0) | 200 OK [http://localhost/administracao]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:57:12) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProcessosController#index (for 127.0.0.1 at 2011-01-11 10:57:18) [GET]
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+  [4;36;1mProcesso Load (0.2ms)[0m   [0;1mSELECT * FROM "processos" [0m
+Rendering template within layouts/application
+Rendering processos/index
+Rendered menus/_principal (0.2ms)
+Rendered menus/_submenu_processos (0.6ms)
+Completed in 101ms (View: 12, DB: 0) | 200 OK [http://localhost/processos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 10:57:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/common.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (6.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+Migrating to CreateCidades (20110109170133)
+Migrating to CreateCartorios (20110109170340)
+Migrating to CreateEntidades (20110109170520)
+Migrating to AddUsuarioOrganizacao (20110109170610)
+Migrating to CreateMotivoNotificacaos (20110110023708)
+Migrating to CreateConfiguracoes (20110110024017)
+Migrating to CreatePessoas (20110110025047)
+Migrating to CreateMensagens (20110110032142)
+Migrating to AdicionaVersoes (20110111124339)
+Migrating to CreateTipoProcessos (20110111131935)
+Migrating to CreateTipoCampos (20110111132051)
+Migrating to CreateValorCampoProcessos (20110111132359)
+Migrating to CreateProcessos (20110111132545)
+Migrating to CreateCampoProcessos (20110111133053)
+Migrating to CreateImagemProcessos (20110111135443)
+Migrating to CreateTipoDocumentos (20110112173724)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "tipo_documentos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo" varchar(255), "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110112173724')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("campo_processos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cartorios")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cidades")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("configuracoes")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("entidades")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("imagem_processos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("mensagens")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_status')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_assunto')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_destinatario_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_usuario_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("motivo_notificacaos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis_usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("pessoa_versions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoa_versions_on_pessoa_id')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("pessoas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_cidade_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_nome_mae')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_nome')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_cnh')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_rg')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_cpf')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("processo_versions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_processo_versions_on_processo_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("processos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tipo_campos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tipo_documentos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tipo_processos")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("valor_campo_processos")[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+Migrating to CreateCidades (20110109170133)
+Migrating to CreateCartorios (20110109170340)
+Migrating to CreateEntidades (20110109170520)
+Migrating to AddUsuarioOrganizacao (20110109170610)
+Migrating to CreateMotivoNotificacaos (20110110023708)
+Migrating to CreateConfiguracoes (20110110024017)
+Migrating to CreatePessoas (20110110025047)
+Migrating to CreateMensagens (20110110032142)
+Migrating to AdicionaVersoes (20110111124339)
+Migrating to CreateTipoProcessos (20110111131935)
+Migrating to CreateTipoCampos (20110111132051)
+Migrating to CreateValorCampoProcessos (20110111132359)
+Migrating to CreateProcessos (20110111132545)
+Migrating to CreateCampoProcessos (20110111133053)
+Migrating to CreateImagemProcessos (20110111135443)
+Migrating to CreateTipoDocumentos (20110112173724)
+Migrating to CreateDocumentos (20110112173828)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "documentos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo_documento_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110112173828')[0m
+Migrating to CreateCampoDocumentos (20110112173909)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "campo_documentos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo_documento_id" integer, "limite" integer, "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110112173909')[0m
+Migrating to CreateValorCampoDocumentos (20110112174000)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "valor_campo_documentos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "documento_id" integer, "campo_documento_id" integer, "valor" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110112174000')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("campo_documentos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("campo_processos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cartorios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("configuracoes")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("documentos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("entidades")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("imagem_processos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("mensagens")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_status')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_assunto')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_destinatario_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_usuario_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("motivo_notificacaos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis_usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("pessoa_versions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoa_versions_on_pessoa_id')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("pessoas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_cidade_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_nome_mae')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_nome')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_cnh')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_rg')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_cpf')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("processo_versions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_processo_versions_on_processo_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("processos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tipo_campos")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tipo_documentos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tipo_processos")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("usuarios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("valor_campo_documentos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("valor_campo_processos")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com') LIMIT 1[0m
+  [4;35;1mUsuario Create (0.1ms)[0m   [0mINSERT INTO "usuarios" ("salt", "created_at", "crypted_password", "remember_token_expires_at", "nome", "updated_at", "created_by", "remember_token", "updated_by", "login", "email") VALUES('a7ca515ee6e15899320cf612560073af308edb8c', '2011-01-12 17:44:02', 'c346941dfcc777319953c40731967c93ecf9fb40', NULL, 'admin', '2011-01-12 17:44:02', NULL, NULL, NULL, 'admin', 'coutinho@mondriantecnologia.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109150215')[0m
+Migrating to CreatePerfis (20110109151007)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "perfis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mPerfil Create (0.2ms)[0m   [0;1mINSERT INTO "perfis" ("created_at", "nome", "updated_at", "created_by", "updated_by") VALUES('2011-01-12 17:44:02', 'ADMIN', '2011-01-12 17:44:02', 1, 1)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151007')[0m
+Migrating to CreatePerfisUsuarios (20110109151210)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "perfis_usuarios" ("usuario_id" integer, "perfil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mPerfil Load (0.1ms)[0m   [0;1mSELECT * FROM "perfis" WHERE ("perfis"."nome" = 'ADMIN') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "perfis_usuarios" ("created_at", "updated_at", "usuario_id", "perfil_id") VALUES ('2011-01-12 17:44:02', '2011-01-12 17:44:02', 1, 1)[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109151210')[0m
+Migrating to CreateCidades (20110109170133)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "cidades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "uf" varchar(2), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170133')[0m
+Migrating to CreateCartorios (20110109170340)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "cartorios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "cidade_id" integer, "oficio" varchar(255), "tabeliao" varchar(255), "endereco" varchar(255), "bairro" varchar(255), "fone" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170340')[0m
+Migrating to CreateEntidades (20110109170520)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "entidades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "cnpj" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mEntidade Create (0.2ms)[0m   [0;1mINSERT INTO "entidades" ("created_at", "nome", "updated_at", "cnpj") VALUES('2011-01-12 17:44:02', 'Fabrica Info', '2011-01-12 17:44:02', NULL)[0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mUsuario Load (0.2ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;36;1mUsuario Update (0.3ms)[0m   [0;1mUPDATE "usuarios" SET "updated_at" = '2011-01-12 17:44:02' WHERE "id" = 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109170520')[0m
+Migrating to AddUsuarioOrganizacao (20110109170610)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "usuarios" ADD "organizacao_id" integer[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "usuarios" ADD "organizacao_type" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_usuarios_on_organizacao_type_and_organizacao_id" ON "usuarios" ("organizacao_type", "organizacao_id")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109170610')[0m
+Migrating to CreateMotivoNotificacaos (20110110023708)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "motivo_notificacaos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "motivo" varchar(255), "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110110023708')[0m
+Migrating to CreateConfiguracoes (20110110024017)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "configuracoes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "chave" varchar(255), "valor" varchar(255), "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110110024017')[0m
+Migrating to CreatePessoas (20110110025047)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "pessoas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "cpf" varchar(255), "rg" varchar(255), "orgao_emissor_rg" varchar(255), "uf_emissor_rg" varchar(255), "cnh" varchar(255), "nome_mae" varchar(255), "endereco" varchar(255), "bairro" varchar(255), "cidade_id" varchar(255), "cep" varchar(255), "estado_civil" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_pessoas_on_cpf" ON "pessoas" ("cpf")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_pessoas_on_rg" ON "pessoas" ("rg")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_pessoas_on_cnh" ON "pessoas" ("cnh")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_pessoas_on_nome" ON "pessoas" ("nome")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_pessoas_on_nome_mae" ON "pessoas" ("nome_mae")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_pessoas_on_cidade_id" ON "pessoas" ("cidade_id")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110110025047')[0m
+Migrating to CreateMensagens (20110110032142)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "mensagens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "usuario_id" integer, "destinatario_id" integer, "assunto" varchar(255), "texto" text, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_mensagens_on_usuario_id" ON "mensagens" ("usuario_id")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_mensagens_on_destinatario_id" ON "mensagens" ("destinatario_id")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_mensagens_on_assunto" ON "mensagens" ("assunto")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_mensagens_on_status" ON "mensagens" ("status")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110110032142')[0m
+Migrating to AdicionaVersoes (20110111124339)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "pessoas" ADD "version" integer[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "pessoa_versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "pessoa_id" integer, "version" integer) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "nome" varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "cpf" varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "rg" varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "orgao_emissor_rg" varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "uf_emissor_rg" varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "cnh" varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "nome_mae" varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "endereco" varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "bairro" varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "cidade_id" varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "cep" varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "estado_civil" varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "created_by" integer DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "updated_by" integer DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "created_at" datetime DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "updated_at" datetime DEFAULT NULL[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_pessoa_versions_on_pessoa_id" ON "pessoa_versions" ("pessoa_id")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110111124339')[0m
+Migrating to CreateTipoProcessos (20110111131935)
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE TABLE "tipo_processos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo" varchar(255), "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110111131935')[0m
+Migrating to CreateTipoCampos (20110111132051)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "tipo_campos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110111132051')[0m
+Migrating to CreateValorCampoProcessos (20110111132359)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "valor_campo_processos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "processo_id" integer, "campo_processo_id" integer, "valor" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110111132359')[0m
+Migrating to CreateProcessos (20110111132545)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "processos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo_processo_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mALTER TABLE "processos" ADD "version" integer[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "processo_versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "processo_id" integer, "version" integer) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "processo_versions" ADD "tipo_processo_id" integer DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "processo_versions" ADD "created_at" datetime DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "processo_versions" ADD "updated_at" datetime DEFAULT NULL[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_processo_versions_on_processo_id" ON "processo_versions" ("processo_id")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110111132545')[0m
+Migrating to CreateCampoProcessos (20110111133053)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "campo_processos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo_campo_id" integer, "tipo_processo_id" integer, "nome" varchar(255), "tamanho" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110111133053')[0m
+Migrating to CreateImagemProcessos (20110111135443)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "imagem_processos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "processo_id" integer, "imagem_file_name" varchar(255), "imagem_content_type" varchar(255), "imagem_file_size" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110111135443')[0m
+Migrating to CreateTipoDocumentos (20110112173724)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "tipo_documentos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo" varchar(255), "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110112173724')[0m
+Migrating to CreateDocumentos (20110112173828)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "documentos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo_documento_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110112173828')[0m
+Migrating to CreateCampoDocumentos (20110112173909)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "campo_documentos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo_documento_id" integer, "tipo_campo_id" integer, "limite" integer, "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110112173909')[0m
+Migrating to CreateValorCampoDocumentos (20110112174000)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "valor_campo_documentos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "documento_id" integer, "campo_documento_id" integer, "valor" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110112174000')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("campo_documentos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("campo_processos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cartorios")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cidades")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("configuracoes")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("documentos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("entidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("imagem_processos")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("mensagens")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_status')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_assunto')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_destinatario_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_usuario_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("motivo_notificacaos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis_usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("pessoa_versions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoa_versions_on_pessoa_id')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("pessoas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_cidade_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_nome_mae')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_nome')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_cnh')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_rg')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_cpf')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("processo_versions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_processo_versions_on_processo_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("processos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tipo_campos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tipo_documentos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tipo_processos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("valor_campo_documentos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("valor_campo_processos")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "nome" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "created_by" integer, "updated_by" integer) [0m
+  [4;36;1mSQL (101.7ms)[0m   [0;1mCREATE UNIQUE INDEX "index_usuarios_on_login" ON "usuarios" ("login")[0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com') LIMIT 1[0m
+  [4;35;1mUsuario Create (0.1ms)[0m   [0mINSERT INTO "usuarios" ("salt", "created_at", "crypted_password", "remember_token_expires_at", "nome", "updated_at", "created_by", "remember_token", "updated_by", "login", "email") VALUES('6cb4199f4382013e6b668afabce027fcff7f99b5', '2011-01-12 17:54:45', 'bf6b2d56d96b054134fc47e39195cea65d0abcec', NULL, 'admin', '2011-01-12 17:54:45', NULL, NULL, NULL, 'admin', 'coutinho@mondriantecnologia.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109150215')[0m
+Migrating to CreatePerfis (20110109151007)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "perfis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mPerfil Create (0.1ms)[0m   [0;1mINSERT INTO "perfis" ("created_at", "nome", "updated_at", "created_by", "updated_by") VALUES('2011-01-12 17:54:45', 'ADMIN', '2011-01-12 17:54:45', 1, 1)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109151007')[0m
+Migrating to CreatePerfisUsuarios (20110109151210)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "perfis_usuarios" ("usuario_id" integer, "perfil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mPerfil Load (0.1ms)[0m   [0;1mSELECT * FROM "perfis" WHERE ("perfis"."nome" = 'ADMIN') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "perfis_usuarios" ("created_at", "updated_at", "usuario_id", "perfil_id") VALUES ('2011-01-12 17:54:45', '2011-01-12 17:54:45', 1, 1)[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109151210')[0m
+Migrating to CreateCidades (20110109170133)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "cidades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "uf" varchar(2), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170133')[0m
+Migrating to CreateCartorios (20110109170340)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "cartorios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "cidade_id" integer, "oficio" varchar(255), "tabeliao" varchar(255), "endereco" varchar(255), "bairro" varchar(255), "fone" varchar(255), "fax" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110109170340')[0m
+Migrating to CreateEntidades (20110109170520)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "entidades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "cnpj" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mEntidade Create (0.2ms)[0m   [0;1mINSERT INTO "entidades" ("created_at", "nome", "updated_at", "cnpj") VALUES('2011-01-12 17:54:45', 'Fabrica Info', '2011-01-12 17:54:45', NULL)[0m
+  [4;35;1mUsuario Load (0.2ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."login" = 'admin') LIMIT 1[0m
+  [4;36;1mUsuario Load (0.1ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."login" = 'admin' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;35;1mUsuario Load (0.1ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'coutinho@mondriantecnologia.com' AND "usuarios".id <> 1) LIMIT 1[0m
+  [4;36;1mUsuario Update (0.1ms)[0m   [0;1mUPDATE "usuarios" SET "updated_at" = '2011-01-12 17:54:45' WHERE "id" = 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109170520')[0m
+Migrating to AddUsuarioOrganizacao (20110109170610)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "usuarios" ADD "organizacao_id" integer[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "usuarios" ADD "organizacao_type" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_usuarios_on_organizacao_type_and_organizacao_id" ON "usuarios" ("organizacao_type", "organizacao_id")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110109170610')[0m
+Migrating to CreateMotivoNotificacaos (20110110023708)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "motivo_notificacaos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "motivo" varchar(255), "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110110023708')[0m
+Migrating to CreateConfiguracoes (20110110024017)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "configuracoes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "chave" varchar(255), "valor" varchar(255), "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110110024017')[0m
+Migrating to CreatePessoas (20110110025047)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "pessoas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "cpf" varchar(255), "rg" varchar(255), "orgao_emissor_rg" varchar(255), "uf_emissor_rg" varchar(255), "cnh" varchar(255), "nome_mae" varchar(255), "endereco" varchar(255), "bairro" varchar(255), "cidade_id" varchar(255), "cep" varchar(255), "estado_civil" varchar(255), "created_by" integer, "updated_by" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_pessoas_on_cpf" ON "pessoas" ("cpf")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_pessoas_on_rg" ON "pessoas" ("rg")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_pessoas_on_cnh" ON "pessoas" ("cnh")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_pessoas_on_nome" ON "pessoas" ("nome")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_pessoas_on_nome_mae" ON "pessoas" ("nome_mae")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_pessoas_on_cidade_id" ON "pessoas" ("cidade_id")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110110025047')[0m
+Migrating to CreateMensagens (20110110032142)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "mensagens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "usuario_id" integer, "destinatario_id" integer, "assunto" varchar(255), "texto" text, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_mensagens_on_usuario_id" ON "mensagens" ("usuario_id")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_mensagens_on_destinatario_id" ON "mensagens" ("destinatario_id")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_mensagens_on_assunto" ON "mensagens" ("assunto")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_mensagens_on_status" ON "mensagens" ("status")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110110032142')[0m
+Migrating to AdicionaVersoes (20110111124339)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "pessoas" ADD "version" integer[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "pessoa_versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "pessoa_id" integer, "version" integer) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "nome" varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "cpf" varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "rg" varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "orgao_emissor_rg" varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "uf_emissor_rg" varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "cnh" varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "nome_mae" varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "endereco" varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "bairro" varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "cidade_id" varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "cep" varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "estado_civil" varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "created_by" integer DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "updated_by" integer DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "pessoa_versions" ADD "created_at" datetime DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "pessoa_versions" ADD "updated_at" datetime DEFAULT NULL[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_pessoa_versions_on_pessoa_id" ON "pessoa_versions" ("pessoa_id")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110111124339')[0m
+Migrating to CreateTipoProcessos (20110111131935)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "tipo_processos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo" varchar(255), "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110111131935')[0m
+Migrating to CreateTipoCampos (20110111132051)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "tipo_campos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110111132051')[0m
+Migrating to CreateValorCampoProcessos (20110111132359)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "valor_campo_processos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "processo_id" integer, "campo_processo_id" integer, "valor" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110111132359')[0m
+Migrating to CreateProcessos (20110111132545)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "processos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo_processo_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "processos" ADD "version" integer[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "processo_versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "processo_id" integer, "version" integer) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "processo_versions" ADD "tipo_processo_id" integer DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "processo_versions" ADD "created_at" datetime DEFAULT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "processo_versions" ADD "updated_at" datetime DEFAULT NULL[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_processo_versions_on_processo_id" ON "processo_versions" ("processo_id")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110111132545')[0m
+Migrating to CreateCampoProcessos (20110111133053)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "campo_processos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo_campo_id" integer, "tipo_processo_id" integer, "nome" varchar(255), "tamanho" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110111133053')[0m
+Migrating to CreateTipoDocumentos (20110112173724)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "tipo_documentos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo" varchar(255), "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110112173724')[0m
+Migrating to CreateDocumentos (20110112173828)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "documentos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo_documento_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110112173828')[0m
+Migrating to CreateCampoDocumentos (20110112173909)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "campo_documentos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo_documento_id" integer, "tipo_campo_id" integer, "limite" integer, "descricao" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110112173909')[0m
+Migrating to CreateValorCampoDocumentos (20110112174000)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "valor_campo_documentos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "documento_id" integer, "campo_documento_id" integer, "valor" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110112174000')[0m
+Migrating to CreateImagens (20110112175356)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "imagens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "documento_id" integer, "imagem_file_name" varchar(255), "imagem_content_type" varchar(255), "imagem_file_size" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (69.5ms)[0m   [0mCREATE INDEX "index_imagens_on_documento_id" ON "imagens" ("documento_id")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110112175356')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("campo_documentos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("campo_processos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cartorios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("configuracoes")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("documentos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("entidades")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("imagens")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_imagens_on_documento_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("mensagens")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_status')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_assunto')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_destinatario_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_usuario_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("motivo_notificacaos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis_usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("pessoa_versions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoa_versions_on_pessoa_id')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("pessoas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_cidade_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_nome_mae')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_nome')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_cnh')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_rg')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_cpf')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("processo_versions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_processo_versions_on_processo_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("processos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tipo_campos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tipo_documentos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tipo_processos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("valor_campo_documentos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("valor_campo_processos")[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsuarios (20110109150215)
+Migrating to CreatePerfis (20110109151007)
+Migrating to CreatePerfisUsuarios (20110109151210)
+Migrating to CreateCidades (20110109170133)
+Migrating to CreateCartorios (20110109170340)
+Migrating to CreateEntidades (20110109170520)
+Migrating to AddUsuarioOrganizacao (20110109170610)
+Migrating to CreateMotivoNotificacaos (20110110023708)
+Migrating to CreateConfiguracoes (20110110024017)
+Migrating to CreatePessoas (20110110025047)
+Migrating to CreateMensagens (20110110032142)
+Migrating to AdicionaVersoes (20110111124339)
+Migrating to CreateTipoProcessos (20110111131935)
+Migrating to CreateTipoCampos (20110111132051)
+Migrating to CreateValorCampoProcessos (20110111132359)
+Migrating to CreateProcessos (20110111132545)
+Migrating to CreateCampoProcessos (20110111133053)
+Migrating to CreateTipoDocumentos (20110112173724)
+Migrating to CreateDocumentos (20110112173828)
+Migrating to CreateCampoDocumentos (20110112173909)
+Migrating to CreateValorCampoDocumentos (20110112174000)
+Migrating to AdicionaImagemDocumento (20110112175612)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "documentos" ADD "imagem_content_type" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "documentos" ADD "imagem_file_name" varchar(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "documentos" ADD "imagem_file_size" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110112175612')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("campo_documentos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("campo_processos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cartorios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cidades")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("configuracoes")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("documentos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("entidades")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("imagens")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_imagens_on_documento_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("mensagens")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_status')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_assunto')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_mensagens_on_destinatario_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_mensagens_on_usuario_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("motivo_notificacaos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("perfis")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("perfis_usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("pessoa_versions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoa_versions_on_pessoa_id')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("pessoas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_cidade_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_nome_mae')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_nome')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_cnh')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_pessoas_on_rg')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_pessoas_on_cpf')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("processo_versions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_processo_versions_on_processo_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("processos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tipo_campos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tipo_documentos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tipo_processos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("usuarios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_usuarios_on_organizacao_type_and_organizacao_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_usuarios_on_login')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("valor_campo_documentos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("valor_campo_processos")[0m
