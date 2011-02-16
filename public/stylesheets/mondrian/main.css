@@ -64,7 +64,7 @@ LAYOUT
 #menu ul {margin:0; padding:0; list-style-type:none;}
 #menu ul li {display:inline; margin:0; padding:0;}
 #menu ul li a {float:left; margin-right:5px; padding-left:5px; background:url("/images/mondrian/menu-left.gif") 0 0 no-repeat; text-decoration:none; cursor:pointer;}
-#menu ul li a span {float:left; display:block; padding:7px 15px 9px 8px; background:url("/images/mondrian/menu-right.gif") 100% 0 no-repeat;}
+#menu ul li a span {width:90px; float:left; display:block; padding:7px 15px 9px 8px; background:url("/images/mondrian/menu-right.gif") 100% 0 no-repeat;}
 #menu ul li a:hover, #menu ul li#menu-active a {background:url("/images/mondrian/menu-left.gif") 0 -35px no-repeat;}
 #menu ul li a:hover span, #menu ul li#menu-active a span {background:url("/images/mondrian/menu-right.gif") 100% -35px no-repeat;}
 #menu ul li#menu-active a {font-weight:bold;}
