@@ -1,5 +1,10 @@
 class CidadesController < ApplicationController
 
+  layout "mollio"
+  
+  before_filter :login_required, :only => []  
+  
+
   before_filter { |f| f.menu 'administracao' }
   # GET /cidades
   # GET /cidades.xml
