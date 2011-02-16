@@ -1,6 +1,6 @@
 class CidadesController < ApplicationController
 
-  layout "mollio"
+  #layout "mollio"
   
   before_filter :login_required, :only => []  
   

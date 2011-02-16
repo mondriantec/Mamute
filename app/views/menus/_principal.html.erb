@@ -1,4 +1,4 @@
-<ul id="nav">
+<ul  class="box">
 <%= mostra_menu('home', :Home)%>
 <% if logged_in? %>
 	<%= mostra_menu('mensagens','Mensagens') %>
@@ -6,6 +6,6 @@
 	<%= mostra_menu('processos','Processos') %>
 	<%= mostra_menu('financeiro','Financeiro') %>
 	<%= mostra_menu('administracao', 'Administração')%>
-	<li class="last"><a href="/logout">Sair</a></li>
+	<!--<li class="last"><a href="/logout"><span>Sair</span></a></li>-->
 <% end %>
 </ul>

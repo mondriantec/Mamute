@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
 
-  layout "mollio"  
+  layout "mondrian"  
   include AuthenticatedSystem
   
   before_filter :login_required

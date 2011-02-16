@@ -10,7 +10,7 @@
 LAYOUT
 ============================================================================= */
 
-#cols {position:relative; margin:15px 0; padding-right:15px; background:url("../design/content.gif") 230px 0 repeat-y;}
+#cols {position:relative; margin:15px 0; padding-right:15px; background:url("/images/mondrian/content.gif") 230px 0 repeat-y;}
 #aside {float:left; width:215px; margin-right:0;}
 #content {margin-left:232px; overflow:visible;}
 #tray .ico-col2 {display:none;}
