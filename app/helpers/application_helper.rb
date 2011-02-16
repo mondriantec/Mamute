@@ -18,13 +18,15 @@ module ApplicationHelper
 		else
 		  """
 
-      <!-- 
+      
       <form action='#' method='get' id='search'>
       	<fieldset>
-      		<legend>Busca</legend>
+      		<legend>Buscar #{self.controller_name.singularize.capitalize}</legend>
 
-      		<p><input type='text' size='17' name='' class='input-text' />&nbsp;<input type='submit' value='OK' class='input-submit-02' /><br />
-      		<a href='javascript:toggle('search-options');' class='ico-drop'>Busca Avançada</a></p>
+      		<p>
+      		  <input type='text' size='17' name='' class='input-text' />&nbsp;<input type='submit' value='OK' class='input-submit-02' /><br />
+      		  <!--<a href='javascript:toggle('search-options');' class='ico-drop'>Busca Avançada</a>-->
+      		</p>
 
       	
 
@@ -40,7 +42,7 @@ module ApplicationHelper
 
       	</fieldset>
       </form>
-      -->
+      
 
       <!-- Create a new project -->
       <p id='btn-create' class='box'><a href='/#{self.controller_name}/new'><span>Adicionar #{self.controller_name.singularize.capitalize}</span></a></p>		  

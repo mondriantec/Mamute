@@ -1,1 +1,6 @@
 /* WRITE YOUR CSS CODE HERE */
+label {
+	display: block;
+	width: 80px;
+	float: left;
+}

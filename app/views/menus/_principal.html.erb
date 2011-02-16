@@ -1,6 +1,7 @@
 <ul  class="box">
-<%= mostra_menu('home', :Home)%>
+
 <% if logged_in? %>
+	<%= mostra_menu('home', :Home)%>
 	<%= mostra_menu('mensagens','Mensagens') %>
 	<%= mostra_menu('pessoas','Pessoas') %>
 	<%= mostra_menu('processos','Processos') %>
