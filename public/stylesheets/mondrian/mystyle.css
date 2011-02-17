@@ -1,6 +1,69 @@
 /* WRITE YOUR CSS CODE HERE */
+
+form {
+    margin-top: 5px;
+}
+
+
+.normal_form label {
+	float: none;
+}
+
+
+
+
+label b {
+    display: block;
+    float:left;
+    margin-right: 5px;
+    width: 80px;
+}
+
+
 label {
 	display: block;
-	width: 80px;
+	background-color: #e2e2e2;
+	margin-bottom: 1px;
+	margin-right: 1px;
+	padding: 3px;
+	padding-left: 10px;
 	float: left;
 }
+
+.uma_linha_form {
+    clear: both;
+    float:none;
+}
+
+
+.nova_linha_form {
+    clear: both;
+}
+
+
+
+
+.quebrar_linha_form {
+    float: none;
+}
+
+
+
+form .form_bar {
+    text-align: center;
+    clear: both;
+    background-color: #ccc;
+    padding: 5px;
+    margin-top: 0px;
+}
+
+.form_bar input {
+    width: 80px;
+    padding: 5px;
+}
+
+input {
+	background:#fff url(images/validationInputBg.png) repeat-x top left;
+	border:1px solid #b3b3b3;
+}
+

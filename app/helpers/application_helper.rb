@@ -3,32 +3,32 @@ module ApplicationHelper
   def menu_ativo?(nome)
     "active" if session[:menu] == nome
   end
-  
+
   def mostra_menu(menu,titulo)
     #TODO: implementar isso
-    #if current_usuario.tem_controller?(menu) 
+    #if current_usuario.tem_controller?(menu)
       "<li class='#{menu_ativo?(menu)}' ><a href='/#{menu}'><span>#{titulo}</span></a></li>"
     #end
-  end  
-  
+  end
+
   def scaffold_tools
 		if File.exist?("#{RAILS_ROOT}/app/views/menus/_tools_#{self.controller_name}.html.erb")
 		  @scaffold_tools = true
-			render :partial => "menus/tools_#{self.controller_name}" 
+			render :partial => "menus/tools_#{self.controller_name}"
 		else
 		  """
 
-      
+
       <form action='#' method='get' id='search'>
       	<fieldset>
       		<legend>Buscar #{self.controller_name.singularize.capitalize}</legend>
 
       		<p>
-      		  <input type='text' size='17' name='' class='input-text' />&nbsp;<input type='submit' value='OK' class='input-submit-02' /><br />
+      		  <input type='text' size='17' name='' class='mondrian_text_box' style='width: 120px' />&nbsp;<input type='submit' value='OK' class='input-submit-02' /><br />
       		  <!--<a href='javascript:toggle('search-options');' class='ico-drop'>Busca Avançada</a>-->
       		</p>
 
-      	
+
 
       		<div id='search-options' style='display:none;'>
 
@@ -38,15 +38,16 @@ module ApplicationHelper
       				<label><input type='checkbox' name='' /> Option III.</label>
       			</p>
 
-      		</div> 
+      		</div>
 
       	</fieldset>
       </form>
-      
+
 
       <!-- Create a new project -->
-      <p id='btn-create' class='box'><a href='/#{self.controller_name}/new'><span>Adicionar #{self.controller_name.singularize.capitalize}</span></a></p>		  
+      <p id='btn-create' class='box'><a href='/#{self.controller_name}/new'><span>Adicionar #{self.controller_name.singularize.capitalize}</span></a></p>
 		  """
-		end    
+		end
   end
 end
+

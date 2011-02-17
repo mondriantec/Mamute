@@ -1,34 +1,33 @@
-<link rel="stylesheet" type="text/css" href="/javascripts/dijit/themes/claro/claro.css" />
-
-
 <h1>Nova mensagem</h1>
 
+<div class="normal_form">
 <% form_for(@mensagem) do |f| %>
   <%= f.error_messages %>
 
   <%= f.hidden_field :usuario_id, :value => current_usuario.id %>
 
 
-  <p>
-    <%= f.label :destinatario_id %>
-    <%= f.select :destinatario_id, Usuario.all.collect {|u| [u.nome, u.id]} %>
-  </p>
-  <p>
-    <%= f.label :assunto %>
-    <%= f.text_field :assunto %>
-  </p>
 
-  <p style="border: solid 1px black">
-    <textarea name="mensagem[texto]" dojoType="dijit.Editor" id="mensagem_texto" class="claro" > </textarea>
-  </p>
+    <label for="mensagem_destinatio_id"><b>Destinatário</b>
+    <%= f.select :destinatario_id, Usuario.all.collect {|u| [u.nome, u.id]} %><br/>
+    </label>
+
+    <label><b>Assunto</b>
+    <%= f.text_field :assunto, :class=> "mondrian_text_box" %><br/>
+    </label>
 
 
 
-  <p>
+    <textarea name="mensagem[texto]"  id="mensagem_texto" dojoType="dijit.Editor" > </textarea>
+
+
+
+
+  <p class="form_bar">
     <%= f.submit 'Enviar' %>
   </p>
 <% end %>
-
+</div>
 <%= link_to 'Voltar', mensagens_path %>
 
 

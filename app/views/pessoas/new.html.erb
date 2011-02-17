@@ -1,67 +1,62 @@
-<h1>New pessoa</h1>
+<h1>Nova Pessoa</h1>
 
+<div class="mondrian_form">
 <% form_for(@pessoa) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
-  </p>
-  <p>
-    <%= f.label :cpf %><br />
-    <%= f.text_field :cpf %>
-  </p>
-  <p>
-    <%= f.label :rg %><br />
-    <%= f.text_field :rg %>
-  </p>
-  <p>
-    <%= f.label :orgao_emissor_rg %><br />
-    <%= f.text_field :orgao_emissor_rg %>
-  </p>
-  <p>
-    <%= f.label :uf_emissor_rg %><br />
-    <%= f.text_field :uf_emissor_rg %>
-  </p>
-  <p>
-    <%= f.label :cnh %><br />
-    <%= f.text_field :cnh %>
-  </p>
-  <p>
-    <%= f.label :nome_mae %><br />
-    <%= f.text_field :nome_mae %>
-  </p>
-  <p>
-    <%= f.label :endereco %><br />
+  <label class="uma_linha_form"><b>Nome</b>
+    <%= f.text_field :nome, :class => "mondrian_text_box", :size => "80" %>
+  </label>
+
+  <label class="uma_linha_form"><b>nome_mae </b>
+    <%= f.text_field :nome_mae, :size => "80" %>
+  </label>
+
+
+
+  <label class="nova_linha_form"><b>Rg</b>
+    <%= f.text_field :rg, :size => "14" %>
+  </label>
+  <label><b>Orgão </b>
+    <%= f.text_field :orgao_emissor_rg, :size => "14" %>
+  </label>
+  <label class="quebrar_linha_form"><b>UF </b>
+    <%= f.text_field :uf_emissor_rg, :size => "2" %>
+  </label>
+
+  <label class="nova_linha_form"><b>CPF</b>
+    <%= f.text_field :cpf,  :size => "14"  %>
+  </label>
+  <label><b>CNH </b>
+    <%= f.text_field :cnh, :size => "14" %>
+  </label>
+  <label  class="quebrar_linha_form"><b>Estado Civil </b>
+    <%= f.text_field :estado_civil, :size => 10 %>
+  </label>
+
+
+  <label class="nova_linha_form"><b>endereco </b>
     <%= f.text_field :endereco %>
-  </p>
-  <p>
-    <%= f.label :bairro %><br />
+  </label>
+  <label class="quebrar_linha_form"><b>bairro </b>
     <%= f.text_field :bairro %>
-  </p>
-  <p>
-    <%= f.label :cidade_id %><br />
+  </label>
+
+
+  <label class="nova_linha_form"><b>cidade_id </b>
     <%= f.text_field :cidade_id %>
-  </p>
-  <p>
-    <%= f.label :cep %><br />
+  </label>
+  <label class="quebrar_linha_form"><b>cep </b>
     <%= f.text_field :cep %>
-  </p>
-  <p>
-    <%= f.label :estado_civil %><br />
-    <%= f.text_field :estado_civil %>
-  </p>
-  <p>
-    <%= f.label :created_by %><br />
-    <%= f.text_field :created_by %>
-  </p>
-  <p>
-    <%= f.label :updated_by %><br />
-    <%= f.text_field :updated_by %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
+  </label>
+
+
+
+  <p class="form_bar">
+    <%= f.submit 'Salvar' %>
   </p>
 <% end %>
+</div>
 
-<%= link_to 'Back', pessoas_path %>
+<%= link_to 'Voltar', pessoas_path %>
+
