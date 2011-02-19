@@ -1,23 +1,31 @@
+<div class=" normal_form">
 <% form_for(@categoria) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :nome %><br />
+  <label>
+      <b>Ligada a</b>
+      <% if @categoria.parent_id %>
+        <%= f.hidden_field :parent_id %>
+        <%= @categoria.categoria.nome %>
+      <% else %>
+        <%= f.select :parent_id, @categorias, :include_blank => true %>
+      <% end %>  
+  </label>  
+    
+  <label>
+    <b>nome </b>
     <%= f.text_field :nome %>
-  </p>
-  <p>
-    <%= f.label :descricao %><br />
+  </label>
+
+  <label>
+    <b>descricao </b>
     <%= f.text_area :descricao %>
-  </p>
-  <% if @categoria.parent_id %>
-  <%= f.hidden_field :parent_id %>
-  <% else %>
-  <p>
-    <%= f.label :parent_id %><br />
-    <%= f.select :parent_id, @categorias, :include_blank => true %>
-  </p>
-  <% end %>
-  <p>
-    <%= f.submit 'Create' %>
+  </label>
+
+
+
+  <p class=" form_bar">
+    <%= f.submit 'Salvar' %>
   </p>
 <% end %>
+</div>
