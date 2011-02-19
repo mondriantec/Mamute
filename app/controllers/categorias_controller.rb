@@ -88,5 +88,6 @@ class CategoriasController < ApplicationController
   def load_categorias
     @categorias = Categoria.find(:all, :conditions => [], :order =>"nome")
     @categorias.delete(@categoria) if @categoria
+    @categorias = @categorias.collect {|c| [c.nome, c.id]}
   end
 end

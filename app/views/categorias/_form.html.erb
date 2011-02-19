@@ -11,7 +11,7 @@
   </p>
   <p>
     <%= f.label :parent_id %><br />
-    <%= f.text_field :parent_id %>
+    <%= f.select :parent_id, @categorias %>
   </p>
   <p>
     <%= f.submit 'Create' %>
