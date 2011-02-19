@@ -1,4 +1,5 @@
 class CategoriasController < ApplicationController
+  after_filter :load_categorias, :only => [:new,:edit,:create,:update]
   # GET /categorias
   # GET /categorias.xml
   def index
@@ -81,5 +82,11 @@ class CategoriasController < ApplicationController
       format.html { redirect_to(categorias_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  private
+  def load_categorias
+    @categorias = Categoria.find(:all, :conditions => [], :order =>"nome")
+    @categorias.delete(@categoria) if @categoria
   end
 end
