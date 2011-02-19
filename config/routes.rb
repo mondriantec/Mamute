@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :categorias
+
   map.resources :home, :collection  => {:testar => :post }
   map.resources :valor_campo_documentos
 

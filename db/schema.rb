@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110112175612) do
+ActiveRecord::Schema.define(:version => 20110219021446) do
 
   create_table "campo_documentos", :force => true do |t|
     t.integer  "tipo_documento_id"
@@ -37,6 +37,14 @@ ActiveRecord::Schema.define(:version => 20110112175612) do
     t.string   "bairro"
     t.string   "fone"
     t.string   "fax"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categorias", :force => true do |t|
+    t.string   "nome"
+    t.text     "descricao"
+    t.integer  "parent_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -221,8 +229,11 @@ ActiveRecord::Schema.define(:version => 20110112175612) do
     t.integer  "updated_by"
     t.integer  "organizacao_id"
     t.string   "organizacao_type"
+    t.string   "entidade_type"
+    t.integer  "entidade_id"
   end
 
+  add_index "usuarios", ["entidade_type", "entidade_id"], :name => "index_usuarios_on_entidade_type_and_entidade_id"
   add_index "usuarios", ["login"], :name => "index_usuarios_on_login", :unique => true
   add_index "usuarios", ["organizacao_type", "organizacao_id"], :name => "index_usuarios_on_organizacao_type_and_organizacao_id"
 
