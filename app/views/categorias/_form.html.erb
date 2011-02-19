@@ -9,10 +9,14 @@
     <%= f.label :descricao %><br />
     <%= f.text_area :descricao %>
   </p>
+  <% if @categoria.parent_id %>
+  <%= f.hidden_field :parent_id %>
+  <% else %>
   <p>
     <%= f.label :parent_id %><br />
-    <%= f.select :parent_id, @categorias %>
+    <%= f.select :parent_id, @categorias, :include_blank => true %>
   </p>
+  <% end %>
   <p>
     <%= f.submit 'Create' %>
   </p>

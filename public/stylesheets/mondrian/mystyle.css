@@ -50,7 +50,6 @@ label {
 
 
 form .form_bar {
-    text-align: center;
     clear: both;
     background-color: #ccc;
     padding: 5px;
@@ -67,3 +66,6 @@ input {
 	border:1px solid #b3b3b3;
 }
 
+#arvore ul {
+	padding-left: 20px;
+}

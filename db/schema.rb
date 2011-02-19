@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110219021446) do
+ActiveRecord::Schema.define(:version => 20110219031110) do
 
   create_table "campo_documentos", :force => true do |t|
     t.integer  "tipo_documento_id"
@@ -45,6 +45,13 @@ ActiveRecord::Schema.define(:version => 20110219021446) do
     t.string   "nome"
     t.text     "descricao"
     t.integer  "parent_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "certidaos", :force => true do |t|
+    t.integer  "documento_id"
+    t.integer  "numero"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

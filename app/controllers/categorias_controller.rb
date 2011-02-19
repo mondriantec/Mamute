@@ -1,9 +1,9 @@
 class CategoriasController < ApplicationController
-  after_filter :load_categorias, :only => [:new,:edit,:create,:update]
+  before_filter :load_categorias, :only => [:new,:edit,:create,:update]
   # GET /categorias
   # GET /categorias.xml
   def index
-    @categorias = Categoria.all
+    @categorias = Categoria.find(:all, :conditions => "parent_id is null")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -25,7 +25,11 @@ class CategoriasController < ApplicationController
   # GET /categorias/new
   # GET /categorias/new.xml
   def new
+    session[:voltar_para] = request.env['HTTP_REFERER'] 
     @categoria = Categoria.new
+    if params[:id]
+      @categoria.parent_id = params[:id]
+    end
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,7 +39,9 @@ class CategoriasController < ApplicationController
 
   # GET /categorias/1/edit
   def edit
+    session[:voltar_para] = request.env['HTTP_REFERER'] 
     @categoria = Categoria.find(params[:id])
+    @categorias.delete(@categoria)  
   end
 
   # POST /categorias
@@ -46,7 +52,7 @@ class CategoriasController < ApplicationController
     respond_to do |format|
       if @categoria.save
         flash[:notice] = 'Categoria was successfully created.'
-        format.html { redirect_to(@categoria) }
+        format.html { redirect_to(session[:voltar_para]) }
         format.xml  { render :xml => @categoria, :status => :created, :location => @categoria }
       else
         format.html { render :action => "new" }
@@ -59,11 +65,10 @@ class CategoriasController < ApplicationController
   # PUT /categorias/1.xml
   def update
     @categoria = Categoria.find(params[:id])
-
     respond_to do |format|
       if @categoria.update_attributes(params[:categoria])
         flash[:notice] = 'Categoria was successfully updated.'
-        format.html { redirect_to(@categoria) }
+        format.html { redirect_to(session[:voltar_para]) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -86,8 +91,6 @@ class CategoriasController < ApplicationController
   
   private
   def load_categorias
-    @categorias = Categoria.find(:all, :conditions => [], :order =>"nome")
-    @categorias.delete(@categoria) if @categoria
-    @categorias = @categorias.collect {|c| [c.nome, c.id]}
+    @categorias = Categoria.find(:all, :conditions => [], :order =>"nome").collect {|c| [c.nome, c.id]}
   end
 end

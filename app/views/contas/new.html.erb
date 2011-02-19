@@ -1,16 +1,16 @@
-<h1>Log In</h1>
+<h1>Entrar no Sistema</h1>
 
 <% form_tag conta_path do -%>
-<p><%= label_tag 'login' %><br />
-<%= text_field_tag 'login', @login %></p>
+<label class="uma_linha_form"><b>Login</b>
+<%= text_field_tag 'login', @login %></label>
 
-<p><%= label_tag 'password' %><br/>
-<%= password_field_tag 'password', nil %></p>
+<label class="uma_linha_form"><b>Senha</b>
+<%= password_field_tag 'password', nil %></label>
 
 <!-- Uncomment this if you want this functionality
 <p><%= label_tag 'remember_me', 'Remember me' %>
 <%= check_box_tag 'remember_me', '1', @remember_me %></p>
 -->
 
-<p><%= submit_tag 'Log in' %></p>
+<p class="form_bar"><%= submit_tag 'Log in' %></p>
 <% end -%>

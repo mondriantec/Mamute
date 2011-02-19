@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  documento_id: 1
+  numero: 1
+
+two:
+  documento_id: 1
+  numero: 1

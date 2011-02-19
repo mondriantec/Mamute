@@ -9,10 +9,24 @@
 </p>
 
 <p>
-  <b>Parent:</b>
-  <%=h @categoria.parent_id %>
+  <b>Categoria Pai:</b>
+  <%=h @categoria.categoria.nome if @categoria.categoria %>
 </p>
 
 
-<%= link_to 'Edit', edit_categoria_path(@categoria) %> |
-<%= link_to 'Back', categorias_path %>
+<h2>Sub Categorias</h2>
+
+<div id="arvore">
+
+<ul>
+  <% @categoria.categorias.each do |c| %>
+    <%= escrever_categoria(c) %>
+  <% end %>
+</ul>
+
+</div>
+
+<%= link_to 'Nova Categoria Filha', "/categorias/new/#{@categoria.id}" %> |
+<%= link_to 'Editar', edit_categoria_path(@categoria) %> |
+<%= link_to 'Excluir', @categoria, :confirm => 'Tem cereteza?', :method => :delete %> |
+<%= link_to 'Voltar', categorias_path %>

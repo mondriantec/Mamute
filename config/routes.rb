@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :certidaos
+
   map.resources :categorias
 
   map.resources :home, :collection  => {:testar => :post }

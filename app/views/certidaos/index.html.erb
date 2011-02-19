@@ -1,0 +1,22 @@
+<h1>Listing certidaos</h1>
+
+<table>
+  <tr>
+    <th>Documento</th>
+    <th>Numero</th>
+  </tr>
+
+<% @certidaos.each do |certidao| %>
+  <tr>
+    <td><%=h certidao.documento_id %></td>
+    <td><%=h certidao.numero %></td>
+    <td><%= link_to 'Show', certidao %></td>
+    <td><%= link_to 'Edit', edit_certidao_path(certidao) %></td>
+    <td><%= link_to 'Destroy', certidao, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New certidao', new_certidao_path %>
