@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110219031110) do
+ActiveRecord::Schema.define(:version => 20110221175552) do
 
   create_table "campo_documentos", :force => true do |t|
     t.integer  "tipo_documento_id"
@@ -71,6 +71,13 @@ ActiveRecord::Schema.define(:version => 20110219031110) do
     t.datetime "updated_at"
   end
 
+  create_table "conveniados", :force => true do |t|
+    t.string   "cnpj"
+    t.string   "nome"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "documentos", :force => true do |t|
     t.integer  "tipo_documento_id"
     t.datetime "created_at"
@@ -78,13 +85,6 @@ ActiveRecord::Schema.define(:version => 20110219031110) do
     t.string   "imagem_content_type"
     t.string   "imagem_file_name"
     t.integer  "imagem_file_size"
-  end
-
-  create_table "entidades", :force => true do |t|
-    t.string   "nome"
-    t.string   "cnpj"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "imagens", :force => true do |t|
@@ -97,6 +97,15 @@ ActiveRecord::Schema.define(:version => 20110219031110) do
   end
 
   add_index "imagens", ["documento_id"], :name => "index_imagens_on_documento_id"
+
+  create_table "irtds", :force => true do |t|
+    t.string   "uf"
+    t.string   "nome"
+    t.string   "presidente"
+    t.boolean  "nacional"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "mensagens", :force => true do |t|
     t.integer  "usuario_id"
@@ -218,6 +227,14 @@ ActiveRecord::Schema.define(:version => 20110219031110) do
   create_table "tipo_processos", :force => true do |t|
     t.string   "tipo"
     t.text     "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tribunais", :force => true do |t|
+    t.string   "uf"
+    t.string   "nome"
+    t.string   "presidente"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
