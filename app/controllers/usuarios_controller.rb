@@ -3,6 +3,11 @@ class UsuariosController < ApplicationController
   include AuthenticatedSystem
 
   def index  
+    if current_usuario.admin
+      @usuarios = Usuario.all
+    elsif current_usuario.entidade
+      @usuarios = current_usuario.entidade.usuarios
+    end
   end
 
   # render new.rhtml

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110221175552) do
+ActiveRecord::Schema.define(:version => 20110221181945) do
 
   create_table "campo_documentos", :force => true do |t|
     t.integer  "tipo_documento_id"
@@ -255,6 +255,7 @@ ActiveRecord::Schema.define(:version => 20110221175552) do
     t.string   "organizacao_type"
     t.string   "entidade_type"
     t.integer  "entidade_id"
+    t.boolean  "admin"
   end
 
   add_index "usuarios", ["entidade_type", "entidade_id"], :name => "index_usuarios_on_entidade_type_and_entidade_id"

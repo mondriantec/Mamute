@@ -1,0 +1,16 @@
+<table>
+	<tr>
+		<th>Nome</th>
+		<th>Login</th>
+		<th></th>
+		<th></th>
+	</tr>
+<% for usuario in @usuarios %>
+	<tr>
+		<td><%= usuario.nome %></td>
+		<td><%= usuario.login %></td>
+		<td>Editar</td>
+		<td>Excluir</td>
+	</tr>
+<% end %>
+</table>
