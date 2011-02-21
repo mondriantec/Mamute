@@ -1,0 +1,15 @@
+<div class="normal_form">
+<% form_for(@tipo_documento) do |f| %>
+  <%= f.error_messages %>
+
+  <label><b>Tipo</b>
+        <%= f.text_field :tipo %>
+  </label>
+  <label><b>Descrição</b>
+        <%= f.text_area :descricao %>
+  </label>
+  <p class="form_bar">
+    <%= f.submit 'Salvar' %>
+  </p>
+<% end %>
+</div>

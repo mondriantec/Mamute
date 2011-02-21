@@ -1,0 +1,33 @@
+<div class="normal_form">
+<% form_for(@campo_documento) do |f| %>
+  <%= f.error_messages %>
+
+
+    <label><b>Tipo Documento</b>
+       <%= f.hidden_field :tipo_documento_id %> 
+       <%= @campo_documento.tipo_documento.tipo %>
+    </label>
+
+
+    <label><b>Tipo</b>
+        <%= f.select("tipo_campo", [["TEXTO","TEXTO"],["DATA","DATA"],["NUMERO","NUMERO"]]) %> 
+    </label>
+     
+
+    <label><b>Nome</b>
+       <%= f.text_field :nome %>
+    </label>
+
+    <label><b>Limite</b>
+       <%= f.text_field :limite %>
+    </label>
+  
+    <label><b>Descrição</b>
+        <%= f.text_area :descricao %>
+    </label>
+
+  <p class='form_bar'>
+    <%= f.submit 'Salvar' %>
+  </p>
+<% end %>
+</div>

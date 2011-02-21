@@ -1,0 +1,24 @@
+<div class="normal_form">
+<% form_for(@campo_processo) do |f| %>
+  <%= f.error_messages %>
+
+  <label><b>Tipo Campo</b>
+        <%= f.select("tipo_campo", [["TEXTO","TEXTO"],["DATA","DATA"],["NUMERO","NUMERO"]]) %> 
+  </label>
+  
+  <label><b>Tipo de Processo</b>
+        <%= f.text_field :tipo_processo_id %>
+  </label>
+  
+  <label><b>Nome</b>
+        <%= f.text_field :nome %>
+  </label>
+  <label><b>Tamanho</b>
+        <%= f.text_field :tamanho %>
+  </label>
+  
+  <label>
+         <%= f.submit 'Salvar' %>
+  </label>
+<%end%>
+</div>

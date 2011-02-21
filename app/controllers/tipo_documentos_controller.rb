@@ -17,6 +17,8 @@ class TipoDocumentosController < ApplicationController
   # GET /tipo_documentos/1.xml
   def show
     @tipo_documento = TipoDocumento.find(params[:id])
+    @campo_documentos =  @tipo_documento.campo_documentos
+    @campo_documento = CampoDocumento.new	
 
     respond_to do |format|
       format.html # show.html.erb

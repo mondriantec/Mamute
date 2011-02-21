@@ -9,19 +9,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110219031110) do
+ActiveRecord::Schema.define(:version => 20110221183928) do
 
   create_table "campo_documentos", :force => true do |t|
     t.integer  "tipo_documento_id"
-    t.integer  "tipo_campo_id"
+    t.string   "tipo_campo"
     t.integer  "limite"
     t.text     "descricao"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "nome"
   end
 
   create_table "campo_processos", :force => true do |t|
-    t.integer  "tipo_campo_id"
+    t.string   "tipo_campo"
     t.integer  "tipo_processo_id"
     t.string   "nome"
     t.integer  "tamanho"

@@ -1,0 +1,16 @@
+<div class="normal_form">
+
+<% form_for(@tipo_campo) do |f| %>
+  <%= f.error_messages %>
+
+  <label><b>Tipo</b>
+    <%= f.text_field :tipo %>
+  </label>
+   
+      
+   <p class="form_bar">
+    <%= f.submit 'Salvar' %>
+  </p>
+<% end %>
+
+</div>
