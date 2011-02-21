@@ -6,6 +6,7 @@ class CidadesController < ApplicationController
   
 
   before_filter { |f| f.menu 'administracao' }
+  
   # GET /cidades
   # GET /cidades.xml
   def index

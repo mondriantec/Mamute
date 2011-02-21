@@ -1,5 +1,5 @@
 class PessoasController < ApplicationController
-  before_filter { |f| f.menu 'pessoas' }
+
   # GET /pessoas
   # GET /pessoas.xml
   def index

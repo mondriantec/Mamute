@@ -1,12 +1,37 @@
 <ul  class="box">
 
-<% if logged_in? %>
-	<%= mostra_menu('home', :Home)%>
-	<%= mostra_menu('mensagens','Mensagens') %>
-	<%= mostra_menu('pessoas','Pessoas') %>
-	<%= mostra_menu('processos','Processos') %>
-	<%= mostra_menu('financeiro','Financeiro') %>
-	<%= mostra_menu('administracao', 'Administração')%>
-	<!--<li class="last"><a href="/logout"><span>Sair</span></a></li>-->
+
+<%# Admin %>
+<% if logged_in? and current_usuario.admin %>
+		<%= mostra_menu('home', :Home)%>
+		<%= mostra_menu('cartorios','Cartórios') %>
+		<%= mostra_menu('conveniados','Conveniados') %>
+		<%= mostra_menu('tribunais','Tribunais') %>
+		<%= mostra_menu('irtds','Institutos') %>
+		<%= mostra_menu('administracao', 'Administração') %>
+
+<%# Irtd Nacional %>
+<% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Irtd' and current_usuario.entidade.nacional %>
+         Menu IRTD Nacional
+
+<%# Irtd Estadual %>
+<% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Irtd' %>
+		Menu IRTD Estadual
+		
+<%# Conveniado %>
+<% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Conveniado' %>
+		Menu Conveniado
+
+<%# TRibunal %>
+<% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Tribunal' %>
+		Menu Tribunal
+
+<%# Cartório %>
+<% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Cartorio' %>
+		Menu Cartorio
+
+<%# Usuario Normal %>
+<% elsif logged_in? %>
+		Menu Usuario
 <% end %>
 </ul>

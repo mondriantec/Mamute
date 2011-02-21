@@ -26,14 +26,14 @@ class CadastraEntidades < ActiveRecord::Migration
     cartorio.save!
     
     u_irtd = Usuario.new
-    u_irtd.login = 'usuario_irtd'
+    u_irtd.login = u_irtd.nome = 'usuario_irtd'
     u_irtd.password = u_irtd.password_confirmation = '123456'
     u_irtd.email = 'usuario_irtd@uol.com.br'
     u_irtd.entidade = irtd
     u_irtd.save!
     
     u_conveniado = Usuario.new
-    u_conveniado.login = 'usuario_conveniado'
+    u_conveniado.login u_conveniado.nome = 'usuario_conveniado'
     u_conveniado.password = u_conveniado.password_confirmation = '123456'
     u_conveniado.email = 'usuario_conveniado@uol.com.br'
     u_conveniado.entidade = conveniado
@@ -41,14 +41,14 @@ class CadastraEntidades < ActiveRecord::Migration
     
     
     u_tribunal = Usuario.new
-    u_tribunal.login = 'usuario_tribunal'
+    u_tribunal.login = u_tribunal.nome = 'usuario_tribunal'
     u_tribunal.password = u_tribunal.password_confirmation = '123456'
     u_tribunal.email = 'usuario_tribunal@uol.com.br'
     u_tribunal.entidade = t
     u_tribunal.save!
     
     u_cartorio = Usuario.new
-    u_cartorio.login = 'usuario_cartorio'
+    u_cartorio.login = u_cartorio.nome = 'usuario_cartorio'
     u_cartorio.password = u_cartorio.password_confirmation = '123456'
     u_cartorio.email = 'usuario_cartorio@uol.com.br'
     u_cartorio.entidade = cartorio

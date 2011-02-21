@@ -1,5 +1,8 @@
 class CategoriasController < ApplicationController
   before_filter :load_categorias, :only => [:new,:edit,:create,:update]
+  
+  before_filter { |f| f.menu 'administracao' }
+  
   # GET /categorias
   # GET /categorias.xml
   def index
