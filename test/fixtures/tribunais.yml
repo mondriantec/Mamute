@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  uf: MyString
+  nome: MyString
+  presidente: MyString
+
+two:
+  uf: MyString
+  nome: MyString
+  presidente: MyString

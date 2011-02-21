@@ -1,6 +1,6 @@
 class CampoProcessosController < ApplicationController
 
-  before_filter { |f| f.menu 'administracao' }
+
 
   # GET /campo_processos
   # GET /campo_processos.xml

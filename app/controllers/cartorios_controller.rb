@@ -1,5 +1,5 @@
 class CartoriosController < ApplicationController
-  before_filter { |f| f.menu 'administracao' }
+
   # GET /cartorios
   # GET /cartorios.xml
   def index

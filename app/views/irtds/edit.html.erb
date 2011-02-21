@@ -1,0 +1,24 @@
+<h1>Editing irtd</h1>
+
+<% form_for(@irtd) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :uf %><br />
+    <%= f.text_field :uf %>
+  </p>
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :presidente %><br />
+    <%= f.text_field :presidente %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @irtd %> |
+<%= link_to 'Back', irtds_path %>

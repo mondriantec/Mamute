@@ -1,6 +1,7 @@
 class ConfiguracoesController < ApplicationController
 
   before_filter { |f| f.menu 'administracao' }
+  
   # GET /configuracoes
   # GET /configuracoes.xml
   def index
