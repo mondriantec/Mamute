@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :irtds
+
+  map.resources :tribunais
+
+  map.resources :conveniados
+
   map.resources :certidaos
 
   map.resources :categorias

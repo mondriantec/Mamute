@@ -1,0 +1,24 @@
+<h1>Listing tribunais</h1>
+
+<table>
+  <tr>
+    <th>Uf</th>
+    <th>Nome</th>
+    <th>Presidente</th>
+  </tr>
+
+<% @tribunais.each do |tribunal| %>
+  <tr>
+    <td><%=h tribunal.uf %></td>
+    <td><%=h tribunal.nome %></td>
+    <td><%=h tribunal.presidente %></td>
+    <td><%= link_to 'Show', tribunal %></td>
+    <td><%= link_to 'Edit', edit_tribunal_path(tribunal) %></td>
+    <td><%= link_to 'Destroy', tribunal, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tribunal', new_tribunal_path %>
