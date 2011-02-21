@@ -33,7 +33,7 @@ class CadastraEntidades < ActiveRecord::Migration
     u_irtd.save!
     
     u_conveniado = Usuario.new
-    u_conveniado.login u_conveniado.nome = 'usuario_conveniado'
+    u_conveniado.login = u_conveniado.nome = 'usuario_conveniado'
     u_conveniado.password = u_conveniado.password_confirmation = '123456'
     u_conveniado.email = 'usuario_conveniado@uol.com.br'
     u_conveniado.entidade = conveniado
