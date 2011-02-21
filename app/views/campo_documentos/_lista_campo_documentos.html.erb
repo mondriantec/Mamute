@@ -1,19 +1,20 @@
 <div class='normal'>
 <table>
   <tr>
-    <th>Tipo documento</th>
+    
     <th>Nome</th>
+    <th>Ordem</th>	
     <th>Limite</th>
     <th>Descricao</th>
   </tr>
 
 <% @campo_documentos.each do |campo_documento| %>
   <tr>
-    <td><%=h campo_documento.tipo_documento_id %></td>
+    
     <td><%=h campo_documento.nome %></td>
+    <td><%=h campo_documento.ordem %></td>	
     <td><%=h campo_documento.limite %></td>
     <td><%=h campo_documento.descricao %></td>
-    <td><%= link_to 'Show', campo_documento %></td>
     <td><%= link_to 'Edit', edit_campo_documento_path(campo_documento) %></td>
     <td><%= link_to 'Destroy', campo_documento, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
