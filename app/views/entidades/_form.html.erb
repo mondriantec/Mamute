@@ -1,0 +1,17 @@
+<div class="normal_form">
+
+<% form_for(@entidade) do |f| %>
+  <%= f.error_messages %>
+
+  <label><b>nome</b>
+    <%= f.text_field :nome %>
+  </label>
+
+  <label><b>Cnpj</b>
+    <%= f.text_field :cnpj %>
+  </label>
+  <p class="form_bar">
+    <%= f.submit 'Salvar' %>
+  </p>
+<% end %>
+</div>
