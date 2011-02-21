@@ -84,7 +84,7 @@
 
 	        <% if logged_in? %>
 				<div id="utility">
-	        		<%#= render :partial => session[:submenu] %>
+	        		<%= render :partial => session[:submenu] if session[:submenu] %>
 				</div>
 			<% end %>
 
