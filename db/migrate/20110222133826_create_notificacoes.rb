@@ -1,6 +1,6 @@
-class CreateNoticacaos < ActiveRecord::Migration
+class CreateNotificacoes < ActiveRecord::Migration
   def self.up
-    create_table :noticacaos do |t|
+    create_table :notificacoes do |t|
       t.integer :cartorio_id
       t.integer :notificado_id
       t.integer :motivo_notificacao_id
@@ -14,6 +14,6 @@ class CreateNoticacaos < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :noticacaos
+    drop_table :notificacoes
   end
 end

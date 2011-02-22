@@ -1,0 +1,55 @@
+<h1>Listing notificacoes</h1>
+
+<br/>
+<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 300px;"
+tabStrip="true">
+    <div dojoType="dijit.layout.ContentPane" title="Pendentes" selected="true">
+		<table>
+		  <tr>
+		    <th>Cartorio</th>
+		    <th>Notificado</th>
+		    <th>Motivo notificacao</th>
+		    <th>Texto</th>
+		    <th>Data envio usuario</th>
+		    <th>Status</th>
+		    <th>Motivo status</th>
+		  </tr>
+
+		<% @notificacoes.each do |notificacao| %>
+		  <tr>
+		    <td><%=h notificacao.cartorio_id %></td>
+		    <td><%=h notificacao.notificado_id %></td>
+		    <td><%=h notificacao.motivo_notificacao_id %></td>
+		    <td><%=h notificacao.texto %></td>
+		    <td><%=h notificacao.data_envio_usuario %></td>
+		    <td><%=h notificacao.status %></td>
+		    <td><%=h notificacao.motivo_status %></td>
+		    <td><%= link_to 'Show', notificacao %></td>
+		    <td><%= link_to 'Edit', edit_notificacao_path(notificacao) %></td>
+		    <td><%= link_to 'Destroy', notificacao, :confirm => 'Are you sure?', :method => :delete %></td>
+		  </tr>
+		<% end %>
+		</table>
+    </div>
+    <div dojoType="dijit.layout.ContentPane" title="Enviadas">
+        Lorem ipsum and all around - second...
+    </div>
+    <div dojoType="dijit.layout.ContentPane" title="Devolvidas">
+        Lorem ipsum and all around - last...
+    </div>
+</div>
+
+
+
+
+
+<br />
+
+<%= link_to 'New notificacao', new_notificacao_path %>
+
+
+<script type="text/javascript" src="/javascripts/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
+<script type="text/javascript">
+    dojo.require("dijit.layout.TabContainer");
+    dojo.require("dijit.layout.ContentPane");
+</script>

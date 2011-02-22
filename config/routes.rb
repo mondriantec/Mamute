@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :noticacaos
+  map.resources :notificacoes
 
   map.resources :irtds
 

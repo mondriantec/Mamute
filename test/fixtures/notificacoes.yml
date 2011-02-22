@@ -5,7 +5,7 @@ one:
   notificado_id: 1
   motivo_notificacao_id: 1
   texto: MyText
-  data_envio_usuario: 2011-02-22 10:24:37
+  data_envio_usuario: 2011-02-22 10:38:26
   status: 1
   motivo_status: MyText
 
@@ -14,6 +14,6 @@ two:
   notificado_id: 1
   motivo_notificacao_id: 1
   texto: MyText
-  data_envio_usuario: 2011-02-22 10:24:37
+  data_envio_usuario: 2011-02-22 10:38:26
   status: 1
   motivo_status: MyText

@@ -1,6 +1,6 @@
-<h1>New noticacao</h1>
+<h1>Editing notificacao</h1>
 
-<% form_for(@noticacao) do |f| %>
+<% form_for(@notificacao) do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -32,8 +32,9 @@
     <%= f.text_area :motivo_status %>
   </p>
   <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Update' %>
   </p>
 <% end %>
 
-<%= link_to 'Back', noticacaos_path %>
+<%= link_to 'Show', @notificacao %> |
+<%= link_to 'Back', notificacoes_path %>
