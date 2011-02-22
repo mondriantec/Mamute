@@ -3,6 +3,7 @@ class UsuariosController < ApplicationController
   include AuthenticatedSystem
 
   def index  
+    @usuario = Usuario.new
     if current_usuario.admin
       @usuarios = Usuario.all
     elsif current_usuario.entidade

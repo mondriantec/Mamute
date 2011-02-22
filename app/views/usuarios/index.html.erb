@@ -1,20 +1,40 @@
-<h1>Usuários</h1>
+<h1>Cadastro de Usuários</h1>
 <br/>
-<table>
-	<tr>
-		<th>Nome</th>
-		<th>Login</th>
-		<th></th>
-		<th></th>
-	</tr>
-<% for usuario in @usuarios %>
-	<tr>
-		<td><%= usuario.nome %></td>
-		<td><%= usuario.login %></td>
-		<td>Editar</td>
-		<td>Excluir</td>
-	</tr>
-<% end %>
-</table>
+<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 300px;"
+tabStrip="true">
+    <div dojoType="dijit.layout.ContentPane" title="Pesquisar" selected="true">
+		<br/>
+		<table>
+			<tr>
+				<th>Nome</th>
+				<th>Login</th>
+				<th></th>
+				<th></th>
+			</tr>
+		<% for usuario in @usuarios %>
+			<tr>
+				<td><%= usuario.nome %></td>
+				<td><%= usuario.login %></td>
+			    <td><%= link_to 'Editar', edit_usuario_path(usuario) %></td>
+			    <td><%= link_to 'Apagar', usuario, :confirm => 'Tem certeza?', :method => :delete %></td>
+			</tr>
+		<% end %>
+		</table>
+    </div>
+    <div dojoType="dijit.layout.ContentPane" title="Cadastrar Novo">
+        <%= render 'form' %>
+    </div>
 
-<%= link_to 'Novo Usuário', new_usuario_path %>
+</div>
+
+
+
+
+<script type="text/javascript" src="/javascripts/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
+<script type="text/javascript">
+    dojo.require("dijit.layout.TabContainer");
+    dojo.require("dijit.layout.ContentPane");
+</script>
+
+
+

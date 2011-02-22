@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <th>Documento</th>
+    <th>Numero</th>
+  </tr>
+
+<% certidoes.each do |certidao| %>
+  <tr>
+    <td><%=h certidao.documento_id %></td>
+    <td><%=h certidao.numero %></td>
+    <td><%= link_to 'Visualizar', certidao %></td>
+    <td><%= link_to 'Editar', edit_certidao_path(certidao) %></td>
+    <td><%= link_to 'Apagar', certidao, :confirm => 'Tem certeza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<h4><%= will_paginate (certidoes) %></h4>

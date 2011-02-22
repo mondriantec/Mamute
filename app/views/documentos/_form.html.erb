@@ -1,0 +1,11 @@
+<% form_for(@documento) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :tipo_documento_id %><br />
+    <%= f.text_field :tipo_documento_id %>
+  </p>
+  <p>
+    <%= f.submit 'Salvar' %>
+  </p>
+<% end %>

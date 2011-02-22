@@ -2,8 +2,8 @@ class CertidaosController < ApplicationController
   # GET /certidaos
   # GET /certidaos.xml
   def index
-    @certidaos = Certidao.all
-
+    @certidoes_pendentes = Certidao.all.paginate(:page => params[:page], :per_page => 5)
+    @certidoes_emitidas = Certidao.all.paginate(:page => params[:page], :per_page => 5)
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @certidaos }
