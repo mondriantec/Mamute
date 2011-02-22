@@ -1,32 +1,24 @@
 <h1>Cadastro de cartorios</h1>
 
-<table>
-  <tr>
-    <th>Cidade</th>
-    <th>Oficio</th>
-    <th>Tabeliao</th>
-    <th>Endereco</th>
-    <th>Bairro</th>
-    <th>Fone</th>
-    <th>Fax</th>
-  </tr>
+<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 350px;"
+tabStrip="true">
+    <div dojoType="dijit.layout.ContentPane" title="Pesquisar" selected="true">
+		<%= render 'lista' %>
+    </div>
+    <div dojoType="dijit.layout.ContentPane" title="Novo Cartório" selected="true">
+		<%= render 'form' %>
+    </div>
 
-<% @cartorios.each do |cartorio| %>
-  <tr>
-    <td><%=h cartorio.cidade_id %></td>
-    <td><%=h cartorio.oficio %></td>
-    <td><%=h cartorio.tabeliao %></td>
-    <td><%=h cartorio.endereco %></td>
-    <td><%=h cartorio.bairro %></td>
-    <td><%=h cartorio.fone %></td>
-    <td><%=h cartorio.fax %></td>
-    <td><%= link_to 'Visualizar', cartorio %></td>
-    <td><%= link_to 'Editar', edit_cartorio_path(cartorio) %></td>
-    <td><%= link_to 'Apagar', cartorio, :confirm => 'Tem certeza?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+</div>
 
-<br />
 
-<%= link_to 'Novo cartorio', new_cartorio_path %>
+
+
+<script type="text/javascript" src="/javascripts/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
+<script type="text/javascript">
+    dojo.require("dijit.layout.TabContainer");
+    dojo.require("dijit.layout.ContentPane");
+</script>
+
+
+

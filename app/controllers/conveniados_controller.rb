@@ -2,7 +2,8 @@ class ConveniadosController < ApplicationController
   # GET /conveniados
   # GET /conveniados.xml
   def index
-    @conveniados = Conveniado.all
+    @conveniados = Conveniado.all.paginate(:page => params[:page], :per_page => 5)
+    @conveniado = Conveniado.new
 
     respond_to do |format|
       format.html # index.html.erb

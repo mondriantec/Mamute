@@ -1,0 +1,27 @@
+<table>
+  <tr>
+    <th>Cidade</th>
+    <th>Oficio</th>
+    <th>Tabeliao</th>
+    <th>Endereco</th>
+    <th>Bairro</th>
+    <th>Fone</th>
+    <th>Fax</th>
+  </tr>
+
+<% @cartorios.each do |cartorio| %>
+  <tr>
+    <td><%=h cartorio.cidade_id %></td>
+    <td><%=h cartorio.oficio %></td>
+    <td><%=h cartorio.tabeliao %></td>
+    <td><%=h cartorio.endereco %></td>
+    <td><%=h cartorio.bairro %></td>
+    <td><%=h cartorio.fone %></td>
+    <td><%=h cartorio.fax %></td>
+    <td><%= link_to 'Visualizar', cartorio %></td>
+    <td><%= link_to 'Editar', edit_cartorio_path(cartorio) %></td>
+    <td><%= link_to 'Apagar', cartorio, :confirm => 'Tem certeza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<h4><%= will_paginate (@cartorios) %></h4>

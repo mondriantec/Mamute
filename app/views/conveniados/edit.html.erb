@@ -1,20 +1,6 @@
 <h1>Editar conveniado</h1>
 
-<% form_for(@conveniado) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :cnpj %><br />
-    <%= f.text_field :cnpj %>
-  </p>
-  <p>
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
-  </p>
-  <p>
-    <%= f.submit 'Salvar' %>
-  </p>
-<% end %>
+<%= render "form" %>
 
 <%= link_to 'Visualizar', @conveniado %> |
 <%= link_to 'Voltar', conveniados_path %>

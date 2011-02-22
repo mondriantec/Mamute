@@ -1,22 +1,21 @@
 <h1>Cadastro de conveniados</h1>
 
-<table>
-  <tr>
-    <th>Cnpj</th>
-    <th>Nome</th>
-  </tr>
+<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 350px;"
+tabStrip="true">
+    <div dojoType="dijit.layout.ContentPane" title="Pesquisar" selected="true">
+		<%= render 'lista' %>
+    </div>
+    <div dojoType="dijit.layout.ContentPane" title="Novo Conveniado" selected="true">
+		<%= render 'form' %>
+    </div>
 
-<% @conveniados.each do |conveniado| %>
-  <tr>
-    <td><%=h conveniado.cnpj %></td>
-    <td><%=h conveniado.nome %></td>
-    <td><%= link_to 'Visualizar', conveniado %></td>
-    <td><%= link_to 'Editar', edit_conveniado_path(conveniado) %></td>
-    <td><%= link_to 'Apagar', conveniado, :confirm => 'Tem certeza?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+</div>
 
-<br />
 
-<%= link_to 'Novo conveniado', new_conveniado_path %>
+
+
+<script type="text/javascript" src="/javascripts/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
+<script type="text/javascript">
+    dojo.require("dijit.layout.TabContainer");
+    dojo.require("dijit.layout.ContentPane");
+</script>

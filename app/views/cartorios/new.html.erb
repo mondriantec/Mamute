@@ -1,39 +1,5 @@
 <h1>Novo Cartório</h1>
 
-<% form_for(@cartorio) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :cidade_id %>
-    <%= f.text_field :cidade_id %>
-  </p>
-  <p>
-    <%= f.label :oficio %>
-    <%= f.text_field :oficio %>
-  </p>
-  <p>
-    <%= f.label :tabeliao %>
-    <%= f.text_field :tabeliao %>
-  </p>
-  <p>
-    <%= f.label :endereco %>
-    <%= f.text_field :endereco %>
-  </p>
-  <p>
-    <%= f.label :bairro %>
-    <%= f.text_field :bairro %>
-  </p>
-  <p>
-    <%= f.label :fone %>
-    <%= f.text_field :fone %>
-  </p>
-  <p>
-    <%= f.label :fax %>
-    <%= f.text_field :fax %>
-  </p>
-  <p>
-    <%= f.submit 'Salvar' %>
-  </p>
-<% end %>
+<%= render "form" %>
 
 <%= link_to 'Voltar', cartorios_path %>

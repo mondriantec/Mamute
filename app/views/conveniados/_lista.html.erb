@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th>Cnpj</th>
+    <th>Nome</th>
+  </tr>
+
+<% @conveniados.each do |conveniado| %>
+  <tr>
+    <td><%=h conveniado.cnpj %></td>
+    <td><%=h conveniado.nome %></td>
+    <td><%= link_to 'Visualizar', conveniado %></td>
+    <td><%= link_to 'Editar', edit_conveniado_path(conveniado) %></td>
+    <td><%= link_to 'Apagar', conveniado, :confirm => 'Tem certeza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<h4><%= will_paginate (@conveniados) %></h4>
