@@ -1,20 +1,32 @@
-<h1>Listing documentos</h1>
+<h1>Cadastro de documentos</h1>
 
-<table>
-  <tr>
-    <th>Tipo documento</th>
-  </tr>
+<br/>
+<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 300px;"
+tabStrip="true">
+    <div dojoType="dijit.layout.ContentPane" title="Pesquisar" selected="true">
+		<%= render 'lista', :documentos => @documentos %>
+    </div>
+    <div dojoType="dijit.layout.ContentPane" title="Digitalizar">
 
-<% @documentos.each do |documento| %>
-  <tr>
-    <td><%=h documento.tipo_documento_id %></td>
-    <td><%= link_to 'Show', documento %></td>
-    <td><%= link_to 'Edit', edit_documento_path(documento) %></td>
-    <td><%= link_to 'Destroy', documento, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+    </div>
+</div>
+
+
+
+
 
 <br />
 
-<%= link_to 'New documento', new_documento_path %>
+<%= link_to 'Novo Documento', new_documento_path %>
+
+
+<script type="text/javascript" src="/javascripts/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
+<script type="text/javascript">
+    dojo.require("dijit.layout.TabContainer");
+    dojo.require("dijit.layout.ContentPane");
+</script>
+
+
+
+
+

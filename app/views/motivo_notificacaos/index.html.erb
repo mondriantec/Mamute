@@ -1,4 +1,4 @@
-<h1>Listing motivo_notificacaos</h1>
+<h1>Cadastro de motivo_notificacaos</h1>
 
 <table>
   <tr>
@@ -10,13 +10,13 @@
   <tr>
     <td><%=h motivo_notificacao.motivo %></td>
     <td><%=h motivo_notificacao.descricao %></td>
-    <td><%= link_to 'Show', motivo_notificacao %></td>
-    <td><%= link_to 'Edit', edit_motivo_notificacao_path(motivo_notificacao) %></td>
-    <td><%= link_to 'Destroy', motivo_notificacao, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Visualizar', motivo_notificacao %></td>
+    <td><%= link_to 'Editar', edit_motivo_notificacao_path(motivo_notificacao) %></td>
+    <td><%= link_to 'Apagar', motivo_notificacao, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New motivo_notificacao', new_motivo_notificacao_path %>
+<%= link_to 'Novo motivo_notificacao', new_motivo_notificacao_path %>

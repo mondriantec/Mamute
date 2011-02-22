@@ -15,8 +15,8 @@
     <td><%=h campo_documento.ordem %></td>	
     <td><%=h campo_documento.limite %></td>
     <td><%=h campo_documento.descricao %></td>
-    <td><%= link_to 'Edit', edit_campo_documento_path(campo_documento) %></td>
-    <td><%= link_to 'Destroy', campo_documento, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Editar', edit_campo_documento_path(campo_documento) %></td>
+    <td><%= link_to 'Apagar', campo_documento, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

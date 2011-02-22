@@ -1,4 +1,4 @@
-<h1>Listing tipo_processos</h1>
+<h1>Cadastro de tipo_processos</h1>
 
 <table>
   <tr>
@@ -10,13 +10,13 @@
   <tr>
     <td><%=h tipo_processo.tipo %></td>
     <td><%=h tipo_processo.descricao %></td>
-    <td><%= link_to 'Show', tipo_processo %></td>
-    <td><%= link_to 'Edit', edit_tipo_processo_path(tipo_processo) %></td>
-    <td><%= link_to 'Destroy', tipo_processo, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Visualizar', tipo_processo %></td>
+    <td><%= link_to 'Editar', edit_tipo_processo_path(tipo_processo) %></td>
+    <td><%= link_to 'Apagar', tipo_processo, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New tipo_processo', new_tipo_processo_path %>
+<%= link_to 'Novo tipo_processo', new_tipo_processo_path %>

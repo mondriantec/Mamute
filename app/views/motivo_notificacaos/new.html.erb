@@ -1,4 +1,4 @@
-<h1>New motivo_notificacao</h1>
+<h1>Novo motivo_notificacao</h1>
 
 <% form_for(@motivo_notificacao) do |f| %>
   <%= f.error_messages %>
@@ -12,8 +12,8 @@
     <%= f.text_area :descricao %>
   </p>
   <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Salvar' %>
   </p>
 <% end %>
 
-<%= link_to 'Back', motivo_notificacaos_path %>
+<%= link_to 'Voltar', motivo_notificacaos_path %>

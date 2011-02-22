@@ -1,4 +1,4 @@
-<h1>Listing processos</h1>
+<h1>Cadastro de processos</h1>
 
 <table>
   <tr>
@@ -8,13 +8,13 @@
 <% @processos.each do |processo| %>
   <tr>
     <td><%=h processo.tipo_processo_id %></td>
-    <td><%= link_to 'Show', processo %></td>
-    <td><%= link_to 'Edit', edit_processo_path(processo) %></td>
-    <td><%= link_to 'Destroy', processo, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Visualizar', processo %></td>
+    <td><%= link_to 'Editar', edit_processo_path(processo) %></td>
+    <td><%= link_to 'Apagar', processo, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New processo', new_processo_path %>
+<%= link_to 'Novo processo', new_processo_path %>

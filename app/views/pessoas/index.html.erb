@@ -1,4 +1,4 @@
-<h1>Listing pessoas</h1>
+<h1>Cadastro de pessoas</h1>
 
 <table>
   <tr>
@@ -14,8 +14,8 @@
     <th>Cidade</th>
     <th>Cep</th>
     <th>Estado civil</th>
-    <th>Created by</th>
-    <th>Updated by</th>
+    <th>Salvard by</th>
+    <th>Salvard by</th>
   </tr>
 
 <% @pessoas.each do |pessoa| %>
@@ -34,13 +34,13 @@
     <td><%=h pessoa.estado_civil %></td>
     <td><%=h pessoa.created_by %></td>
     <td><%=h pessoa.updated_by %></td>
-    <td><%= link_to 'Show', pessoa %></td>
-    <td><%= link_to 'Edit', edit_pessoa_path(pessoa) %></td>
-    <td><%= link_to 'Destroy', pessoa, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Visualizar', pessoa %></td>
+    <td><%= link_to 'Editar', edit_pessoa_path(pessoa) %></td>
+    <td><%= link_to 'Apagar', pessoa, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New pessoa', new_pessoa_path %>
+<%= link_to 'Novo pessoa', new_pessoa_path %>

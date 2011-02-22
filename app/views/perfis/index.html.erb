@@ -1,4 +1,4 @@
-<h1>Listing perfis</h1>
+<h1>Cadastro de perfis</h1>
 
 <table>
   <tr>
@@ -8,13 +8,13 @@
 <% @perfis.each do |perfil| %>
   <tr>
     <td><%=h perfil.nome %></td>
-    <td><%= link_to 'Show', perfil %></td>
-    <td><%= link_to 'Edit', edit_perfil_path(perfil) %></td>
-    <td><%= link_to 'Destroy', perfil, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Visualizar', perfil %></td>
+    <td><%= link_to 'Editar', edit_perfil_path(perfil) %></td>
+    <td><%= link_to 'Apagar', perfil, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New perfil', new_perfil_path %>
+<%= link_to 'Novo perfil', new_perfil_path %>

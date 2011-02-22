@@ -1,4 +1,4 @@
-<h1>Editing mensagem</h1>
+<h1>Editar mensagem</h1>
 
 <% form_for(@mensagem) do |f| %>
   <%= f.error_messages %>
@@ -24,9 +24,9 @@
     <%= f.text_field :status %>
   </p>
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.submit 'Salvar' %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @mensagem %> |
-<%= link_to 'Back', mensagens_path %>
+<%= link_to 'Visualizar', @mensagem %> |
+<%= link_to 'Voltar', mensagens_path %>

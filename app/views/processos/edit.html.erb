@@ -1,4 +1,4 @@
-<h1>Editing processo</h1>
+<h1>Editar processo</h1>
 
 <% form_for(@processo) do |f| %>
   <%= f.error_messages %>
@@ -8,9 +8,9 @@
     <%= f.text_field :tipo_processo_id %>
   </p>
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.submit 'Salvar' %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @processo %> |
-<%= link_to 'Back', processos_path %>
+<%= link_to 'Visualizar', @processo %> |
+<%= link_to 'Voltar', processos_path %>

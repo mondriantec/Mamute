@@ -1,4 +1,4 @@
-<h1>New configuracao</h1>
+<h1>Novo configuracao</h1>
 
 <% form_for(@configuracao) do |f| %>
   <%= f.error_messages %>
@@ -16,8 +16,8 @@
     <%= f.text_area :descricao %>
   </p>
   <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Salvar' %>
   </p>
 <% end %>
 
-<%= link_to 'Back', configuracoes_path %>
+<%= link_to 'Voltar', configuracoes_path %>

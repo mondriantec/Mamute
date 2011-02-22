@@ -1,4 +1,4 @@
-<h1>Listing certidaos</h1>
+<h1>Cadastro de certidaos</h1>
 
 
 <br/>
@@ -15,9 +15,9 @@ tabStrip="true">
 		  <tr>
 		    <td><%=h certidao.documento_id %></td>
 		    <td><%=h certidao.numero %></td>
-		    <td><%= link_to 'Show', certidao %></td>
-		    <td><%= link_to 'Edit', edit_certidao_path(certidao) %></td>
-		    <td><%= link_to 'Destroy', certidao, :confirm => 'Are you sure?', :method => :delete %></td>
+		    <td><%= link_to 'Visualizar', certidao %></td>
+		    <td><%= link_to 'Editar', edit_certidao_path(certidao) %></td>
+		    <td><%= link_to 'Apagar', certidao, :confirm => 'Tem certeza?', :method => :delete %></td>
 		  </tr>
 		<% end %>
 		</table>
@@ -32,7 +32,7 @@ tabStrip="true">
 
 <br />
 
-<%= link_to 'New certidao', new_certidao_path %>
+<%= link_to 'Novo certidao', new_certidao_path %>
 
 
 <script type="text/javascript" src="/javascripts/dojo/dojo.js" djConfig="parseOnLoad: true"></script>

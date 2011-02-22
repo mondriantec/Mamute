@@ -1,4 +1,4 @@
-<h1>Listing valor_campo_processos</h1>
+<h1>Cadastro de valor_campo_processos</h1>
 
 <table>
   <tr>
@@ -12,13 +12,13 @@
     <td><%=h valor_campo_processo.processo_id %></td>
     <td><%=h valor_campo_processo.campo_processo_id %></td>
     <td><%=h valor_campo_processo.valor %></td>
-    <td><%= link_to 'Show', valor_campo_processo %></td>
-    <td><%= link_to 'Edit', edit_valor_campo_processo_path(valor_campo_processo) %></td>
-    <td><%= link_to 'Destroy', valor_campo_processo, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Visualizar', valor_campo_processo %></td>
+    <td><%= link_to 'Editar', edit_valor_campo_processo_path(valor_campo_processo) %></td>
+    <td><%= link_to 'Apagar', valor_campo_processo, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New valor_campo_processo', new_valor_campo_processo_path %>
+<%= link_to 'Novo valor_campo_processo', new_valor_campo_processo_path %>

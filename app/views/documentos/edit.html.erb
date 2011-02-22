@@ -1,4 +1,4 @@
-<h1>Editing documento</h1>
+<h1>Editar documento</h1>
 
 <% form_for(@documento) do |f| %>
   <%= f.error_messages %>
@@ -8,9 +8,9 @@
     <%= f.text_field :tipo_documento_id %>
   </p>
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.submit 'Salvar' %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @documento %> |
-<%= link_to 'Back', documentos_path %>
+<%= link_to 'Visualizar', @documento %> |
+<%= link_to 'Voltar', documentos_path %>

@@ -1,4 +1,4 @@
-<h1>Editing perfil</h1>
+<h1>Editar perfil</h1>
 
 <% form_for(@perfil) do |f| %>
   <%= f.error_messages %>
@@ -8,9 +8,9 @@
     <%= f.text_field :nome %>
   </p>
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.submit 'Salvar' %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @perfil %> |
-<%= link_to 'Back', perfis_path %>
+<%= link_to 'Visualizar', @perfil %> |
+<%= link_to 'Voltar', perfis_path %>

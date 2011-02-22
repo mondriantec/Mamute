@@ -1,4 +1,4 @@
-<h1>Listing cartorios</h1>
+<h1>Cadastro de cartorios</h1>
 
 <table>
   <tr>
@@ -20,13 +20,13 @@
     <td><%=h cartorio.bairro %></td>
     <td><%=h cartorio.fone %></td>
     <td><%=h cartorio.fax %></td>
-    <td><%= link_to 'Show', cartorio %></td>
-    <td><%= link_to 'Edit', edit_cartorio_path(cartorio) %></td>
-    <td><%= link_to 'Destroy', cartorio, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Visualizar', cartorio %></td>
+    <td><%= link_to 'Editar', edit_cartorio_path(cartorio) %></td>
+    <td><%= link_to 'Apagar', cartorio, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New cartorio', new_cartorio_path %>
+<%= link_to 'Novo cartorio', new_cartorio_path %>

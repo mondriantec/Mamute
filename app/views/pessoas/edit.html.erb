@@ -1,4 +1,4 @@
-<h1>Editing pessoa</h1>
+<h1>Editar pessoa</h1>
 
 <% form_for(@pessoa) do |f| %>
   <%= f.error_messages %>
@@ -60,9 +60,9 @@
     <%= f.text_field :updated_by %>
   </p>
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.submit 'Salvar' %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @pessoa %> |
-<%= link_to 'Back', pessoas_path %>
+<%= link_to 'Visualizar', @pessoa %> |
+<%= link_to 'Voltar', pessoas_path %>

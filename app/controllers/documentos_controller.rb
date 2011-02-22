@@ -1,8 +1,9 @@
+require 'will_paginate'
 class DocumentosController < ApplicationController
   # GET /documentos
   # GET /documentos.xml
   def index
-    @documentos = Documento.all
+    @documentos = Documento.all.paginate(:page => params[:page], :per_page => 5)
 
     respond_to do |format|
       format.html # index.html.erb

@@ -2,8 +2,9 @@ class NotificacoesController < ApplicationController
   # GET /notificacoes
   # GET /notificacoes.xml
   def index
-    @notificacoes = Notificacao.all
-
+    @notificacoes_pendentes = Notificacao.all
+    @notificacoes_enviadas = Notificacao.all
+    @notificacoes_devolvidas = Notificacao.all
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @notificacoes }

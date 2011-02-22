@@ -1,4 +1,4 @@
-<h1>Listing campo_processos</h1>
+<h1>Cadastro de campo_processos</h1>
 
 <table>
   <tr>
@@ -14,13 +14,13 @@
     <td><%=h campo_processo.tipo_processo_id %></td>
     <td><%=h campo_processo.nome %></td>
     <td><%=h campo_processo.tamanho %></td>
-    <td><%= link_to 'Show', campo_processo %></td>
-    <td><%= link_to 'Edit', edit_campo_processo_path(campo_processo) %></td>
-    <td><%= link_to 'Destroy', campo_processo, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Visualizar', campo_processo %></td>
+    <td><%= link_to 'Editar', edit_campo_processo_path(campo_processo) %></td>
+    <td><%= link_to 'Apagar', campo_processo, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New campo_processo', new_campo_processo_path %>
+<%= link_to 'Novo campo_processo', new_campo_processo_path %>

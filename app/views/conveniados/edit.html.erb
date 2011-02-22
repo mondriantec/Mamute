@@ -1,4 +1,4 @@
-<h1>Editing conveniado</h1>
+<h1>Editar conveniado</h1>
 
 <% form_for(@conveniado) do |f| %>
   <%= f.error_messages %>
@@ -12,9 +12,9 @@
     <%= f.text_field :nome %>
   </p>
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.submit 'Salvar' %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @conveniado %> |
-<%= link_to 'Back', conveniados_path %>
+<%= link_to 'Visualizar', @conveniado %> |
+<%= link_to 'Voltar', conveniados_path %>

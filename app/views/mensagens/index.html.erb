@@ -1,4 +1,4 @@
-<h1>Listing mensagens</h1>
+<h1>Cadastro de mensagens</h1>
 
 <table>
   <tr>
@@ -16,13 +16,13 @@
     <td><%=h mensagem.assunto %></td>
     <td><%=h mensagem.texto %></td>
     <td><%=h mensagem.status %></td>
-    <td><%= link_to 'Show', mensagem %></td>
-    <td><%= link_to 'Edit', edit_mensagem_path(mensagem) %></td>
-    <td><%= link_to 'Destroy', mensagem, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Visualizar', mensagem %></td>
+    <td><%= link_to 'Editar', edit_mensagem_path(mensagem) %></td>
+    <td><%= link_to 'Apagar', mensagem, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New mensagem', new_mensagem_path %>
+<%= link_to 'Novo mensagem', new_mensagem_path %>

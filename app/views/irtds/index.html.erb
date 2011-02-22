@@ -1,4 +1,4 @@
-<h1>Listing irtds</h1>
+<h1>Cadastro de irtds</h1>
 
 <table>
   <tr>
@@ -12,13 +12,13 @@
     <td><%=h irtd.uf %></td>
     <td><%=h irtd.nome %></td>
     <td><%=h irtd.presidente %></td>
-    <td><%= link_to 'Show', irtd %></td>
-    <td><%= link_to 'Edit', edit_irtd_path(irtd) %></td>
-    <td><%= link_to 'Destroy', irtd, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Visualizar', irtd %></td>
+    <td><%= link_to 'Editar', edit_irtd_path(irtd) %></td>
+    <td><%= link_to 'Apagar', irtd, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New irtd', new_irtd_path %>
+<%= link_to 'Novo irtd', new_irtd_path %>

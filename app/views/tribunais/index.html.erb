@@ -1,4 +1,4 @@
-<h1>Listing tribunais</h1>
+<h1>Cadastro de tribunais</h1>
 
 <table>
   <tr>
@@ -12,13 +12,13 @@
     <td><%=h tribunal.uf %></td>
     <td><%=h tribunal.nome %></td>
     <td><%=h tribunal.presidente %></td>
-    <td><%= link_to 'Show', tribunal %></td>
-    <td><%= link_to 'Edit', edit_tribunal_path(tribunal) %></td>
-    <td><%= link_to 'Destroy', tribunal, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Visualizar', tribunal %></td>
+    <td><%= link_to 'Editar', edit_tribunal_path(tribunal) %></td>
+    <td><%= link_to 'Apagar', tribunal, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New tribunal', new_tribunal_path %>
+<%= link_to 'Novo tribunal', new_tribunal_path %>

@@ -1,4 +1,4 @@
-<h1>Editing certidao</h1>
+<h1>Editar certidao</h1>
 
 <% form_for(@certidao) do |f| %>
   <%= f.error_messages %>
@@ -12,9 +12,9 @@
     <%= f.text_field :numero %>
   </p>
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.submit 'Salvar' %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @certidao %> |
-<%= link_to 'Back', certidaos_path %>
+<%= link_to 'Visualizar', @certidao %> |
+<%= link_to 'Voltar', certidaos_path %>
