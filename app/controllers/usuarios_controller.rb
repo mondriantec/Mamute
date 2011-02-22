@@ -12,7 +12,7 @@ class UsuariosController < ApplicationController
   end
   
   def edit
-    @usuario = Usuario.new
+    @usuario = Usuario.find(params[:id])
   end
 
   # render new.rhtml
