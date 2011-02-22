@@ -1,0 +1,38 @@
+<p>
+  <b>Cartorio:</b>
+  <%=h @noticacao.cartorio_id %>
+</p>
+
+<p>
+  <b>Notificado:</b>
+  <%=h @noticacao.notificado_id %>
+</p>
+
+<p>
+  <b>Motivo notificacao:</b>
+  <%=h @noticacao.motivo_notificacao_id %>
+</p>
+
+<p>
+  <b>Texto:</b>
+  <%=h @noticacao.texto %>
+</p>
+
+<p>
+  <b>Data envio usuario:</b>
+  <%=h @noticacao.data_envio_usuario %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @noticacao.status %>
+</p>
+
+<p>
+  <b>Motivo status:</b>
+  <%=h @noticacao.motivo_status %>
+</p>
+
+
+<%= link_to 'Edit', edit_noticacao_path(@noticacao) %> |
+<%= link_to 'Back', noticacaos_path %>

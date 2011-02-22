@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cartorio_id: 1
+  notificado_id: 1
+  motivo_notificacao_id: 1
+  texto: MyText
+  data_envio_usuario: 2011-02-22 10:24:37
+  status: 1
+  motivo_status: MyText
+
+two:
+  cartorio_id: 1
+  notificado_id: 1
+  motivo_notificacao_id: 1
+  texto: MyText
+  data_envio_usuario: 2011-02-22 10:24:37
+  status: 1
+  motivo_status: MyText

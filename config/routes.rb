@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :noticacaos
+
   map.resources :irtds
 
   map.resources :tribunais
