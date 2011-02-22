@@ -48,7 +48,7 @@
 		</p>
 
 		<% if logged_in? %>
-		<p class="f-right">Usuário: <strong><a href="#"><%= self.current_usuario.nome %></a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a href="/logout" id="logout">Sair</a></strong></p>
+		<p class="f-right">Usuário: <strong><%= link_to current_usuario.nome, edit_usuario_path(current_usuario) %></a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a href="/logout" id="logout">Sair</a></strong></p>
 		<% end %>
 	</div> <!--  /tray -->
 

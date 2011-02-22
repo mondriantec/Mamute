@@ -12,15 +12,24 @@
 
 <%# Irtd Nacional %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Irtd' and current_usuario.entidade.nacional %>
-         Menu IRTD Nacional
+        <%= mostra_menu('home', :Home)%>
+		<%= mostra_menu('irtds','Institutos') %>
+		<%= mostra_menu('conveniados','Conveniados') %>
+		<%= mostra_menu('tribunais','Tribunais') %>
+		<%= mostra_menu('usuarios','Usuários') %>
+		<%= mostra_menu('financeiro', 'Financeiro') %>						
 
 <%# Irtd Estadual %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Irtd' %>
-		Menu IRTD Estadual
+		<%= mostra_menu('home', :Home)%>
+		<%= mostra_menu('cartorios','Cartórios') %>
+		<%= mostra_menu('usuarios','Usuários') %>
+		<%= mostra_menu('financeiro', 'Financeiro') %>						
+
 		
 <%# Conveniado %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Conveniado' %>
-		Menu Conveniado
+		
 
 <%# TRibunal %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Tribunal' %>

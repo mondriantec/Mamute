@@ -10,6 +10,10 @@ class UsuariosController < ApplicationController
       @usuarios = current_usuario.entidade.usuarios
     end
   end
+  
+  def edit
+    @usuario = Usuario.new
+  end
 
   # render new.rhtml
   def new
