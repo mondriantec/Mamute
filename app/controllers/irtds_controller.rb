@@ -2,8 +2,8 @@ class IrtdsController < ApplicationController
   # GET /irtds
   # GET /irtds.xml
   def index
-    @irtds = Irtd.all
-
+    @irtds = Irtd.all.paginate(:page => params[:page], :per_page => 5)
+    @irtd = Irtd.new
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @irtds }

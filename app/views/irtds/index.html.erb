@@ -1,24 +1,21 @@
 <h1>Cadastro de irtds</h1>
 
-<table>
-  <tr>
-    <th>Uf</th>
-    <th>Nome</th>
-    <th>Presidente</th>
-  </tr>
+<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 350px;"
+tabStrip="true">
+    <div dojoType="dijit.layout.ContentPane" title="Pesquisar" selected="true">
+		<%= render 'lista' %>
+    </div>
+    <div dojoType="dijit.layout.ContentPane" title="Novo Instituto" selected="true">
+		<%= render 'form' %>
+    </div>
 
-<% @irtds.each do |irtd| %>
-  <tr>
-    <td><%=h irtd.uf %></td>
-    <td><%=h irtd.nome %></td>
-    <td><%=h irtd.presidente %></td>
-    <td><%= link_to 'Visualizar', irtd %></td>
-    <td><%= link_to 'Editar', edit_irtd_path(irtd) %></td>
-    <td><%= link_to 'Apagar', irtd, :confirm => 'Tem certeza?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+</div>
 
-<br />
 
-<%= link_to 'Novo irtd', new_irtd_path %>
+
+
+<script type="text/javascript" src="/javascripts/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
+<script type="text/javascript">
+    dojo.require("dijit.layout.TabContainer");
+    dojo.require("dijit.layout.ContentPane");
+</script>

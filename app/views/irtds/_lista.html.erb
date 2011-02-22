@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <th>Uf</th>
+    <th>Nome</th>
+    <th>Presidente</th>
+  </tr>
+
+<% @irtds.each do |irtd| %>
+  <tr>
+    <td><%=h irtd.uf %></td>
+    <td><%=h irtd.nome %></td>
+    <td><%=h irtd.presidente %></td>
+    <td><%= link_to 'Visualizar', irtd %></td>
+    <td><%= link_to 'Editar', edit_irtd_path(irtd) %></td>
+    <td><%= link_to 'Apagar', irtd, :confirm => 'Tem certeza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<h4><%= will_paginate (@irtds) %></h4>

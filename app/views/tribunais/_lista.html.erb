@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <th>Uf</th>
+    <th>Nome</th>
+    <th>Presidente</th>
+  </tr>
+
+<% @tribunais.each do |tribunal| %>
+  <tr>
+    <td><%=h tribunal.uf %></td>
+    <td><%=h tribunal.nome %></td>
+    <td><%=h tribunal.presidente %></td>
+    <td><%= link_to 'Visualizar', tribunal %></td>
+    <td><%= link_to 'Editar', edit_tribunal_path(tribunal) %></td>
+    <td><%= link_to 'Apagar', tribunal, :confirm => 'Tem certeza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<h4><%= will_paginate (@tribunais) %></h4>
