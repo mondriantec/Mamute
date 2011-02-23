@@ -1,4 +1,10 @@
-class DocumentosController < ApplicationController
+class DocumentosController < ApplicationController      
+  
+  def get_campos            
+     @campos = CampoDocumento.find(:all, :order => "ordem", :conditions => ["tipo_documento_id=?",params[:id]])
+     render :layout => false
+  end
+  
   # GET /documentos
   # GET /documentos.xml
   def index

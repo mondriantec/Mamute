@@ -5,13 +5,19 @@
 <% form_for(@documento) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :tipo_documento_id %><br />
-    <%= f.text_field :tipo_documento_id %>
-  </p>
-  <p>
+  <label><b>Tipo</b>
+    <%= f.select :tipo_documento_id,TipoDocumento.find(:all, :order => "tipo").collect{|t| [t.tipo, t.id]}, :include_blank => true %>
+  </label>                   
+
+  <span id="documento_campos"></span>
+
+  <p class="form_bar">
     <%= f.submit 'Salvar' %>
   </p>
 <% end %>
 </div>
 
+<%= observe_field :documento_tipo_documento_id, 
+	:update => 'documento_campos',
+	:url => {:action => 'get_campos'} ,
+	:with => "id" %>
