@@ -2,12 +2,12 @@
 <% for c in @campos %>
 	<label><b><%= c.nome %></b>
 	<% case c.tipo_campo when "TEXTO" %>
-			<%= text_field_tag "metadados[#{c.nome}]" %>
+			<%= text_field_tag "metadados[#{c.id}]" %>
 		<% when "DATA" %>
-		    <%= text_field_tag "metadados[#{c.nome}]" %>
+		    <%= text_field_tag "metadados[#{c.id}]" %>
 		<% when "NUMERO" %>
-		    <%= text_field_tag "metadados[#{c.nome}]" %>
+		    <%= text_field_tag "metadados[#{c.id}]" %>
 		<% when "TEXTO_LONGO" %>
-		    <%= text_area_tag "metadados[#{c.nome}]" %>
+		    <%= text_area_tag "metadados[#{c.id}]" %>
 	<% end %>
 <% end %>
