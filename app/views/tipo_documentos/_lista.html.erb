@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <th>Tipo</th>
+    <th>Descricao</th>
+  </tr>
+
+<% @tipo_documentos.each do |tipo_documento| %>
+  <tr>
+    <td><%=h tipo_documento.tipo %></td>
+    <td><%=h tipo_documento.descricao %></td>
+    <td><%= link_to 'Visualizar', tipo_documento %></td>
+    <td><%= link_to 'Editar', edit_tipo_documento_path(tipo_documento) %></td>
+    <td><%= link_to 'Apagar', tipo_documento, :confirm => 'Tem certeza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
