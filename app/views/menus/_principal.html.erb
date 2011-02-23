@@ -28,11 +28,17 @@
 
 <%# Conveniado %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Conveniado' %>
-		
+		<%= mostra_menu('home', :Home)%>
+		<%= mostra_menu('notificacoes','Notificações') %>
+		<%= mostra_menu('usuarios','Usuários') %>
+		<%= mostra_menu('financeiro', 'Financeiro') %>		
 
 <%# TRibunal %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Tribunal' %>
-		Menu Tribunal
+		<%= mostra_menu('home', :Home)%>
+		<%= mostra_menu('#','Selos') %>
+		<%= mostra_menu('usuarios','Usuários') %>
+		<%= mostra_menu('financeiro', 'Financeiro') %>
 
 <%# Cartório %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Cartorio' %>
@@ -45,6 +51,10 @@
 
 <%# Usuario Normal %>
 <% elsif logged_in? %>
-		Menu Usuario
+		<%= mostra_menu('home', :Home)%>
+		<%= mostra_menu('documentos','Documentos') %>
+		<%= mostra_menu('notificacoes','Notificações') %>
+		<%= mostra_menu('certidaos','Certidões') %>
+		<%= mostra_menu('financeiro', 'Financeiro') %>
 <% end %>
 </ul>

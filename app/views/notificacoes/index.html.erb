@@ -1,7 +1,7 @@
 <h1>Cadastro de notificacoes</h1>
 
 <br/>
-<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 300px;"
+<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 450px;"
 tabStrip="true">
     <div dojoType="dijit.layout.ContentPane" title="Pendentes" selected="true">
 		<%= render 'lista', :notificacoes => @notificacoes_pendentes %>
@@ -12,6 +12,12 @@ tabStrip="true">
     <div dojoType="dijit.layout.ContentPane" title="Devolvidas">
         <%= render 'lista', :notificacoes => @notificacoes_devolvidas %>
     </div>
+	
+	<% if current_usuario.entidade and current_usuario.entidade_type == 'Conveniado' %>
+	<div dojoType="dijit.layout.ContentPane" title="Nova Notificação">
+        <%= render 'form' %>
+    </div>
+	<% end %>
 </div>
 
 <br />

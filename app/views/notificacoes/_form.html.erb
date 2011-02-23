@@ -5,35 +5,28 @@
 <% form_for(@notificacao) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :cartorio_id %><br />
+  <label>
+	<b>cartorio_id</b>
     <%= f.text_field :cartorio_id %>
-  </p>
-  <p>
-    <%= f.label :notificado_id %><br />
+  </label>
+  <label>
+	<b>notificado_id</b>
     <%= f.text_field :notificado_id %>
-  </p>
-  <p>
-    <%= f.label :motivo_notificacao_id %><br />
+  </label>
+  <label>
+
+	<b>motivo_notificacao_id</b>
     <%= f.text_field :motivo_notificacao_id %>
-  </p>
-  <p>
-    <%= f.label :texto %><br />
+  </label>
+  <label>
+
+	<b>texto</b>
     <%= f.text_area :texto %>
-  </p>
-  <p>
-    <%= f.label :data_envio_usuario %><br />
-    <%= f.datetime_select :data_envio_usuario %>
-  </p>
-  <p>
-    <%= f.label :status %><br />
-    <%= f.text_field :status %>
-  </p>
-  <p>
-    <%= f.label :motivo_status %><br />
-    <%= f.text_area :motivo_status %>
-  </p>
-  <p>
+  </label>
+
+
+
+  <p class="form_bar">
     <%= f.submit 'Salvar' %>
   </p>
 <% end %>
