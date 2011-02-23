@@ -1,40 +1,6 @@
 <h1>Editar cartorio</h1>
 
-<% form_for(@cartorio) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :cidade_id %><br />
-    <%= f.text_field :cidade_id %>
-  </p>
-  <p>
-    <%= f.label :oficio %><br />
-    <%= f.text_field :oficio %>
-  </p>
-  <p>
-    <%= f.label :tabeliao %><br />
-    <%= f.text_field :tabeliao %>
-  </p>
-  <p>
-    <%= f.label :endereco %><br />
-    <%= f.text_field :endereco %>
-  </p>
-  <p>
-    <%= f.label :bairro %><br />
-    <%= f.text_field :bairro %>
-  </p>
-  <p>
-    <%= f.label :fone %><br />
-    <%= f.text_field :fone %>
-  </p>
-  <p>
-    <%= f.label :fax %><br />
-    <%= f.text_field :fax %>
-  </p>
-  <p>
-    <%= f.submit 'Salvar' %>
-  </p>
-<% end %>
+<%= render 'form' %>
 
 <%= link_to 'Visualizar', @cartorio %> |
 <%= link_to 'Voltar', cartorios_path %>
