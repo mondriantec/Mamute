@@ -5,20 +5,20 @@
 
 <% form_for (@usuario) do |f| -%>
 <%= error_messages_for :usuario %>
-<p><%= f.label :login %><br/>
+<label><b>Login</b>
 <%= f.text_field :login %>
-</p>
+</label>
 
-<p><%= f.label :email %><br/>
-<%= f.text_field :email %></p>
+<label><b>E-mail</b>
+<%= f.text_field :email %></label>
 
-<p><%= f.label :password %><br/>
-<%= f.password_field :password %></p>
+<label><b>Senha</b>
+<%= f.password_field :password %></label>
 
-<p><%= f.label :password_confirmation, 'Confirm Password' %><br/>
-<%= f.password_field :password_confirmation %></p>
+<label><b>Confirmar Senha</b>
+<%= f.password_field :password_confirmation %></label>
 
-<p><%= submit_tag 'Salvar' %></p>
+<p class="form_bar"><%= submit_tag 'Salvar' %></p>
 <% end -%>
 </div>
 
