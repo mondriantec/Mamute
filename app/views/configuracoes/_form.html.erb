@@ -5,19 +5,19 @@
 <% form_for(@configuracao) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :chave %><br />
+  <label>
+    <b>chave </b>
     <%= f.text_field :chave %>
-  </p>
-  <p>
-    <%= f.label :valor %><br />
+  </label>
+  <label>
+    <b>valor </b>
     <%= f.text_field :valor %>
-  </p>
-  <p>
-    <%= f.label :descricao %><br />
+  </label>
+  <label>
+    <b>descricao </b>
     <%= f.text_area :descricao %>
-  </p>
-  <p>
+  </label>
+  <p class="form_bar">
     <%= f.submit 'Salvar' %>
   </p>
 <% end %>

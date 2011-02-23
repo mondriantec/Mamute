@@ -5,15 +5,15 @@
 <% form_for(@certidao) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :documento_id %><br />
+  <label>
+    <b>documento_id </b>
     <%= f.text_field :documento_id %>
-  </p>
-  <p>
-    <%= f.label :numero %><br />
+  </label>
+  <label>
+    <b>numero </b>
     <%= f.text_field :numero %>
-  </p>
-  <p>
+  </label>
+  <p class="form_bar">
     <%= f.submit 'Salvar' %>
   </p>
 <% end %>

@@ -5,15 +5,15 @@
 <% form_for(@cidade) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :nome %><br />
+  <label>
+    <b>nome </b>
     <%= f.text_field :nome %>
-  </p>
-  <p>
-    <%= f.label :uf %><br />
+  </label>
+  <label>
+    <b>uf </b>
     <%= f.text_field :uf %>
-  </p>
-  <p>
+  </label>
+  <p class="form_bar">
     <%= f.submit 'Salvar' %>
   </p>
 <% end %>
