@@ -8,7 +8,7 @@
 		<%= mostra_menu('conveniados','Conveniados') %>
 		<%= mostra_menu('tribunais','Tribunais') %>
 		<%= mostra_menu('irtds','Institutos') %>
-		<%= mostra_menu('administracao', 'Administração') %>
+		<%= mostra_menu('administracao', 'Cadastros') %>
 
 <%# Irtd Nacional %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Irtd' and current_usuario.entidade.nacional %>
@@ -26,7 +26,6 @@
 		<%= mostra_menu('usuarios','Usuários') %>
 		<%= mostra_menu('financeiro', 'Financeiro') %>						
 
-		
 <%# Conveniado %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Conveniado' %>
 		

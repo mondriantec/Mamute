@@ -5,19 +5,19 @@
 <% form_for(@irtd) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :uf %><br />
+  <label>
+    <b>uf</b>
     <%= f.text_field :uf %>
-  </p>
-  <p>
-    <%= f.label :nome %><br />
+  </label>
+  <label>
+    <b>nome</b>
     <%= f.text_field :nome %>
-  </p>
-  <p>
-    <%= f.label :presidente %><br />
+  </label>
+  <label>
+    <b>presidente</b>
     <%= f.text_field :presidente %>
-  </p>
-  <p>
+  </label>
+  <p class="form_bar">
     <%= f.submit 'Salvar' %>
   </p>
 <% end %>
