@@ -1,0 +1,21 @@
+<table>
+  <tr>
+    <th>Tribunal</th>
+    <th>Selo prefixo</th>
+    <th>Selo incial</th>
+    <th>Selo final</th>
+  </tr>
+
+<% lotes.each do |lote| %>
+  <tr>
+    <td><%=h lote.tribunal_id %></td>
+    <td><%=h lote.selo_prefixo %></td>
+    <td><%=h lote.selo_incial %></td>
+    <td><%=h lote.selo_final %></td>
+    <td><%= link_to 'Show', lote %></td>
+    <td><%= link_to 'Edit', edit_lote_path(lote) %></td>
+    <td><%= link_to 'Destroy', lote, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>              
+<h4><%= will_paginate (lotes) %></h4>  

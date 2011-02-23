@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tribunal_id: 1
+  selo_prefixo: MyString
+  selo_incial: 1
+  selo_final: 1
+
+two:
+  tribunal_id: 1
+  selo_prefixo: MyString
+  selo_incial: 1
+  selo_final: 1

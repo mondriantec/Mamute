@@ -1,0 +1,28 @@
+<div class="normal_form">
+  <div class="form_titulo">
+    &nbsp;
+  </div>
+<% form_for(@lote) do |f| %>
+  <%= f.error_messages %>
+
+  <label>
+    <b>tribunal_id </b>
+    <%= f.text_field :tribunal_id %>
+  </label>
+  <label>
+    <b>selo_prefixo </b>
+    <%= f.text_field :selo_prefixo %>
+  </label>
+  <label>
+    <b>selo_incial </b>
+    <%= f.text_field :selo_incial %>
+  </label>
+  <label>
+    <b>selo_final </b>
+    <%= f.text_field :selo_final %>
+  </label>
+  <p class="form_bar">
+    <%= f.submit 'Salvar' %>
+  </p>
+<% end %>            
+</div>

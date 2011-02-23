@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :lotes
+
   map.resources :notificacoes
 
   map.resources :irtds

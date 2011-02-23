@@ -1,0 +1,35 @@
+<h1>Cadastro de lotes de selos</h1>
+
+
+
+<br/>
+<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 450px;"
+tabStrip="true"> 
+	<div dojoType="dijit.layout.ContentPane" title="Localizar Selo" selected="true">
+		--
+	</div>
+
+    <div dojoType="dijit.layout.ContentPane" title="Não Utilizados" selected="true">
+		<%= render 'lista', :lotes => @lotes_nao_utilizados %>
+    </div>
+    <div dojoType="dijit.layout.ContentPane" title="Em Uso">
+        <%= render 'lista', :lotes => @lotes_em_uso %> 
+    </div>
+    <div dojoType="dijit.layout.ContentPane" title="Finalizados">
+        <%= render 'lista', :lotes => @lotes_finalizados %> 
+    </div>
+	
+	<div dojoType="dijit.layout.ContentPane" title="Novo Lote">
+        <%= render 'form' %>
+    </div>
+
+</div>
+
+<br />
+
+
+<script type="text/javascript" src="/javascripts/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
+<script type="text/javascript">
+    dojo.require("dijit.layout.TabContainer");
+    dojo.require("dijit.layout.ContentPane");
+</script>
