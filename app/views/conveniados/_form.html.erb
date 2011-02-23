@@ -5,15 +5,15 @@
 <% form_for(@conveniado) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :cnpj %><br />
+  <label>
+    <b>cnpj </b>
     <%= f.text_field :cnpj %>
-  </p>
-  <p>
-    <%= f.label :nome %><br />
+  </label>
+  <label>
+    <b>nome </b>
     <%= f.text_field :nome %>
   </p>
-  <p>
+  <p class="form_bar">
     <%= f.submit 'Salvar' %>
   </p>
 <% end %>
