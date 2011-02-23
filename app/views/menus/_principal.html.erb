@@ -36,7 +36,7 @@
 <%# TRibunal %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Tribunal' %>
 		<%= mostra_menu('home', :Home)%>
-		<%= mostra_menu('#','Selos') %>
+		<%= mostra_menu('lotes','Selos') %>
 		<%= mostra_menu('usuarios','Usuários') %>
 		<%= mostra_menu('financeiro', 'Financeiro') %>
 
