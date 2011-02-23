@@ -1,4 +1,7 @@
-<div class=" normal_form">
+<div class="normal_form">
+  <div class="form_titulo">
+    &nbsp;
+  </div>
 <% form_for(@categoria) do |f| %>
   <%= f.error_messages %>
 
@@ -9,9 +12,9 @@
         <%= @categoria.categoria.nome %>
       <% else %>
         <%= f.select :parent_id, @categorias, :include_blank => true %>
-      <% end %>  
-  </label>  
-    
+      <% end %>
+  </label>
+
   <label>
     <b>nome </b>
     <%= f.text_field :nome %>
@@ -29,3 +32,4 @@
   </p>
 <% end %>
 </div>
+

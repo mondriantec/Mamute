@@ -1,35 +1,47 @@
+
+
+<div class="normal_form">
+
+  <div class="form_titulo">
+    &nbsp;
+  </div>
+
 <% form_for(@cartorio) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :cidade_id %>
+
+
+  <label>
+    <b>cidade_id </b>
     <%= f.text_field :cidade_id %>
-  </p>
-  <p>
-    <%= f.label :oficio %>
+  </label>
+  <label>
+    <b>oficio </b>
     <%= f.text_field :oficio %>
-  </p>
-  <p>
-    <%= f.label :tabeliao %>
+  </label>
+  <label>
+    <b>tabeliao </b>
     <%= f.text_field :tabeliao %>
-  </p>
-  <p>
-    <%= f.label :endereco %>
+  </label>
+  <label>
+    <b>endereco </b>
     <%= f.text_field :endereco %>
-  </p>
-  <p>
-    <%= f.label :bairro %>
+  </label>
+  <label>
+    <b>bairro </b>
     <%= f.text_field :bairro %>
-  </p>
-  <p>
-    <%= f.label :fone %>
+  </label>
+  <label>
+    <b>fone </b>
     <%= f.text_field :fone %>
-  </p>
-  <p>
-    <%= f.label :fax %>
+  </label>
+  <label>
+    <b>fax </b>
     <%= f.text_field :fax %>
-  </p>
-  <p>
+  </label>
+  <p class="form_bar">
     <%= f.submit 'Salvar' %>
   </p>
 <% end %>
+</div>
+

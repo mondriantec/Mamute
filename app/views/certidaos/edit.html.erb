@@ -1,20 +1,8 @@
 <h1>Editar certidao</h1>
 
-<% form_for(@certidao) do |f| %>
-  <%= f.error_messages %>
 
-  <p>
-    <%= f.label :documento_id %><br />
-    <%= f.text_field :documento_id %>
-  </p>
-  <p>
-    <%= f.label :numero %><br />
-    <%= f.text_field :numero %>
-  </p>
-  <p>
-    <%= f.submit 'Salvar' %>
-  </p>
-<% end %>
+<%= render "form" %>
 
 <%= link_to 'Visualizar', @certidao %> |
 <%= link_to 'Voltar', certidaos_path %>
+

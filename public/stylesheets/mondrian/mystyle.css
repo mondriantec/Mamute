@@ -69,3 +69,6 @@ input {
 #arvore ul {
 	padding-left: 20px;
 }
+
+.form_titulo {border:1px solid #0074B3; background-color:#0085cc; color:#fff; padding: 5px; font-weight: bold}
+

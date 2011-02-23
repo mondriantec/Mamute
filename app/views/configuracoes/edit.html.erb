@@ -1,24 +1,7 @@
 <h1>Editar configuracao</h1>
 
-<% form_for(@configuracao) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :chave %><br />
-    <%= f.text_field :chave %>
-  </p>
-  <p>
-    <%= f.label :valor %><br />
-    <%= f.text_field :valor %>
-  </p>
-  <p>
-    <%= f.label :descricao %><br />
-    <%= f.text_area :descricao %>
-  </p>
-  <p>
-    <%= f.submit 'Salvar' %>
-  </p>
-<% end %>
+<%= render "form" %>
 
 <%= link_to 'Visualizar', @configuracao %> |
 <%= link_to 'Voltar', configuracoes_path %>
+

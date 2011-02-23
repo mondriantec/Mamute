@@ -2,16 +2,16 @@
   <div class="form_titulo">
     &nbsp;
   </div>
-<% form_for(@conveniado) do |f| %>
+<% form_for(@certidao) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :cnpj %><br />
-    <%= f.text_field :cnpj %>
+    <%= f.label :documento_id %><br />
+    <%= f.text_field :documento_id %>
   </p>
   <p>
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
+    <%= f.label :numero %><br />
+    <%= f.text_field :numero %>
   </p>
   <p>
     <%= f.submit 'Salvar' %>

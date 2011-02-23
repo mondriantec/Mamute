@@ -1,0 +1,41 @@
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Cpf</th>
+    <th>Rg</th>
+    <th>Orgao emissor rg</th>
+    <th>Uf emissor rg</th>
+    <th>Cnh</th>
+    <th>Nome mae</th>
+    <th>Endereco</th>
+    <th>Bairro</th>
+    <th>Cidade</th>
+    <th>Cep</th>
+    <th>Estado civil</th>
+    <th>Salvard by</th>
+    <th>Salvard by</th>
+  </tr>
+
+<% @pessoas.each do |pessoa| %>
+  <tr>
+    <td><%=h pessoa.nome %></td>
+    <td><%=h pessoa.cpf %></td>
+    <td><%=h pessoa.rg %></td>
+    <td><%=h pessoa.orgao_emissor_rg %></td>
+    <td><%=h pessoa.uf_emissor_rg %></td>
+    <td><%=h pessoa.cnh %></td>
+    <td><%=h pessoa.nome_mae %></td>
+    <td><%=h pessoa.endereco %></td>
+    <td><%=h pessoa.bairro %></td>
+    <td><%=h pessoa.cidade_id %></td>
+    <td><%=h pessoa.cep %></td>
+    <td><%=h pessoa.estado_civil %></td>
+    <td><%=h pessoa.created_by %></td>
+    <td><%=h pessoa.updated_by %></td>
+    <td><%= link_to 'Visualizar', pessoa %></td>
+    <td><%= link_to 'Editar', edit_pessoa_path(pessoa) %></td>
+    <td><%= link_to 'Apagar', pessoa, :confirm => 'Tem certeza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+

@@ -1,19 +1,23 @@
+<div class="normal_form">
+  <div class="form_titulo">
+    &nbsp;
+  </div>
 <% form_for(@tribunal) do |f| %>
+
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :uf %><br />
+  <label><b>Uf</b>
     <%= f.text_field :uf %>
-  </p>
-  <p>
-    <%= f.label :nome %><br />
+  </label>
+  <label><b>Nome</b>
     <%= f.text_field :nome %>
-  </p>
-  <p>
-    <%= f.label :presidente %><br />
+  </label>
+  <label><b>Presidente</b>
     <%= f.text_field :presidente %>
-  </p>
-  <p>
+  </label>
+  <p class="form_bar">
     <%= f.submit 'Salvar' %>
   </p>
 <% end %>
+</div>
+

@@ -2,24 +2,21 @@
   <div class="form_titulo">
     &nbsp;
   </div>
-<% form_for(@irtd) do |f| %>
+<% form_for(@cidade) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :uf %><br />
-    <%= f.text_field :uf %>
-  </p>
   <p>
     <%= f.label :nome %><br />
     <%= f.text_field :nome %>
   </p>
   <p>
-    <%= f.label :presidente %><br />
-    <%= f.text_field :presidente %>
+    <%= f.label :uf %><br />
+    <%= f.text_field :uf %>
   </p>
   <p>
     <%= f.submit 'Salvar' %>
   </p>
 <% end %>
+</div>
 </div>
 
