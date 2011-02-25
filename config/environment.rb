@@ -4,7 +4,7 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
 
-  config.gem "sqlite3-ruby", :lib => "sqlite3"
+  config.gem "pg"
   #config.gem "brazilian-rails", :version => '2.1.15'
   config.time_zone = 'UTC'
   config.gem "will_paginate", :require => 'will_paginate'

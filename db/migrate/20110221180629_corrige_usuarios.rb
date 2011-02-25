@@ -5,7 +5,7 @@ class CorrigeUsuarios < ActiveRecord::Migration
     add_column :usuarios, :admin, :boolean
     u = Usuario.find_by_login('admin')
     u.admin = true
-    u.save
+    u.save!
   end
 
   def self.down

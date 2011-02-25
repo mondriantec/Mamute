@@ -1,5 +1,36 @@
 # Methods added to this helper will be available to all templates in the application.
-module ApplicationHelper      
+module ApplicationHelper  
+
+  def lista_estados
+ [
+      ["AC","AC"],
+      ["AL","AL"],
+      ["AP","AP"],
+      ["AM","AM"],
+      ["BA","BA"],
+      ["CE","CE"],
+      ["DF","DF"],
+      ["ES","ES"],
+      ["GO","GO"],
+      ["MA","MA"],
+      ["MT","MT"],
+      ["MS","MS"],
+      ["MG","MG"],
+      ["PA","PA"],
+      ["PB","PB"],
+      ["PR","PR"],
+      ["PE","PE"],
+      ["PI","PI"],
+      ["RJ","RJ"],
+      ["RN","RN"],
+      ["RS","RS"],
+      ["RO","RO"],
+      ["RR","RR"],
+      ["SC","SC"],
+      ["SP","SP"],
+      ["SE","SE"],
+      ["TO","TO"],]
+  end    
   
   def usuario_cartorio?
     current_usuario.entidade and current_usuario.entidade_type == 'Cartorio'

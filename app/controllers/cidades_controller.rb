@@ -10,8 +10,10 @@ class CidadesController < ApplicationController
   # GET /cidades
   # GET /cidades.xml
   def index
-    @cidades = Cidade.all
-
+    @cidades  = []
+    if params[:uf]
+       @cidades = Cidade.find(:all,:conditions=>['uf=?',params[:uf]], :order=> "uf").paginate(:page => params[:page], :per_page => 20)
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @cidades }
