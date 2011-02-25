@@ -1,7 +1,7 @@
 class CorrigeUsuarios < ActiveRecord::Migration
   def self.up
-    remove_column :usuarios, :organizao_id
-    remove_column :usuarios, :organizao_type
+    remove_column :usuarios, :organizacao_id
+    remove_column :usuarios, :organizacao_type
     add_column :usuarios, :admin, :boolean
     u = Usuario.find_by_login('admin')
     u.admin = true
