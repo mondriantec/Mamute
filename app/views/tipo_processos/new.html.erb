@@ -1,19 +1,5 @@
 <h1>Novo tipo_processo</h1>
 
-<% form_for(@tipo_processo) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :tipo %><br />
-    <%= f.text_field :tipo %>
-  </p>
-  <p>
-    <%= f.label :descricao %><br />
-    <%= f.text_area :descricao %>
-  </p>
-  <p>
-    <%= f.submit 'Salvar' %>
-  </p>
-<% end %>
+<%= render 'form'%>
 
 <%= link_to 'Voltar', tipo_processos_path %>

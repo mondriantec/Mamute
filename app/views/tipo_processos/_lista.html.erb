@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <th>Tipo</th>
+    <th>Descricao</th>
+  </tr>
+
+<% @tipo_processos.each do |tipo_processo| %>
+  <tr>
+    <td><%=h tipo_processo.tipo %></td>
+    <td><%=h tipo_processo.descricao %></td>
+    <td><%= link_to 'Visualizar', tipo_processo %></td>
+    <td><%= link_to 'Editar', edit_tipo_processo_path(tipo_processo) %></td>
+    <td><%= link_to 'Apagar', tipo_processo, :confirm => 'Tem certeza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
