@@ -29,6 +29,7 @@
 <%# Conveniado %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Conveniado' %>
 		<%= mostra_menu('home', :Home)%>
+		<%= mostra_menu('documentos','Documentos') %>
 		<%= mostra_menu('notificacoes','Notificações') %>
 		<%= mostra_menu('usuarios','Usuários') %>
 		<%= mostra_menu('financeiro', 'Financeiro') %>		
