@@ -42,6 +42,7 @@ class ConveniadosController < ApplicationController
   # POST /conveniados.xml
   def create
     @conveniado = Conveniado.new(params[:conveniado])
+    
 
     respond_to do |format|
       if @conveniado.save

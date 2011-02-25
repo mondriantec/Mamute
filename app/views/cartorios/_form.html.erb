@@ -11,7 +11,7 @@
 
   <label>
     <b>cidade_id </b>
-    <%= f.select :cidade_id, Cidade.find(:all, :conditions => ["uf = ?",current_usuario.entidade.uf).collect{|c|[c.nome, c.id]} %>
+    <%= f.select :cidade_id, Cidade.find(:all, :conditions => ["uf = ?",current_usuario.entidade.uf]).collect{|c|[c.nome, c.id]} %>
   </label>
   <label>
     <b>oficio </b>
