@@ -2,14 +2,18 @@
 
 
 <br/>
-<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 300px;"
-tabStrip="true">
-    <div dojoType="dijit.layout.ContentPane" title="Pendentes" selected="true">
-		<%= render 'lista', :certidoes => @certidoes_pendentes %>
-    </div>
-    <div dojoType="dijit.layout.ContentPane" title="Emitidas">
+<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 300px;"    tabStrip="true">
+
+    <div dojoType="dijit.layout.ContentPane" title="Certidões">
         <%= render 'lista', :certidoes => @certidoes_emitidas %>
     </div>
+                                               
+    <% if usuario_final? %>
+    <div dojoType="dijit.layout.ContentPane" title="Solicitar Certidão">
+        <%= render 'lista', :certidoes => @certidoes_emitidas %>
+    </div>               
+	<% end %>
+
 
 </div>
 

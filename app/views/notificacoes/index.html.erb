@@ -1,22 +1,27 @@
 <h1>Cadastro de notificacoes</h1>
 
 <br/>
-<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 450px;"
-tabStrip="true">
-    <div dojoType="dijit.layout.ContentPane" title="Pendentes" selected="true">
-		<%= render 'lista', :notificacoes => @notificacoes_pendentes %>
-    </div>
-    <div dojoType="dijit.layout.ContentPane" title="Enviadas">
-        <%= render 'lista', :notificacoes => @notificacoes_enviadas %>
-    </div>
-    <div dojoType="dijit.layout.ContentPane" title="Devolvidas">
-        <%= render 'lista', :notificacoes => @notificacoes_devolvidas %>
-    </div>
-	
-	<% if current_usuario.entidade and current_usuario.entidade_type == 'Conveniado' %>
-	<div dojoType="dijit.layout.ContentPane" title="Nova Notificação">
-        <%= render 'form' %>
-    </div>
+<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 400px;"
+tabStrip="true">                         
+
+	<% if !usuario_final?  %>
+	    <div dojoType="dijit.layout.ContentPane" title="Pendentes" selected="true">
+			<%= render 'lista', :notificacoes => @notificacoes_pendentes %>
+	    </div>
+	    <div dojoType="dijit.layout.ContentPane" title="Enviadas">
+	        <%= render 'lista', :notificacoes => @notificacoes_enviadas %>
+	    </div>
+	    <div dojoType="dijit.layout.ContentPane" title="Devolvidas">
+	        <%= render 'lista', :notificacoes => @notificacoes_devolvidas %>
+	    </div>
+	<% elsif usuario_conveniado? %>
+		<div dojoType="dijit.layout.ContentPane" title="Nova Notificação">
+	        <%= render 'form' %>
+	    </div>    
+	<% elsif usuario_final? %>
+    	<div dojoType="dijit.layout.ContentPane" title="Minhas Notificações" selected="true">
+			<%= render 'lista', :notificacoes => @notificacoes_pendentes %>
+    	</div>	
 	<% end %>
 </div>
 

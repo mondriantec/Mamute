@@ -1,5 +1,34 @@
 # Methods added to this helper will be available to all templates in the application.
-module ApplicationHelper          
+module ApplicationHelper      
+  
+  def usuario_cartorio?
+    current_usuario.entidade and current_usuario.entidade_type == 'Cartorio'
+  end     
+  
+  def usuario_conveniado?
+    current_usuario.entidade and current_usuario.entidade_type == 'Conveniado'
+  end  
+         
+  def usuario_tribunal?
+    current_usuario.entidade and current_usuario.entidade_type == 'Tribunal'
+  end    
+
+  def usuario_irtd?
+    current_usuario.entidade and current_usuario.entidade_type == 'Irtd'
+  end  
+  
+  def usuario_irtd_nacional?
+    current_usuario.entidade and current_usuario.entidade_type == 'Irtd' and current_usuario.entidade.nacional
+  end  
+                                                                                                              
+  def usuario_admin?
+    current_usuario.admin
+  end                    
+  
+  def usuario_final?
+     current_usuario.entidade.nil? and !current_usuario.admin
+  end
+      
   def edit_entidade_path(entidade)
     "/#{entidade.class.to_s.downcase.pluralize}/#{entidade.id}/edit"
   end

@@ -4,7 +4,7 @@
   </div>
 <% form_for(@notificacao) do |f| %>
   <%= f.error_messages %>
-
+  <!--
   <label>
 	<b>cartorio_id</b>
     <%= f.text_field :cartorio_id %>
@@ -13,7 +13,17 @@
 	<b>notificado_id</b>
     <%= f.text_field :notificado_id %>
   </label>
-  <label>
+  -->
+
+  <label> 
+	<b>CPF NOTIFICADO</b>
+    <%= f.text_field :motivo_notificacao_id %>
+  </label>
+ 
+
+
+
+  <label> 
 
 	<b>motivo_notificacao_id</b>
     <%= f.text_field :motivo_notificacao_id %>
