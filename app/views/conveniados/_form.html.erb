@@ -13,6 +13,10 @@
     <b>nome </b>
     <%= f.text_field :nome %>
   </label>
+  <label>
+  <b>uf </b>
+   <%= f.select ("uf",lista_estados)%>
+  </label>
   <p class="form_bar">
     <%= f.submit 'Salvar' %>
   </p>

@@ -1,0 +1,20 @@
+<div class="normal_form">
+  <div class="form_titulo">
+    &nbsp;
+  </div>
+<% form_for(@tipo_processo) do |f| %>
+  <%= f.error_messages %>
+
+  <label>
+    <b>Tipo</b>
+    <%= f.text_field :tipo %>
+  </label>
+  <label>
+    <b>descricao</b>
+    <%= f.text_area :descricao %>
+  </label>
+  <p class='form_bar'>
+    <%= f.submit 'Salvar' %>
+  </p>
+<% end %>
+</div>

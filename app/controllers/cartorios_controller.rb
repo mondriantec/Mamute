@@ -42,6 +42,7 @@ class CartoriosController < ApplicationController
   # POST /cartorios.xml
   def create
     @cartorio = Cartorio.new(params[:cartorio])
+    @cartorio.cidade_id = params[:uf] 
 
     respond_to do |format|
       if @cartorio.save

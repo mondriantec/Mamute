@@ -5,9 +5,11 @@ tabStrip="true">
     <div dojoType="dijit.layout.ContentPane" title="Pesquisar" selected="true">
 		<%= render 'lista' %>
     </div>
+    <% if usuario_irtd? %>
     <div dojoType="dijit.layout.ContentPane" title="Novo Cartório" selected="true">
 		<%= render 'form' %>
     </div>
+    <% end %>
 
 </div>
 

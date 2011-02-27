@@ -1,5 +1,14 @@
 <h1>Cadastro de cidades</h1>
 
+<div class="normal_form">
+<form>
+<label><b>Selecione a UF</b><%= select_tag 'uf',options_for_select(lista_estados)%></label>
+<p class="form_bar">
+<%= submit_tag 'Pesquisar' %>
+</p>
+</form>
+
+
 <table>
   <tr>
     <th>Nome</th>
@@ -17,6 +26,10 @@
 <% end %>
 </table>
 
+<% if @cidades.size > 0 %>
+   <h4><%= will_paginate (@cidades) %></h4>
+<% end %>
 <br />
 
 <%= link_to 'Novo cidade', new_cidade_path %>
+
