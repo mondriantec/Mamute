@@ -1,0 +1,16 @@
+<h1>Editing selo</h1>
+
+<% form_for(@selo) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :numero %><br />
+    <%= f.text_field :numero %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @selo %> |
+<%= link_to 'Back', selos_path %>

@@ -16,8 +16,13 @@
 <p>
   <b>Selo final:</b>
   <%=h @lote.selo_final %>
-</p>
-
+</p>       
+           
+<ul>
+<% @lote.selos.each do |s| %>
+       <li><%= link_to s.numero, s %> - <%= s.descricao_status %></li>
+<% end %>
+</ul>
 
 <%= link_to 'Edit', edit_lote_path(@lote) %> |
 <%= link_to 'Back', lotes_path %>

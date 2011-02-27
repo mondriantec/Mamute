@@ -5,7 +5,7 @@ class Lote < ActiveRecord::Base
   def criar_selos
      for i in selo_inicial..selo_final
         s = Selo.new
-        s.numero = '#{self.prefico}#{i}'
+        s.numero = "#{self.selo_prefixo}#{i}"
         s.status = 0  
         s.lote = self
         s.save
