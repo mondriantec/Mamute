@@ -2,28 +2,19 @@
 <br/>
 <div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 300px;"
 tabStrip="true">
-    <div dojoType="dijit.layout.ContentPane" title="Pesquisar" selected="true">
-		<br/>
-		<table>
-			<tr>
-				<th>Nome</th>
-				<th>Login</th>
-				<th></th>
-				<th></th>
-			</tr>
-		<% for usuario in @usuarios %>
-			<tr>
-				<td><%= usuario.nome %></td>
-				<td><%= usuario.login %></td>
-			    <td><%= link_to 'Editar', edit_usuario_path(usuario) %></td>
-			    <td><%= link_to 'Apagar', usuario, :confirm => 'Tem certeza?', :method => :delete %></td>
-			</tr>
-		<% end %>
-		</table>
-    </div>
-    <div dojoType="dijit.layout.ContentPane" title="Cadastrar Novo">
+    <div dojoType="dijit.layout.ContentPane" title="Meus Usuários" selected="true">
+		<%= render 'lista', :usuarios => @usuarios %>	    
+    </div>   
+
+    <div dojoType="dijit.layout.ContentPane" title="Novo Usuário de <%= current_usuario.entidade_type %>">
         <%= render 'form' %>
+    </div> 
+
+    <div dojoType="dijit.layout.ContentPane" title="Novo Cliente" selected="true">    
+	    <%= @usuario.entidade = nil %>
+		<%= render 'form' %> 	    
     </div>
+
 
 </div>
 
