@@ -3,3 +3,10 @@
 development:
   adapter: sqlite3
   database: db/development.sqlite3
+
+production:
+  adapter: postgresql
+  host: 201.49.38.20
+  username: dute
+  password: dute*&098
+  database: irtd_dev
