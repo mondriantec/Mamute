@@ -53,7 +53,8 @@ class DocumentosController < ApplicationController
     Documento.transaction do                         
       @usuario = Usuario.find_by_cpf(params[:usuario][:cpf])                          
       @documento = Documento.new(params[:documento])      
-      @documento.usuario = @usuario
+      @documento.usuario = @usuario  
+      @documento.cartorio = current_usuario.entidade
       @documento.save       
       params[:metadados].each do |k,v|
         @documento.valor_campo_documentos.create(:campo_documento_id => k, :valor => v)

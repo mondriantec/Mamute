@@ -10,3 +10,5 @@ Rails::Initializer.run do |config|
   config.gem "will_paginate", :require => 'will_paginate'
 
 end
+                         
+require "#{RAILS_ROOT}/lib/fpdf.rb"
