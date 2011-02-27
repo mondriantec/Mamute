@@ -4,7 +4,8 @@ class TipoDocumentosController < ApplicationController
 
   # GET /tipo_documentos
   # GET /tipo_documentos.xml
-  def index
+  def index        
+    @tipo_documento = TipoDocumento.new
     @tipo_documentos = TipoDocumento.all
 
     respond_to do |format|

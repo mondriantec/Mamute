@@ -9,5 +9,8 @@
 		    <%= text_field_tag "metadados[#{c.id}]" %>
 		<% when "TEXTO_LONGO" %>
 		    <%= text_area_tag "metadados[#{c.id}]" %>
-	<% end %>
-<% end %>
+	<% end %>     
+	</label>
+<% end %>    
+
+<label><b>Arquivo</b><%= file_field_tag 'documento[imagem]' %>

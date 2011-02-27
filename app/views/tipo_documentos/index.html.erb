@@ -1,8 +1,30 @@
-<h1>Cadastro de tipo_documentos</h1>
+<h1>Cadastro de Tipos de Documentos</h1>
 
-<%= render "lista" %>
+<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 400px;"
+tabStrip="true">                                               
 
-<br />
+    
+	
+	<div dojoType="dijit.layout.ContentPane" title="Tipos de Documentos" selected="true">
+		<%= render 'lista' %>
+	</div>  
+	
+	<div dojoType="dijit.layout.ContentPane" title="Novo Tipo de Documento" selected="true">
+		<%= render 'form' %>
+	</div>
 
-<%= link_to 'Novo tipo_documento', new_tipo_documento_path %>
 
+</div>
+
+
+ 
+
+
+<script type="text/javascript" src="/javascripts/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
+<script type="text/javascript">
+    dojo.require("dijit.layout.TabContainer");
+    dojo.require("dijit.layout.ContentPane");
+</script>
+
+
+ 

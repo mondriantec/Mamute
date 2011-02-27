@@ -7,10 +7,13 @@ class DocumentosController < ApplicationController
   
   # GET /documentos
   # GET /documentos.xml
-  def index
+  def index                    
+    
     @documento = Documento.new
-    @documentos = Documento.all.paginate(:page => params[:page], :per_page => 5)
-
+    @documentos = []
+    if params[:tipo] and params[:tipo][:tipo_documento_id]
+      @documentos = Documento.find_all_by_tipo_documento_id(params[:tipo][:tipo_documento_id]).paginate(:page => params[:page], :per_page => 5)
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @documentos }
@@ -46,11 +49,16 @@ class DocumentosController < ApplicationController
 
   # POST /documentos
   # POST /documentos.xml
-  def create
-    @documento = Documento.new(params[:documento])
-
+  def create                                           
+    Documento.transaction do                                                   
+      @documento = Documento.new(params[:documento])  
+      @documento.save       
+      params[:metadados].each do |k,v|
+        @documento.valor_campo_documentos.create(:campo_documento_id => k, :valor => v)
+      end 
+    end
     respond_to do |format|
-      if @documento.save
+      if !@documento.new_record?
         flash[:notice] = 'Documento was successfully created.'
         format.html { redirect_to(@documento) }
         format.xml  { render :xml => @documento, :status => :created, :location => @documento }

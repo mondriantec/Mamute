@@ -1,2 +1,3 @@
-class ValorCampoDocumento < ActiveRecord::Base
+class ValorCampoDocumento < ActiveRecord::Base        
+  belongs_to :campo_documento
 end
