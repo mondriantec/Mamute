@@ -1,8 +1,19 @@
 <p>
+  <b>Tribunal:</b>
+  <%=h @selo.lote.tribunal.nome %>
+</p>
+
+<p>
   <b>Numero:</b>
   <%=h @selo.numero %>
 </p>
+                               
 
 
-<%= link_to 'Edit', edit_selo_path(@selo) %> |
-<%= link_to 'Back', selos_path %>
+<p>
+  <b>Status:</b>
+  <%=h @selo.descricao_status %>
+</p>
+
+
+<%= link_to 'Voltar', @selo.lote %>
