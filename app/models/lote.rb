@@ -1,5 +1,6 @@
 class Lote < ActiveRecord::Base    
-  has_many :selos
+  has_many :selos          
+  belongs_to :tribunal
   after_create :criar_selos
   
   def criar_selos
