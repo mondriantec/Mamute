@@ -1,9 +1,8 @@
 <ul  class="box">
 
-
+		<%= mostra_menu('home', :Home)%>
 <%# Admin %>
 <% if logged_in? and current_usuario.admin %>
-		<%= mostra_menu('home', :Home)%>
 		<%= mostra_menu('cartorios','Cartórios') %>
 		<%= mostra_menu('conveniados','Conveniados') %>
 		<%= mostra_menu('tribunais','Tribunais') %>
@@ -12,7 +11,6 @@
 
 <%# Irtd Nacional %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Irtd' and current_usuario.entidade.nacional %>
-        <%= mostra_menu('home', :Home)%>
 		<%= mostra_menu('irtds','Institutos') %>
 		<%= mostra_menu('conveniados','Conveniados') %>
 		<%= mostra_menu('tribunais','Tribunais') %>
@@ -21,14 +19,12 @@
 
 <%# Irtd Estadual %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Irtd' %>
-		<%= mostra_menu('home', :Home)%>
 		<%= mostra_menu('cartorios','Cartórios') %>
 		<%= mostra_menu('usuarios','Usuários') %>
 		<%= mostra_menu('financeiro', 'Financeiro') %>						
 
 <%# Conveniado %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Conveniado' %>
-		<%= mostra_menu('home', :Home)%>
 		<%= mostra_menu('documentos','Documentos') %>
 		<%= mostra_menu('notificacoes','Notificações') %>
 		<%= mostra_menu('usuarios','Usuários') %>
@@ -36,14 +32,12 @@
 
 <%# TRibunal %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Tribunal' %>
-		<%= mostra_menu('home', :Home)%>
 		<%= mostra_menu('lotes','Selos') %>
 		<%= mostra_menu('usuarios','Usuários') %>
 		<%= mostra_menu('financeiro', 'Financeiro') %>
 
 <%# Cartório %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Cartorio' %>
-		<%= mostra_menu('home', :Home)%>
 		<%= mostra_menu('documentos','Documentos') %>
 		<%= mostra_menu('notificacoes','Notificações') %>
 		<%= mostra_menu('certidaos','Certidões') %>
@@ -52,10 +46,12 @@
 
 <%# Usuario Normal %>
 <% elsif logged_in? %>
-		<%= mostra_menu('home', :Home)%>
+
 		<%= mostra_menu('documentos','Documentos') %>
 		<%= mostra_menu('notificacoes','Notificações') %>
 		<%= mostra_menu('certidaos','Certidões') %>
 		<%= mostra_menu('financeiro', 'Financeiro') %>
+<% else %>
+		<%= mostra_menu('documentos/verificar', 'Consultar Selo')%>
 <% end %>
 </ul>

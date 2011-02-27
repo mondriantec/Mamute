@@ -1,0 +1,15 @@
+<div class="normal_form">
+<% form_tag do %>         
+	<div class="form_titulo">
+    &nbsp;Verificar Autenticidade do Documento Utilizando o Selo Eletrônico
+  </div>
+   <label><b>Numero do Selo</b><%= text_field_tag 'selo' %></label>
+   <p class="form_bar">
+	  <%= submit_tag "Consultar"%>
+   </p> 
+<% end %>              
+</div>     
+
+<% if @documento %>
+	     <%= render 'visualizar'%>          
+<% end %>

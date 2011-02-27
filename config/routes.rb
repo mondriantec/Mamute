@@ -20,7 +20,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :campo_documentos
 
-  map.resources :documentos
+  map.resources :documentos, :collection => {:verificar => [:get,:post]}
 
   map.resources :tipo_documentos
 

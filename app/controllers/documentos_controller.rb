@@ -1,4 +1,12 @@
-class DocumentosController < ApplicationController      
+class DocumentosController < ApplicationController   
+     
+  before_filter :login_required, :except => [:verificar]
+  def verificar
+    if request.post?
+       selo = Selo.find_by_numero(params[:selo])   
+       @documento = selo.documento if selo.documento
+    end
+  end   
   
   def get_campos            
      @campos = CampoDocumento.find(:all, :order => "ordem", :conditions => ["tipo_documento_id=?",params[:id]])
