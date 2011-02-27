@@ -50,8 +50,10 @@ class DocumentosController < ApplicationController
   # POST /documentos
   # POST /documentos.xml
   def create                                           
-    Documento.transaction do                                                   
-      @documento = Documento.new(params[:documento])  
+    Documento.transaction do                         
+      @usuario = Usuario.find_by_cpf(params[:usuario][:cpf])                          
+      @documento = Documento.new(params[:documento])      
+      @documento.usuario = @usuario
       @documento.save       
       params[:metadados].each do |k,v|
         @documento.valor_campo_documentos.create(:campo_documento_id => k, :valor => v)

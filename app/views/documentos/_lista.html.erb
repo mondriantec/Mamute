@@ -14,7 +14,8 @@
 <br/>  
 <% if documentos.size > 0%>
 <table>
-  <tr>
+  <tr>        
+	<th>Dono</th>
     <% documentos[0].tipo_documento.campo_documentos.each do |c| %>
       <th><%= c.nome %></th>
     <% end %>
@@ -22,7 +23,8 @@
   </tr>
 
 <% documentos.each do |documento| %>
-  <tr>
+  <tr>       
+	<td><%= documento.usuario.nome %>
     <% documento.valor_campo_documentos.each do |v| %>
       <td><%= v.valor %></td>
     <% end %>

@@ -10,10 +10,18 @@ tabStrip="true">
         <%= render 'form' %>
     </div> 
 
+	<% if usuario_cartorio? %>
     <div dojoType="dijit.layout.ContentPane" title="Novo Cliente" selected="true">    
 	    <%= @usuario.entidade = nil %>
 		<%= render 'form' %> 	    
-    </div>
+    </div>                  
+           
+    <div dojoType="dijit.layout.ContentPane" title="Localizar Cliente" selected="true">
+		Pesquisar	    
+    </div>   
+    <% end %>
+
+
 
 
 </div>

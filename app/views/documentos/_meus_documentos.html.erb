@@ -1,0 +1,13 @@
+<div class="normal_form">
+<ul>
+<% documentos.each do |d| %>
+<li>
+   	<label><b>Tipo</b><%= d.tipo_documento.tipo %></label>     
+	<% d.valor_campo_documentos.each do |v| %>
+           <label><b><%= v.campo_documento.nome %></b> <%= v.valor %></label>
+	<% end %>
+	<label><b>Opções</b><%= link_to 'Solicitar Certidao', '#' %> | <%= link_to('Visualizar Documento', d) if d.pode_visualizar? %></label>
+</li>
+<% end %>
+</ul>	
+</div>

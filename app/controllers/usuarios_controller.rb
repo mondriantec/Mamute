@@ -1,9 +1,15 @@
 class UsuariosController < ApplicationController
   # Be sure to include AuthenticationSystem in Application Controller instead
   include AuthenticatedSystem
+                          
+  def por_cpf
+     @usuario = Usuario.find(:first, :conditions => ["entidade_id is null and cpf = ?",params[:cpf]])         
+     render :text => @usuario.nome, :layout => false
+  end
 
   def index  
-    @usuario = Usuario.new
+    @usuario = Usuario.new     
+    @usuario.entidade = current_usuario.entidade if current_usuario.entidade
     if current_usuario.admin
       @usuarios = Usuario.all
     elsif current_usuario.entidade

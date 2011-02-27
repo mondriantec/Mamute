@@ -21,19 +21,12 @@ tabStrip="true">
     	</div>                                                                              
 	<% elsif usuario_final? %>
 	<div dojoType="dijit.layout.ContentPane" title="Documentos" selected="true">
-		<%= render 'meus_documentos', :documentos => @documentos %>
+		<%= render 'meus_documentos', :documentos => current_usuario.documentos %>
 	</div>
     <% end %>
 
 </div>
-
-
-
-
-
-<br />
-
-<%= link_to 'Novo Documento', new_documento_path %>
+                                                  
 
 
 <script type="text/javascript" src="/javascripts/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
