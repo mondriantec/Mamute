@@ -1,6 +1,7 @@
 class DocumentosController < ApplicationController   
      
-  before_filter :login_required, :except => [:verificar]
+  before_filter :login_required, :except => [:verificar]       
+  
   def verificar
     if request.post?
        selo = Selo.find_by_numero(params[:selo])   
@@ -18,7 +19,7 @@ class DocumentosController < ApplicationController
   def index                    
     
     @documento = Documento.new
-    @documentos = []
+    @documentos = []  
     if params[:tipo] and params[:tipo][:tipo_documento_id]
       @documentos = Documento.find_all_by_tipo_documento_id(params[:tipo][:tipo_documento_id]).paginate(:page => params[:page], :per_page => 5)
     end
@@ -30,9 +31,12 @@ class DocumentosController < ApplicationController
 
   # GET /documentos/1
   # GET /documentos/1.xml
-  def show
+  def show                                  
+   
     @documento = Documento.find(params[:id])
-
+    if usuario_final? and !@documento.certidoes
+      redirect_to :controller => 'certidoes', :action => 'solicitar' , :id => @documento.id
+    end
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @documento }

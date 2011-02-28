@@ -21,7 +21,7 @@ tabStrip="true">
     	</div>                                                                              
 	<% elsif usuario_final? %>
 	<div dojoType="dijit.layout.ContentPane" title="Documentos" selected="true">
-		<%= render 'meus_documentos', :documentos => current_usuario.documentos %>
+		<%= render 'lista', :documentos => @documentos %>
 	</div>
     <% end %>
 

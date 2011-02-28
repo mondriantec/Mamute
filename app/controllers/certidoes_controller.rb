@@ -1,4 +1,4 @@
-class CertidaosController < ApplicationController
+class CertidoesController < ApplicationController
   # GET /certidaos
   # GET /certidaos.xml
   def index

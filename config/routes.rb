@@ -11,7 +11,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :conveniados
 
-  map.resources :certidaos
+  map.resources :certidoes
 
   map.resources :categorias
 
