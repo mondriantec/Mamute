@@ -49,7 +49,7 @@ class CertidoesController < ApplicationController
     respond_to do |format|
       if @certidao.save
         flash[:notice] = 'Certidao was successfully created.'
-        format.html { redirect_to(@certidao) }
+        format.html { redirect_to(@certidao.documento) }
         format.xml  { render :xml => @certidao, :status => :created, :location => @certidao }
       else
         format.html { render :action => "new" }
