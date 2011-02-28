@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :valores_sistema
+
+  map.resources :precos
+
   map.resources :selos
 
   map.resources :lotes
@@ -11,7 +15,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :conveniados
 
-  map.resources :certidoes
+  map.resources :certidoes, :collection => {:solicitar => :get }
 
   map.resources :categorias
 

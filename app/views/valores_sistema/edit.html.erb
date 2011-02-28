@@ -1,0 +1,24 @@
+<h1>Editing valor_sistema</h1>
+
+<% form_for(@valor_sistema) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :certidao %><br />
+    <%= f.text_field :certidao %>
+  </p>
+  <p>
+    <%= f.label :notificacao %><br />
+    <%= f.text_field :notificacao %>
+  </p>
+  <p>
+    <%= f.label :registro %><br />
+    <%= f.text_field :registro %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @valor_sistema %> |
+<%= link_to 'Back', valores_sistema_path %>

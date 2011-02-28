@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tribunal_id: 1
+  certidao: 1.5
+  notificacao: 1.5
+  registro: 
+
+two:
+  tribunal_id: 1
+  certidao: 1.5
+  notificacao: 1.5
+  registro: 

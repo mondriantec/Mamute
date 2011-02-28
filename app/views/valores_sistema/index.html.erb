@@ -1,0 +1,24 @@
+<h1>Listing valores_sistema</h1>
+
+<table>
+  <tr>
+    <th>Certidao</th>
+    <th>Notificacao</th>
+    <th>Registro</th>
+  </tr>
+
+<% @valores_sistema.each do |valor_sistema| %>
+  <tr>
+    <td><%=h valor_sistema.certidao %></td>
+    <td><%=h valor_sistema.notificacao %></td>
+    <td><%=h valor_sistema.registro %></td>
+    <td><%= link_to 'Show', valor_sistema %></td>
+    <td><%= link_to 'Edit', edit_valor_sistema_path(valor_sistema) %></td>
+    <td><%= link_to 'Destroy', valor_sistema, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New valor_sistema', new_valor_sistema_path %>

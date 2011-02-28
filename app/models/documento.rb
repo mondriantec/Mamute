@@ -1,16 +1,22 @@
-require 'fpdf'
+
 class Documento < ActiveRecord::Base
   has_many :valor_campo_documentos
+  has_many :certidoes
   belongs_to :tipo_documento
-  has_attached_file :imagem    
-   belongs_to :usuario    
-   belongs_to :selo
-   belongs_to :cartorio    
+  belongs_to :usuario    
+  belongs_to :selo
+  belongs_to :cartorio     
+  
+  has_attached_file :imagem
+  
+  before_save :usar_selo 
+  
+  def valor_certidao
+     self.cartorio.tribunal.precos.last.certidao + ValorSistema.first.certidao
+  end
    
-   before_save :usar_selo
-   
-   def usar_selo
-      s = Selo.find(:first, :order => "id", :conditions => "status = 0")
+   def usar_selo              
+      s = Selo.find(:first, :order => "id", :conditions => ["status = 0 and lote_id in (?)",self.cartorio.tribunal.lote_ids])
       s.status = 1
       s.save
       self.selo = s
@@ -25,7 +31,7 @@ class Documento < ActiveRecord::Base
   def to_pdf
      
     
-     require 'fpdf'
+    require 'fpdf'
 
     @documento = self
 

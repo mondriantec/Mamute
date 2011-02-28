@@ -1,4 +1,6 @@
 class CertidoesController < ApplicationController
+ 
+  
   # GET /certidaos
   # GET /certidaos.xml
   def index
@@ -23,8 +25,10 @@ class CertidoesController < ApplicationController
 
   # GET /certidaos/new
   # GET /certidaos/new.xml
-  def new
+  def new    
+    @documento = Documento.find(params[:id])     
     @certidao = Certidao.new
+    @certidao.documento = @documento 
 
     respond_to do |format|
       format.html # new.html.erb

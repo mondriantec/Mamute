@@ -4,18 +4,18 @@
   </div>
 <% form_for(@certidao) do |f| %>
   <%= f.error_messages %>
-
-  <label>
-    <b>documento_id </b>
-    <%= f.text_field :documento_id %>
-  </label>
-  <label>
-    <b>numero </b>
-    <%= f.text_field :numero %>
-  </label>
-  <p class="form_bar">
-    <%= f.submit 'Salvar' %>
-  </p>
+    <%= f.hidden_field :documento_id %>         
+    <label><b>Tipo de Documento</b><%= @documento.tipo_documento.tipo %></label>
+  	<% @documento.valor_campo_documentos.each do |v| %>
+         <label><b><%= v.campo_documento.nome %></b> <%= v.valor %></label>
+	<% end %>    
+	<label><b>Valor</b><%= @documento.valor_certidao %></label>       
+	<label><b>Cartão</b><%= f.select :tipo_cartao, ['VISA','MASTER'] %></label>
+	<label><b>Num. Cartão</b><%= f.text_field :numero_cartao %></label>
+	<label><b>Validade</b><%= f.select :mes_validade_cartao,['1','2','3','4','5','6','7','8','9','10','11','12'] %>/
+						  <%= f.select :ano_validade_cartao, ['2011','2012','2013','2014','2015','2016','2017','2018','2019','2020'] %></label> 
+	<p class="form_bar">
+		<%= submit_tag "Pagar"%>
+	</p>
 <% end %>
 </div>
-

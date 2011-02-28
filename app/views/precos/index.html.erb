@@ -1,0 +1,26 @@
+<h1>Listing precos</h1>
+
+<table>
+  <tr>
+    <th>Tribunal</th>
+    <th>Certidao</th>
+    <th>Notificacao</th>
+    <th>Registro</th>
+  </tr>
+
+<% @precos.each do |preco| %>
+  <tr>
+    <td><%=h preco.tribunal_id %></td>
+    <td><%=h preco.certidao %></td>
+    <td><%=h preco.notificacao %></td>
+    <td><%=h preco.registro %></td>
+    <td><%= link_to 'Show', preco %></td>
+    <td><%= link_to 'Edit', edit_preco_path(preco) %></td>
+    <td><%= link_to 'Destroy', preco, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New preco', new_preco_path %>

@@ -40,7 +40,7 @@
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Cartorio' %>
 		<%= mostra_menu('documentos','Documentos') %>
 		<%= mostra_menu('notificacoes','Notificações') %>
-		<%= mostra_menu('certidaos','Certidões') %>
+		<%= mostra_menu('certidoes','Certidões') %>
 		<%= mostra_menu('usuarios','Usuários') %>
 		<%= mostra_menu('financeiro', 'Financeiro') %>
 
@@ -49,7 +49,7 @@
 
 		<%= mostra_menu('documentos','Documentos') %>
 		<%= mostra_menu('notificacoes','Notificações') %>
-		<%= mostra_menu('certidaos','Certidões') %>
+		<%= mostra_menu('certidoes','Certidões') %>
 		<%= mostra_menu('financeiro', 'Financeiro') %>
 <% else %>
 		<%= mostra_menu('documentos/verificar', 'Consultar Selo')%>

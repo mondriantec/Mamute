@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  certidao: 1.5
+  notificacao: 1.5
+  registro: 1.5
+
+two:
+  certidao: 1.5
+  notificacao: 1.5
+  registro: 1.5

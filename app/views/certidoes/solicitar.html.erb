@@ -1,0 +1,17 @@
+<h1>Solicitar Certidão</h1>              
+<div class="normal_form">
+<% form_tag do %>
+    <label><b>Tipo de Documento</b><%= @documento.tipo_documento.tipo %></label>
+  	<% @documento.valor_campo_documentos.each do |v| %>
+         <label><b><%= v.campo_documento.nome %></b> <%= v.valor %></label>
+	<% end %>    
+	<label><b>Valor</b><%= @documento.valor_certidao %></label>       
+	<label><b>Cartão</b><%= select_tag 'tipo_cartao', options_for_select(['VISA','MASTER']) %></label>
+	<label><b>Num. Cartão</b><%= text_field_tag 'certidao[numero]' %></label>
+	<label><b>Validade</b><%= select_tag 'certidao[mes_validade]',options_for_select(['1','2','3','4','5','6','7','8','9','10','11','12']) %>/
+						  <%= select_tag 'certidao[ano_validade]', options_for_select(['2011','2012','2013','2014','2015','2016','2017','2018','2019','2020']) %></label> 
+	<p class="form_bar">
+		<%= submit_tag "Pagar"%>
+	</p>
+<% end %>
+</div>

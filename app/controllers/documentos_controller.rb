@@ -1,6 +1,7 @@
 class DocumentosController < ApplicationController   
      
-  before_filter :login_required, :except => [:verificar]       
+  before_filter :login_required, :except => [:verificar]             
+  include ApplicationHelper
   
   def verificar
     if request.post?
@@ -34,8 +35,9 @@ class DocumentosController < ApplicationController
   def show                                  
    
     @documento = Documento.find(params[:id])
-    if usuario_final? and !@documento.certidoes
-      redirect_to :controller => 'certidoes', :action => 'solicitar' , :id => @documento.id
+    if usuario_final? and @documento.certidoes.size == 0
+      redirect_to :controller => 'certidoes', :action => 'new' , :id => @documento.id           
+      return
     end
     respond_to do |format|
       format.html # show.html.erb
@@ -66,7 +68,7 @@ class DocumentosController < ApplicationController
       @usuario = Usuario.find_by_cpf(params[:usuario][:cpf])                          
       @documento = Documento.new(params[:documento])      
       @documento.usuario = @usuario  
-      @documento.cartorio = current_usuario.entidade
+      @documento.cartorio_id = current_usuario.entidade_id
       @documento.save       
       params[:metadados].each do |k,v|
         @documento.valor_campo_documentos.create(:campo_documento_id => k, :valor => v)
