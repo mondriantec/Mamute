@@ -1,11 +1,12 @@
-<div class="normal_form">
-	  <h3>Documento Selado Eletronicamente</h3>
-	  <label><b>Num. Selo:</b> <%= @documento.selo.numero %></label>
+
+<div class="mondrian_form">   
+	  <label class="uma_linha_form"><b style="width: 400px">Documento Selado e Assinado Eletronicamente</b>&nbsp;</label>
+	  <label class="nova_linha_form"><b>Num. Selo:</b> <%= @documento.selo.numero %></label>
 	  <label><b>Cartório:</b> <%= @documento.cartorio.oficio %></label>
 	  <label><b>Tabelião:</b> <%= @documento.cartorio.tabeliao %></label>
-	  <label><a href="#">Mais detalhes da autenticação</a></label>
+	  <label style="width: 283px"><b>Data:</b><%= @documento.created_at.strftime("%d/%m/%Y") %></label>
 </div>
 <br/>
-<iframe width="100%" height="100%" src="<%= @documento.to_pdf %>" style="border: solid 1px #ccc">
+<iframe width="100%" height="1150" src="<%= @documento.to_pdf %>" style="border: solid 1px #ccc">
 	
 </iframe>

@@ -23,8 +23,7 @@ class Documento < ActiveRecord::Base
    end
  
   def desenha_selo
-     # Colors of frame, background and text
-
+    
   end
                         
    
@@ -35,9 +34,10 @@ class Documento < ActiveRecord::Base
 
     @documento = self
 
-    @pdf=FPDF.new
-    @pdf.AddPage
-    @pdf.SetDrawColor(0, 0, 0)
+    @pdf=FPDF.new('P','mm','A4')
+    @pdf.AddPage( 'P')
+    @pdf.SetDrawColor(155, 155, 155)
+    
     @pdf.SetFillColor(255, 255, 255)
     @pdf.SetTextColor(0, 0, 0)
 
@@ -47,15 +47,21 @@ class Documento < ActiveRecord::Base
     @pdf.SetFont('Arial','B',10)
 
     # Title                    
-
-
-    texto = "#{@documento.selo.lote.tribunal.nome}
-Selo N.:  #{@documento.selo.numero}
-#{@documento.cartorio.oficio}
-Tabeliao:  #{@documento.cartorio.tabeliao}
-Data: #{@documento.created_at.strftime('%d/%m/%Y')}"
-    @pdf.MultiCell(60,5,texto,1,'C')        
-    @pdf.Image("#{RAILS_ROOT}/public#{@documento.imagem.url}", 10, 40, 33)
+                    
+    @pdf.Image("#{RAILS_ROOT}/public/images/brasao2.jpg", 12, 10, 25)   
+ 
+    texto = "                                   
+                           #{@documento.selo.lote.tribunal.nome}
+                           Selo N.:  #{@documento.selo.numero}
+                           #{@documento.cartorio.oficio}
+                           Tabeliao:  #{@documento.cartorio.tabeliao}
+                           Data: #{@documento.created_at.strftime('%d/%m/%Y')}
+                            "
+                                   
+                                  
+    @pdf.MultiCell(190,4,texto,1,'L')        
+    
+    @pdf.Image("#{RAILS_ROOT}/public#{@documento.imagem.url}", 10, 50, 100)
     @pdf.Output("#{RAILS_ROOT}/public/pdfs/#{@documento.id}.pdf")  
     "/pdfs/#{@documento.id}.pdf"
   end 
