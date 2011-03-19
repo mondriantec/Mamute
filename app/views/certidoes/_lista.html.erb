@@ -1,16 +1,18 @@
 <table>
   <tr>
-    <th>Documento</th>
-    <th>Numero</th>
+    <th>Certidão</th>
+    <th>Tipo de Documento</th>
+    <th>Campo Chave</th>
+    <th>Valor Chave</th>
   </tr>
 
 <% certidoes.each do |certidao| %>
   <tr>
-    <td><%=h certidao.documento_id %></td>
-    <td><%=h certidao.numero %></td>
-    <td><%= link_to 'Visualizar', certidao %></td>
-    <td><%= link_to 'Editar', edit_certidao_path(certidao) %></td>
-    <td><%= link_to 'Apagar', certidao, :confirm => 'Tem certeza?', :method => :delete %></td>
+    <td><%=h certidao.id %></td>
+    <td><%=h certidao.documento.tipo_documento.tipo %></td>
+    <td><%= certidao.documento.campo_chave.nome %></td>
+    <td><%= certidao.documento.valor_chave %></td>
+    <td><%= link_to 'Visualizar Documento', certidao.documento %></td>
   </tr>
 <% end %>
 </table>

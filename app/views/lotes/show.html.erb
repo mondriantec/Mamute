@@ -24,8 +24,8 @@
 </p>       
            
 <ul>
-<% @lote.selos.each do |s| %>
-       <li><%= link_to s.numero, s %> - <%= s.descricao_status %></li>
+<% @lote.selos.find(:all, :order => "id").each do |s| %>
+       <li><%= link_to s.numero, s %> - <%= s.documento ? link_to('Visualizar Documento',s.documento) : 'Nao Utilizado' %></li>
 <% end %>
 </ul>
 

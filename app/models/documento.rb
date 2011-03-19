@@ -11,6 +11,14 @@ class Documento < ActiveRecord::Base
   
   before_save :usar_selo 
   
+  def campo_chave
+    self.tipo_documento.campo_documentos.find(:first, :order => "ordem")
+  end
+
+  def valor_chave
+    self.valor_campo_documentos.find_by_campo_documento_id(self.campo_chave).valor
+  end
+  
   def valor_certidao
      self.cartorio.tribunal.precos.last.certidao + ValorSistema.first.certidao
   end
