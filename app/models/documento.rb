@@ -36,42 +36,45 @@ class Documento < ActiveRecord::Base
                         
    
   def to_pdf
-     
+    if (self.imagem_content_type == 'application/pdf' ) 
+        self.imagem.url
+    else
     
-    require 'fpdf'
+        require 'fpdf'
 
-    @documento = self
+        @documento = self
 
-    @pdf=FPDF.new('P','mm','A4')
-    @pdf.AddPage( 'P')
-    @pdf.SetDrawColor(155, 155, 155)
+        @pdf=FPDF.new('P','mm','A4')
+        @pdf.AddPage( 'P')
+        @pdf.SetDrawColor(155, 155, 155)
     
-    @pdf.SetFillColor(255, 255, 255)
-    @pdf.SetTextColor(0, 0, 0)
+        @pdf.SetFillColor(255, 255, 255)
+        @pdf.SetTextColor(0, 0, 0)
 
-    @pdf.SetLineWidth(0.1)
+        @pdf.SetLineWidth(0.1)
 
 
-    @pdf.SetFont('Arial','B',10)
+        @pdf.SetFont('Arial','B',10)
 
-    # Title                    
+        # Title                    
                     
-    @pdf.Image("#{RAILS_ROOT}/public/images/brasao2.jpg", 12, 10, 25)   
+        @pdf.Image("#{RAILS_ROOT}/public/images/brasao2.jpg", 12, 10, 25)   
  
-    texto = "                                   
-                           #{@documento.selo.lote.tribunal.nome}
-                           Selo N.:  #{@documento.selo.numero}
-                           #{@documento.cartorio.oficio}
-                           Tabeliao:  #{@documento.cartorio.tabeliao}
-                           Data: #{@documento.created_at.strftime('%d/%m/%Y')}
-                            "
+        texto = "                                   
+                               #{@documento.selo.lote.tribunal.nome}
+                               Selo N.:  #{@documento.selo.numero}
+                               #{@documento.cartorio.oficio}
+                               Tabeliao:  #{@documento.cartorio.tabeliao}
+                               Data: #{@documento.created_at.strftime('%d/%m/%Y')}
+                                "
                                    
                                   
-    @pdf.MultiCell(190,4,texto,1,'L')        
+        @pdf.MultiCell(190,4,texto,1,'L')        
     
-    @pdf.Image("#{RAILS_ROOT}/public#{@documento.imagem.url}", 10, 50, 100)
-    @pdf.Output("#{RAILS_ROOT}/public/pdfs/#{@documento.id}.pdf")  
-    "/pdfs/#{@documento.id}.pdf"
+        @pdf.Image("#{RAILS_ROOT}/public#{@documento.imagem.url}", 10, 50, 100)
+        @pdf.Output("#{RAILS_ROOT}/public/pdfs/#{@documento.id}.pdf")  
+        "/pdfs/#{@documento.id}.pdf"   
+    end
   end 
    
   def pode_visualizar?
