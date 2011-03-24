@@ -4,18 +4,153 @@
   </div>
 <% form_for(@certidao) do |f| %>
   <%= f.error_messages %>
+    
+<style>
+    .separador {
+        display: block;
+        background-color: #e2e2e2;
+        margin-bottom: 1px;
+        margin-right: 1px;
+        padding: 3px 3px 6px 3px;
+    }
+    
+    .separador label {
+        float: left;
+        margin-bottom: 0px !important;
+        margin-right: 5px !important;
+        padding: 0px !important;
+        font-weight:bold;
+        text-transform: uppercase;
+        width: 150px;
+    }
+
+    .FimDosFloats {
+        clear: both;
+        font-size: 0;
+        height: 0;
+        line-height: 0;
+    }
+    
+    .cards input {
+        float:left;
+        margin: 6px 1px 0px 0px !important;
+        width: 265px !important;
+    } 
+    
+    .cards label {
+        float: 0;
+        margin-bottom: 0px !important;
+        margin-right: 7px !important;
+        padding: 0px !important;
+        width: 50px;
+    } 
+    
+    label label {border: solid 1}
+</style>
+    
+<fieldset>
+  
+    <%= f.hidden_field :documento_id %>     
+    <div class="separador">
+        <label>Tipo de Documento:</label>
+        <span><%= @documento.tipo_documento.tipo %></span>
+    </div>  
+	
+  	<% @documento.valor_campo_documentos.each do |v| %>
+        <div class="separador">
+            <label><%= v.campo_documento.nome %></label>
+            <%= v.valor %>
+        </div>  
+	<% end %> 
+	
+    <div class="separador">
+        <label>Valor</label>
+        <%= @documento.valor_certidao %>
+    </div>  
+	
+    <div class="separador">
+      <label>Tipo do cartão:</label>
+      <span class="cards">
+          <%= f.radio_button :tipo_cartao, "VISA", :id => 'visa' %> 
+          <label for="visa"><img src="/images/flags_credit_card/flag_visa.gif" alt="VISA" title="VISA" /></label>
+      </span>
+      
+      <span class="cards">
+        <%= f.radio_button :tipo_cartao, "MASTERCARD", :id => 'mastercard' %> 
+        <label for="mastercard"><img src="/images/flags_credit_card/flag_mastercard.gif" alt="MASTERCARD" title="MASTERCARD" /></label>
+      </span>
+      
+      <span class="cards">
+        <%= f.radio_button :tipo_cartao, "HIPERCARD", :id => 'hipercard' %> 
+        <label for="hipercard"><img src="/images/flags_credit_card/flag_hipercard.gif" alt="HIPERCARD" title="HIPERCARD" /></label>
+      </span>
+      
+      <span class="cards">
+        <%= f.radio_button :tipo_cartao, "AMERICAN EXPRESS", :id => 'amex' %> 
+        <label for="amex"><img src="/images/flags_credit_card/flag_amex.gif" alt="AMERICAN EXPRESS" title="AMERICAN EXPRESS" /></label>
+      </span>
+      
+      <span class="cards">
+        <%= f.radio_button :tipo_cartao, "DINERS", :id => 'diners' %> 
+        <label for="diners"><img src="/images/flags_credit_card/flag_diners.gif" alt="DINERS" title="DINERS" /></label>
+      </span>
+      
+      <div class="FimDosFloats"></div>
+    </div>
+	 
+    <div class="separador">
+        <label>Num. Cartão</b></label>
+        <%= f.text_field :numero_cartao %>
+    </div>  
+	 
+    <div class="separador">
+        <label>Titular</b></label>
+        <%= text_field_tag 'certidao[cartao_titular]' %>
+    </div>  
+	 
+    <div class="separador">
+        <label>Cod de Segurança</b></label>
+        <%= text_field_tag 'certidao[cartao_codigo]' %>
+    </div>  
+	 
+    <div class="separador">
+        <label>Validade</b></label>
+        <%= f.select :mes_validade_cartao,['1','2','3','4','5','6','7','8','9','10','11','12'] %> / <%= f.select :ano_validade_cartao, ['2011','2012','2013','2014','2015','2016','2017','2018','2019','2020'] %>
+    </div>  
+
+    <p class="form_bar">
+        <%= submit_tag "Pagar"%>
+    </p>
+	
+</fieldset>
+
     <%= f.hidden_field :documento_id %>         
     <label><b>Tipo de Documento</b><%= @documento.tipo_documento.tipo %></label>
   	<% @documento.valor_campo_documentos.each do |v| %>
          <label><b><%= v.campo_documento.nome %></b> <%= v.valor %></label>
 	<% end %>    
 	<label><b>Valor</b><%= @documento.valor_certidao %></label>       
-	<label><b>Cartão</b><%= f.select :tipo_cartao, ['VISA','MASTER'] %></label>
+    
+    <div class="separa">
+        <b>Tipo do Cartão</b>
+	    <label><%= f.radio_button :tipo_cartao, "VISA" %> <img src="/images/flags_credit_card/flag_visa.gif" alt="VISA" title="VISA" /></label>
+	    <label><%= f.radio_button :tipo_cartao, "MASTERCARD" %> <img src="/images/flags_credit_card/flag_mastercard.gif" alt="MASTERCARD" title="MASTERCARD" /></label>
+	    <label><%= f.radio_button :tipo_cartao, "HIPERCARD" %> <img src="/images/flags_credit_card/flag_hipercard.gif" alt="HIPERCARD" title="HIPERCARD" /></label>
+	    <label><%= f.radio_button :tipo_cartao, "AMERICAN EXPRESS" %> <img src="/images/flags_credit_card/flag_amex.gif" alt="AMERICAN EXPRESS" title="AMERICAN EXPRESS" /></label>
+	    <label><%= f.radio_button :tipo_cartao, "DINERS" %> <img src="/images/flags_credit_card/flag_diners.gif" alt="DINERS" title="DINERS" /></label>
+	    <div style="clear:both"></div>
+    </div>	
+    
+    <label><b>Titular</b><%= text_field_tag 'certidao[cartao_titular]' %></label>
+    <label><b>Cod de Segurança</b><%= text_field_tag 'certidao[cartao_codigo]' %></label>
+    
 	<label><b>Num. Cartão</b><%= f.text_field :numero_cartao %></label>
 	<label><b>Validade</b><%= f.select :mes_validade_cartao,['1','2','3','4','5','6','7','8','9','10','11','12'] %>/
 						  <%= f.select :ano_validade_cartao, ['2011','2012','2013','2014','2015','2016','2017','2018','2019','2020'] %></label> 
 	<p class="form_bar">
 		<%= submit_tag "Pagar"%>
 	</p>
+
+	
 <% end %>
 </div>

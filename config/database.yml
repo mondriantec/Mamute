@@ -2,14 +2,14 @@
 #   gem install sqlite3-ruby (not necessary on OS X Leopard)
 development:
   adapter: postgresql
-  host: 201.49.38.20
-  username: dute
-  password: dute*&098
+  host: localhost
+  username: postgres
+  password: postgres
   database: irtd_dev
 
 production:
   adapter: postgresql
-  host: 201.49.38.20
-  username: dute
-  password: dute*&098
+  host: localhosr
+  username: postgres
+  password: postgres
   database: irtd_dev

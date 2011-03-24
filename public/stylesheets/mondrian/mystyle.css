@@ -21,6 +21,30 @@ label b {
 }
 
 
+.separa b {
+    display: block;
+    float:left;
+    margin-right: 5px;
+    width: 150px;       
+    text-transform: uppercase;
+}
+
+.separa {
+	display: block;
+	background-color: #e2e2e2;
+	margin-bottom: 1px;
+	margin-right: 1px;
+	padding: 3px;
+	padding-left: 10px;
+	width: 98%;
+	float: none;
+}
+
+.separa label {
+	display: block;
+	float: left;
+}
+
 label {
 	display: block;
 	background-color: #e2e2e2;
