@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+ 
+  <title>Home</title>
+<!-- CSS Sheet  -->
+  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+<!-- Lava Lamp Navigation  -->
+
+
+  <link rel="stylesheet" href="/stylesheets/lavalamp.css" type="text/css" media="screen" />
+
+  <script type="text/javascript" src="/javascripts/jquery-1.2.3.min.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.lavalamp.min.js"></script>
+    
+  <script type="text/javascript">
+        $(function() {
+            $("#1, #2, #3").lavaLamp({
+                fx: "backout",
+                speed: 800,
+                click: function(event, menuItem) {
+                    return true;
+                }
+            });
+        });
+    </script><!-- Sliding Gallery Navigation  -->
+    
+
+	
+  <script type="text/javascript" src="/javascripts/easySlider1.5.js"></script>
+	
+  <script type="text/javascript">
+		$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true,
+				continuous: true 
+			});
+		});	
+	</script>
+</head>
+
+
+<body>
+
+<div id="container">
+    <div id="wrapper">
+    
+        <!-- Begin Top Bar  -->
+        <div id="topbar">
+
+            <!-- Begin LavaLamp Navigation  -->
+            <div id="nav">
+                <ul class="lavaLampWithImage" id="1">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">O IRTDPJ</a></li>
+                    <li><a href="services.html">Servi&ccedil;os</a></li>
+                    <li><a href="events.html">FAQ</a></li>
+                    <li><a href="contacts.html">Contato</a></li>
+                </ul>
+            </div>
+            <!-- End LavaLamp Navigation  -->
+        
+        </div>
+        <!-- End Top Bar  -->
+
+        <!-- Begin Header  -->
+        <div id="header">
+            <div id="slider">
+			    <ul>
+				    <li><a href="#"><img src="/images/header1.jpg" alt="" border="0" /></a></li>
+                    <li><a href="#"><img src="/images/header2.jpg" alt="" border="0" /></a></li>
+                    <li><a href="#"><img src="/images/header3.jpg" alt="" border="0" /></a></li>
+	            </ul>
+            </div>
+        </div>
+        <!-- End Header  -->
+
+        <!-- Begin Icon Bar  -->
+        <div id="iconbar">
+            <div class="iconbox">
+                <img src="/images/icon1.png" alt="" class="leftimage" height="47" width="48" />
+                <h1>Notifica&ccedil;&atilde;o</h1>
+                <span class="smalltitle">Fa&ccedil;a suas notifica&ccedil;&otilde;es na web</span>&nbsp; Escolha um modelo de notifica&ccedil;&atilde;o e envie agora sua notifica&ccedil;&atilde;o&nbsp; <span class="smalltitle"><a href="#">Mais</a></span><img src="images/arrow.png" alt="" height="10" width="11" />
+            </div>
+            <div class="iconline"></div>
+
+            <div class="iconbox">
+                <img style="width: 56px; height: 47px;" class="leftimage" alt="" src="images/icon_folder1.gif" />
+                <h1>2a. via de documentos</h1>
+                <span class="smalltitle">Nunca &nbsp;perca seus documentos</span> Segunda via dos seus documentos registrados na hora e com valor de original. <span class="smalltitle"><a href="#">Mais</a></span><img src="images/arrow.png" alt="" height="10" width="11" />
+            </div>
+            <div class="iconline"></div>
+            
+            <div class="iconbox">
+                <img src="/images/icon3.png" alt="" class="leftimage" height="47" width="43" />
+                <h1>Validar Autenticidade</h1>
+                <span>
+                    <span style="font-weight: bold;">Estado: &nbsp; &nbsp;
+                    <select name="Estados">
+                        <option>CE</option>
+                        <option>SP</option>
+                        <option>RJ</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>RN</option>
+                        <option>MA</option>
+                        <option>SC</option>
+                        <option>RS</option>
+                        <option>DF</option>
+                        <option>GO</option>
+                        <option>MS</option>
+                        <option>MT</option>
+                        <option>PE</option>
+                        <option>BA</option>
+                        <option>SE</option>
+                        <option>AL</option>
+                    </select>
+                </span>
+                <br />
+                <span style="font-weight: bold;">No. Selo: &nbsp;<input name="selo" size="14"/></span>
+            </div>
+            <div class="iconline"></div>
+     
+            <div class="iconbox">
+                <img style="width: 48px; height: 48px;" src="images/icon_mailbox1.gif" alt="" class="leftimage" />
+                <h1>Acessar o sistema</h1>
+                <span style="font-weight: bold;">CPF/CNPJ: <input name="CPF" size="12"/></span><br style="font-weight: bold;" />
+                <span style="font-weight: bold;">Chave&nbsp;Acesso: &nbsp; <input size="7" name="chave" /></span>                
+            </div>
+        </div>
+        <!-- End Icon Bar  -->
+
+<!-- Begin Content  -->
+<div id="content">
+    <div id="welcome">
+        <h2>Bem vindo ao Portal de Documentos</h2> 
+        <h3>Seu cart&oacute;rio de T&iacute;tulos e Documentos na internet&nbsp;</h3>
+
+        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nula facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril. Nam liber tempor cum soluta nobis eleifend option congue nihil
+        imperdie. doming id quod. mazim placerat facer possim assum vel eum
+        iriure dolor in hendrerit in vulputate velit esse molestie cons.<br />
+
+              <br />
+        Equat, vel illum dolore eu feugiat nulla facilisis at vero autem vel
+        eum iriure dolor in hendrerit in vulputate. Duis autem vel eum iriure
+        dolor in hendrerit in vulputate velit esse molestie consequat, vel
+        illum dolore eu feugiat nula facilisis at vero eros et accumsan et
+        iusto odio dignissim qui blandit praesent. </p>
+
+            
+        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nula facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril. Nam liber tempor cum soluta nobis eleifend option congue nihil
+        imperdie. doming id quod. mazim placerat facer possim assum vel eum
+        iriure dolor in hendrerit in vulputate velit esse molestie cons.</p>
+    </div>
+     
+    <div id="latestnews">
+        <h1>&Uacute;ltimas Not&iacute;cias</h1>
+        <h4>O que est&aacute; acontecendo</h4>
+        <p><img src="/images/pic01.gif" alt="" class="leftimage" height="67" vspace="5" width="67" /><span class="smalltitle">Autem vel eum iriure dolor in</span> hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.<span class="smalltitle"> <a href="#">More</a></span><img src="images/arrow.png" alt="" height="10" width="11" /></p>
+        <p><img src="/images/pic02.gif" alt="" class="leftimage" height="67" vspace="5" width="67" /><span class="smalltitle">Autem vel eum iriure dolor in</span> hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.<span class="smalltitle"> <a href="#">More</a></span><img src="images/arrow.png" alt="" height="10" width="11" /></p>
+        <p><img src="/images/pic01.gif" alt="" class="leftimage" height="67" vspace="5" width="67" /><span class="smalltitle">Autem vel eum iriure dolor in</span> hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.<span class="smalltitle"> <a href="#">More</a></span><img src="images/arrow.png" alt="" height="10" width="11" /></p>
+    </div>
+</div>
+<!-- End Content  -->
+
+</div>
+</div>
+
+
+<!-- Begin Footer1  -->
+<div id="footer1">
+  <div id="footer1content">
+    
+<div id="recentnews">
+    <div style="width: 60px; float: left;"><img src="/images/icon_mailbox1.gif" alt="" height="50" width="49" /></div>
+        <div style="width: 220px; float: left;">
+              
+        <h5>Correio Cartorial</h5>
+         Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse  dolore eu feugiat nula facilisis at vero eros et accumsa. <a href="#">More</a>
+    </div>
+</div>
+
+    
+<div id="connect">
+      
+<h5>Connect With Us</h5>
+
+      <br />
+<img src="/images/icon6.png" alt="" class="leftimage" height="49" width="39" /><img src="images/icon7.png" alt="" class="leftimage" height="49" width="46" /><img src="images/icon8.png" alt="" class="leftimage" height="49" width="52" /><img src="images/icon9.png" alt="" class="leftimage" height="49" width="34" /> </div>
+
+  </div>
+
+</div>
+
+<!-- End Footer1  -->
+
+<!-- Begin Footer2  -->
+<div id="footer2">
+  
+<div id="footer2content">
+    
+<div style="width: 300px; float: left;">&copy; Copyright IRTDPJ Brasil.&nbsp; </div>
+<div style="width: 400px; float: right; text-align: right;">&bull;  <a href="index.html">Home</a> &bull; <a href="about.html">O IRTDPJ</a> &bull;  <a href="services.html">Servi&ccedil;os</a> &bull; <a href="events.html">FAQ</a> &bull;  <a href="contacts.html">Contatos</a></div>
+</div>
+
+</div>
+
+<!-- End Footer2  -->
+</body>
+</html>
