@@ -130,8 +130,11 @@
             <div class="iconbox">
                 <img style="width: 48px; height: 48px;" src="images/icon_mailbox1.gif" alt="" class="leftimage" />
                 <h1>Acessar o sistema</h1>
-                <span style="font-weight: bold;">CPF/CNPJ: <input name="CPF" size="12"/></span><br style="font-weight: bold;" />
-                <span style="font-weight: bold;">Chave&nbsp;Acesso: &nbsp; <input size="7" name="chave" /></span>                
+                <form action="/conta" method="post">
+                <span style="font-weight: bold;">CPF/CNPJ: <input name="login" size="12"/></span><br style="font-weight: bold;" />
+                <span style="font-weight: bold;">Chave&nbsp;Acesso: &nbsp; <input size="7" name="password" type="password"/></span>                
+                <input name="commit" type="submit" value="Entrar" />
+                </form>
             </div>
         </div>
         <!-- End Icon Bar  -->
