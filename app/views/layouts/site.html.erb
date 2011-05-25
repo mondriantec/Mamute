@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Home</title>
+    <!-- CSS Sheet  -->
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <!-- Lava Lamp Navigation  -->
+
+    <link rel="stylesheet" href="/stylesheets/lavalamp.css" type="text/css" media="screen" />
+
+    <script type="text/javascript" src="/javascripts/jquery-1.2.3.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.lavalamp.min.js"></script>
+    
+    <script type="text/javascript">
+    $(function() {
+        $("#1, #2, #3").lavaLamp({
+            fx: "backout",
+            speed: 800,
+            click: function(event, menuItem) {
+                return true;
+            }
+        });
+    });
+    </script><!-- Sliding Gallery Navigation  -->
+	
+    <script type="text/javascript" src="/javascripts/easySlider1.5.js"></script>
+	
+    <script type="text/javascript">
+        $(document).ready(function(){	
+	        $("#slider").easySlider({
+		        auto: true,
+		        continuous: true 
+	        });
+        });	
+    </script>
+</head>
+
+<body>
+    <%= yield %>
+</body>
+</html>
