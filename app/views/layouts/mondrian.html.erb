@@ -14,44 +14,57 @@
 	<!--[if lte IE 6]><link rel="stylesheet" media="screen,projection" type="text/css" href="/stylesheets/mondrian/main-ie6.css" /><![endif]--> <!-- MSIE6 -->
 	<link rel="stylesheet" media="screen,projection" type="text/css" href="/stylesheets/mondrian/style.css" /> <!-- GRAPHIC THEME -->
 	<link rel="stylesheet" media="screen,projection" type="text/css" href="/stylesheets/mondrian/mystyle.css" /> <!-- WRITE YOUR CSS CODE HERE -->
+	
+	<!-- CSS DO SITE -->
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/stylesheets/lavalamp.css" type="text/css" media="screen" />
+    
 	<script type="text/javascript" src="/javascripts/mondrian/jquery.js"></script>
 	<script type="text/javascript" src="/javascripts/mondrian/switcher.js"></script>
 	<script type="text/javascript" src="/javascripts/mondrian/toggle.js"></script>
 	<script type="text/javascript" src="/javascripts/mondrian/ui.core.js"></script>
 	<script type="text/javascript" src="/javascripts/mondrian/ui.tabs.js"></script>   
-	<%= javascript_include_tag :all %>
+	
+	<!-- JS DO SITE -->
+    <script type="text/javascript" src="/javascripts/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.lavalamp.min.js"></script>
+    
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$(".tabs > ul").tabs();
+		
+		// Efeitos do menu do site
+        $("#1, #2, #3").lavaLamp({
+            fx: "backout",
+            speed: 800,
+            click: function(event, menuItem) {
+                return true;
+            }
+        });
 	});
 	</script>
+	
 	<title>GoDocs</title>
 </head>
 
 <body class="tundra">
 
+<div id="container">
+    <div id="topbar">
+        <div id="nav">
+            <ul class="lavaLampWithImage" id="1">
+                <li class="current"><a href="/site">Home</a></li>
+                <li><a href="/site/about">O IRTDPJ</a></li>
+                <li><a href="/site/services">Servi&ccedil;os</a></li>
+                <li><a href="/site/events">FAQ</a></li>
+                <li><a href="/site/contacts">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 <div id="main">
 
-	<!-- Tray -->
-	<div id="tray" class="box">
-
-		<p class="f-left box">
-
-			<!-- Switcher -->
-			<!--
-			<span class="f-left" id="switcher">
-				<a href="#" rel="1col" class="styleswitch ico-col1" title="Display one column"><img src="design/switcher-1col.gif" alt="1 Column" /></a>
-				<a href="#" rel="2col" class="styleswitch ico-col2" title="Display two columns"><img src="design/switcher-2col.gif" alt="2 Columns" /></a>
-			</span>
-			-->
-			<big><big><strong>GoDocs</strong></big></big>
-
-		</p>
-
-		<% if logged_in? %>
-		<p class="f-right">Usuário: <strong><%= link_to current_usuario.nome, edit_usuario_path(current_usuario) %></a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a href="/logout" id="logout">Sair</a></strong></p>
-		<% end %>
-	</div> <!--  /tray -->
 
 	<hr class="noscreen" />
 
