@@ -42,30 +42,10 @@
             <div class="iconbox">
                 <img src="/images/icon3.png" alt="" class="leftimage" height="47" width="43" />
                 <h1>Validar Autenticidade</h1>
-                <span>
-                    <span style="font-weight: bold;">Estado: &nbsp; &nbsp;
-                    <select name="Estados">
-                        <option>CE</option>
-                        <option>SP</option>
-                        <option>RJ</option>
-                        <option>PB</option>
-                        <option>PR</option>
-                        <option>RN</option>
-                        <option>MA</option>
-                        <option>SC</option>
-                        <option>RS</option>
-                        <option>DF</option>
-                        <option>GO</option>
-                        <option>MS</option>
-                        <option>MT</option>
-                        <option>PE</option>
-                        <option>BA</option>
-                        <option>SE</option>
-                        <option>AL</option>
-                    </select>
-                </span>
-                <br />
-                <span style="font-weight: bold;">No. Selo: &nbsp;<input name="selo" size="14"/></span>
+                <% form_tag('/documentos/verificar') do -%>
+                <span style="font-weight: bold;">No. Selo: &nbsp;<%= text_field_tag 'selo' %></span>
+                <%= submit_tag "Consultar"%>
+                <% end %> 
             </div>
             <div class="iconline"></div>
      
@@ -73,7 +53,7 @@
                 <img style="width: 48px; height: 48px;" src="/images/icon_mailbox1.gif" alt="" class="leftimage" />
                 <h1>Acessar o sistema</h1>
                 <% form_tag conta_path do -%>
-                <span style="font-weight: bold;">CPF/CNPJ: <%= text_field_tag 'login', @login %></span><br style="font-weight: bold;" />
+                <span style="font-weight: bold;">Login: <%= text_field_tag 'login', @login %></span><br style="font-weight: bold;" />
                 <span style="font-weight: bold;">Chave&nbsp;Acesso: &nbsp; <%= password_field_tag 'password', nil %></span>                
                 <%= submit_tag 'Entrar' %>
                 <% end -%>
