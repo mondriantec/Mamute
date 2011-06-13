@@ -16,17 +16,36 @@
   -->
 
   <label> 
-	<b>CPF NOTIFICADO</b>
-    <%= f.text_field :motivo_notificacao_id %>
+	<b>CPF NOTIFICADO </b>
+	<%= f.text_field :cpf %>
   </label>
- 
+
+  <label>		    
+	<b>ENDEREÇO: </b>
+	<%= f.text_field :endereco %>
+  </label>
+  <label>	    
+	<b>BAIRRO: </b>
+	<%= f.text_field :bairro %>
+  </label>
+  
+  <label>	     
+	<b>UF </b>
+	<%= f.select :uf, @ufs  %>
+  </label>
+ <label>		    
+	<b>CIDADE </b>
+	<%= f.select :cidade, Cidade.find(:all).collect { |c| [c.nome, c.id]}%>
+  </label>
 
 
 
   <label> 
 
-	<b>motivo_notificacao_id</b>
-    <%= f.text_field :motivo_notificacao_id %>
+	<b>Motivo Notificação </b>
+    <%= f.select :motivo_notificacao_id, MotivoNotificacao.find(:all).collect { |m| [m.motivo, m.id]}%>
+
+    	
   </label>
   <label>
 
