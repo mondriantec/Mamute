@@ -26,6 +26,7 @@ class NotificacoesController < ApplicationController
   # GET /notificacoes/new
   # GET /notificacoes/new.xml
   def new
+    @cidades = Cidade.all(:conditions => ['uf = ?', "#{params[:uf].blank? ? 'CE' : params[:uf]}"], :order => 'nome')
     @notificacao = Notificacao.new
 
     respond_to do |format|
@@ -83,5 +84,13 @@ class NotificacoesController < ApplicationController
       format.html { redirect_to(notificacoes_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  def get_municipios
+    unless params[:uf].blank?
+      @cidades = Cidade.all(:conditions => ['uf = ?', params[:uf]], :order => 'nome')
+    end
+    
+    render :layout => false
   end
 end

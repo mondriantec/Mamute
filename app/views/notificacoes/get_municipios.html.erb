@@ -1,0 +1,3 @@
+<% if @cidades %>
+  <%= select_tag 'noticacoes[cidade]', options_for_select(@cidades.collect { |c| [c.nome, c.id] }.insert(0, ['Selecione um Município...', ''])), :onchange => 'remove_css(this)', :valida => true %> 
+<% end %>
