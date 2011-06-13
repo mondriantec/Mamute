@@ -93,4 +93,5 @@ class NotificacoesController < ApplicationController
     
     render :layout => false
   end
+  
 end

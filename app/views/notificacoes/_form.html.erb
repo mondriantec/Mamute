@@ -17,7 +17,7 @@
 
   <label> 
 	<b>CPF NOTIFICADO </b>
-	<%= f.text_field :cpf %>
+	<%= f.text_field :cpf, :id => 'cpf' %>
   </label>
 
   <label>		    
@@ -31,13 +31,13 @@
   
   <label>	     
 	<b>UF </b>
-    <%= select_tag 'notificacao[uf]', options_for_select(lista_estados, "#{params[:uf].blank? ? 'nil' : params[:uf]}") %>
+    <%= select_tag 'notificacao[uf]', options_for_select(lista_estados, "#{params[:uf].blank? ? 'nil' : params[:uf]}"), :id => 'select_cidade_uf' %>
   </label>
 
   <label>		    
 	<b>CIDADE </b>
     <span id="div_municipios">
-        <%= select_tag 'dute[codmunic]', options_for_select(@cidades.collect { |c| [c.nome, c.id] }.insert(0, ['Selecione um Município...', ''])), :onchange => 'remove_css(this)', :valida => true %>
+        <%= select_tag 'notificacao[cidade]', options_for_select(@cidades.collect { |c| [c.nome, c.id] }.insert(0, ['Selecione um Município...', ''])), :onchange => 'remove_css(this)', :valida => true %>
     </span>
   </label>
 
@@ -52,21 +52,8 @@
   </label>
 
 
-
   <p class="form_bar">
     <%= f.submit 'Salvar' %>
   </p>
 <% end %>
 </div>
-
-<script>
-jQuery(document).ready(function(){
-    
-    // Toda vez que houver modifacao no campo de uf é executado uma ação
-    jQuery('#notificacao_uf').change( function() {
-        jQuery.post('get_municipios', { uf: jQuery('#notificacao_uf').val() }, function(retorno) {
-            jQuery('#div_municipios').html(retorno);
-        });
-    });
-});
-</script>
