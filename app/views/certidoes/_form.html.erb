@@ -105,12 +105,12 @@
 	 
     <div class="separador">
         <label>Titular</b></label>
-        <%= text_field_tag 'certidao[cartao_titular]' %>
+        <%= text_field_tag 'cartao_titular' %>
     </div>  
 	 
     <div class="separador">
         <label>Cod de Segurança</b></label>
-        <%= text_field_tag 'certidao[cartao_codigo]' %>
+        <%= text_field_tag 'cartao_codigo' %>
     </div>  
 	 
     <div class="separador">
@@ -141,8 +141,8 @@
 	    <div style="clear:both"></div>
     </div>	
     
-    <label><b>Titular</b><%= text_field_tag 'certidao[cartao_titular]' %></label>
-    <label><b>Cod de Segurança</b><%= text_field_tag 'certidao[cartao_codigo]' %></label>
+    <label><b>Titular</b><%= text_field_tag 'cartao_titular' %></label>
+    <label><b>Cod de Segurança</b><%= text_field_tag 'cartao_codigo' %></label>
     
 	<label><b>Num. Cartão</b><%= f.text_field :numero_cartao %></label>
 	<label><b>Validade</b><%= f.select :mes_validade_cartao,['1','2','3','4','5','6','7','8','9','10','11','12'] %>/
