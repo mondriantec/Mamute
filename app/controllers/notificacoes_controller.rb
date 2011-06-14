@@ -49,7 +49,9 @@ class NotificacoesController < ApplicationController
 	u = Usuario.new
 	u.nome = params[:notificado][:nome]
         u.cpf = params[:notificado][:cpf]
-        u.save
+        u.password = u.password_confirmation = Time.now.to_i.to_s
+        u.email = u.password + '@teste.com'
+        u.save!
     end
     @notificacao.notificado = u
 
