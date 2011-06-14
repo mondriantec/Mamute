@@ -5,12 +5,20 @@
 
 <p>
   <b>Notificado:</b>
-  <%=h @notificacao.notificado_id %>
+  <%=h @notificacao.cpf %>
+</p>
+
+<p>
+  <b>Endereço:</b>
+  <%=h @notificacao.endereco %> /
+  <%=h @notificacao.bairro %> /
+  <%=h @notificacao.cidade.nome%>-
+  <%=h @notificacao.uf%>
 </p>
 
 <p>
   <b>Motivo notificacao:</b>
-  <%=h @notificacao.motivo_notificacao_id %>
+  <%=h @notificacao.motivo_notificacao.motivo %>
 </p>
 
 <p>

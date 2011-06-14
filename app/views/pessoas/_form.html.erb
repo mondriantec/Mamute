@@ -15,39 +15,43 @@
 
 
 
-  <label class="nova_linha_form"><b>Rg</b>
+  <label class="uma_linha_form"><b>Rg</b>
     <%= f.text_field :rg, :size => "14" %>
   </label>
-  <label><b>Orgão </b>
+  <label class="uma_linha_form"><b>Orgão Emissor </b>
     <%= f.text_field :orgao_emissor_rg, :size => "14" %>
   </label>
-  <label class="quebrar_linha_form"><b>UF </b>
-    <%= f.text_field :uf_emissor_rg, :size => "2" %>
+  <label class="uma_linha_form"><b>UF EMISSOR </b>
+    <%= select_tag :uf_emissor_rg, options_for_select(lista_estados, "#{params[:uf].blank? ? 'nil' : params[:uf]}") %>
   </label>
 
-  <label class="nova_linha_form"><b>CPF</b>
+  <label class="uma_linha_form"><b>CPF</b>
     <%= f.text_field :cpf,  :size => "14"  %>
   </label>
-  <label><b>CNH </b>
+  <label class="uma_linha_form"><b>CNH </b>
     <%= f.text_field :cnh, :size => "14" %>
   </label>
-  <label  class="quebrar_linha_form"><b>Estado Civil </b>
+  <label  class="uma_linha_form"><b>Estado Civil </b>
     <%= f.text_field :estado_civil, :size => 10 %>
   </label>
 
 
-  <label class="nova_linha_form"><b>endereco </b>
+  <label class="uma_linha_form"><b>ENDEREÇO </b>
     <%= f.text_field :endereco %>
   </label>
-  <label class="quebrar_linha_form"><b>bairro </b>
+  <label class="uma_linha_form"><b>BAIRRO </b>
     <%= f.text_field :bairro %>
   </label>
 
+ <label class="uma_linha_form" >    
+	<b>UF </b>
+    <%= select_tag 'notificacao[uf]', options_for_select(lista_estados, "#{params[:uf].blank? ? 'nil' : params[:uf]}") %>
+  </label>	
 
-  <label class="nova_linha_form"><b>cidade_id </b>
+  <label class="uma_linha_form"><b>CIDADE </b>
     <%= f.text_field :cidade_id %>
   </label>
-  <label class="quebrar_linha_form"><b>cep </b>
+  <label class="uma_linha_form"><b>CEP </b>
     <%= f.text_field :cep %>
   </label>
 
