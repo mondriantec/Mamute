@@ -54,7 +54,7 @@
                 <h1>Sua Área</h1>
                 <br />
                 <% form_tag conta_path do -%>
-                <span style="font-weight: bold;">Login: <%= text_field_tag 'login', @login %></span><br style="font-weight: bold;" />
+                <span style="font-weight: bold;">CPF/CNPJ: <%= text_field_tag 'login', @login %></span><br style="font-weight: bold;" />
                 <span style="font-weight: bold;">Chave&nbsp;Acesso: &nbsp; <%= password_field_tag 'password', nil %></span>                
                 <%= submit_tag 'Entrar' %>
                 <% end -%>
