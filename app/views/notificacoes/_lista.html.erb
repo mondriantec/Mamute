@@ -4,21 +4,17 @@
     <th>Cartorio</th>
     <th>Notificado</th>
     <th>Motivo notificacao</th>
-    <th>Texto</th>
     <th>Data envio usuario</th>
     <th>Status</th>
-    <th>Motivo status</th>
   </tr>
 
 <% notificacoes.each do |notificacao| %>
   <tr>
-    <td><%=h notificacao.cartorio_id %></td>
-    <td><%=h notificacao.cpf %></td>
+    <td><%=h notificacao.cartorio.oficio if notificacao.cartorio %></td>
+    <td><%=h notificacao.notificado.nome if notificacao.notificado %></td>
     <td><%=h notificacao.motivo_notificacao.motivo %></td>
-    <td><%=h notificacao.texto %></td>
     <td><%=h notificacao.data_envio_usuario %></td>
     <td><%=h notificacao.status %></td>
-    <td><%=h notificacao.motivo_status %></td>
     <td><%= link_to 'Visualizar', notificacao %></td>
     <td><%= link_to 'Editar', edit_notificacao_path(notificacao) %></td>
     <td><%= link_to 'Apagar', notificacao, :confirm => 'Tem certeza?', :method => :delete %></td>
