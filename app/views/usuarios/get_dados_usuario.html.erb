@@ -1,1 +1,7 @@
-dados
+<label><b>Nome</b>
+   <% if @usuario.nil? %>
+	<%= text_field_tag 'notificado[nome]' %>
+  <% else %>
+	<%= @usuario.nome %>
+  <% end %>
+</label>

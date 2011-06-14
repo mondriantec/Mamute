@@ -44,6 +44,14 @@ class NotificacoesController < ApplicationController
   # POST /notificacoes.xml
   def create
     @notificacao = Notificacao.new(params[:notificacao])
+    u = Usuario.find_by_cpf(params[:notificado][:cpf])
+    if u.nil?
+	u = Usuario.new
+	u.nome = params[:notificado][:nome]
+        u.cpf = params[:notificado][:cpf]
+        u.save
+    end
+    @notificacao.notificado = u
 
     respond_to do |format|
       if @notificacao.save

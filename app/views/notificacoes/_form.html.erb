@@ -17,11 +17,11 @@
 
   <label> 
 	<b>CPF NOTIFICADO </b>
-	<%= f.text_field :cpf %>
-    <span id="div_cpf">
-    </span>
+	<%= text_field_tag 'notificado[cpf]' %>
   </label>
 
+    <div id="div_cpf">
+    </div>
   
   <label>		    
 	<b>ENDEREÇO: </b>
@@ -65,7 +65,7 @@
                                     :update => :div_municipios, 
                                     :with   => 'uf' %>
 
-<%= observe_field 'notificacao_cpf', :on => 'blur', 
+<%= observe_field 'notificado_cpf', :on => 'blur', 
                                      :url => {:controller => 'usuarios', :action => 'get_dados_usuario'}, 
                                      :update => 'div_cpf', 
                                      :with => 'cpf' -%>
