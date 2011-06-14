@@ -1,5 +1,5 @@
 class UsuariosController < ApplicationController
-  # Be sure to include AuthenticationSystem in Application Controller instead
+
   include AuthenticatedSystem
                           
   def por_cpf
@@ -40,7 +40,8 @@ class UsuariosController < ApplicationController
   
   def get_dados_usuario
     @usuario = Usuario.find_by_cpf(params[:cpf])
-    render :json => @usuario, :layout => false
+    
+    render :layout => false
   end
   
 end
