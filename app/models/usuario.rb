@@ -58,7 +58,7 @@ class Usuario < ActiveRecord::Base
   end
 
   private
-  def star_login
+  def setar_login
 	self.login = self.cpf
   end
   
