@@ -19,24 +19,25 @@
     <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/stylesheets/lavalamp.css" type="text/css" media="screen" />
     
+    <!-- jQuery -->
 	<script type="text/javascript" src="/javascripts/mondrian/jquery.js"></script>
+    <script> jQuery.noConflict();</script>
 	<script type="text/javascript" src="/javascripts/mondrian/switcher.js"></script>
 	<script type="text/javascript" src="/javascripts/mondrian/toggle.js"></script>
 	<script type="text/javascript" src="/javascripts/mondrian/ui.core.js"></script>
 	<script type="text/javascript" src="/javascripts/mondrian/ui.tabs.js"></script>   
-	
-    <%= javascript_include_tag 'application.js' %>
-
-	<!-- JS DO SITE -->
     <script type="text/javascript" src="/javascripts/jquery.easing.min.js"></script>
     <script type="text/javascript" src="/javascripts/jquery.lavalamp.min.js"></script>
-    
+
+    <%= javascript_include_tag 'application.js' %>
+    <%= javascript_include_tag 'prototype.js' %>
+
 	<script type="text/javascript">
-	$(document).ready(function(){
-		$(".tabs > ul").tabs();
+	jQuery(document).ready(function(){
+		jQuery(".tabs > ul").tabs();
 		
 		// Efeitos do menu do site
-        $("#1, #2, #3").lavaLamp({
+        jQuery("#1, #2, #3").lavaLamp({
             fx: "backout",
             speed: 800,
             click: function(event, menuItem) {

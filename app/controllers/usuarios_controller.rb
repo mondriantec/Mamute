@@ -40,7 +40,8 @@ class UsuariosController < ApplicationController
   
   def get_dados_usuario
     @usuario = Usuario.find_by_cpf(params[:cpf])
-    render :json => @usuario, :layout => false
+    
+    render :layout => false
   end
   
 end

@@ -17,7 +17,9 @@
 
   <label> 
 	<b>CPF NOTIFICADO </b>
-	<%= f.text_field :cpf, :id => 'cpf' %>
+	<%= f.text_field :cpf %>
+    <span id="div_cpf">
+    </span>
   </label>
 
   <label>		    
@@ -31,7 +33,7 @@
   
   <label>	     
 	<b>UF </b>
-    <%= select_tag 'notificacao[uf]', options_for_select(lista_estados, "#{params[:uf].blank? ? 'nil' : params[:uf]}"), :id => 'select_cidade_uf' %>
+    <%= select_tag 'notificacao[uf]', options_for_select(lista_estados, "#{params[:uf].blank? ? 'nil' : params[:uf]}") %>
   </label>
 
   <label>		    
@@ -57,3 +59,12 @@
   </p>
 <% end %>
 </div>
+
+<%= observe_field 'notificacao_uf', :url => { :action => 'get_municipios' }, 
+                                    :update => :div_municipios, 
+                                    :with   => 'uf' %>
+
+<%= observe_field 'notificacao_cpf', :on => 'blur', 
+                                     :url => {:controller => 'usuarios', :action => 'get_dados_usuario'}, 
+                                     :update => 'div_cpf', 
+                                     :with => 'cpf' -%>
