@@ -13,8 +13,8 @@
 <% notificacoes.each do |notificacao| %>
   <tr>
     <td><%=h notificacao.cartorio_id %></td>
-    <td><%=h notificacao.notificado_id %></td>
-    <td><%=h notificacao.motivo_notificacao_id %></td>
+    <td><%=h notificacao.cpf %></td>
+    <td><%=h notificacao.motivo_notificacao.motivo %></td>
     <td><%=h notificacao.texto %></td>
     <td><%=h notificacao.data_envio_usuario %></td>
     <td><%=h notificacao.status %></td>
