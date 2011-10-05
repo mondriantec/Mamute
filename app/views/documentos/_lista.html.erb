@@ -24,7 +24,7 @@
 
 	<% documentos.each do |documento| %>
 	  <tr>       
-		<td><%= documento.usuario.nome %>
+		<td><%= documento.usuario.nome if documento.usuario %>
 	    <% documento.valor_campo_documentos.each do |v| %>
 	      <td><%= v.valor %></td>
 	    <% end %>

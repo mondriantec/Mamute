@@ -322,3 +322,10 @@ h6 {
 	color: #fff;
 	text-decoration: none;
 }
+
+div.new_line {
+    background-color: #DDDDDD;
+    height: 26px;
+    width: 100%;
+}
+

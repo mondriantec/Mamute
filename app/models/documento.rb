@@ -10,7 +10,7 @@ class Documento < ActiveRecord::Base
   has_attached_file :imagem
   
   before_save :usar_selo 
-  
+
   def campo_chave
     self.tipo_documento.campo_documentos.find(:first, :order => "ordem")
   end
@@ -39,7 +39,6 @@ class Documento < ActiveRecord::Base
     if (self.imagem_content_type == 'application/pdf' ) 
         self.imagem.url
     else
-    
         require 'fpdf'
 
         @documento = self
@@ -52,7 +51,6 @@ class Documento < ActiveRecord::Base
         @pdf.SetTextColor(0, 0, 0)
 
         @pdf.SetLineWidth(0.1)
-
 
         @pdf.SetFont('Arial','B',10)
 

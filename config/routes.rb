@@ -62,7 +62,7 @@ ActionController::Routing::Routes.draw do |map|
   map.login '/login', :controller => 'contas', :action => 'new'
   map.register '/register', :controller => 'usuarios', :action => 'create'
   map.signup '/signup', :controller => 'usuarios', :action => 'new'
-  map.resources :usuarios
+  map.resources :usuarios, :collection => {:busca_nome => [:post]}
 
   map.resource :conta
 

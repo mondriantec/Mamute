@@ -9,7 +9,7 @@ development:
 
 production:
   adapter: postgresql
-  host: localhosr
+  host: localhost
   username: postgres
   password: postgres
   database: irtd_dev

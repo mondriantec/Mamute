@@ -17,15 +17,20 @@ tabStrip="true">
     </div>                  
            
     <div dojoType="dijit.layout.ContentPane" title="Localizar Cliente" selected="true">
-		Pesquisar	    
+		<%#= render 'pesquisar' %>
+           <table>
+              <tr><th> ID </th> <th> Nome </th> <th> CPF </th> </tr>
+              <% Usuario.all(:conditions => "entidade_id is null", :order => 'nome').each do |c| %>
+                    <tr>
+                        <td> <%= c.id %> </td>
+                        <td> <%= c.nome %></td>
+                        <td> <%= c.cpf%></td>
+                   </tr> 
+              <% end %>
+           </table>
     </div>   
     <% end %>
-
-
-
-
 </div>
-
 
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js" djConfig="parseOnLoad: true"></script>
