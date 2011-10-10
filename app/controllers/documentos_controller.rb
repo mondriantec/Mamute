@@ -90,8 +90,9 @@ class DocumentosController < ApplicationController
   # PUT /documentos/1
   # PUT /documentos/1.xml
   def update
+    documento = Documento.find params[:id]
     Documento.transaction do                         
-      @usuario = Usuario.find_by_cpf(params[:usuario][:cpf])                          
+      @usuario = Usuario.find_by_id(documento.usuario_id)                          
       @documento = Documento.new(params[:documento])      
       @documento.usuario = @usuario  
       @documento.cartorio_id = current_usuario.entidade_id
