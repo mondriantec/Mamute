@@ -3,7 +3,7 @@
 <% form_for(@documento) do |f| %>
   <%= f.error_messages %>
 
-<%= f.hidden_field_tag 'documento[usuario_id]', @documento.usuario_id %>
+<%= hidden_field_tag 'documento[usuario_id]', @documento.usuario_id %>
 
 <% for c in @campos %>
 	<label><b><%= c.nome %></b>
