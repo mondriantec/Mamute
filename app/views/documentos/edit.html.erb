@@ -3,11 +3,6 @@
 <% form_for(@documento) do |f| %>
   <%= f.error_messages %>
 
-
-<label>
-	    <b>CPF Cliente</b><%= text_field_tag 'usuario[cpf]' %>   <span id="nome_cliente"></span>
-</label>
-
 <% for c in @campos %>
 	<label><b><%= c.nome %></b>
 	<% case c.tipo_campo when "TEXTO" %>
@@ -22,11 +17,6 @@
 	</label>
 <% end %>    
 
-<%= observe_field 'usuario_cpf',
-		:update => 'nome_cliente',
-		:url => {:controller => 'usuarios', :action => 'por_cpf'},
-		:with => 'cpf'
- %>
   <p>
     <%= f.submit 'Salvar' %>
   </p>
