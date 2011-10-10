@@ -31,7 +31,7 @@
                                                                  
 
 <label><b>CPF</b>
-<%= f.text_field :cpf %>
+<%= f.text_field :cpf, :onkeypress => 'mascara(this, cpf_cnpj)' %>
 </label>     
 
 <label><b>Nome do Pai</b>
