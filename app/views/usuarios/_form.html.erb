@@ -28,10 +28,11 @@
 <label><b>RG e Orgão Emissor</b>
 <%= f.text_field :rg %>           	<%= f.text_field :orgao_rg %>
 </label>  
-                                                                 
+
+00.000.000/0001-00                                                                 
 
 <label><b>CPF</b>
-<%= f.text_field :cpf, :onkeypress => 'mascara(this, cpf_cnpj)' %>
+<%= f.text_field :cpf, :onkeypress => 'mascara(this, cpf_cnpj)', :maxlength => 18 %>
 </label>     
 
 <label><b>Nome do Pai</b>
