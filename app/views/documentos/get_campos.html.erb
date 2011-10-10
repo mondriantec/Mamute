@@ -1,6 +1,6 @@
 
 <label>
-	    <b>CPF Cliente</b><%= text_field_tag 'usuario[cpf]' %>   <span id="nome_cliente"></span>
+	    <b>CPF Cliente</b><%= text_field_tag 'usuario[cpf]', nil,  :onkeypress => 'mascara(this,cpf_cnpj)', :maxlength => 18 %>   <span id="nome_cliente"></span>
 </label>
 
 <% for c in @campos %>
@@ -8,7 +8,7 @@
 	<% case c.tipo_campo when "TEXTO" %>
 		<%= text_field_tag "metadados[#{c.id}]" %>
 		<% when "DATA" %>
-		    <%= text_field_tag "metadados[#{c.id}]" %>
+		    <%= text_field_tag "metadados[#{c.id}]" , nil, :onkeypress => 'mascara(this, data)', :maxlength => 10 %>
 		<% when "NUMERO" %>
 		    <%= text_field_tag "metadados[#{c.id}]" %>
 		<% when "TEXTO_LONGO" %>
