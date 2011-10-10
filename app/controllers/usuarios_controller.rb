@@ -11,7 +11,7 @@ class UsuariosController < ApplicationController
      @usuario = Usuario.find(:first, :conditions => ["entidade_id is null and cpf = ?",params[:cpf]])         
 
      if @usuario.nil?
-        render :text => '', :layout => false
+        render :text => 'Não Encontrado', :layout => false
      else
         render :text => @usuario.nome, :layout => false
      end
