@@ -39,7 +39,7 @@ class UsuariosController < ApplicationController
  
   def create                                    
     @usuario = Usuario.new(params[:usuario])
-    @usuario.cpf = params[:usuario][:cpf]
+    @usuario.cpf = params[:usuario][:cpf].gsub('.','').gsub('-','').gsub('/','')
     success = @usuario && @usuario.save 
     @usuario.entidade = current_usuario.entidade
 
