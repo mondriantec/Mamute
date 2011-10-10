@@ -41,7 +41,8 @@ class DocumentosController < ApplicationController
     end
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @documento }
+      format.xml  { rendd %>
+</div>er :xml => @documento }
     end
   end
 
@@ -59,6 +60,7 @@ class DocumentosController < ApplicationController
   # GET /documentos/1/edit
   def edit
     @documento = Documento.find(params[:id])
+    @campos = CampoDocumento.find(:all, :order => "ordem", :conditions => ["tipo_documento_id=?",@documento.tipo_documento_id])
   end
 
   # POST /documentos

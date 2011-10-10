@@ -3,10 +3,30 @@
 <% form_for(@documento) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :tipo_documento_id %><br />
-    <%= f.text_field :tipo_documento_id %>
-  </p>
+
+<label>
+	    <b>CPF Cliente</b><%= text_field_tag 'usuario[cpf]' %>   <span id="nome_cliente"></span>
+</label>
+
+<% for c in @campos %>
+	<label><b><%= c.nome %></b>
+	<% case c.tipo_campo when "TEXTO" %>
+		<%= text_field_tag "metadados[#{c.id}]" %>
+		<% when "DATA" %>
+		    <%= text_field_tag "metadados[#{c.id}]" %>
+		<% when "NUMERO" %>
+		    <%= text_field_tag "metadados[#{c.id}]" %>
+		<% when "TEXTO_LONGO" %>
+		    <%= text_area_tag "metadados[#{c.id}]" %>
+	<% end %>     
+	</label>
+<% end %>    
+
+<%= observe_field 'usuario_cpf',
+		:update => 'nome_cliente',
+		:url => {:controller => 'usuarios', :action => 'por_cpf'},
+		:with => 'cpf'
+ %>
   <p>
     <%= f.submit 'Salvar' %>
   </p>
