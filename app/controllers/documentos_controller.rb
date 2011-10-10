@@ -90,10 +90,19 @@ class DocumentosController < ApplicationController
   # PUT /documentos/1
   # PUT /documentos/1.xml
   def update
-    @documento = Documento.find(params[:id])
+    Documento.transaction do                         
+      @usuario = Usuario.find_by_cpf(params[:usuario][:cpf])                          
+      @documento = Documento.new(params[:documento])      
+      @documento.usuario = @usuario  
+      @documento.cartorio_id = current_usuario.entidade_id
+      resposta = @documento.save       
+      params[:metadados].each do |k,v|
+        @documento.valor_campo_documentos.create(:campo_documento_id => k, :valor => v)
+      end 
+    end
 
     respond_to do |format|
-      if @documento.update_attributes(params[:documento])
+      if resposta
         flash[:notice] = 'Documento was successfully updated.'
         format.html { redirect_to(@documento) }
         format.xml  { head :ok }
