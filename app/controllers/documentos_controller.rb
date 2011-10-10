@@ -41,8 +41,7 @@ class DocumentosController < ApplicationController
     end
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { rendd %>
-</div>er :xml => @documento }
+      format.xml  { render :xml => @documento }
     end
   end
 
