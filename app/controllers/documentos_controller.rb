@@ -90,7 +90,7 @@ class DocumentosController < ApplicationController
   # PUT /documentos/1
   # PUT /documentos/1.xml
   def update
-    @documento = Documento.find params[:id]
+    @documento = Documento.find params[:documento][:id]
     Documento.transaction do                         
       @documento.cartorio_id = current_usuario.entidade_id
       @documento.save       
@@ -102,7 +102,7 @@ class DocumentosController < ApplicationController
     respond_to do |format|
       if 1 == 1 # so pra ajudar nos testes
         flash[:notice] = 'Documento was successfully updated.'
-        format.html { redirect_to(documento) }
+        format.html { redirect_to(@documento) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
