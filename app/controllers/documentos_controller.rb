@@ -93,7 +93,9 @@ class DocumentosController < ApplicationController
     @documento = Documento.find params[:documento][:id]
     Documento.transaction do                         
       @documento.cartorio_id = current_usuario.entidade_id
-      @documento.save       
+      @documento.save  
+      #apaga os valores atuais
+      @documento.valor_campo_documentos.each {|v| v.delete}
       params[:metadados].each do |k,v|
         @documento.valor_campo_documentos.create(:campo_documento_id => k, :valor => v)
       end 
