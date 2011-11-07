@@ -37,7 +37,7 @@
 			prevText: 		'',
 			nextId: 		'nextBtn',	
 			nextText: 		'',
-			controlsShow:	true,
+			controlsShow:	false,
 			controlsBefore:	'',
 			controlsAfter:	'',	
 			controlsFade:	true,
@@ -48,9 +48,9 @@
 			lastText: 		'Last',
 			lastShow:		false,				
 			vertical:		false,
-			speed: 			1300,
+			speed: 			1500,
 			auto:			false,
-			pause:			3000,
+			pause:			5000,
 			continuous:		false
 		}; 
 		

@@ -4,9 +4,10 @@
   <%= f.error_messages %>
 
 <%= hidden_field_tag 'documento[id]', @documento.id %>
-
+<table>
 <% for c in @campos %>
-	<label><b><%= c.nome %></b>
+    <tr><td> <b> <%= c.nome %> </b></td>
+        <td> 
 	<% case c.tipo_campo when "TEXTO" %>
 		<%= text_field_tag "metadados[#{c.id}]", c.valor_campo(@documento) %>
 		<% when "DATA" %>
@@ -16,13 +17,16 @@
 		<% when "TEXTO_LONGO" %>
 		    <%= text_area_tag "metadados[#{c.id}]", c.valor_campo(@documento) %>
 	<% end %>     
-	</label>
+	</td>
+    </tr>
 <% end %>    
-<br>
-  <p>
-    <%= f.submit 'Salvar' %>
-  </p>
+  <tr>
+     <td colspan='2' style='text-align: right'>
+       <%= f.submit 'Salvar' %>
+     </td>
+  </tr>
 <% end %>
+</table>
 
 <%= link_to 'Visualizar', @documento %> |
 <%= link_to 'Voltar', documentos_path %>

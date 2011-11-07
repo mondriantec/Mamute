@@ -77,20 +77,22 @@ module ApplicationHelper
     #end
   end
 
-  def scaffold_tools
-		if File.exist?("#{RAILS_ROOT}/app/views/menus/_tools_#{self.controller_name}.html.erb")
-		  @scaffold_tools = true
-			render :partial => "menus/tools_#{self.controller_name}"
-		else
-		  """
 
-
-      <form action='#' method='get' id='search'>
-      	<fieldset>
-      		<legend>Buscar #{self.controller_name.singularize.capitalize}</legend>
-
+ def scaffold_tools
+                  if File.exist?("#{RAILS_ROOT}/app/views/menus/_tools_#{self.controller_name}.html.erb")
+                    @scaffold_tools = true
+                          render :partial => "menus/tools_#{self.controller_name}"
+                  else
+                    """
+   
+  
+        <form action='/#{self.controller_name}/search_#{self.controller_name.singularize}' method='get' id='search'>
+           <fieldset>
+                   <legend>Buscar #{self.controller_name.singularize.capitalize}</legend>
+   
       		<p>
-      		  <input type='text' size='17' name='' class='mondrian_text_box' style='width: 120px' />&nbsp;<input type='submit' value='OK' class='input-submit-02' /><br />
+      		  <input id='#{self.controller_name}' type='text' size='17' name='#{self.controller_name}' class='mondrian_text_box' style='width: 120px' />
+                  <input type='submit' value='OK' class='input-submit-02' /><br />
       		  <!--<a href='javascript:toggle('search-options');' class='ico-drop'>Busca Avançada</a>-->
       		</p>
 

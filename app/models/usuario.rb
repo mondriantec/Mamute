@@ -5,6 +5,7 @@ class Usuario < ActiveRecord::Base
   has_and_belongs_to_many :perfis
   belongs_to :entidade, :polymorphic => true  
   has_many :documentos
+  belongs_to :cadastrado_por, :class_name => 'Usuario', :foreign_key => 'cadastrado_por_id'
   
   include Authentication
   include Authentication::ByPassword

@@ -4,49 +4,46 @@
   </div>
 
 <% form_for (@usuario) do |f| -%>
-<%= error_messages_for :usuario %>
+   <%= error_messages_for :usuario %>
 
-<label><b>Nome</b>
-<%= f.text_field :nome, :size => 80 %>
-</label>
+   <label><b>Nome</b>
+       <%= f.text_field :nome, :size => 80 %>
+   </label>
 
-<label><b>Login</b>
-<%= f.text_field :login %>
-</label>
+   <% if !@usuario.entidade.nil? %>
+      <label><b>Login</b>
+         <%= f.text_field :login %>
+      </label>
+   <% end %>
 
-<label><b>E-mail</b>
-<%= f.text_field :email %></label>
+   <label><b>E-mail</b>
+   <%= f.text_field :email %></label>
 
-<label><b>Senha</b>
-<%= f.password_field :password %></label>
+   <label><b>Senha</b>
+   <%= f.password_field :password %></label>
 
-<label><b>Confirmar Senha</b>
-<%= f.password_field :password_confirmation %></label>  
+   <label><b>Confirmar Senha</b>
+   <%= f.password_field :password_confirmation %></label>  
 
+   <label><b>CPF</b>
+       <%= f.text_field :cpf, :onkeypress => 'mascara(this, cpf_cnpj)', :maxlength => 18, :size => '30' %>
+   </label>     
 
-<% if @usuario.entidade.nil? %>
-<label><b>RG e Orgão Emissor</b>
-<%= f.text_field :rg %>           	<%= f.text_field :orgao_rg %>
-</label>  
+   <% if @usuario.entidade.nil? %>
+      <label><b>RG e Orgão Emissor</b>
+         <%= f.text_field :rg %>           	<%= f.text_field :orgao_rg %>
+      </label>  
 
-                                                           
+     <label><b>Nome do Pai</b>
+         <%= f.text_field :pai, :size => 80 %>
+     </label>             
 
-<label><b>CPF</b>
-<%= f.text_field :cpf, :onkeypress => 'mascara(this, cpf_cnpj)', :maxlength => 18 %>
-</label>     
+     <label><b>Nome da Mãe</b>
+         <%= f.text_field :mae, :size => 80 %>
+     </label>
+   <% end %>
 
-<label><b>Nome do Pai</b>
-<%= f.text_field :pai, :size => 80 %>
-</label>             
-
-
-<label><b>Nome da Mãe</b>
-<%= f.text_field :mae, :size => 80 %>
-</label>
-            
-<% end %>
-
-<p class="form_bar"><%= submit_tag 'Salvar' %></p>
+   <p class="form_bar"><%= submit_tag 'Salvar' %></p>
 <% end -%>
 </div>
 

@@ -1,9 +1,35 @@
-<div id="nav">
-    <ul class="lavaLampWithImage" id="1">
-        <li class="current"><a href="/site">Home</a></li>
-        <li><a href="/site/about">O IRTDPJ</a></li>
-        <li><a href="/site/services">Servi&ccedil;os</a></li>
-        <li><a href="/site/events">FAQ</a></li>
-        <li><a href="/site/contacts">Contato</a></li>
-    </ul>
+<style>
+  .linha_h { border-right: 1px solid #363636; height: 22px; float: left; padding: 0 5px}
+  .current_menu { color: #4c810c !important}
+</style>
+
+<div id='menu_site' style='padding-top: 7px'>
+   <div style='float:left; margin-left: 20px'> 
+       <a class="<%='current_menu' if action_name == 'index'%>" href="/site">HOME</a>                       
+   </div>
+
+   <div class='linha_h'></div>
+
+   <div style='float:left; margin-left: 10px'> 
+        <a class="<%='current_menu' if action_name == 'about'%>" href="/site/about">O IRTDPJ</a>                       
+   </div>
+
+   <div class='linha_h'></div>
+
+   <div style='float:left; margin-left: 10px'>
+       <a class="<%='current_menu' if action_name == 'services'%>" href="/site/services">SERVI&Ccedil;OS</a>
+   </div>
+
+   <div class='linha_h'></div>
+
+   <div style='float:left; margin-left: 10px'> 
+       <a class="<%='current_menu' if action_name == 'events'%>" href="/site/events">FAQ</a>
+   </div>
+
+   <div class='linha_h'></div>
+
+   <div style='float:left; margin-left: 10px'>
+       <a class="<%='current_menu' if action_name == 'contacts'%>" href="/site/contacts">CONTATO</a>    
+   </div>
+
 </div>

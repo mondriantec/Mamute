@@ -1,3 +1,20 @@
+<script>
+var i = 0;
+function pesquisarListar(){
+   if ( i % 2 == 0 ){
+      document.getElementById("listar").style.display="none";
+      document.getElementById("pesquisar").style.display="block";
+      document.getElementById("listar_clientes").style.display="block";
+   } else {
+      document.getElementById("listar").style.display="block";
+      document.getElementById("pesquisar").style.display="none";
+      document.getElementById("listar_clientes").style.display="none";
+   }
+   i++;
+}
+
+</script>
+
 <h1>Cadastro de Usuários</h1>
 <br/>
 <div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 300px;"
@@ -17,16 +34,32 @@ tabStrip="true">
     </div>                  
            
     <div dojoType="dijit.layout.ContentPane" title="Localizar Cliente" selected="true">
-		<%#= render 'pesquisar' %>
-           <table>
-              <tr><th> ID </th> <th> Nome </th> <th> CPF </th> </tr>
-              <% Usuario.all(:conditions => "entidade_id is null", :order => 'nome').each do |c| %>
-                    <tr>
-                        <td> <%= c.id %> </td>
-                        <td> <%= c.nome %></td>
-                        <td> <%= c.cpf%></td>
-                   </tr> 
-              <% end %>
+       <%#= render 'pesquisar' %>
+       <table width='600'>
+          <tr> 
+             <th width='120'> CPF </th>
+             <th width='360'> Nome </th>
+             <th width='120' >
+                 <a href='#' style='color: white' onclick="pesquisarListar()"> Pesquisar / Listar </a>
+             </th> 
+          </tr>
+       </table>
+
+       <table width='600' id='pesquisar' style='display: none'>
+          <tr>
+              <td width='112'> <%= text_field_tag :buscar_cpf,  nil, :style=> "width: 110px" %> </td>
+              <td width='478'> <%= text_field_tag :buscar_nome, nil, :style=> "width: 454px"  %> </td>
+          </tr>
+       </table>
+          <table id='listar_clientes'> </table>
+
+       <table width='600' id='listar'>
+          <% Usuario.all(:conditions => "cadastrado_por_id = #{current_usuario.entidade_id}", :order => 'nome').each do |c| %>
+             <tr>
+                <td width='112'> <%= c.cpf%></td>
+                <td width='478' colspan='2'> <%= c.nome %></td>
+              </tr> 
+                  <% end %>
            </table>
     </div>   
     <% end %>
@@ -40,5 +73,10 @@ tabStrip="true">
 </script>
 
 
+<%= observe_field 'buscar_cpf',  :url => { :action => 'buscar_clientes' },
+                                           :update => :listar_clientes,
+                                           :with   => "'nome=' + jQuery('#buscar_nome').val() + '&cpf='+ jQuery('#buscar_cpf').val()" %>
 
-
+<%= observe_field 'buscar_nome', :url => { :action => 'buscar_clientes' },
+                                           :update => :listar_clientes,
+                                           :with   => "'nome=' + jQuery('#buscar_nome').val() + '&cpf='+ jQuery('#buscar_cpf').val()" %>

@@ -1,6 +1,6 @@
 
 <label>
-	    <b>CPF Cliente</b><%= text_field_tag 'usuario[cpf]', nil,  :onkeypress => 'mascara(this,cpf_cnpj)', :maxlength => 18 %>   <span id="nome_cliente"></span>
+	    <b>CPF Cliente</b><%= text_field_tag 'usuario[cpf]', nil , :maxlength => 18, :onkeypress => 'mascara(this, cpf_cnpj)' %><span id="nome_cliente"></span>
 </label>
 
 <% for c in @campos %>

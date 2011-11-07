@@ -17,17 +17,43 @@ class DocumentosController < ApplicationController
   
   # GET /documentos
   # GET /documentos.xml
-  def index                    
-    
-    @documento = Documento.new
-    @documentos = []  
-    if params[:tipo] and params[:tipo][:tipo_documento_id]
-      @documentos = Documento.find_all_by_tipo_documento_id(params[:tipo][:tipo_documento_id]).paginate(:page => params[:page], :per_page => 5)
-    end
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @documentos }
-    end
+  def index            
+     # listagem de documentos
+     @tipo_documento = []
+     if !params[:tipo]
+        @tipo_documento << ['- Selecione -','']                                                               
+     else
+        TipoDocumento.find_all_by_id( params[:tipo][:tipo_documento_id]).each do |t|
+           @tipo_documento << [t.tipo, t.id]
+        end
+     end
+     TipoDocumento.all.each do |t|
+        @tipo_documento << [t.tipo, t.id] if !@tipo_documento.include?  [t.tipo, t.id]
+     end
+ 
+ 
+     # Novo Documento
+     @documento = Documento.new
+     
+     # Listagem de Documentos
+     @documentos = []  
+     condition = ''
+     if current_usuario.entidade.nil?
+        condition = " and cliente_id = #{current_usuario.cpf}"  
+     else
+        condition = " and cartorio_id = #{current_usuario.entidade_id}"  
+     end
+
+     if params[:tipo] and params[:tipo][:tipo_documento_id]
+        @documentos = Documento.all(:conditions => "tipo_documento_id = #{params[:tipo][:tipo_documento_id]} #{condition}" ).paginate(:page =>params[:page], :per_page =>5)
+     end
+ 
+ 
+     # Resposta 
+     respond_to do |format|
+       format.html # index.html.erb
+       format.xml  { render :xml => @documentos }
+     end
   end
 
   # GET /documentos/1
@@ -66,11 +92,14 @@ class DocumentosController < ApplicationController
   # POST /documentos.xml
   def create                                           
     Documento.transaction do                         
-      @usuario = Usuario.find_by_cpf(params[:usuario][:cpf])                          
+      @cliente = Usuario.find_by_cpf(params[:usuario][:cpf])                          
       @documento = Documento.new(params[:documento])      
-      @documento.usuario = @usuario  
+      @documento.usuario = current_usuario
+      @documento.cliente = @cliente
       @documento.cartorio_id = current_usuario.entidade_id
-      @documento.save       
+
+      @documento.save      
+
       params[:metadados].each do |k,v|
         @documento.valor_campo_documentos.create(:campo_documento_id => k, :valor => v)
       end 

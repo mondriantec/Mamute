@@ -2,13 +2,12 @@ class UsuariosController < ApplicationController
 
   include AuthenticatedSystem
 
-  def busca_nome
-     @usuarios = Usuario.find(:all, :conditions => "entidade_id is null and nome like '%#{params[:nome_cliente]}%'")
-     render :layout => false
+  def search_usuario
+     @usuarios = current_usuario.entidade.usuarios.find(:all, :conditions => "nome like '%#{params[:usuarios]}%'") 
   end
                           
   def por_cpf
-     @usuario = Usuario.find(:first, :conditions => ["entidade_id is null and cpf = ?",params[:cpf]])         
+     @usuario = Usuario.find(:first, :conditions => ["entidade_id is null and cpf = ?",params[:cpf].gsub('.','').gsub('-','').gsub('/','')])         
 
      if @usuario.nil?
         render :text => 'Não Encontrado', :layout => false
@@ -40,8 +39,15 @@ class UsuariosController < ApplicationController
   def create                                    
     @usuario = Usuario.new(params[:usuario])
     @usuario.cpf = params[:usuario][:cpf].gsub('.','').gsub('-','').gsub('/','')
+
+    if @usuario.login.nil?
+       @usuario.login          = @usuario.cpf 
+       @usuario.cadastrado_por_id = current_usuario.entidade_id
+    else
+       @usuario.entidade = current_usuario.entidade
+    end
+
     success = @usuario && @usuario.save 
-    @usuario.entidade = current_usuario.entidade
 
     if success && @usuario.errors.empty?
       flash[:notice] = "Usuário Cadastrado com Sucesso!"
@@ -57,5 +63,28 @@ class UsuariosController < ApplicationController
     
     render :layout => false
   end
-  
+
+  def destroy
+    @usuario = Usuario.find(params[:id])
+    @usuario.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(usuarios_url) }
+      format.xml  { head :ok }
+    end
+  end
+
+  def buscar_clientes
+    condition = "cadastrado_por_id = #{current_usuario.entidade_id}"
+    
+    if !params[:nome].blank? 
+       condition += " and UPPER(nome) like '%#{params[:nome].upcase}%'"
+    end
+    if !params[:cpf].blank? 
+       condition += " and cpf like '%#{params[:cpf]}%'"
+    end
+
+    @usuarios = Usuario.all(:conditions => condition )
+    render :layout => false
+  end  
 end

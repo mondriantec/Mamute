@@ -2,7 +2,7 @@
 <form> 
 	<label>
 		<b>Tipo de Documento</b>
-		<%= select 'tipo','tipo_documento_id', options_for_select(TipoDocumento.all.collect {|t| [t.tipo, t.id]}), :include_blank => true%>
+		<%= select 'tipo','tipo_documento_id', options_for_select(@tipo_documento) %>
 	</label>           
 	<p class="form_bar">
 	   <%= submit_tag "Listar" %> 
@@ -12,30 +12,36 @@
 
 
 <br/>  
-<% if documentos.size > 0%>
-	<table>
-	  <tr>        
-		<th>Dono</th>
-	    <% documentos[0].tipo_documento.campo_documentos.each do |c| %>
-	      <th><%= c.nome %></th>
-	    <% end %>
-	    <th colspan="3">
-	  </tr>
+
+<% if documentos.size > 0 %>
+
+     <table>
+	<tr>        
+           <th>Dono</th>
+              <% ids = [] %>
+              <% TipoDocumento.find(params[:tipo][:tipo_documento_id]).campo_documentos.each do |c| %>
+                 <th><%= c.nome %></th>
+                 <% ids << c.id %>
+              <% end %>
+	   <th colspan="3"> Opções </th>
+	</tr>
 
 	<% documentos.each do |documento| %>
-	  <tr>       
-		<td><%= documento.usuario.nome if documento.usuario %>
-	    <% documento.valor_campo_documentos.each do |v| %>
-	      <td><%= v.valor %></td>
-	    <% end %>
-	    <td><%= link_to 'Visualizar', documento %></td> 
-		<% if usuario_cartorio? %>
-	    <td><%= link_to 'Editar', edit_documento_path(documento) %></td>
-	    <td><%= link_to 'Apagar', documento, :confirm => 'Tem certeza?', :method => :delete %></td>
-	    <% end %>
-	  </tr>
+	   <tr>       
+               <td><%= documento.usuario.nome if documento.usuario %></td>
+                   <% ids.each do |id| %>
+                        <td>
+                           <% campo_doc = documento.valor_campo_documentos.find_by_campo_documento_id(id) %>
+                           <%= campo_doc.valor.gsub('/','-') if campo_doc %> 
+                        </td> 
+                   <% end %>
+               <td><%= link_to 'Visualizar', documento %></td> 
+	       <% if usuario_cartorio? %>
+                   <td><%= link_to 'Editar', edit_documento_path(documento) %></td>
+                   <td><%= link_to 'Apagar', documento, :confirm => 'Tem certeza?', :method => :delete %></td>
+               <% end %>
+	   </tr>
 	<% end %>
-	</table>    
- 
-	<h4><%= will_paginate (documentos) %></h4>
+    </table>
+    <h4><%= will_paginate (documentos) %></h4>
 <% end %>
