@@ -362,3 +362,14 @@ div#menu_site a{
    font-weight: bold; 
    font-size: 14px; 
 }
+
+.linha_h {
+    border-right: 1px solid #363636;
+    float: left;
+    height: 22px;
+    padding: 0 5px;
+}
+
+.active{
+ color: #4C810C !important;
+}

@@ -1,56 +1,77 @@
-<ul  class="box">
+<%= mostra_menu('home', :Home)%>
+<div class='linha_h' style='margin-right: 10px;' ></div>
 
-		<%= mostra_menu('home', :Home)%>
+
 <%# Admin %>
 <% if logged_in? and current_usuario.admin %>
 		<%= mostra_menu('cartorios','Cartórios') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('conveniados','Conveniados') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('tribunais','Tribunais') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('irtds','Institutos') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('administracao', 'Cadastros') %>
 
 <%# Irtd Nacional %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Irtd' and current_usuario.entidade.nacional %>
 		<%= mostra_menu('irtds','Institutos') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('conveniados','Conveniados') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('tribunais','Tribunais') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('usuarios','Usuários') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('financeiro', 'Financeiro') %>						
 
 <%# Irtd Estadual %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Irtd' %>
 		<%= mostra_menu('cartorios','Cartórios') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('usuarios','Usuários') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('financeiro', 'Financeiro') %>						
 
 <%# Conveniado %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Conveniado' %>
 		<%= mostra_menu('documentos','Documentos') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('notificacoes','Notificações') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('usuarios','Usuários') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('financeiro', 'Financeiro') %>		
 
 <%# TRibunal %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Tribunal' %>
 		<%= mostra_menu('lotes','Selos') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('usuarios','Usuários') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('financeiro', 'Financeiro') %>
 
 <%# Cartório %>
 <% elsif logged_in? and current_usuario.entidade and current_usuario.entidade_type == 'Cartorio' %>
 		<%= mostra_menu('documentos','Documentos') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('notificacoes','Notificações') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('usuarios','Usuários') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('financeiro', 'Financeiro') %>
 
 <%# Usuario Normal %>
 <% elsif logged_in? %>
 
 		<%= mostra_menu('documentos','Documentos') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('notificacoes','Notificações') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('certidoes','Certidões') %>
+                <div class='linha_h' style='margin-right: 10px;' ></div>
 		<%= mostra_menu('financeiro', 'Financeiro') %>
 <% else %>
 		<%= mostra_menu('documentos/verificar', 'Consultar Selo')%>
 <% end %>
-</ul>

@@ -20,7 +20,7 @@ class DocumentosController < ApplicationController
   def index            
      # listagem de documentos
      @tipo_documento = []
-     if !params[:tipo]
+     if !params[:tipo] or params[:tipo][:tipo_documento_id].blank?
         @tipo_documento << ['- Selecione -','']                                                               
      else
         TipoDocumento.find_all_by_id( params[:tipo][:tipo_documento_id]).each do |t|
@@ -39,12 +39,12 @@ class DocumentosController < ApplicationController
      @documentos = []  
      condition = ''
      if current_usuario.entidade.nil?
-        condition = " and cliente_id = #{current_usuario.cpf}"  
+        condition = "and cliente_id = #{current_usuario.id}"  
      else
-        condition = " and cartorio_id = #{current_usuario.entidade_id}"  
+        condition = "and cartorio_id = #{current_usuario.entidade_id}"  
      end
-
-     if params[:tipo] and params[:tipo][:tipo_documento_id]
+     
+     if params[:tipo] and !params[:tipo][:tipo_documento_id].blank?
         @documentos = Documento.all(:conditions => "tipo_documento_id = #{params[:tipo][:tipo_documento_id]} #{condition}" ).paginate(:page =>params[:page], :per_page =>5)
      end
  
@@ -80,6 +80,10 @@ class DocumentosController < ApplicationController
       format.html # new.html.erb
       format.xml  { render :xml => @documento }
     end
+  end
+
+  def visualizar
+    @documento = Documento.find(params[:id])
   end
 
   # GET /documentos/1/edit

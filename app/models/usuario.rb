@@ -6,6 +6,9 @@ class Usuario < ActiveRecord::Base
   belongs_to :entidade, :polymorphic => true  
   has_many :documentos
   belongs_to :cadastrado_por, :class_name => 'Usuario', :foreign_key => 'cadastrado_por_id'
+  has_many :meus_documentos, :class_name => 'Documento', :foreign_key => 'cliente_id'
+
+  validates_uniqueness_of :cpf 
   
   include Authentication
   include Authentication::ByPassword

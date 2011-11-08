@@ -5,7 +5,9 @@
     <th>Nome</th>
     <th>Ordem</th>	
     <th>Limite</th>
-    <th>Descricao</th>
+    <th>Descrição</th>
+    <th>Exibe Listagem </th>
+    <th colspan='2'>Opções</th>
   </tr>
 
 <% @campo_documentos.each do |campo_documento| %>
@@ -15,6 +17,7 @@
     <td><%=h campo_documento.ordem %></td>	
     <td><%=h campo_documento.limite %></td>
     <td><%=h campo_documento.descricao %></td>
+    <td><%= check_box_tag 'exibe', nil,  campo_documento.exibe_listagem, :disabled => true %></td>
     <td><%= link_to 'Editar', edit_campo_documento_path(campo_documento) %></td>
     <td><%= link_to 'Apagar', campo_documento, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>

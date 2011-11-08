@@ -19,7 +19,7 @@
 	<tr>        
            <th>Dono</th>
               <% ids = [] %>
-              <% TipoDocumento.find(params[:tipo][:tipo_documento_id]).campo_documentos.each do |c| %>
+              <% TipoDocumento.find(params[:tipo][:tipo_documento_id]).campo_documentos.all(:conditions => 'exibe_listagem = true').each do |c| %>
                  <th><%= c.nome %></th>
                  <% ids << c.id %>
               <% end %>
@@ -44,4 +44,11 @@
 	<% end %>
     </table>
     <h4><%= will_paginate (documentos) %></h4>
+
+
+<% else %>
+  <br/>
+  <%= 'Nenhum documento encontrado.' if params[:tipo] and !params[:tipo][:tipo_documento_id].blank? %>
+  <br/>
+  <br/>
 <% end %>

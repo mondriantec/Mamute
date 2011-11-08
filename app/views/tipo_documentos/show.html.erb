@@ -9,6 +9,11 @@
 </p>
 
 <%= link_to 'Novo Campo para documento', "/campo_documentos/new?id=#{@tipo_documento.id}" %>
+
+
 <%= render :partial=> "campo_documentos/lista_campo_documentos" %>
+
+
+
 <%= link_to 'Editar', edit_tipo_documento_path(@tipo_documento) %> |
 <%= link_to 'Voltar', tipo_documentos_path %>

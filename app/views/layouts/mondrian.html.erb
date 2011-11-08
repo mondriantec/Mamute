@@ -48,41 +48,48 @@
 	});
 	</script>
 	
-	<title>GoDocs</title>
+	<title> IRTDPJ - Sistema </title>
 </head>
 
-<body class="tundra">
+<body class="tundra" style='background: url("/images/bgsecundario.png") repeat-x scroll 0% -28px rgb(255, 255, 255); '>
 
-<div id="container">
-    <div id="topbar">
-        <div id="nav">
-            <ul class="lavaLampWithImage" id="1">
-                <li class="current"><a href="/site">Home</a></li>
-                <li><a href="/site/about">O IRTDPJ</a></li>
-                <li><a href="/site/services">Servi&ccedil;os</a></li>
-                <li><a href="/site/events">FAQ</a></li>
-                <li><a href="/site/contacts">Contato</a></li>
-            </ul>
+<div id="" style="position: relative; height: 10px; width: 100%;"> </div>
+ <div id="containerSite" style='width: 100%'>
+    <div id="wrapper" style=' width: 100% '>
+        <!-- Begin Top Bar  -->
+        <div id="topbarSite" style='margin: 5px 0 7px 0; '>
+              <div style='float: left; margin-top: 3px'>
+                  <img src='/images/logoceb.png' width='220'/>
+              </div>
+              <div style='float:right; margin-right: -27px; margin-top: 3px;  '>
+                  <img src='/images/headerright.png' width='400' />
+              </div>
         </div>
-    </div>
-</div>
+        <div id='bottombar' style='margin-left: 0px; width: 100% '>
+           <!-- Begin LavaLamp Navigation  -->
+           <div id="menu_site" style="padding: 5px 20px; float: left; width: 68%">
+	      <%= render :partial => "menus/principal"%>
+           </div>
+
+           <!-- Menu lateral esquerdo -->
+           <div id="menu_site" style="padding: 5px 20px; float: right; width: 25%" >
+              <div style="float: right; padding-right: 0px;">
+                   <a href="/logout/"><span><strong>SAIR</strong></span></a>
+              </div>
+              <div class='linha_h' style='float: right; padding: 0 ; margin:0 10px '></div>
+              <div style="float: right; padding-right: 10px;">
+                   <a href="#"><span><strong>AJUDA</strong></span></a>
+              </div>
+           </div>
+           <!-- End LavaLamp Navigation  --> 
+        </div>
+        <!-- End Top Bar  -->
 
 <div id="main">
-
-
 	<hr class="noscreen" />
 
-	<!-- Menu -->
-	<div id="menu" class="box">
 
-		<ul class="box f-right">
-			<li><a href="#"><span><strong>Ajuda</strong></span></a></li>
-			<li><a href="/logout/"><span><strong>Sair</strong></span></a></li>
-		</ul>
 
-	<%= render :partial => "menus/principal"%>
-
-	</div> <!-- /header -->
 
 	<hr class="noscreen" />
 
@@ -101,10 +108,10 @@
 			</div> <!-- /padding -->
 
 	        <% if logged_in? %>
-				<div id="utility">
+			<div id="utility">
 	        		<%= render :partial => session[:submenu] if session[:submenu] %>
-				</div>
-			<% end %>
+			</div>
+		<% end %>
 
 		</div> <!-- /aside -->
 
@@ -130,6 +137,8 @@
 
 </div> <!-- /main -->
 
+    </div>
+ </div>
 </body>
 
 

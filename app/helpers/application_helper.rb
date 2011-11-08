@@ -73,7 +73,11 @@ module ApplicationHelper
   def mostra_menu(menu,titulo)
     #TODO: implementar isso
     #if current_usuario.tem_controller?(menu)
-      "<li class='#{menu_ativo?(menu)}' ><a href='/#{menu}'><span>#{titulo}</span></a></li>"
+      "<div style='float: left; padding-right: 0px;'>
+          <a class='#{menu_ativo?(menu)}' href='/#{menu}'> <span> <strong>          #{titulo}        </strong> </span> </a>
+      </div>"
+
+    #  "<li class='#{menu_ativo?(menu)}' ><a href='/#{menu}'><span>#{titulo}</span></a></li>"
     #end
   end
 
