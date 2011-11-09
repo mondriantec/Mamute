@@ -131,11 +131,11 @@ h6 {
         height: 109px;
 }
 #bottombar {
-       background-image: url("/images/bg-menu_principal.png");
-       background-repeat: repeat-x;
-       height: 40px;
-       margin: 2px 0 0 25px;
-       width: 888px;
+    background-image: url("/images/bg-menu_principal.png");
+    background-repeat: repeat-x;
+    height: 40px;
+    margin: 17px 0 0 25px;
+    width: 888px;
 }
 
 /* === Navigation Section === */

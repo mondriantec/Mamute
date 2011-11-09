@@ -68,6 +68,7 @@ module ApplicationHelper
   
   def menu_ativo?(nome)
     "active" if session[:menu] == nome
+    "active" if controller_name == nome
   end
 
   def mostra_menu(menu,titulo)
