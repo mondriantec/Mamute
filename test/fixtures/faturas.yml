@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  vencimento: 2011-11-14
+  status: 1
+  valor: 1.5
+  cartorio_id: 1
+
+two:
+  vencimento: 2011-11-14
+  status: 1
+  valor: 1.5
+  cartorio_id: 1
