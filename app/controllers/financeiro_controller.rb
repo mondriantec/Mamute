@@ -4,5 +4,8 @@ class FinanceiroController < ApplicationController
 
   def index
   end
+  
+  def index_gerar_faturas
+  end
 
 end
