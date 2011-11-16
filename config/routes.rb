@@ -40,7 +40,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :mensagens
 
-  map.resources :financeiro, :collection => {:index_gerar_faturas => :get}
+  map.resources :financeiro, :collection => {:index_gerar_faturas => :get, :conferencia_gerar_faturas => :post}
 
   map.resources :pessoas
 

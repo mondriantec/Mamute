@@ -3,6 +3,10 @@ class Fatura < ActiveRecord::Base
   belongs_to :cartorio
   has_one :boleto
 
+
+  def self.descartar_fatura_pendente(uf)
+     #apagar os boletos, as faturas e desmarcar os documentos 
+  end
 end
 
 
