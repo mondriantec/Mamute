@@ -1,2 +1,9 @@
-<h1>Geração das Faturas ao Cartórios</h1>
-  <%= render :partial => :form, :locals => {:acao_form => "/financeiro/conferencia_gerar_faturas" } %>
+<h1>Geração das Faturas aos Cartórios</h1>
+<form method="post" action='/financeiro/conferencia_gerar_faturas' style="width: 600px">
+	<label for = 'periodo', class='label' style="width: 594px"><b>Período:</b>
+		<%= text_field_tag :data_inicio, nil, :maxlength => 10, :size => 10,  :onkeypress => 'mascara(this,data)' %>
+		a
+		<%= text_field_tag :data_fim, nil, :maxlength => 10, :size => 10,  :onkeypress => 'mascara(this,data)' %>
+  </label>
+<div class="submit_bar"><%= submit_tag "Visualizar"%></div>
+</form>		
