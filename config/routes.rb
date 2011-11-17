@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :movimentos
+
+  map.resources :sub_depositarios
+
+  map.resources :depositarios
+
   map.resources :descontos
 
   map.resources :arquivo_pagamentos, :collection => {:index => [:get,:post], :new => [:get, :post]}

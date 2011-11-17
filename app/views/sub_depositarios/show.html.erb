@@ -1,0 +1,18 @@
+<p>
+  <b>Depositario:</b>
+  <%=h @sub_depositario.depositario_id %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%=h @sub_depositario.descricao %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @sub_depositario.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_sub_depositario_path(@sub_depositario) %> |
+<%= link_to 'Back', sub_depositarios_path %>

@@ -1,0 +1,24 @@
+<h1>Listing sub_depositarios</h1>
+
+<table>
+  <tr>
+    <th>Depositario</th>
+    <th>Descricao</th>
+    <th>Status</th>
+  </tr>
+
+<% @sub_depositarios.each do |sub_depositario| %>
+  <tr>
+    <td><%=h sub_depositario.depositario_id %></td>
+    <td><%=h sub_depositario.descricao %></td>
+    <td><%=h sub_depositario.status %></td>
+    <td><%= link_to 'Show', sub_depositario %></td>
+    <td><%= link_to 'Edit', edit_sub_depositario_path(sub_depositario) %></td>
+    <td><%= link_to 'Destroy', sub_depositario, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New sub_depositario', new_sub_depositario_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  descricao: MyString
+  tipo: false
+  agencia: MyString
+  conta: MyString
+  banco: MyString
+  entidade_id: 1
+
+two:
+  descricao: MyString
+  tipo: false
+  agencia: MyString
+  conta: MyString
+  banco: MyString
+  entidade_id: 1

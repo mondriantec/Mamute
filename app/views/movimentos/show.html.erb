@@ -1,0 +1,78 @@
+<p>
+  <b>Valor:</b>
+  <%=h @movimento.valor %>
+</p>
+
+<p>
+  <b>Depositario:</b>
+  <%=h @movimento.depositario_id %>
+</p>
+
+<p>
+  <b>Observacao:</b>
+  <%=h @movimento.observacao %>
+</p>
+
+<p>
+  <b>Documento type:</b>
+  <%=h @movimento.documento_type %>
+</p>
+
+<p>
+  <b>Documento:</b>
+  <%=h @movimento.documento_id %>
+</p>
+
+<p>
+  <b>Data contabil:</b>
+  <%=h @movimento.data_contabil %>
+</p>
+
+<p>
+  <b>Data vencimento:</b>
+  <%=h @movimento.data_vencimento %>
+</p>
+
+<p>
+  <b>Data pagamento:</b>
+  <%=h @movimento.data_pagamento %>
+</p>
+
+<p>
+  <b>Entidade:</b>
+  <%=h @movimento.entidade_id %>
+</p>
+
+<p>
+  <b>Sub depositario:</b>
+  <%=h @movimento.sub_depositario_id %>
+</p>
+
+<p>
+  <b>Tipo movimento:</b>
+  <%=h @movimento.tipo_movimento %>
+</p>
+
+<p>
+  <b>Numero documento:</b>
+  <%=h @movimento.numero_documento %>
+</p>
+
+<p>
+  <b>Tipo de documento:</b>
+  <%=h @movimento.tipo_de_documento %>
+</p>
+
+<p>
+  <b>Fornecedor:</b>
+  <%=h @movimento.fornecedor %>
+</p>
+
+<p>
+  <b>Numero transacao:</b>
+  <%=h @movimento.numero_transacao %>
+</p>
+
+
+<%= link_to 'Edit', edit_movimento_path(@movimento) %> |
+<%= link_to 'Back', movimentos_path %>
