@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :descontos
+
+  map.resources :arquivo_pagamentos, :collection => {:index => [:get,:post], :new => [:get, :post]}
+
   map.resources :valores_sistema
 
   map.resources :precos

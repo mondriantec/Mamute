@@ -1,0 +1,45 @@
+
+  <label for="cartorio", class='label'><b>Cartório:</b>
+    <%=h @desconto.cartorio.oficio %>
+  </label>
+
+  <% if current_usuario.gerente_financeiro_entidade %>
+    <label for="depositario", class='label'><b>Depositário:</b>
+      <%=h @desconto.depositario.descricao %>
+    </label>
+
+   <% if @desconto.sub_depositario %>
+    <label for="sub_depositario", class='label'><b>Sub Depositário:</b>
+      <%=h @desconto.sub_depositario.descricao if @desconto.sub_depositario %>
+    </label>
+   <% end %>
+  <% end %>
+
+<!--
+  <label for="modalidade_id", class='label'><b>Modalidade:</b>
+    <%#=h @desconto.modalidade %>
+  </label>
+-->
+
+  <label for="valor", class='label'><b>Valor:</b>
+    <%=h @desconto.valor.contabil %>
+  </label>
+
+
+  <label for="status", class='label'><b>Status:</b>
+    <%=h @desconto.descricao_status %>
+  </label>
+
+  <% if @desconto.data_pagamento %>
+    <label for="data_pagamento", class='label'><b>Data pagamento:</b>
+      <%=h @desconto.data_pagamento.to_s_br if @desconto.data_pagamento %>
+    </label>
+  <% end %>
+
+
+  <label for="motivo", class='label'><b>Motivo:</b>
+    <%=h @desconto.motivo %>
+  </label>
+
+
+<%= link_to 'Voltar', descontos_path %>
