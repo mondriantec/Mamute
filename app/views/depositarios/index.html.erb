@@ -1,0 +1,30 @@
+<h1>Listing depositarios</h1>
+
+<table>
+  <tr>
+    <th>Descricao</th>
+    <th>Tipo</th>
+    <th>Agencia</th>
+    <th>Conta</th>
+    <th>Banco</th>
+    <th>Entidade</th>
+  </tr>
+
+<% @depositarios.each do |depositario| %>
+  <tr>
+    <td><%=h depositario.descricao %></td>
+    <td><%=h depositario.tipo %></td>
+    <td><%=h depositario.agencia %></td>
+    <td><%=h depositario.conta %></td>
+    <td><%=h depositario.banco %></td>
+    <td><%=h depositario.entidade_id %></td>
+    <td><%= link_to 'Show', depositario %></td>
+    <td><%= link_to 'Edit', edit_depositario_path(depositario) %></td>
+    <td><%= link_to 'Destroy', depositario, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New depositario', new_depositario_path %>

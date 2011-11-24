@@ -1,0 +1,42 @@
+<% form_for(@desconto) do |f| %>
+  <%= f.error_messages %>
+
+    <label for="desconto_cidade", class='label'><b>Municipio</b>
+      <%= select_tag 'desconto_cidade', options_for_select(@cidades) %> 
+    </label>
+
+    <div id='div_cartorio'></div>
+
+    <label for="depositario_id", class='label'><b>Depositário</b> 
+      <%= f.select(:depositario_id, Depositario.find(:all).collect { |d| [d.descricao, d.id]}, :include_blank => true) %>
+    </label>
+
+    <div id='div_sub_depositario'></div> 
+
+<!--
+    <label for="desconto_modalidade_id", class='label'><b>Modalidade</b>
+      <%#= f.select :modalidade_id, [['Selecione a Modalidade',nil],['A Vista',1],['A Prazo',2]] %>
+    </label>
+-->   
+  
+    <label for="desconto_valor", class='label'><b>Valor</b>
+      <%= f.text_field :valor %>
+    </label>   
+
+    <label for="desconto_motivo", class='label'><b>Motivo</b>
+      <%= f.text_area :motivo %>
+    </label>
+  <p>
+    <%= f.submit "Salvar" %>
+  </p>
+
+<%= observe_field 'desconto_cidade',
+    :update => "div_cartorio",
+    :url => {:controller => 'descontos', :action => 'get_cartorios'},
+    :with => 'desconto_cidade' %>
+
+<%= observe_field 'desconto_depositario_id',
+  :update => 'div_sub_depositario',      
+	:url    => { :action => 'get_sub_depositario' }, 
+  :with   => 'depositario_id' %>
+<% end %>

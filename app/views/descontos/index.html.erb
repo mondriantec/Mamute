@@ -1,0 +1,74 @@
+<h1>Descontos</h1>
+<p id="div_form_busca_desconto">
+  <form method="post" action="/descontos/index">
+    <fieldset id="busca">
+      <LEGEND>Filtrar por:</LEGEND>
+      <table>
+      <% if current_usuario.entidade_type == 'Cartorio' %>
+         <tr> 
+             <td>
+                <label for="desconto_cidade", class='label'><b>Municipio</b>
+                  <%= select_tag 'desconto_cidade', options_for_select(@cidades) %> 
+                </label>
+             </td>
+         </tr> 
+         <tr>
+            <td> 
+              <div id='div_cartorio'></div>
+            </td>
+         </tr> 
+         <% end %>
+         <tr>
+            <td><label for="descont_status", class='label'><b>Situaçao</b><%= select 'desconto','status', @status, :include_blank => true %></label></td>
+         </tr>
+      
+      </table>
+      <%= submit_tag "Filtrar" %>
+      <%#= link_to('Limpar Filtro', :action => 'index') if params[:busca] %>
+    </fieldset>
+<%= observe_field 'desconto_cidade',
+    :update => "div_cartorio",
+    :url => {:controller => 'descontos', :action => 'get_cartorios'},
+    :with => 'desconto_cidade' %>
+  </form>
+</p>
+
+<table>
+  <tr>
+    <th>Cartorio</th>
+    <% if current_usuario.entidade_type == 'Cartorio' %>
+      <th>Depositário</th>
+      <th>Sub Depositário</th>
+    <% end %>
+    <th>Modalidade</th>
+    <th>Valor</th>
+    <th>Status</th>
+    <th>Data pagamento</th>
+    <th>Motivo</th>
+    <th colspan='2'>Opções</th>
+  </tr>
+
+<% for desconto in @descontos %>
+  <tr>
+    <td><%=h desconto.cartorio.oficio %></td>
+    <% if current_usuario.entidade_type == 'Irtd' %>
+      <td><%=h desconto.depositario.descricao %></td>
+      <td><%=h desconto.sub_depositario.descricao if desconto.sub_depositario %></td>
+    <% end %>
+    <td><%=h desconto.modalidade %></td>
+    <td><%=h desconto.valor.contabil %></td>
+    <td><%=h desconto.descricao_status %></td>
+    <td><%=h desconto.data_pagamento.to_s_br if desconto.data_pagamento %></td>
+    <td><%=h desconto.motivo %></td>
+    <td><%= link_to 'Exibir', desconto %></td>
+    <% if current_usuario.entidade_type == 'Cartorio' %>
+      <td><%= link_to 'Excluir', desconto, :confirm => 'Confirma exclusão do registro?', :method => :delete %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+   <% if current_usuario.entidade_type == 'Cartorio' %>
+        <%= link_to 'Novo Desconto', new_desconto_path %>
+   <% end %>

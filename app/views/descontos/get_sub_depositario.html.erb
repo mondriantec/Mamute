@@ -1,0 +1,4 @@
+<label for="sub_depositario_id", class='label'><b>Sub Depositario</b> 
+   <%= select_tag('desconto[sub_depositario_id]', options_for_select(@sub_depositarios.collect { |c| [c.descricao, c.id]}))%>
+</label>
+

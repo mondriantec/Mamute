@@ -1,0 +1,33 @@
+<p>
+  <b>Descricao:</b>
+  <%=h @depositario.descricao %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%=h @depositario.tipo %>
+</p>
+
+<p>
+  <b>Agencia:</b>
+  <%=h @depositario.agencia %>
+</p>
+
+<p>
+  <b>Conta:</b>
+  <%=h @depositario.conta %>
+</p>
+
+<p>
+  <b>Banco:</b>
+  <%=h @depositario.banco %>
+</p>
+
+<p>
+  <b>Entidade:</b>
+  <%=h @depositario.entidade_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_depositario_path(@depositario) %> |
+<%= link_to 'Back', depositarios_path %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cartorio_id: 1
+  valor: 1.5
+  status: 1
+  item_repasse_id: 1
+  data_pagamento: 2011-11-17
+  motivo: MyText
+  usuario_id: 1
+  depositario_id: 1
+  sub_depositario_id: 1
+
+two:
+  cartorio_id: 1
+  valor: 1.5
+  status: 1
+  item_repasse_id: 1
+  data_pagamento: 2011-11-17
+  motivo: MyText
+  usuario_id: 1
+  depositario_id: 1
+  sub_depositario_id: 1

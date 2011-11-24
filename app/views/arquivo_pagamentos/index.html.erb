@@ -1,0 +1,30 @@
+<h1>Arquivos de pagamento</h1>
+
+  <form method="post" action="/arquivo_pagamentos/index">
+    <fieldset id="busca_mes">
+      <LEGEND>Selecione o Mes:</LEGEND>
+      <%= select_tag :mes_do_ano, options_for_select(@meses,params[:mes_do_ano].nil? ? Date.today.month.to_s : params[:mes_do_ano] ) %>
+      <%= submit_tag "Consultar" %>
+    </fieldset>
+  </form>
+
+<table>
+  <tr>
+		<td>Data de Envio</td>
+    <td>Nome</td>
+    <td>Observação</td>
+    <td><%= link_to 'Novo Arquivo de Pagamento', new_arquivo_pagamento_path %></td>
+  </tr>
+
+<% for arquivo_pagamento in @arquivo_pagamentos %>
+  <tr>
+		<td><%= arquivo_pagamento.created_at.strftime("%d/%m/%Y") %></td>
+    <td><%= arquivo_pagamento.nome %></td>
+    <td><%= arquivo_pagamento.descricao %></td>
+  </tr>
+<% end %>
+</table>
+
+<br/>
+
+<%= link_to 'Novo Arquivo de Pagamento', new_arquivo_pagamento_path %>

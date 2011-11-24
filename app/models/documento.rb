@@ -12,6 +12,16 @@ class Documento < ActiveRecord::Base
   
   before_save :usar_selo 
 
+
+  def descricao_status_financeiro
+    case self.status_financeiro  
+       when 0 : 'A ser faturado'
+       when 1 : 'Em processo de faturamento'
+       when 2 : 'Faturado'
+       else 'Indefinido'
+    end
+  end
+
   def campo_chave
     self.tipo_documento.campo_documentos.find(:first, :order => "ordem")
   end

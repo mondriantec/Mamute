@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <th>Nr. Fatura</th>
+    <th>Cód. Cartório</th>
+    <th>Municipio</th>
+    <th>Ofício</th>
+    <th>Valor</th>
+    <th>Descontos</th>
+    <th>Valor Final</th>
+  </thead>
+  <tbody>
+  <% for r in @resultado %>
+    <tr>
+      <td><%=h r['id_fatura'] %></td>
+      <td><%=h r['id_cartorio'] %></td>
+      <td><%=h r['cidade'] %></td>
+      <td><%=h r['oficio'] %></td>
+      <td><%=h r['valor_nominal'] %></td>
+      <td><%=h r['descontos'] %></td>
+      <td><%=h r['valor_final'] %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

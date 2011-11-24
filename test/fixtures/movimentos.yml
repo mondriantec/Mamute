@@ -1,0 +1,35 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  valor: 1.5
+  depositario_id: 1
+  observacao: MyText
+  documento_type: MyString
+  documento_id: 1
+  data_contabil: 2011-11-17
+  data_vencimento: 2011-11-17
+  data_pagamento: 2011-11-17
+  entidade_id: 1
+  sub_depositario_id: 1
+  tipo_movimento: MyString
+  numero_documento: MyString
+  tipo_de_documento: 1
+  fornecedor: MyString
+  numero_transacao: MyString
+
+two:
+  valor: 1.5
+  depositario_id: 1
+  observacao: MyText
+  documento_type: MyString
+  documento_id: 1
+  data_contabil: 2011-11-17
+  data_vencimento: 2011-11-17
+  data_pagamento: 2011-11-17
+  entidade_id: 1
+  sub_depositario_id: 1
+  tipo_movimento: MyString
+  numero_documento: MyString
+  tipo_de_documento: 1
+  fornecedor: MyString
+  numero_transacao: MyString

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  boleto_id: 1
+  data: 2011-11-16
+  valor: 1.5
+
+two:
+  boleto_id: 1
+  data: 2011-11-16
+  valor: 1.5
