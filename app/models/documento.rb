@@ -32,22 +32,18 @@ class Documento < ActiveRecord::Base
    end
  
   def desenha_selo
-    
   end
                         
-   
   def to_pdf
-    if (self.imagem_content_type == 'application/pdf' ) 
-        self.imagem.url
+    if (self.imagem_content_type == 'application/pdf' or self.imagem_content_type == 'application/tiff'  ) 
+        return self.imagem.url
     else
         require 'fpdf'
 
         @documento = self
-
         @pdf=FPDF.new('P','mm','A4')
         @pdf.AddPage( 'P')
         @pdf.SetDrawColor(155, 155, 155)
-    
         @pdf.SetFillColor(255, 255, 255)
         @pdf.SetTextColor(0, 0, 0)
 
@@ -57,7 +53,7 @@ class Documento < ActiveRecord::Base
 
         # Title                    
                     
-        @pdf.Image("#{RAILS_ROOT}/public/images/brasao2.jpg", 12, 10, 25)   
+#        @pdf.Image("#{RAILS_ROOT}/public/images/brasao2.jpg", 12, 10, 25)   
  
         texto = "                                   
                                #{@documento.selo.lote.tribunal.nome}
@@ -65,14 +61,14 @@ class Documento < ActiveRecord::Base
                                #{@documento.cartorio.oficio}
                                Tabeliao:  #{@documento.cartorio.tabeliao}
                                Data: #{@documento.created_at.strftime('%d/%m/%Y')}
-                                "
-                                   
-                                  
+                               "
+        texto = Iconv.iconv('iso-8859-1','utf-8',texto).join
+                        
         @pdf.MultiCell(190,4,texto,1,'L')        
-    
+   
         @pdf.Image("#{RAILS_ROOT}/public#{@documento.imagem.url}", 10, 50, 100)
         @pdf.Output("#{RAILS_ROOT}/public/pdfs/#{@documento.id}.pdf")  
-        "/pdfs/#{@documento.id}.pdf"   
+        return "/pdfs/#{@documento.id}.pdf"   
     end
   end 
    

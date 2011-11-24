@@ -35,16 +35,21 @@
 
 	<script type="text/javascript">
 	jQuery(document).ready(function(){
-		jQuery(".tabs > ul").tabs();
-		
-		// Efeitos do menu do site
-        jQuery("#1, #2, #3").lavaLamp({
-            fx: "backout",
-            speed: 800,
-            click: function(event, menuItem) {
-                return true;
-            }
-        });
+            jQuery(".tabs > ul").tabs();
+
+            // Efeitos do menu do site
+            jQuery("#1, #2, #3").lavaLamp({
+                fx: "backout",
+                speed: 800,
+                click: function(event, menuItem) {
+                    return true;
+                }
+             });
+             
+            // Altura content
+            altura = screen.height - 434;
+            jQuery("#content").css('height',altura);
+            jQuery("#view_doc").css('height',altura-100);
 	});
 	</script>
 	
@@ -57,22 +62,21 @@
  <div id="containerSite" style='width: 100%'>
     <div id="wrapper" style=' width: 100% '>
         <!-- Begin Top Bar  -->
-        <div id="topbarSite" style='margin: 0px 0 7px 0; '>
+        <div id="topbarSite" >
               <div style='float: left; margin-top: 8px'>
                   <img src='/images/logoceb.png' width='220'/>
               </div>
-              <div style='float:right; margin-right: -30px; margin-top: 3px;  '>
-                  <img src='/images/headerright.png' width='440' />
+              <div class='bandeiraBrasil'>
               </div>
         </div>
-        <div id='bottombar' style='margin-left: 0px; width: 100% '>
+        <div id='bottombar' style='margin-top: 7px ;margin-left: 0px; width: 100% '>
            <!-- Begin LavaLamp Navigation  -->
-           <div id="menu_site" style="padding: 5px 20px; float: left; width: 68%">
+           <div id="menu_site" style="padding: 5px 20px; float: left; width: 560px">
 	      <%= render :partial => "menus/principal"%>
            </div>
 
            <!-- Menu lateral esquerdo -->
-           <div id="menu_site" style="padding: 5px 20px; float: right; width: 25%" >
+           <div id="menu_site" style="padding: 5px 20px; float: right; " >
               <div style="float: right; padding-right: 0px;">
                    <a href="/logout/"><span><strong>SAIR</strong></span></a>
               </div>
@@ -85,12 +89,7 @@
         </div>
         <!-- End Top Bar  -->
 
-<div id="main">
-	<hr class="noscreen" />
-
-
-
-
+     <div id="main" >
 	<hr class="noscreen" />
 
 	<!-- Columns -->
@@ -126,24 +125,23 @@
 
 	<hr class="noscreen" />
 
-	<!-- Footer -->
-	<div id="footer" class="box">
+    </div> <!-- /main -->
 
-		<p class="f-left">&copy; 2010 <a href="http://www.fabricainfo.com">Fabrica Info</a>, Todos os diretitos reservados &reg;</p>
-
-<!--		<p class="f-right">Templates by <a href="http://www.adminizio.com/">Adminizio</a></p>-->
-
-	</div> <!-- /footer -->
-
-</div> <!-- /main -->
+    <!-- Begin Footer2  -->
+    <div id="footer-site">
+       <div id="footer2content" style='color: #ddd; margin-left: 20px'>
+           <div style="width: 300px; float: left;">&copy; Copyright IRTDPJ Brasil.&nbsp; </div>
+       </div>
+    </div>
 
     </div>
  </div>
 </body>
 
-
-
-
 </html>
 
-
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+    jQuery("#new_documento").css('height', altura);
+  });
+</script>

@@ -37,11 +37,11 @@ class UsuariosController < ApplicationController
   end
  
   def create                                    
-    @usuario = Usuario.new(params[:usuario])
-    @usuario.cpf = params[:usuario][:cpf].gsub('.','').gsub('-','').gsub('/','')
+    @usuario        = Usuario.new(params[:usuario])
+    @usuario.cpf    = params[:usuario][:cpf].gsub('.','').gsub('-','').gsub('/','')
+    @usuario.login  = @usuario.cpf 
 
-    if @usuario.login.nil?
-       @usuario.login          = @usuario.cpf 
+    if params[:is_cartorio].blank?
        @usuario.cadastrado_por_id = current_usuario.entidade_id
     else
        @usuario.entidade = current_usuario.entidade

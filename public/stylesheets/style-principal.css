@@ -234,10 +234,10 @@ h6 {
 }
 #latestnews {
     background: none repeat scroll 0 0 #F2F2F2;
-    border: 2px solid #CDCECF;
+    border: 1px solid #CDCECF;
     float: right;
     margin: 10px;
-    padding: 5px;
+    padding: 7px;
     width: 228px;
 }
 .arrowbox {

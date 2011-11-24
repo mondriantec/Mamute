@@ -45,7 +45,7 @@ class DocumentosController < ApplicationController
      end
      
      if params[:tipo] and !params[:tipo][:tipo_documento_id].blank?
-        @documentos = Documento.all(:conditions => "tipo_documento_id = #{params[:tipo][:tipo_documento_id]} #{condition}" ).paginate(:page =>params[:page], :per_page =>5)
+        @documentos = Documento.all(:conditions => "tipo_documento_id = #{params[:tipo][:tipo_documento_id]} #{condition}" ).paginate(:page =>params[:page], :per_page =>10)
      end
  
  
@@ -82,7 +82,7 @@ class DocumentosController < ApplicationController
     end
   end
 
-  def visualizar
+  def detalhe
     @documento = Documento.find(params[:id])
   end
 

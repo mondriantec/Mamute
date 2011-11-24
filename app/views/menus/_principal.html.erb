@@ -66,12 +66,8 @@
 <% elsif logged_in? %>
 
 		<%= mostra_menu('documentos','Documentos') %>
-                <div class='linha_h' style='margin-right: 10px;' ></div>
-		<%= mostra_menu('notificacoes','Notificações') %>
-                <div class='linha_h' style='margin-right: 10px;' ></div>
-		<%= mostra_menu('certidoes','Certidões') %>
-                <div class='linha_h' style='margin-right: 10px;' ></div>
-		<%= mostra_menu('financeiro', 'Financeiro') %>
+                <!--div class='linha_h' style='margin-right: 10px;' ></div-->
+		<%#= mostra_menu('notificacoes','Notificações') %>
 <% else %>
 		<%= mostra_menu('documentos/verificar', 'Consultar Selo')%>
 <% end %>

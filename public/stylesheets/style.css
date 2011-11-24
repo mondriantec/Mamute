@@ -123,7 +123,7 @@ h6 {
 /*	background-image: url(/images/headerprincipal.png);
 	background-repeat: no-repeat;*/
         margin-top: 0px;
-	height: 92px;
+	height: 102px;
 }
 #topbar {
 	background-image: url(/images/logobar.gif);
@@ -373,3 +373,13 @@ div#menu_site a{
 .active{
  color: #4C810C !important;
 }
+
+.bandeiraBrasil{
+    float: right; 
+    margin-right: 0px; 
+    margin-top: 3px; 
+    height: 105px; 
+    width: 440px; 
+    background: url("/images/headerright.png");
+}
+

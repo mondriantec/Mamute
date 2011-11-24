@@ -1,31 +1,28 @@
 <h1>Cadastro de documentos</h1>
 
 <br/>
-<div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 300px;"
-tabStrip="true">                                               
+   <div dojoType="dijit.layout.TabContainer" style="width: 100%; height: 300px;" tabStrip="true">                                               
 
-    
-	<% if usuario_conveniado? %>
-		<div dojoType="dijit.layout.ContentPane" title="Recebimento" selected="true">
-			<%= render 'lista', :documentos => @documentos %>
-		</div>
-    <% elsif usuario_cartorio? %> 
-		<div dojoType="dijit.layout.ContentPane" title="Documentos" selected="true">
-			<%= render 'lista', :documentos => @documentos %>
-		</div>                                      
-    	<div dojoType="dijit.layout.ContentPane" title="Novo Documento" selected="true">
-		<%= render 'form' %>
-    	</div> 
-    	<div dojoType="dijit.layout.ContentPane" title="Digitalizar">
-              <iframe src="http://70.38.38.133/applet/applet.html" frameborder="0" style='float: left'></iframe>
-    	</div>                                                                              
+     <% if usuario_conveniado? %>
+	 <div dojoType="dijit.layout.ContentPane" title="Recebimento" selected="true">
+            <%= render 'lista', :documentos => @documentos %>
+         </div>
+     <% elsif usuario_cartorio? %> 
+         <div dojoType="dijit.layout.ContentPane" title="Documentos" selected="true">
+             <%= render 'lista', :documentos => @documentos %>
+         </div>                                      
+         <div dojoType="dijit.layout.ContentPane" title="Novo Documento" selected="true">
+             <%= render 'form' %>
+         </div> 
+         <div dojoType="dijit.layout.ContentPane" title="Digitalizar">
+             <iframe src="http://70.38.38.133/applet/applet.html" frameborder="0" style='float: left'></iframe>
+         </div>                                                                              
 
-	<% elsif usuario_final? %>
-	<div dojoType="dijit.layout.ContentPane" title="Documentos" selected="true">
-		<%= render 'lista', :documentos => @documentos %>
-	</div>
-    <% end %>
-
+     <% elsif usuario_final? %>
+         <div dojoType="dijit.layout.ContentPane" title="Documentos" selected="true">
+             <%= render 'lista', :documentos => @documentos %>
+         </div>
+     <% end %>
 </div>
                                                   
 

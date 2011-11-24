@@ -1,12 +1,11 @@
 <h1>Bem Vindo</h1>                                                                         
-<%= current_usuario.id %>
 <p>Bem Vindo ao Sistema Nacional de Registro de Processos.</p>
 <% if current_usuario.admin %>
-	<p>Você é o Administrador do Sistema</p>
+	<p>Você  é o Administrador do Sistema</p>
 <% elsif current_usuario.entidade %>
 	<p>Você entrou no sistema utilizando login e senha de <i><b><%= link_to current_usuario.nome, edit_usuario_path(current_usuario) %></b></i>, 
-	usuário pertcendo a entidade <i><b><%= link_to current_usuario.entidade.nome, edit_entidade_path(current_usuario.entidade) %></i></b>. 
-	Suas permissões são de administrador de entidade do tipo <i><b><%= current_usuario.entidade_type %></b></i> </p>  
+	usuário pertecendo a entidade <i><b><%= link_to current_usuario.entidade.nome, edit_entidade_path(current_usuario.entidade) %></i></b>. 
+	Suas permissões são de administrador de entidade do tipo <i><b><%= current_usuario.entidade_type %></b></i>. </p>  
 <% else %>
 	<p>Você entrou no sistema como <i><b><%= link_to current_usuario.nome, edit_usuario_path(current_usuario) %></b></i></p>
 <% end %>

@@ -5,16 +5,18 @@
 
 <% form_for (@usuario) do |f| -%>
    <%= error_messages_for :usuario %>
+   
+   <% if !@usuario.entidade.nil? %>
+       <%= hidden_field_tag :is_cartorio, :true%>
+   <% end %>
 
    <label><b>Nome</b>
        <%= f.text_field :nome, :size => 80 %>
    </label>
 
-   <% if !@usuario.entidade.nil? %>
-      <label><b>Login</b>
-         <%= f.text_field :login %>
-      </label>
-   <% end %>
+   <label><b>CPF</b>
+       <%= f.text_field :cpf, :onkeypress => 'mascara(this, cpf_cnpj)', :maxlength => 18, :size => '30' %>
+   </label>     
 
    <label><b>E-mail</b>
    <%= f.text_field :email %></label>
@@ -24,10 +26,6 @@
 
    <label><b>Confirmar Senha</b>
    <%= f.password_field :password_confirmation %></label>  
-
-   <label><b>CPF</b>
-       <%= f.text_field :cpf, :onkeypress => 'mascara(this, cpf_cnpj)', :maxlength => 18, :size => '30' %>
-   </label>     
 
    <% if @usuario.entidade.nil? %>
       <label><b>RG e Orgão Emissor</b>
