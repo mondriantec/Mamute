@@ -1,0 +1,28 @@
+<h1>Planos de Conta</h1>
+
+<table>
+  <tr>
+    <th>Código conta</th>
+    <th>Conta Mãe</th>
+    <th>Descrição</th>
+    <th>Tipo</th>
+    <th>Lançavel</th>
+  </tr>
+
+<% @planos_de_conta.each do |plano_de_conta| %>
+  <tr>
+    <td><%=h plano_de_conta.codigo_conta %></td>
+    <td><%=h plano_de_conta.parent_id %></td>
+    <td><%=h plano_de_conta.descricao %></td>
+    <td><%=h plano_de_conta.tipo %></td>
+    <td><%=h plano_de_conta.lancavel %></td>
+    <td><%= link_to 'Show', plano_de_conta %></td>
+    <td><%= link_to 'Edit', edit_plano_de_conta_path(plano_de_conta) %></td>
+    <td><%= link_to 'Destroy', plano_de_conta, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo plano de conta', new_plano_de_conta_path %>

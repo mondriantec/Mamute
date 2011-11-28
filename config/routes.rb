@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :planos_de_conta
+
   map.resources :movimentos
 
   map.resources :sub_depositarios

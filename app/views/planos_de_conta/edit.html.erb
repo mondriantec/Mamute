@@ -1,0 +1,32 @@
+<h1>Editing plano_de_conta</h1>
+
+<% form_for(@plano_de_conta) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :codigo_conta %><br />
+    <%= f.text_field :codigo_conta %>
+  </p>
+  <p>
+    <%= f.label :parent_id %><br />
+    <%= f.text_field :parent_id %>
+  </p>
+  <p>
+    <%= f.label :descricao %><br />
+    <%= f.text_field :descricao %>
+  </p>
+  <p>
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </p>
+  <p>
+    <%= f.label :lancavel %><br />
+    <%= f.check_box :lancavel %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @plano_de_conta %> |
+<%= link_to 'Back', planos_de_conta_path %>
