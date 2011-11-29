@@ -4,7 +4,7 @@ class PlanosDeContaController < ApplicationController
   # GET /planos_de_conta
   # GET /planos_de_conta.xml
   def index
-    @planos_de_conta = PlanoDeConta.all
+    @planos_de_conta = PlanoDeConta.find(:all, :order => 'codigo_conta')
 
     respond_to do |format|
       format.html # index.html.erb

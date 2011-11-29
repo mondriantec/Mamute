@@ -3,22 +3,23 @@
 <table>
   <tr>
     <th>Código conta</th>
-    <th>Conta Mãe</th>
     <th>Descrição</th>
+    <th>Conta Mãe</th>
     <th>Tipo</th>
     <th>Lançavel</th>
+    <th colspan=3>Opções</th>
   </tr>
 
 <% @planos_de_conta.each do |plano_de_conta| %>
   <tr>
     <td><%=h plano_de_conta.codigo_conta %></td>
-    <td><%=h plano_de_conta.parent_id %></td>
     <td><%=h plano_de_conta.descricao %></td>
-    <td><%=h plano_de_conta.tipo %></td>
-    <td><%=h plano_de_conta.lancavel %></td>
-    <td><%= link_to 'Show', plano_de_conta %></td>
-    <td><%= link_to 'Edit', edit_plano_de_conta_path(plano_de_conta) %></td>
-    <td><%= link_to 'Destroy', plano_de_conta, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%=h plano_de_conta.conta_mae.descricao if plano_de_conta.conta_mae %></td>
+    <td><%=h plano_de_conta.descricao_tipo %></td>
+    <td><%=h plano_de_conta.descricao_lancavel %></td>
+    <td><%= link_to 'Exibir', plano_de_conta %></td>
+    <td><%= link_to 'Editar', edit_plano_de_conta_path(plano_de_conta) %></td>
+    <td><%= link_to 'Excluir', plano_de_conta, :confirm => 'Confirma Exclusão?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
