@@ -1,0 +1,35 @@
+<%= link_to 'Novo Lançamento', new_movimento_path %>
+<p>
+<table>
+  <tr>
+    <th>Lançamento</th>
+    <th>Data</th>
+    <th>Data Pagamento</th>
+    <th>Valor</th>
+    <th>Depositário</th>
+    <th>Observações</th>
+    <th colspan='2'>Opções</th>
+  </tr>
+
+<% for movimento in @movimentos %>
+  <tr>
+    <% begin %>
+	    <td><%=h movimento.id %></td>
+	    <td><%=h movimento.data.to_s_br %></td>
+	    <td><%=h movimento.data_pagamento.to_s_br %></td>
+	    <td align = "right" ><%=h movimento.valor.contabil %></td>
+	    <td><%=h movimento.depositario.descricao if movimento.depositario %></td>
+	    <td><%=h movimento.observacao %></td>
+	    <td><%= link_to image_tag('icons/web/visualizar.png'), movimento %></td>
+      <td><% if current_usuario.altera_movimento %><%= link_to image_tag('icons/web/editar.png'), edit_movimento_path(movimento) %><% end %></td>
+    <% rescue %>
+		<td>Erro no pagamento <%= movimento.id %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo Lançamento', new_movimento_path %>
+

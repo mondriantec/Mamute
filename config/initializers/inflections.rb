@@ -15,5 +15,6 @@ ActiveSupport::Inflector.inflections do |inflect|
     inflect.irregular 'certidao','certidoes'
     inflect.irregular 'valor_sistema','valores_sistema'
     inflect.irregular 'plano_de_conta', 'planos_de_conta'
+    inflect.irregular 'tipo_de_documento', 'tipos_de_documento'
 #   inflect.uncountable %w( fish sheep )
 end

@@ -1,9 +1,9 @@
 class MovimentosController < ApplicationController
+
+  before_filter :load_tipos_de_documentos, :except => [:index, :destroy]
+
   # GET /movimentos
   # GET /movimentos.xml
-
-  before_filter :load_contas_correntes
-
   def contas_a_pagar
     @movimentos = Movimento.find(:all,:conditions => ["data_pagamento is null and entidade_id = ? and tipo_movimento = 'D'", current_usuario.entidade_id])
   end
@@ -173,9 +173,10 @@ class MovimentosController < ApplicationController
     end
   end
 
-  def load_contas_correntes
-    @contas = [['','']]
-    contas = ContaCorrente.find(:all, :conditions => ["status = 'A'"], :order => 'descricao')
-    contas.each {|c| @contas << [c.descricao, c.id]}
+  def load_tipos_de_documentos
+    @tipos_de_documentos = [['Selecione um Tipo de Documento', nil]]
+    tipos = TipoDeDocumento.find(:all, :order => 'descricao')
+    tipos.each {|t| @tipos_de_documentos << [t.descricao, t.id]}
   end
+
 end

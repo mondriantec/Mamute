@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :tipos_de_documento
+
   map.resources :planos_de_conta
 
   map.resources :movimentos

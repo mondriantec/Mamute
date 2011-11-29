@@ -1,71 +1,14 @@
-<h1>New movimento</h1>
+<h1>Movimento</h1>
 
 <% form_for(@movimento) do |f| %>
   <%= f.error_messages %>
 
+  <%= render :partial => "formulario", :locals => {:f => f} %>
+
   <p>
-    <%= f.label :valor %><br />
-    <%= f.text_field :valor %>
+    <%= f.submit "Gravar" %>
   </p>
-  <p>
-    <%= f.label :depositario_id %><br />
-    <%= f.text_field :depositario_id %>
-  </p>
-  <p>
-    <%= f.label :observacao %><br />
-    <%= f.text_area :observacao %>
-  </p>
-  <p>
-    <%= f.label :documento_type %><br />
-    <%= f.text_field :documento_type %>
-  </p>
-  <p>
-    <%= f.label :documento_id %><br />
-    <%= f.text_field :documento_id %>
-  </p>
-  <p>
-    <%= f.label :data_contabil %><br />
-    <%= f.date_select :data_contabil %>
-  </p>
-  <p>
-    <%= f.label :data_vencimento %><br />
-    <%= f.date_select :data_vencimento %>
-  </p>
-  <p>
-    <%= f.label :data_pagamento %><br />
-    <%= f.date_select :data_pagamento %>
-  </p>
-  <p>
-    <%= f.label :entidade_id %><br />
-    <%= f.text_field :entidade_id %>
-  </p>
-  <p>
-    <%= f.label :sub_depositario_id %><br />
-    <%= f.text_field :sub_depositario_id %>
-  </p>
-  <p>
-    <%= f.label :tipo_movimento %><br />
-    <%= f.text_field :tipo_movimento %>
-  </p>
-  <p>
-    <%= f.label :numero_documento %><br />
-    <%= f.text_field :numero_documento %>
-  </p>
-  <p>
-    <%= f.label :tipo_de_documento %><br />
-    <%= f.text_field :tipo_de_documento %>
-  </p>
-  <p>
-    <%= f.label :fornecedor %><br />
-    <%= f.text_field :fornecedor %>
-  </p>
-  <p>
-    <%= f.label :numero_transacao %><br />
-    <%= f.text_field :numero_transacao %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
+  
 <% end %>
 
-<%= link_to 'Back', movimentos_path %>
+<%= link_to 'Voltar', movimentos_path %>
