@@ -55,20 +55,20 @@ class MovimentosController < ApplicationController
   # GET /movimentos/1
   # GET /movimentos/1.xml
   def show
-    begin
+   # begin
       @movimento = Movimento.find(params[:id])
 
       respond_to do |format|
         format.html # show.html.erb
         format.xml  { render :xml => @movimento }
       end
-    rescue ActiveRecord::RecordNotFound => erro
-      flash[:error] = "Registro não encontrado"
-      redirect_to :controller => "erros", :action => "index" 
-    rescue => erro
-      flash[:error] = "Ocorreu o seguinte erro: #{erro}"
-      redirect_to :controller => "erros", :action => "index"
-    end
+   # rescue ActiveRecord::RecordNotFound => erro
+   #   flash[:error] = "Registro não encontrado"
+   #   redirect_to :controller => "erros", :action => "index" 
+   # rescue => erro
+   #   flash[:error] = "Ocorreu o seguinte erro: #{erro}"
+   #   redirect_to :controller => "erros", :action => "index"
+   # end
   end
 
   # GET /movimentos/new
@@ -101,12 +101,12 @@ class MovimentosController < ApplicationController
     @movimento = Movimento.new(params[:movimento])
     @movimento.entidade_id = current_usuario.entidade_id
     @movimento.valor = params[:movimento][:valor].gsub(',','.')
-    @movimento.created_by = current_usuario.id
-    @movimento.updated_by = current_usuario.id
+    @movimento.usuario_id = current_usuario.id
+    #@movimento.updated_by = current_usuario.id
     @movimento.data_vencimento = @movimento.data_pagamento if current_usuario.entidade_id == 1
     respond_to do |format|
       if @movimento.save
-        flash[:notice] = 'Movimento was successfully created.'
+        flash[:notice] = 'Movimento cadastrado com sucesso.'
         format.html { redirect_to(@movimento) }
         format.xml  { render :xml => @movimento, :status => :created, :location => @movimento }
       else

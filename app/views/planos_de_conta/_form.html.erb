@@ -21,6 +21,8 @@
     <%= f.label :lancavel %><br />
     <%= f.check_box :lancavel %>
   </p>
+
+  <%= hidden_field_tag 'plano_de_conta[entidade_id]', current_usuario.entidade_id %>
   <p>
     <%= f.submit 'Salvar' %>
   </p>

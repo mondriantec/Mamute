@@ -3,7 +3,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :planos_de_conta
 
-  map.resources :movimentos
+  map.resources :movimentos, :collection => {:contas_a_pagar => :get, :contas_pagas => [:get,:post]}
 
   map.resources :sub_depositarios
 

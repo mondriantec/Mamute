@@ -1,3 +1,4 @@
+<h1>Lançamento</h1>
 <%= link_to 'Novo Lançamento', new_movimento_path %>
 <br>
 <p>
@@ -21,13 +22,8 @@
 </p>
 
 <p>
-  <b>Usuário Insert:</b>
-  <%=h @movimento.usuario_insert.login if @movimento.usuario_insert %>
-</p>
-
-<p>
-  <b>Usuário Update:</b>
-  <%=h @movimento.usuario_update.login if @movimento.usuario_update %>
+  <b>Usuário:</b>
+  <%=h @movimento.usuario.login if @movimento.usuario %>
 </p>
 
 

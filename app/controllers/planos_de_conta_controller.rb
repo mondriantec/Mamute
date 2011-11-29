@@ -4,7 +4,7 @@ class PlanosDeContaController < ApplicationController
   # GET /planos_de_conta
   # GET /planos_de_conta.xml
   def index
-    @planos_de_conta = PlanoDeConta.find(:all, :order => 'codigo_conta')
+    @planos_de_conta = PlanoDeConta.find(:all, :conditions => ["entidade_id = ?", current_usuario.entidade_id], :order => 'codigo_conta')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -15,7 +15,7 @@ class PlanosDeContaController < ApplicationController
   # GET /planos_de_conta/1
   # GET /planos_de_conta/1.xml
   def show
-    @plano_de_conta = PlanoDeConta.find(params[:id])
+    @plano_de_conta = PlanoDeConta.find_by_id_and_entidade_id(params[:id], current_usuario.entidade_id)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -36,7 +36,7 @@ class PlanosDeContaController < ApplicationController
 
   # GET /planos_de_conta/1/edit
   def edit
-    @plano_de_conta = PlanoDeConta.find(params[:id])
+    @plano_de_conta = PlanoDeConta.find_by_id_and_entidade_id(params[:id], current_usuario.entidade_id)
   end
 
   # POST /planos_de_conta
@@ -58,7 +58,7 @@ class PlanosDeContaController < ApplicationController
   # PUT /planos_de_conta/1
   # PUT /planos_de_conta/1.xml
   def update
-    @plano_de_conta = PlanoDeConta.find(params[:id])
+    @plano_de_conta = PlanoDeConta.find_by_id_and_entidade_id(params[:id], current_usuario.entidade_id)
 
     respond_to do |format|
       if @plano_de_conta.update_attributes(params[:plano_de_conta])
@@ -74,7 +74,7 @@ class PlanosDeContaController < ApplicationController
   # DELETE /planos_de_conta/1
   # DELETE /planos_de_conta/1.xml
   def destroy
-    @plano_de_conta = PlanoDeConta.find(params[:id])
+    @plano_de_conta = PlanoDeConta.find_by_id_and_entidade_id(params[:id], current_usuario.entidade_id)
     @plano_de_conta.destroy
 
     respond_to do |format|
@@ -85,7 +85,7 @@ class PlanosDeContaController < ApplicationController
 
   def load_contas_mae
      @contas_mae = [['Selecione uma conta', nil]]
-     contas = PlanoDeConta.find(:all, :conditions => ["lancavel = false"], :order => 'codigo_conta')
+     contas = PlanoDeConta.find(:all, :conditions => ["lancavel = false and entidade_id = ?", current_usuario.entidade_id], :order => 'codigo_conta')
      contas.each {|c| @contas_mae << [c.descricao, c.id]}
   end
 
