@@ -11,3 +11,4 @@ Rails::Initializer.run do |config|
 end
                          
 require "#{RAILS_ROOT}/lib/fpdf.rb"
+

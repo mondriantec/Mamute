@@ -3,7 +3,7 @@
 <table>
   <tr>
     <th>Lançamento</th>
-    <th>Data</th>
+    <th>Data Contábil</th>
     <th>Data Pagamento</th>
     <th>Valor</th>
     <th>Depositário</th>
@@ -13,18 +13,13 @@
 
 <% for movimento in @movimentos %>
   <tr>
-    <% begin %>
 	    <td><%=h movimento.id %></td>
-	    <td><%=h movimento.data.to_s_br %></td>
-	    <td><%=h movimento.data_pagamento.to_s_br %></td>
-	    <td align = "right" ><%=h movimento.valor.contabil %></td>
+	    <td><%=h movimento.data_contabil %></td>
+	    <td><%=h movimento.data_pagamento %></td>
+	    <td align = "right" ><%=h movimento.valor %></td>
 	    <td><%=h movimento.depositario.descricao if movimento.depositario %></td>
 	    <td><%=h movimento.observacao %></td>
 	    <td><%= link_to image_tag('icons/web/visualizar.png'), movimento %></td>
-      <td><% if current_usuario.altera_movimento %><%= link_to image_tag('icons/web/editar.png'), edit_movimento_path(movimento) %><% end %></td>
-    <% rescue %>
-		<td>Erro no pagamento <%= movimento.id %></td>
-    <% end %>
   </tr>
 <% end %>
 </table>
