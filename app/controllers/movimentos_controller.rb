@@ -1,6 +1,6 @@
 class MovimentosController < ApplicationController
 
-  before_filter :load_tipos_de_documentos, :except => [:index, :destroy]
+  before_filter :load_tipos_de_documentos, :load_depositarios, :except => [:index, :destroy]
 
   # GET /movimentos
   # GET /movimentos.xml
@@ -173,10 +173,25 @@ class MovimentosController < ApplicationController
     end
   end
 
+  def planos_de_conta
+    @planos = PlanoDeConta.find(:all, :conditions => ["entidade_id = ? and lancavel = true and tipo = ?", current_usuario.entidade_id, params['movimento_tipo_movimento']], :order => 'codigo_conta')
+    if @planos
+       render :layout => false
+    else
+       render :text => ''
+    end
+  end
+
   def load_tipos_de_documentos
     @tipos_de_documentos = [['Selecione um Tipo de Documento', nil]]
     tipos = TipoDeDocumento.find(:all, :order => 'descricao')
     tipos.each {|t| @tipos_de_documentos << [t.descricao, t.id]}
+  end
+
+  def load_depositarios
+    @depositarios = [['Selecione o Depositário', nil]]
+    depositarios = Depositario.find(:all ,:conditions => ["entidade_id = ?", current_usuario.entidade_id], :order => 'descricao')
+    depositarios.each {|d| @depositarios << [d.descricao, d.id]}
   end
 
 end

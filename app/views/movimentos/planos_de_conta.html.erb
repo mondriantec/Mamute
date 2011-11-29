@@ -1,0 +1,4 @@
+<label for="plano_de_conta_id", class='label'><b>Plano De Conta</b> 
+   <%= select_tag('movimento[plano_de_conta_id]', options_for_select(@planos.collect { |c| [(c.codigo_conta + ' - ' + c.descricao), c.id]}))%>
+</label>
+
