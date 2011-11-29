@@ -1,0 +1,30 @@
+<% form_for(@depositario) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :descricao %><br />
+    <%= f.text_field :descricao %>
+  </p>
+  <p>
+    <%= f.label :tipo %><br />
+    <%= f.check_box :tipo %>
+  </p>
+  <p>
+    <%= f.label :agencia %><br />
+    <%= f.text_field :agencia %>
+  </p>
+  <p>
+    <%= f.label :conta %><br />
+    <%= f.text_field :conta %>
+  </p>
+  <p>
+    <%= f.label :banco %><br />
+    <%= f.text_field :banco %>
+  </p>
+
+  <%= hidden_field_tag 'depositario[entidade_id]', current_usuario.entidade_id %>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+

@@ -1,23 +1,5 @@
-<h1>New sub_depositario</h1>
+<h1>Cadastro de SubDepositário</h1>
 
-<% form_for(@sub_depositario) do |f| %>
-  <%= f.error_messages %>
+<%= render :partial => 'form' %>
 
-  <p>
-    <%= f.label :depositario_id %><br />
-    <%= f.text_field :depositario_id %>
-  </p>
-  <p>
-    <%= f.label :descricao %><br />
-    <%= f.text_field :descricao %>
-  </p>
-  <p>
-    <%= f.label :status %><br />
-    <%= f.text_field :status %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
-
-<%= link_to 'Back', sub_depositarios_path %>
+<%= link_to 'Voltar', :controller => :depositarios, :action => :show, :id => params['depositario_id'] %>

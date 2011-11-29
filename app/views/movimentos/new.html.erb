@@ -1,14 +1,12 @@
 <h1>Movimento</h1>
 
 <% form_for(@movimento) do |f| %>
+<label>
   <%= f.error_messages %>
 
   <%= render :partial => "formulario", :locals => {:f => f} %>
 
-  <p>
-    <%= f.submit "Gravar" %>
-  </p>
   
 <% end %>
-
 <%= link_to 'Voltar', movimentos_path %>
+</label>

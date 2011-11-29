@@ -44,7 +44,7 @@ class SubDepositariosController < ApplicationController
 
     respond_to do |format|
       if @sub_depositario.save
-        format.html { redirect_to(@sub_depositario, :notice => 'SubDepositario was successfully created.') }
+        format.html { redirect_to(@sub_depositario.depositario, :notice => 'Subdepositario cadastrado com sucesso.') }
         format.xml  { render :xml => @sub_depositario, :status => :created, :location => @sub_depositario }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class SubDepositariosController < ApplicationController
 
     respond_to do |format|
       if @sub_depositario.update_attributes(params[:sub_depositario])
-        format.html { redirect_to(@sub_depositario, :notice => 'SubDepositario was successfully updated.') }
+        format.html { redirect_to(@sub_depositario.depositario, :notice => 'Subdepositario atualizado com sucesso.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -73,10 +73,11 @@ class SubDepositariosController < ApplicationController
   # DELETE /sub_depositarios/1.xml
   def destroy
     @sub_depositario = SubDepositario.find(params[:id])
+    s = @sub_depositario
     @sub_depositario.destroy
 
     respond_to do |format|
-      format.html { redirect_to(sub_depositarios_url) }
+      format.html { redirect_to(s.depositario) }
       format.xml  { head :ok }
     end
   end

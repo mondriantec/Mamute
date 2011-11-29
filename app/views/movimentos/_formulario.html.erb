@@ -1,66 +1,55 @@
-<script type="text/javascript"  src="/javascripts/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
-
-
-<script type="text/javascript">
-	dojo.require("dojo.parser");
-	dojo.require("dijit.form.DateTextBox");
-</script>
 
     <label for="fornecedor", class='label'><b>Fornecedor</b> 
  		  <%= f.text_field :fornecedor, :class => "dijitTextBox" %>
     </label>
-
+<br/> 
     <label for="tipo_movimento", class='label'><b>Tipo</b>
       <%= select_tag('movimento[tipo_movimento]',options_for_select([["DEBITO","D"],["CREDITO","C"]])) %>
     </label>    
-
+<br/> 
     <label for="tipo_de_documento_id", class='label'><b>Tp. Doc.</b> 
       <%= f.select( :tipo_de_documento_id, @tipos_de_documentos) %>
     </label>
- 
-    <% if current_usuario.entidade_id == 1 %>
+<br/>  
        <label for="numero_transacao", class='label'><b>Nr. Transação</b> 
  		     <%= f.text_field :numero_transacao, :class => "dijitTextBox" %>
        </label>
-    <% end %>
-   
+<br/>    
     <label for="numero_documento", class='label'><b>Documento</b> 
  		  <%= f.text_field :numero_documento, :class => "dijitTextBox" %>
     </label>
-    
+<br/>     
     <label for="data", class='label'><b>Data Contábil</b>
        <%#= dojo_date_field(@movimento, :data, Date.today) %>  
-       <%= f.text_field :data_contabil,  :onkeypress => 'mascara(this,data)', :maxlength => 10 %><br/> 
-
+       <%= f.text_field :data_contabil,  :onkeypress => 'mascara(this,data)', :maxlength => 10 %>
+    </label>
+<br/> 
 
     <label for="data_vencimento", class='label'><b>Data vencimento</b>
-       <%= f.text_field :data_vencimento,  :onkeypress => 'mascara(this,data)', :maxlength => 10 %><br/> 
+       <%= f.text_field :data_vencimento,  :onkeypress => 'mascara(this,data)', :maxlength => 10 %>
     </label>
-
+<br/> 
     <label for="data_pagamento", class='label'><b>Data pagamento</b> 
-       <%= f.text_field :data_pagamento,  :onkeypress => 'mascara(this,data)', :maxlength => 10 %><br/> 
+       <%= f.text_field :data_pagamento,  :onkeypress => 'mascara(this,data)', :maxlength => 10 %>
    </label>
-
+<br/> 
     <label for="valor", class='label'><b>Valor</b> 
  		  <%= f.text_field :valor, :class => "dijitTextBox", :onkeypress => 'mascara(this,valor)' %>
     </label>
-
-    <% if current_usuario.entidade_id == 1 %>
-    <label for="tipo_de_documento_id", class='label'><b>Conta</b> 
-      <%= f.select :conta_corrente_id, @contas %>
-    </label>
-    <% end %>
-
+<br/> 
     <label for="depositario_id", class='label'><b>Depositario</b> 
       <%= select_tag('movimento[depositario_id]', options_for_select(Depositario.find(:all, :conditions => ['entidade_id = ?',current_usuario.entidade_id.to_s]).collect { |d| [d.descricao, d.id]})) %>
     </label>
-
+<br/> 
     <div id='div_sub_depositario'></div>
-
+<br/> 
    	<label for="observacao", class='label'><b>Observações</b>
 		  <%= f.text_area :observacao, :rows => 4, :cols => 50, :class => "dijitTextBox", :style=> "width: 250px" %><br/>
 	  </label>
-
+<br>
+  <p>
+    <%= f.submit "Gravar" %>
+  </p>	
 <%= observe_field 'movimento_depositario_id',
   :update => 'div_sub_depositario',      
 	:url    => { :action => 'sub_depositario' }, 
