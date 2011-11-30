@@ -1,0 +1,32 @@
+<% form_for(@parametro_financeiro) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :tipo_documento_id %><br />
+    <%= f.select :tipo_documento_id, @tipos_documentos %>
+  </p>
+  <p>
+    <%= f.label :qtd_paginas_inicial %><br />
+    <%= f.text_field :qtd_paginas_inicial %>
+  </p>
+  <p>
+    <%= f.label :valor_qtd_inicial %><br />
+    <%= f.text_field :valor_qtd_inicial %>
+  </p>
+  <p>
+    <%= f.label :qtd_pag_extra %><br />
+    <%= f.text_field :qtd_pag_extra %>
+  </p>
+  <p>
+    <%= f.label :valor_qtd_extra %><br />
+    <%= f.text_field :valor_qtd_extra %>
+  </p>
+  <p>
+    <%= f.label :valor_limite %><br />
+    <%= f.text_field :valor_limite %>
+  </p>
+  <p>
+    <%= f.submit 'Salvar' %>
+  </p>
+<% end %>
+

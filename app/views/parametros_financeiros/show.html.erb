@@ -1,0 +1,34 @@
+<h1>Parâmetro Financeiro</h1>
+<p>
+  <b>Tipo documento:</b>
+  <%=h @parametro_financeiro.tipo_documento.tipo if @parametro_financeiro.tipo_documento %>
+</p>
+
+<p>
+  <b>Qtd paginas inicial:</b>
+  <%=h @parametro_financeiro.qtd_paginas_inicial %>
+</p>
+
+<p>
+  <b>Valor qtd inicial:</b>
+  <%=h @parametro_financeiro.valor_qtd_inicial %>
+</p>
+
+<p>
+  <b>Qtd pag extra:</b>
+  <%=h @parametro_financeiro.qtd_pag_extra %>
+</p>
+
+<p>
+  <b>Valor qtd extra:</b>
+  <%=h @parametro_financeiro.valor_qtd_extra %>
+</p>
+
+<p>
+  <b>Valor limite:</b>
+  <%=h @parametro_financeiro.valor_limite %>
+</p>
+
+
+<%= link_to 'Editar', edit_parametro_financeiro_path(@parametro_financeiro) %> |
+<%= link_to 'Voltar', parametros_financeiros_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tipo_documento: 
+  qtd_paginas_inicial: 1
+  valor_qtd_inicial: 1.5
+  qtd_pag_extra: 1
+  valor_qtd_extra: 1.5
+  valor_limite: 1.5
+
+two:
+  tipo_documento: 
+  qtd_paginas_inicial: 1
+  valor_qtd_inicial: 1.5
+  qtd_pag_extra: 1
+  valor_qtd_extra: 1.5
+  valor_limite: 1.5

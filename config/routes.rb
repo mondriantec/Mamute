@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :parametros_financeiros
+
   map.resources :tipos_de_documento
 
   map.resources :planos_de_conta
