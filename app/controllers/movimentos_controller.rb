@@ -8,6 +8,10 @@ class MovimentosController < ApplicationController
     @movimentos = Movimento.find(:all,:conditions => ["data_pagamento is null and entidade_id = ? and tipo_movimento = 'D'", current_usuario.entidade_id])
   end
 
+  def contas_a_receber
+    @movimentos = Movimento.find(:all,:conditions => ["data_pagamento is null and entidade_id = ? and tipo_movimento = 'C'", current_usuario.entidade_id])
+  end
+
   def contas_pagas
      #campos para o select
     @campos = []
@@ -34,6 +38,34 @@ class MovimentosController < ApplicationController
   	  	@movimentos = Movimento.find(:all, :limit => 10, :conditions => ["data_pagamento is not null and entidade_id = ? and tipo_movimento = 'D'", current_usuario.entidade_id])
     end  
   end
+
+  def contas_recebidas
+     #campos para o select
+    @campos = []
+    @campos << ["LANCAMENTO: NÚMERO" ,"LANCAMENTO"]
+    @campos << ["DATA LANCAMENTO","DATA"]
+    @campos << ["DATA PAGAMENTO" ,"DT_PAG"]
+    @campos << ["VALOR" ,"VALOR"]
+
+
+    if request.post?
+      @monvimentos = []
+      x = params[:busca].clone
+      params[:busca] = params[:busca].gsub(/\./,'').gsub(/-/,'').gsub(/\//,'')
+      if params[:tipo_busca] == "LANCAMENTO"
+         @movimentos = Movimento.find(:all, :conditions => ["id = ? and data_pagamento is not null and entidade_id = ? and tipo_movimento = 'C'",params[:busca], current_usuario.entidade_id])
+      elsif params[:tipo_busca] == "DATA"
+         @movimentos = Movimento.find(:all, :conditions => ["data = ? and data_pagamento is not null and entidade_id = ? and tipo_movimento = 'C'",params[:busca].to_date, current_usuario.entidade_id])
+      elsif params[:tipo_busca] == "DT_PAG"
+         @movimentos = Movimento.find(:all, :conditions => ["data_pagamento = ? and data_pagamento is not null and entidade_id = ? and tipo_movimento = 'C'",params[:busca].to_date, current_usuario.entidade_id])
+      elsif params[:tipo_busca] == "VALOR"
+         @movimentos = Movimento.find(:all, :conditions => ["valor between ? and ? and data_pagamento is not null and entidade_id = ? and tipo_movimento = 'C'",(params[:busca].to_f - 1),(params[:busca].to_f + 1), current_usuario.entidade_id]) 
+      end
+    else
+  	  	@movimentos = Movimento.find(:all, :limit => 10, :conditions => ["data_pagamento is not null and entidade_id = ? and tipo_movimento = 'C'", current_usuario.entidade_id])
+    end  
+  end
+
 
   def index
     begin
