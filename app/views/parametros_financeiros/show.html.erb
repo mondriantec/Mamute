@@ -1,5 +1,9 @@
 <h1>Parâmetro Financeiro</h1>
 <p>
+  <b>Serviço:</b>
+  <%=h @parametro_financeiro.servico.descricao if @parametro_financeiro.servico %>
+</p>
+<p>
   <b>Tipo documento:</b>
   <%=h @parametro_financeiro.tipo_documento.tipo if @parametro_financeiro.tipo_documento %>
 </p>

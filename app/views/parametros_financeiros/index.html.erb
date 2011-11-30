@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Serviço</th>
     <th>Tipo de documento</th>
     <th>Nr. Pagin Inicial</th>
     <th>Valor qtd Inicial</th>
@@ -13,6 +14,7 @@
 
 <% @parametros_financeiros.each do |parametro_financeiro| %>
   <tr>
+    <td><%=h parametro_financeiro.servico.descricao if parametro_financeiro.servico %></td>
     <td><%=h parametro_financeiro.tipo_documento.tipo if parametro_financeiro.tipo_documento %></td>
     <td><%=h parametro_financeiro.qtd_paginas_inicial %></td>
     <td><%=h parametro_financeiro.valor_qtd_inicial %></td>

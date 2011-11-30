@@ -2,6 +2,11 @@
   <%= f.error_messages %>
 
   <p>
+    <%= f.label :servico_id %><br />
+    <%= f.select :servico_id, @servicos %>
+  </p>
+
+  <p>
     <%= f.label :tipo_documento_id %><br />
     <%= f.select :tipo_documento_id, @tipos_documentos %>
   </p>

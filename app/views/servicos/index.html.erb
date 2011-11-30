@@ -1,0 +1,21 @@
+<h1>Cadastro de Serviços</h1>
+
+<table>
+  <tr>
+    <th>Descrição</th>
+    <th colspan=3>Opções</th>
+  </tr>
+
+<% @servicos.each do |servico| %>
+  <tr>
+    <td><%=h servico.descricao %></td>
+    <td><%= link_to 'Exibir', servico %></td>
+    <td><%= link_to 'Editar', edit_servico_path(servico) %></td>
+    <td><%= link_to 'Excluir', servico, :confirm => 'Confirma Exclusão?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo Serviço', new_servico_path %>

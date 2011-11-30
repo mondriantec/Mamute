@@ -1,6 +1,9 @@
 class ParametrosFinanceirosController < ApplicationController
+
+
   
   before_filter :load_tipos_documentos, :except => [:index, :destroy]
+  before_filter :load_servicos, :except => [:index, :destroy]
   # GET /parametros_financeiros
   # GET /parametros_financeiros.xml
   def index
@@ -86,13 +89,14 @@ class ParametrosFinanceirosController < ApplicationController
   end
 
  def load_tipos_documentos
-    # carregar somente os tipos que ainda nao foram usados pela entidade, pra facilitar para o usuario
     @tipos_documentos = [['Selecione um tipo de documento', nil]]
-    tipos = TipoDocumento.find_by_sql("select * from tipo_documentos 
-                                       where id not in
-                                             (select tipo_documento_id from parametros_financeiros
-                                              where entidade_id = #{current_usuario.entidade_id})
-                                       order by tipo")
+    tipos = TipoDocumento.all(:order => 'tipo')
    tipos.each {|t| @tipos_documentos << [t.tipo, t.id]}
+ end
+
+ def load_servicos
+   @servicos = [['Selecione um serviço.']]
+   servicos = Servico.all(:order => 'descricao')
+   servicos.each {|s| @servicos << [s.descricao, s.id]}
  end
 end
