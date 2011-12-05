@@ -23,6 +23,18 @@ class Documento < ActiveRecord::Base
   end
 
   def cacular_valor_cobrado!
+    # usar a parametros financeiros para calcular o valor cobrado
+    con = ActiveRecord::Base.connection
+    sql = "select fnc_gera_valor_cobrado(#{self.tipo_documento_id}, #{self.numero_paginas}, #{self.cartorio.irtd_id}, #{1}) as resultado "
+    res = con.execute sql
+    res = res.to_a[0]['resultado'].to_f
+    if res == -1 then
+     return false
+    else
+      self.valor_cobrado = res
+      self.save
+      return true
+    end
   end
 
   def campo_chave
