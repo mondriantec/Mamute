@@ -22,6 +22,9 @@ class Documento < ActiveRecord::Base
     end
   end
 
+  def cacular_valor_cobrado!
+  end
+
   def campo_chave
     self.tipo_documento.campo_documentos.find(:first, :order => "ordem")
   end
