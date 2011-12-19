@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>IRTD</th>
     <th>Controle</th>
     <th>Data</th>
     <th>Quantidade Docs</th>
@@ -13,6 +14,7 @@
 
 <% @repasses_fabrica.each do |repasse_fabrica| %>
   <tr>
+    <td><%=h repasse_fabrica.irtd.nome %></td>
     <td><%=h repasse_fabrica.id %></td>
     <td><%=h repasse_fabrica.data.to_s %></td>
     <td><%=h repasse_fabrica.quantidade_de_documentos %></td>

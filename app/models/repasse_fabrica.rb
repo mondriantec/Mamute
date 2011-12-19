@@ -1,5 +1,6 @@
 class RepasseFabrica < ActiveRecord::Base
    has_many :documentos
+   belongs_to :irtd
 
 
    def quantidade_de_documentos

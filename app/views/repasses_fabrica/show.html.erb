@@ -3,6 +3,7 @@
 <h2>Dados Repasse</h2>
 <table>
   <thead>
+     <th>IRTD</th>
      <th>Controle</th>
      <th>Data</th>
      <th>Quantidade Docs.</th>
@@ -10,6 +11,7 @@
      <th>Valor</th>
   </thead>  
   <tr>
+    <td><%=h @repasse_fabrica.irtd.nome %></td>
     <td><%=h @repasse_fabrica.id %></td>
     <td><%=h @repasse_fabrica.data %></td>
     <td><%=h @repasse_fabrica.quantidade_de_documentos %></td> 
@@ -28,7 +30,6 @@
      <th>Nr Paginas</th>
      <th>UF</th>
      <th>Cidade</th>
-     <th>IRTD</th>
      <th>Cartório</th>
   </thead>  
  <% for doc in @repasse_fabrica.documentos %>
@@ -39,7 +40,6 @@
       <td><%=h doc.numero_paginas %></td>
       <td><%=h doc.cartorio.irtd.uf if doc.cartorio %></td>
       <td><%=h doc.cartorio.cidade.nome if doc.cartorio %></td>
-      <td><%=h doc.cartorio.irtd.nome if doc.cartorio %></td>
       <td><%=h doc.cartorio.oficio if doc.cartorio %></td>
     </tr>
  <% end %>
