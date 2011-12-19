@@ -64,7 +64,7 @@ OTHERS
 #aside ul ul li a, #aside ul li#submenu-active ul li a {border-bottom:1px solid #cfcfcf; background-color:#f5f5f5; color:#303030;}
 #aside ul li ul li a {background-color:#e3e3e3;}
 #aside ul ul li a:hover, #aside ul ul li a:active, #aside ul ul li a:focus, #aside ul li#submenu-active ul li a:hover, #aside ul li#submenu-active ul li a:active, #aside ul li#submenu-active ul li a:focus {color:#df0000;}
-#content h1 {background-color:#303030; color:#fff;}
+#content h1 {background: url("/images/bg-topico.jpg") repeat scroll 0 0 transparent; border: 2px solid #4F8A0A; color: #FFFFFF; height: 37px; margin-bottom: 10px; letter-spacing:1px; font-weight: bold}
 #content .tabs {border-bottom:1px solid #cfcfcf;}
 #content .tabs a {color:#303030;}
 #content .tabs a span {color:#303030;}

@@ -1,0 +1,24 @@
+<div class="mondrian_form">
+     <label class="uma_linha_form"><b style="width: 400px">Documento Selado e Assinado Eletronicamente</b>&nbsp;</label>
+
+     <div class='new_line'>
+          <label><b>Num. Selo:</b> <%= @documento.selo.numero %></label>
+          <label><b>Cartório:</b> <%= @documento.cartorio.oficio %></label>
+          <label><b>Tabelião:</b> <%= @documento.cartorio.tabeliao %></label>
+          <label><b>Data:</b><%= @documento.created_at.strftime("%d/%m/%Y") %></label>
+     </div>
+</div>
+<br/>
+
+
+
+<table >
+   <tr> <th width='130'>Dono</th> <td><%= @documento.usuario.nome           if @documento.usuario %></td> </tr>
+       <% @documento.tipo_documento.campo_documentos.each do |c| %>
+            <tr>
+                <th><%= c.nome %></th>
+                    <% campo_doc = @documento.valor_campo_documentos.find_by_campo_documento_id(c.id) %>
+                <td><%= campo_doc.valor.gsub('/','-') if campo_doc %> </td>
+            </tr>
+       <% end %>
+</table>

@@ -1,8 +1,8 @@
 <div class="normal_form">
-  <div class="form_titulo">
-    &nbsp;
-  </div>
-<% form_for(@notificacao) do |f| %>
+  <!--div class="form_titulo" style='font-weight: bold; '>
+    Nova Notificação
+  </div-->
+<% form_for(@notificacao, :html => { :multipart => true }) do |f| %>
   <%= f.error_messages %>
   <!--
   <label>
@@ -33,15 +33,14 @@
   </label>
   
   <label>	     
-	<b>UF </b>
-    <%= select_tag 'notificacao[uf]', options_for_select(lista_estados, "#{params[:uf].blank? ? 'nil' : params[:uf]}") %>
+	<b>UF</b>
+        <%= select_tag 'notificacao[uf]', options_for_select(lista_estados, "#{params[:uf].blank? ? 'nil' : params[:uf]}") %>
   </label>
-
-  <label>		    
-	<b>CIDADE </b>
-    <span id="div_municipios">
-        <%= select_tag 'notificacao[cidade_id]', options_for_select(@cidades.collect { |c| [c.nome, c.id] }.insert(0, ['Selecione um Município...', ''])), :onchange => 'remove_css(this)', :valida => true %>
-    </span>
+  <label>	     
+        <b>CIDADE</b>
+        <span id="div_municipios">
+            <%= select_tag 'notificacao[cidade_id]', options_for_select(@cidades.collect { |c| [c.nome, c.id] }.insert(0, ['Selecione um Município...', ''])), :onchange => 'remove_css(this)', :valida => true %>
+        </span>
   </label>
 
   <label> 
@@ -51,9 +50,13 @@
 
   <label>
 	<b>texto</b>
-    <%= f.text_area :texto %>
+        <%= f.text_area :texto, :rows=>6, :cols=> 60 %>
   </label>
 
+  <label>
+        <b>Notificação</b>
+        <input type="file" name="documento"> 
+  </label>
 
   <p class="form_bar">
     <%= f.submit 'Salvar' %>

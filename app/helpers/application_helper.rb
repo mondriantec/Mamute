@@ -118,9 +118,15 @@ module ApplicationHelper
 
 
       <!-- Create a new project -->
-      <p id='btn-create' class='box'><a href='/#{self.controller_name}/new'><span>Adicionar #{self.controller_name.singularize.capitalize}</span></a></p>
-		  """
-		end
+      <a href='/#{self.controller_name}/new' >
+      <p id='btn-create_broken' style='background:url(/images/botao_add.jpg); text-decoration: none' class='box'>
+           <span style='margin-left: 50px; font-size: 13px; color: white; font-weight: bold'>
+              Adicionar #{self.controller_name.singularize.capitalize}
+           </span>
+      </p>
+      </a>
+	   """
+      end
   end
 end
 

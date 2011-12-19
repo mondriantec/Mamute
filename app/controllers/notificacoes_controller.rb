@@ -6,6 +6,7 @@ class NotificacoesController < ApplicationController
     @notificacoes_enviadas = Notificacao.all.paginate(:page => params[:page], :per_page => 5)
     @notificacoes_devolvidas = Notificacao.all.paginate(:page => params[:page], :per_page => 5)
     @notificacao = Notificacao.new
+    @cidades = Cidade.all    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @notificacoes }
