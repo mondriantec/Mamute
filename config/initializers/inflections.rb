@@ -17,5 +17,6 @@ ActiveSupport::Inflector.inflections do |inflect|
     inflect.irregular 'plano_de_conta', 'planos_de_conta'
     inflect.irregular 'tipo_de_documento', 'tipos_de_documento'
     inflect.irregular 'parametro_financeiro', 'parametros_financeiros'
+    inflect.irregular 'repasse_fabrica', 'repasses_fabrica'
 #   inflect.uncountable %w( fish sheep )
 end

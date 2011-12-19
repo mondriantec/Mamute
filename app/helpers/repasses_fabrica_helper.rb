@@ -1,0 +1,2 @@
+module RepassesFabricaHelper
+end

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  data: 2011-12-19
+  valor: 1.5
+  observacao: MyText
+
+two:
+  data: 2011-12-19
+  valor: 1.5
+  observacao: MyText

@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :repasses_fabrica
+
   map.resources :servicos
 
   map.resources :parametros_financeiros

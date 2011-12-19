@@ -7,6 +7,7 @@ class Documento < ActiveRecord::Base
   belongs_to :selo
   belongs_to :cartorio
   belongs_to :cliente, :class_name => 'Usuario', :foreign_key => 'cliente_id'
+  belongs_to :repasse_fabrica
   
   has_attached_file :imagem
   
