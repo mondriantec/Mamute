@@ -1,0 +1,32 @@
+<h1>Repasses</h1>
+
+<table>
+  <tr>
+    <th>IRTD</th>
+    <th>Controle</th>
+    <th>Data</th>
+    <th>Quantidade Docs</th>
+    <th>Quantidade Páginas</th>
+    <th>Valor</th>
+    <th>Observação</th>
+    <th>Opções</th>
+  </tr>
+
+<% @repasses_fabrica.each do |repasse_fabrica| %>
+  <tr>
+    <td><%=h repasse_fabrica.irtd.nome %></td>
+    <td><%=h repasse_fabrica.id %></td>
+    <td><%=h repasse_fabrica.data.to_s %></td>
+    <td><%=h repasse_fabrica.quantidade_de_documentos %></td>
+    <td><%=h repasse_fabrica.quantidade_de_paginas %></td>
+    <td><%=h repasse_fabrica.valor %></td>
+    <td><%=h repasse_fabrica.observacao %></td>
+    <td><%= link_to 'Detalhes', repasse_fabrica %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Voltar', :controller => 'financeiro', :action => 'index' %>
+

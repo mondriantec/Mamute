@@ -1,0 +1,48 @@
+<h1>Detalhes do Repasse</h1>
+
+<h2>Dados Repasse</h2>
+<table>
+  <thead>
+     <th>IRTD</th>
+     <th>Controle</th>
+     <th>Data</th>
+     <th>Quantidade Docs.</th>
+     <th>Quantidade Págs.</th>  
+     <th>Valor</th>
+  </thead>  
+  <tr>
+    <td><%=h @repasse_fabrica.irtd.nome %></td>
+    <td><%=h @repasse_fabrica.id %></td>
+    <td><%=h @repasse_fabrica.data %></td>
+    <td><%=h @repasse_fabrica.quantidade_de_documentos %></td> 
+    <td><%=h @repasse_fabrica.quantidade_de_paginas %></td> 
+    <td><%=h @repasse_fabrica.valor %></td>
+  </tr>
+</table>
+
+
+  <h2>Dados dos Documentos</h2>
+<table>
+  <thead>
+     <th>Controle</th>
+     <th>Data</th>
+     <th>Tipo</th>
+     <th>Nr Paginas</th>
+     <th>UF</th>
+     <th>Cidade</th>
+     <th>Cartório</th>
+  </thead>  
+ <% for doc in @repasse_fabrica.documentos %>
+    <tr>
+      <td><%=h doc.id %></td>
+      <td><%=h doc.created_at.to_date.to_s %></td>
+      <td><%=h doc.tipo_documento.tipo if doc.tipo_documento %></td>
+      <td><%=h doc.numero_paginas %></td>
+      <td><%=h doc.cartorio.irtd.uf if doc.cartorio %></td>
+      <td><%=h doc.cartorio.cidade.nome if doc.cartorio %></td>
+      <td><%=h doc.cartorio.oficio if doc.cartorio %></td>
+    </tr>
+ <% end %>
+</table>
+
+<%= link_to 'Voltar', repasses_fabrica_path %>

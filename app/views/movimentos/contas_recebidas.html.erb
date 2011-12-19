@@ -1,0 +1,15 @@
+<p id="div_form_busca_contas_recebidas">
+  <form method="post" action="/movimentos/contas_recebidas">
+    <fieldset id="busca_simples">
+      <LEGEND>Filtrar por:</LEGEND>
+      <%= select_tag :tipo_busca, options_for_select(@campos,params[:tipo_busca]) %>
+      <%= text_field_tag 'busca', params[:busca] %> 
+      <%= submit_tag "Filtrar" %>
+      <%= link_to('Limpar Filtro', :action => 'index') if params[:busca] %>
+    </fieldset>
+  </form>
+</p>
+
+<h1>Contas Recebidas</h1>
+
+<%= render :partial => "list" %>

@@ -2,7 +2,7 @@ class DepositariosController < ApplicationController
   # GET /depositarios
   # GET /depositarios.xml
   def index
-    @depositarios = Depositario.all
+    @depositarios = Depositario.find(:all, :order => 'descricao')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -44,7 +44,7 @@ class DepositariosController < ApplicationController
 
     respond_to do |format|
       if @depositario.save
-        format.html { redirect_to(@depositario, :notice => 'Depositario was successfully created.') }
+        format.html { redirect_to(@depositario, :notice => 'Depositario cadastrado com sucesso.') }
         format.xml  { render :xml => @depositario, :status => :created, :location => @depositario }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class DepositariosController < ApplicationController
 
     respond_to do |format|
       if @depositario.update_attributes(params[:depositario])
-        format.html { redirect_to(@depositario, :notice => 'Depositario was successfully updated.') }
+        format.html { redirect_to(@depositario, :notice => 'Depositario atualizado com sucesso.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  codigo_conta: MyString
+  parent_id: 1
+  descricao: MyString
+  tipo: MyString
+  lancavel: false
+
+two:
+  codigo_conta: MyString
+  parent_id: 1
+  descricao: MyString
+  tipo: MyString
+  lancavel: false

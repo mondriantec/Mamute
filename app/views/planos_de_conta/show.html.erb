@@ -1,0 +1,30 @@
+<h1>Plano de Conta</h1>
+
+<p>
+  <b>Codigo conta:</b>
+  <%=h @plano_de_conta.codigo_conta %>
+</p>
+
+<p>
+  <b>Conta mãe:</b>
+  <%=h @plano_de_conta.conta_mae.descricao if @plano_de_conta.conta_mae %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%=h @plano_de_conta.descricao %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%=h @plano_de_conta.descricao_tipo %>
+</p>
+
+<p>
+  <b>Lancavel:</b>
+  <%=h @plano_de_conta.descricao_lancavel %>
+</p>
+
+
+<%= link_to 'Editar', edit_plano_de_conta_path(@plano_de_conta) %> |
+<%= link_to 'Voltar', planos_de_conta_path %>

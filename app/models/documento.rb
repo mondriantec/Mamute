@@ -7,6 +7,7 @@ class Documento < ActiveRecord::Base
   belongs_to :selo
   belongs_to :cartorio
   belongs_to :cliente, :class_name => 'Usuario', :foreign_key => 'cliente_id'
+  belongs_to :repasse_fabrica
   
   has_attached_file :imagem
   
@@ -19,6 +20,21 @@ class Documento < ActiveRecord::Base
        when 1 : 'Em processo de faturamento'
        when 2 : 'Faturado'
        else 'Indefinido'
+    end
+  end
+
+  def cacular_valor_cobrado!
+    # usar a parametros financeiros para calcular o valor cobrado
+    con = ActiveRecord::Base.connection
+    sql = "select fnc_gera_valor_cobrado(#{self.tipo_documento_id}, #{self.numero_paginas}, #{self.cartorio.irtd_id}, #{1}) as resultado "
+    res = con.execute sql
+    res = res.to_a[0]['resultado'].to_f
+    if res == -1 then
+     return false
+    else
+      self.valor_cobrado = res
+      self.save
+      return true
     end
   end
 

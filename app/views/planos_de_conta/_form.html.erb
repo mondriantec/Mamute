@@ -1,0 +1,30 @@
+<% form_for(@plano_de_conta) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :codigo_conta %><br />
+    <%= f.text_field :codigo_conta %>
+  </p>
+  <p>
+    <%= f.label :parent_id %><br />
+    <%= f.select :parent_id, @contas_mae %>
+  </p>
+  <p>
+    <%= f.label :descricao %><br />
+    <%= f.text_field :descricao %>
+  </p>
+  <p>
+    <%= f.label :tipo %><br />
+    <%= f.select :tipo, @tipos %>
+  </p>
+  <p>
+    <%= f.label :lancavel %><br />
+    <%= f.check_box :lancavel %>
+  </p>
+
+  <%= hidden_field_tag 'plano_de_conta[entidade_id]', current_usuario.entidade_id %>
+  <p>
+    <%= f.submit 'Salvar' %>
+  </p>
+<% end %>
+

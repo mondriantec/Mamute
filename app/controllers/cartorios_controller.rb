@@ -43,7 +43,10 @@ class CartoriosController < ApplicationController
   def create
     @cartorio = Cartorio.new(params[:cartorio])
     @cartorio.cidade_id = params[:uf] 
-
+    # com base na cidade, pega o irtd responsavel pelo cartorio
+    irtd = nil
+    irtd = Irtd.find_by_uf @cartorio.cidade.uf if @cartorio.cidade
+    @cartorio.irtd_id = irtd.id if irtd
     respond_to do |format|
       if @cartorio.save
         flash[:notice] = 'Cartorio was successfully created.'

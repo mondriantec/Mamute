@@ -1,0 +1,33 @@
+<h1>Parâmetros Financeiros</h1>
+
+<table>
+  <tr>
+    <th>Serviço</th>
+    <th>Tipo de documento</th>
+    <th>Nr. Pagin Inicial</th>
+    <th>Valor qtd Inicial</th>
+    <th>Qtd. Pag. Extra</th>
+    <th>Valor Qtd Extra</th>
+    <th>Valor limite</th>
+    <th colspan=3>Opções</th>
+  </tr>
+
+<% @parametros_financeiros.each do |parametro_financeiro| %>
+  <tr>
+    <td><%=h parametro_financeiro.servico.descricao if parametro_financeiro.servico %></td>
+    <td><%=h parametro_financeiro.tipo_documento.tipo if parametro_financeiro.tipo_documento %></td>
+    <td><%=h parametro_financeiro.qtd_paginas_inicial %></td>
+    <td><%=h parametro_financeiro.valor_qtd_inicial %></td>
+    <td><%=h parametro_financeiro.qtd_pag_extra %></td>
+    <td><%=h parametro_financeiro.valor_qtd_extra %></td>
+    <td><%=h parametro_financeiro.valor_limite %></td>
+    <td><%= link_to 'Exibir', parametro_financeiro %></td>
+    <td><%= link_to 'Editar', edit_parametro_financeiro_path(parametro_financeiro) %></td>
+    <td><%= link_to 'Excluir', parametro_financeiro, :confirm => 'Confirma Exclusão?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo Parâmetro', new_parametro_financeiro_path %>

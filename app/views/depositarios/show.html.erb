@@ -1,15 +1,16 @@
+<h1>Cadastro de Depositários</h1>
 <p>
-  <b>Descricao:</b>
+  <b>Descrição:</b>
   <%=h @depositario.descricao %>
 </p>
 
 <p>
-  <b>Tipo:</b>
-  <%=h @depositario.tipo %>
+  <b>Conta Bancária:</b>
+  <%=h @depositario.descricao_tipo %>
 </p>
 
 <p>
-  <b>Agencia:</b>
+  <b>Agência:</b>
   <%=h @depositario.agencia %>
 </p>
 
@@ -23,11 +24,26 @@
   <%=h @depositario.banco %>
 </p>
 
-<p>
-  <b>Entidade:</b>
-  <%=h @depositario.entidade_id %>
-</p>
 
+<%= link_to 'Editar', edit_depositario_path(@depositario) %> |
+<%= link_to 'Voltar', depositarios_path %>
+<br><hr>
 
-<%= link_to 'Edit', edit_depositario_path(@depositario) %> |
-<%= link_to 'Back', depositarios_path %>
+<b>Sub Depositarios</b>
+<table>
+  <tr>
+    <th>Descrição</th>
+    <th>Status</th>
+    <th colspan=3>Opções</th>
+  </tr>
+
+<% for s in @depositario.sub_depositarios %>
+  <tr>
+    <td><%=h s.descricao %></td>
+    <td><%=h s.descricao_status %></td>
+    <td><%= link_to 'Editar', :controller => :sub_depositarios, :action => :edit, :id => s.id, :depositario_id => @depositario.id  %></td>
+    <td><%= link_to 'Excluir', s, :confirm => 'Confirma Exclusão?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>	
+<%= link_to 'Novo Sub Depositário', :controller => :sub_depositarios, :action => :new, :depositario_id => @depositario.id %>

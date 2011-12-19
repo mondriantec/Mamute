@@ -1,5 +1,15 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :movimentos
+  map.resources :repasses_fabrica
+
+  map.resources :servicos
+
+  map.resources :parametros_financeiros
+
+  map.resources :tipos_de_documento
+
+  map.resources :planos_de_conta
+
+  map.resources :movimentos, :collection => {:contas_a_pagar => :get, :contas_pagas => [:get,:post], :contas_a_receber => :get, :contas_recebidas => [:get,:post]}
 
   map.resources :sub_depositarios
 
