@@ -1,0 +1,16 @@
+<h1>Tipo de Notificação</h1>
+<% form_for(@tipo_de_notificacao) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :descricao %><br />
+    <%= f.text_field :descricao %>
+  </p>
+  <p>
+    <%= f.label :modelo_de_notificacao_id %><br />
+    <%= f.text_field :modelo_de_notificacao_id %>
+  </p>
+  <p>
+    <%= f.submit 'salvar' %>
+  </p>
+<% end %>

@@ -1,0 +1,46 @@
+<script type="text/javascript"  src="/javascripts/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
+
+
+<script type="text/javascript">
+	dojo.require("dojo.parser");
+  dojo.require("dijit.Editor");
+
+
+  dojo.addOnLoad(function () {
+      dojo.connect(dojo.byId('dojo_form'), 'onsubmit', function () {
+         dojo.byId('modelo_de_notificacao_texto').value = dijit.byId('editor').getValue(false);
+      });
+   });
+</script>
+
+<% form_for( @modelo_de_notificacao, :id=> "dojo_form") do |f| %>
+  <%= f.error_messages %>
+<div class="formAnswer">
+  <p>
+    <%= f.label :descricao %><br />
+    <%= f.text_field :descricao %>
+  </p>
+
+  <p>
+    Abaixo a lista de variáveis que você pode utilizar:
+    <ul>
+      <li>{{DATA_HOJE}} - Data do dia por extenso</li>
+      <li>{{COMARCA}} - Se compareceu ou compareceram</li>
+      <li>{{COMPARECEU}} - Se compareceu ou compareceram</li>
+      <li>{{CELCARANTE}} - Nome do declarante</li>
+    </ul>
+  </p>
+
+  <p>
+    <%= f.label :texto %><br />
+    <%= f.hidden_field :texto %>
+    <div id="editor" style="background-color: #FFF; width: 800px" dojoType="dijit.Editor" extraPlugins="['dijit._editor.plugins.AlwaysShowToolbar']"><%= @modelo_de_notificacao.texto %></div>
+
+
+
+  </p>
+  <p>
+    <%= f.submit 'Salvar' %>
+  </p>
+</div>
+<% end %>

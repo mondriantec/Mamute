@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :modelos_de_notificacao
+
+  map.resources :tipos_de_notificacao
+
   map.resources :repasses_fabrica
 
   map.resources :servicos

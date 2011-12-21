@@ -1,0 +1,21 @@
+<h1>Modelos de Notificação</h1>
+
+<table>
+  <tr>
+    <th>Descricao</th>
+    <th colspan=3>Opções</th>
+  </tr>
+
+<% @modelos_de_notificacao.each do |modelo_de_notificacao| %>
+  <tr>
+    <td><%=h modelo_de_notificacao.descricao %></td>
+    <td><%= link_to 'Exibir', modelo_de_notificacao %></td>
+    <td><%= link_to 'Editar', edit_modelo_de_notificacao_path(modelo_de_notificacao) %></td>
+    <td><%= link_to 'Excluir', modelo_de_notificacao, :confirm => 'Confirma Exclusao?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo Modelo de notificação', new_modelo_de_notificacao_path %>
