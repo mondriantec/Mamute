@@ -1,3 +1,4 @@
+<h1>Tipo de Notificação</h1>
 <p>
   <b>Descricao:</b>
   <%=h @tipo_de_notificacao.descricao %>
@@ -5,9 +6,9 @@
 
 <p>
   <b>Modelo de notificacao:</b>
-  <%=h @tipo_de_notificacao.modelo_de_notificacao_id %>
+  <%=h @tipo_de_notificacao.modelo_de_notificacao.descricao if @tipo_de_notificacao.modelo_de_notificacao %>
 </p>
 
 
-<%= link_to 'Edit', edit_tipo_de_notificacao_path(@tipo_de_notificacao) %> |
-<%= link_to 'Back', tipos_de_notificacao_path %>
+<%= link_to 'Editar', edit_tipo_de_notificacao_path(@tipo_de_notificacao) %> |
+<%= link_to 'Voltar', tipos_de_notificacao_path %>

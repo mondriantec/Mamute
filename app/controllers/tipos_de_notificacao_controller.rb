@@ -1,4 +1,6 @@
 class TiposDeNotificacaoController < ApplicationController
+
+  before_filter :load_modelos, :except => ['index, :destroy']
   # GET /tipos_de_notificacao
   # GET /tipos_de_notificacao.xml
   def index
@@ -79,5 +81,11 @@ class TiposDeNotificacaoController < ApplicationController
       format.html { redirect_to(tipos_de_notificacao_url) }
       format.xml  { head :ok }
     end
+  end
+
+  def load_modelos
+    @modelos = [['Selecione um Modelo de Notificação', nil]]
+    mod = ModeloDeNotificacao.find(:all, :order => 'descricao')
+    mod.each {|m| @modelos << [m.descricao, m.id]}
   end
 end

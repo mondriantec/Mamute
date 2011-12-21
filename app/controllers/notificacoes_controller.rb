@@ -1,4 +1,6 @@
 class NotificacoesController < ApplicationController
+
+  before_filter :load_tipos, :except => ['index','destroy']
   # GET /notificacoes
   # GET /notificacoes.xml
   def index
@@ -103,6 +105,12 @@ class NotificacoesController < ApplicationController
     end
     
     render :layout => false
+  end
+
+  def load_tipos
+    @tipos = [['Selecione um tipo de notificacao', nil]]
+    tipos = TipoDeNotificacao.find(:all, :order => 'descricao')
+    tipos.each {|t| @tipos << [t.descricao, t.id]}
   end
   
 end
