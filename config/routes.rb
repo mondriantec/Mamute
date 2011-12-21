@@ -31,7 +31,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :lotes
 
-  map.resources :notificacoes
+  map.resources :notificacoes, :collection => {:imprimir_notificacao => :get}
 
   map.resources :irtds
 

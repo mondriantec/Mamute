@@ -1,6 +1,6 @@
 class NotificacoesController < ApplicationController
 
-  before_filter :load_tipos, :except => ['index','destroy']
+  before_filter :load_tipos, :except => ['destroy']
   # GET /notificacoes
   # GET /notificacoes.xml
   def index
@@ -97,6 +97,12 @@ class NotificacoesController < ApplicationController
       format.html { redirect_to(notificacoes_url) }
       format.xml  { head :ok }
     end
+  end
+
+  def imprimir_notificacao
+    @notificacao = Notificacao.find_by_id params[:id]
+    @modelo = @notificacao.tipo_de_notificacao.modelo_de_notificacao
+    render :layout => false
   end
   
   def get_municipios

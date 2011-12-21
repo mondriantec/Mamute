@@ -16,6 +16,7 @@
     <td><%=h notificacao.data_envio_usuario %></td>
     <td><%=h notificacao.status %></td>
     <td><%= link_to 'Visualizar', notificacao %></td>
+    <td><%= link_to 'Imprimir', :action => 'imprimir_notificacao', :id => notificacao.id %></td>
     <td><%= link_to 'Editar', edit_notificacao_path(notificacao) %></td>
     <td><%= link_to 'Apagar', notificacao, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>

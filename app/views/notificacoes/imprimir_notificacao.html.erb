@@ -1,0 +1,10 @@
+<%= Liquid::Template.parse(@modelo.texto).render ({
+  'CPF_NOTIFICADO' => (@notificacao.cpf if @notificacao.cpf),
+  'ENDERECO' => ( @notificacao.endereco if @notificacao.endereco ),
+  'BAIRRO' => ( @notificacao.bairro if @notificacao.bairro ),
+  'UF' => (@notificacao.uf if @notificacao.uf),
+  'CIDADE' => (@notificacao.cidade.nome if @notificacao.cidade),
+  'MOTIVO' => 'MOTIVO',
+  'TEXTO' => (@notificacao.texto if @notificacao.texto) 
+     
+ }) %>

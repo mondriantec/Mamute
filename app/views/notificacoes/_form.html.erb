@@ -44,6 +44,10 @@
   </label>
 
   <label> 
+	<b>Tipo de Notificação </b>
+    <%= f.select :tipo_de_notificacao_id, @tipos %>
+  </label>
+  <label> 
 	<b>Motivo Notificação </b>
     <%= f.select :motivo_notificacao_id, MotivoNotificacao.find(:all).collect { |m| [m.motivo, m.id]}%>
   </label>

@@ -7,6 +7,7 @@ Rails::Initializer.run do |config|
   #config.gem "brazilian-rails", :version => '2.1.15'
   config.time_zone = 'Brasilia'
   config.gem "will_paginate", :require => 'will_paginate'
+  config.gem "liquid"
 
 end
                          
